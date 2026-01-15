@@ -24,6 +24,12 @@ Status: ✅ **ALL FILES CREATED & READY TO USE**
 11. ✅ **REFACTORING_GUIDE.md** - Detailed module explanations
 12. ✅ **QUICK_START.md** - Installation & getting started
 
+### Utilities
+11. ✅ **reproduce_panas.py** - Re-run emotional analysis
+12. ✅ **verify_reasoning.py** - Test intervention logic
+13. ✅ **verify_display.py** - Test console output
+14. ✅ **prompts/** - Customizable agent personas & instructions
+
 ---
 
 ## 🚀 QUICK START
@@ -41,6 +47,15 @@ your_project/
 ├── panas_analyzer.py
 ├── output_manager.py
 ├── main.py
+├── reproduce_panas.py    <-- Optional: Analysis tool
+├── verify_reasoning.py   <-- Optional: Testing tool
+├── verify_display.py     <-- Optional: Testing tool
+├── prompts/              <-- REQUIRED: Agent personas
+│   ├── therapist_prompt.txt
+│   ├── patient_A_prompt.txt
+│   ├── patient_B_prompt.txt
+│   ├── trigger-personas.json
+│   └── trigger-personas_PANAS_2.json
 └── .env (create this)
 ```
 
@@ -277,6 +292,47 @@ if selected_trigger == "My Trigger":
 ```python
 CONVERSATION_MODEL = "gpt-4-turbo"  # Or any OpenAI model
 ```
+
+### Prompt & Persona Customization
+
+**1. System Prompts (`prompts/*.txt`)**
+Edit these files to change the core behavior of the agents:
+- `therapist_prompt.txt`: Instructions for the AI Therapist.
+- `patient_A_prompt.txt`: Base instructions for Patient A.
+- `patient_B_prompt.txt`: Base instructions for Patient B.
+
+**2. Personas (`prompts/trigger-personas.json`)**
+Add or modify characters available for simulation.
+```json
+"New Character": {
+  "name": "Alex",
+  "age": 35,
+  "occupation": "Engineer",
+  "personality": "Logical, detached, avoids conflict...",
+  "trigger_behavior": "Withdraws into silence when criticized"
+}
+```
+
+---
+
+## 🛠️ UTILITY & VERIFICATION SCRIPTS
+
+Used for testing and validating the system without running a full session.
+
+### 1. Reproduce PANAS Analysis
+**File**: `reproduce_panas.py`
+- **Purpose**: Re-run the PANAS emotional scoring on an existing transcript json file. Useful if you want to tweak the scoring prompt or fix a parsing error without generating a new conversation.
+- **Usage**: Edit the filename in the script and run `python reproduce_panas.py`.
+
+### 2. Verify Reasoned Interventions
+**File**: `verify_reasoning.py`
+- **Purpose**: Test the intervention generation logic in isolation. It feeds a mock conversation and trigger to the LLM to verify it produces a valid response with the correct "voice".
+- **Usage**: `python verify_reasoning.py`
+
+### 3. Verify Console Display
+**File**: `verify_display.py`
+- **Purpose**: Test the rich console output formatting (summaries, stats) using dummy data.
+- **Usage**: `python verify_display.py`
 
 ---
 
