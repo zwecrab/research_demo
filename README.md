@@ -112,7 +112,11 @@ START
 5. (NEW!) Select First Speaker
   ├─ Patient A (affected party)
   ├─ Patient B (supporting partner)
-  └─ Random
+  ├─ Random
+  ↓
+6. (NEW!) Persona Selection
+  ├─ Random (default)
+  ├─ Manual Selection (browse & choose specific personas)
   ↓
 [SIMULATION RUNS: 25-35 turns]
   ↓
@@ -145,6 +149,9 @@ END
 | Timing | 0-100 | Is it a natural pause point? |
 | Impact | 0-100 | Will it help (USR framework)? |
 | **Average** | **0-100** | **Trigger threshold: ≥70** |
+ 
+### Intervention Transparency
+- **Reasoning**: The system now provides an explicit explanation for *why* an intervention was triggered, referencing the specific scoring dimension and observed behavior.
 
 ### PANAS Emotional Assessment
 
@@ -164,8 +171,8 @@ END
 ### 1. Four-Dimensional Intervention Scoring
 → Not just *when* to intervene (triggers), but *whether* intervening will help (clinical reasoning)
 
-### 2. NEW: First Speaker Selection
-→ Research design feature: test whether starting order affects therapeutic outcomes
+### 2. NEW: First Speaker & Persona Selection
+→ Research design feature: control exactly *who* speaks first and *which* specific persona characteristics are active.
 
 ### 3. Modular Architecture
 → Test components independently (Sequential vs LLM Only vs LLM+Triggers)
@@ -395,7 +402,7 @@ This modular refactoring maintains all functionality of the original test5.py wh
 **Status**: ✅ **COMPLETE & READY TO USE**
 
 **Created**: January 8, 2026
-**Version**: 2.0 (Modular + First Speaker Selection)
+**Version**: 2.1 (Modular + First Speaker + Persona Selection)
 
 **Start with**: `QUICK_START.md` → `python main.py` → Check `transcripts/`
 
