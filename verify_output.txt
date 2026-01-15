@@ -1,0 +1,72 @@
+Loading transcript data...
+
+--- TEST DISPLAY SUMMARY ---
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      LOSS OF LOVE/AFFECTION
+Conversation Structure:     LLM Only
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Sharma
+  Patient A:  Emma Johnson
+  Patient B:  Gregory Adams
+
+Transcript Statistics:
+  Total Turns:                31
+  Therapist Turns:            9
+  Patient A Turns:            13
+  Patient B Turns:            9
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+PANAS Emotional State Changes:
+
+  Emma Johnson:
+    Positive Affect Change:     +1
+    Negative Affect Change:     +1
+    Overall Change:             +2
+    Improved Positive Emotions: 2
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Interested: 3 -> 4 (+1)
+      • Proud: 4 -> 1 (-3)
+      • Attentive: 5 -> 4 (-1)
+      • Active: 3 -> 4 (+1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 3 -> 4 (+1)
+      • Scared: 3 -> 4 (+1)
+      • Ashamed: 3 -> 1 (-2)
+      • Afraid: 3 -> 4 (+1)
+
+  Gregory Adams:
+    Positive Affect Change:     +2
+    Negative Affect Change:     +2
+    Overall Change:             +4
+    Improved Positive Emotions: 4
+    Improved Negative Emotions: 5
+
+    Significant Changes:
+      • Interested: 3 -> 4 (+1)
+      • Strong: 4 -> 3 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 5 (+1)
+      • Attentive: 4 -> 5 (+1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 2 -> 3 (+1)
+      • Scared: 2 -> 3 (+1)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 3 -> 1 (-2)
+      • Ashamed: 2 -> 1 (-1)
+      • Jittery: 2 -> 1 (-1)
+      • Afraid: 2 -> 3 (+1)
+======================================================================
+
+--- END TEST ---

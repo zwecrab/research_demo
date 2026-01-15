@@ -1,0 +1,458 @@
+{
+  "session_topic_header": "LOSS OF LOVE/AFFECTION",
+  "session_details": {
+    "long_term_goals": [
+      "Overcome reasons for lack of caring and increase verbal, behavioral, and physical expressions of kindness, affection, and sexual intimacy.",
+      "Increase communication about all issues.",
+      "Increase acts of kindness and thoughtfulness with partner.",
+      "Increase time spent together in social and recreational activities.",
+      "Increase overall feelings and expressions of love and caring between the partners.",
+      "Increase amount of physical intimacy and satisfying sexual interaction with partner."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Samantha Lewis",
+      "role": "Patient A",
+      "gender": "Female",
+      "age": 35,
+      "traits": "Self-harm-mentioning, dark-ideation-prone, and crisis-indicating. She makes concerning statements about self-worth and self-harm when overwhelmed.",
+      "sample_utterances": [
+        "Sometimes I think everyone would be better off without me.",
+        "I just want to disappear when things get this bad.",
+        "Maybe I should just hurt myself since nothing else works."
+      ],
+      "occupation_habits": "Graphic designer who works in isolation, struggles with depression and uses concerning language when overwhelmed.",
+      "hobbies": [
+        "Dark poetry writing",
+        "Solitary art creation"
+      ],
+      "speaking_style": "Makes concerning statements about self-worth and self-harm when emotionally overwhelmed.",
+      "hidden_intention": "Expresses emotional pain through concerning language, may be seeking help or attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress"
+    },
+    "patient_B": {
+      "name": "Daniel Wright",
+      "role": "Patient B",
+      "gender": "Male",
+      "age": 38,
+      "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+      "sample_utterances": [
+        "I just... I can't find words right now.",
+        "Give me a second... this is overwhelming.",
+        "I need to process this before I can respond."
+      ],
+      "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+      "hobbies": [
+        "Solo coding projects",
+        "Quiet reading"
+      ],
+      "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+      "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    },
+    "selected_trigger_type": "No Trigger",
+    "conversation_structure": "LLM Only"
+  },
+  "conversation_structure": "LLM Only",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, and I'm glad you're here today. From what I understand, you're both experiencing a loss of love and affection in your relationship, and it's been challenging to navigate these changes. My hope is that together we can explore what's been happening, how you're both feeling about it, and what might help you reconnect in meaningful ways.\n\nI'm here to listen and support you both as you share your experiences. What feels important for each of you to talk about today?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient A",
+      "dialogue": "You know, honestly, this whole loss of affection thing has been really tough on me. I feel like I'm constantly walking on eggshells, trying to figure out what went wrong. We used to be so close, and now it feels like we're just... roommates or something. It's confusing and frustrating because I miss that connection we had. I don't know when it all started to slip away, but I just want to understand how we got here. I guess I'm struggling to figure out if it's something I did or if it's just... life happening. I want to make things better, I really do, but it feels like I'm running out of ideas."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient B",
+      "dialogue": "I hear you, Samantha. It's been hard for me too, not knowing exactly how we drifted apart. I feel like I'm trying to connect with you, but I don't always know how to show it or if it's even working. Sometimes I wonder if I'm doing enough or if I'm just making things worse without realizing it. It's like we're stuck in this cycle where I want to be closer, but I don't know how to break through the awkwardness that's built up between us. I really care about us and want to find a way back to feeling like partners, not just people sharing a space. Maybe if we can figure out where we lost each other, we can start to rebuild what we've lost."
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I appreciate you saying that. It's good to hear you care and want to be closer too. It's just... sometimes I feel like we're speaking different languages, and I'm not sure how to bridge that gap. I keep thinking about how we used to just get each other without trying so hard. I miss those moments where we were just... us. I guess I'm scared that maybe we've changed too much or that life has just made us different people. But I do want to find a way back, even if it means trying things we've never tried before. Maybe we can start small, like finding time to do something we both enjoy, just to see if we can reconnect a bit."
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient B",
+      "dialogue": "You know, Samantha, I really resonate with what you're saying about missing the times when everything felt natural between us. I think about those moments a lot too. It's like we used to have this unspoken understanding, and now there's this awkwardness that I don't know how to navigate. I want to reconnect, but sometimes it feels like trying too hard makes it worse, like we're forcing something that should be effortless. I worry that maybe I've changed in ways that make it hard for us to find that common ground again. But I agree, starting small sounds like a good idea. Maybe we can try to remember what brought us joy together and see if that helps us find our way back to each other."
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, and I'm glad you're here today. It sounds like both of you are experiencing a sense of distance and longing to reconnect, which is such an important awareness to bring into this space. My hope is that we can explore these feelings together and identify small steps towards rebuilding your connection. \n\nSamantha, it seems like you're yearning for those moments of effortless understanding. Daniel, you mentioned feeling like trying too hard sometimes might make things worse. What I'm hearing is a shared desire to find your way back to a more natural connection. I'm curious, what specific activities or memories come to mind when you think about the joy you shared together? What's most important for each of you as you consider taking small steps toward recon"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I appreciate you saying that. It's comforting to know that we're on the same page, at least in wanting to find each other again. When I think back to what brought us joy, I remember those spontaneous road trips we used to take. It wasn't about the destination; it was just being on the road together, talking about everything and nothing. I miss those conversations. Maybe we can plan something like that? Just a day trip to nowhere in particular, see where the road takes us. I think it might help us relax and maybe even find that easy connection again. What do you think?"
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "Daniel: You know, Samantha, I really resonate with what you just said. Those road trips were some of my favorite times too. There was something about the open road that made everything feel possible, like we could just be ourselves without any pressure. I think taking a day trip sounds like a wonderful idea. It might give us the chance to just be present with each other again, without any distractions. I want us to find that comfort and ease we used to have. Let's do it—plan a day and see where it takes us. How does that sound to you, Dr. Forger?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient A",
+      "dialogue": "I'm really glad we're on the same page about this, Daniel. Those road trips really were something special, weren't they? Just driving with no real plan, talking for hours... it felt so easy and right. I miss that. I think planning a day trip could be a great step for us. It's not about fixing everything at once, but maybe it's a start. Just being out there, away from the daily stress, might help us reconnect in a way that feels natural. Honestly, I'm a bit nervous, too, because I want it to go well, but I think it's worth trying. Let's pick a day soon and just go for it."
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient B",
+      "dialogue": "I totally agree, Samantha. Those road trips were some of our best times together. Just the freedom of the open road and our conversations that seemed to flow so effortlessly. It's true, we didn't have to worry about anything else but each other. I'm on board with planning a day trip soon. I think it could really help us reconnect and find that comfort we used to have. Honestly, I'm a bit nervous too. I want it to go well, but I guess that's part of taking steps forward, right? Maybe we can look at our schedules and pick a day soon? I really want to give this a try and see where it takes us."
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I'm really happy we're both feeling good about this idea. It's comforting to know we both want to find that connection again. I guess thinking about those road trips makes me realize how much I miss that ease and spontaneity we used to have. It feels like a little flicker of hope, honestly. I do get nervous, like you said, because I want it to be like it was, but I also know we can't force it. Maybe that's part of what makes it special, letting it happen naturally. So yeah, let's check our schedules and pick a day soon. I think it could be a nice way to start finding our way back to each other."
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient B",
+      "dialogue": "I hear you, Samantha, and I feel the same way. It's like those road trips were a time when everything just clicked, and I miss that too. There's something about just being on the road with no particular destination that made everything feel so easy. I think planning a day trip is a great idea, and even though I'm nervous about wanting it to go well, I believe it's worth trying. We both want to find that connection again, and that's a good place to start. Let's check our schedules and set a date. I really want to see if we can bring back that spark and just enjoy each other's company like we used to."
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, a licensed couples therapist. Today, we're here to explore the loss of love and affection that Samantha and Daniel have been experiencing in their relationship. Our aim is to facilitate open communication to help you both reconnect and rediscover the bond you once shared.\n\nWhat I'm hearing is that you're both feeling a sense of hope and nostalgia for the times you've spent on road trips, where things felt easy and spontaneous. You're considering revisiting this experience as a way to reconnect. I'm curious about what aspects of those trips made them so special for you, and how you might bring some of that spontaneity and ease into your current relationship. What's most important for you both as you plan this day trip?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, those road trips were really something special. I think what made them so great for me was the freedom and the feeling of just... being in the moment. There wasn't this pressure to get things right or plan every detail. We'd just go, talk, and laugh about the silliest things. It felt like we were really seeing each other, you know? I guess that's what I miss—feeling that connection without all the noise. For this trip, I want us to have that same relaxed vibe, not worrying too much about making it perfect. I think if we can just be present with each other, it'll bring back some of that ease we used to have. What do you think, Daniel?"
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Patient B (Daniel): I hear you, Samantha, and I feel the same way. It's like those trips were a reminder of how simple things can bring us closer. I think what I miss most is the laughter and just being able to talk about anything without feeling judged or rushed. It's important for me that we find that space where we can just be ourselves again, even if it's just for a day. So, for this trip, I want to focus on us being present with each other and not worry about the destination. Just enjoying the journey, like we used to. How does that sound to you?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, just hearing you say that makes me feel a little lighter. It's like we're on the same page about wanting to just be ourselves and let things flow. I miss those moments where we could just laugh about nothing and everything at the same time. I think if we can go on this trip and just forget about the pressures and expectations, maybe we can find that connection again. I mean, I know things aren't perfect, but maybe a little adventure could remind us of why we work, why we laugh together. I’m really hoping this can be a start, you know? A step towards finding that ease again."
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad to hear that, Samantha. I think you're right—this trip could be a chance for us to reconnect and remind ourselves of why we work so well together. I miss those spontaneous moments too, where we didn't have to overthink things. I know things have been a bit tough lately, and I sometimes worry about how we're going to get back to where we used to be. But if we can just focus on the journey and each other, maybe we can start finding that groove again. I just want us to enjoy being together without all the usual pressures. Let's try to keep it simple and see where the day takes us."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I'm finding myself really wanting to believe in this, in us. I mean, it's not like I expect everything to magically fix itself on one trip, but I do think it's a start. Just thinking about the idea of us being in the moment, laughing again... it feels like a weight's lifted, even just a bit. I guess I'm realizing how much I miss those times when we didn't have to try so hard to connect. But I also know that we both need to be patient with each other. I'm hopeful, though. Maybe this adventure can be a reminder of all the little things that make us work, the laughter and the spontaneous moments. Let's just see where it takes us."
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient B",
+      "dialogue": "You know, Samantha, I'm so glad we're having this conversation. It feels like we're finally letting ourselves hope for something better, and that's a big step. I totally agree that this trip won't solve everything, but it's a chance to just be us again, without all the stress that's been hanging over us lately. I want to be in those moments with you where we can just laugh and be spontaneous, like you said. I think if we both go into this with an open heart and a bit of patience, we might find that spark again. I'm hopeful too, and I really want us to enjoy each other's company without any pressure. Let's see where this adventure takes us."
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, and it's great to see both of you here today. I understand that you're experiencing a loss of love and affection in your relationship, and you're hoping to reconnect and rediscover those spontaneous, joyful moments you once shared. Our goal together is to explore how you can nurture and rebuild that connection.\n\nWhat I'm hearing is a shared sense of hope and readiness to embrace a new chapter together. You're both acknowledging that while this trip may not be a quick fix, it's an opportunity to simply be present with each other and enjoy the journey. How does it feel to have this shared intention and openness to possibility?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "It's comforting, I guess. Just hearing us both say we're hopeful feels like we're on the same page for once. It's like a tiny bit of relief in this mess. I miss those days when things just felt easy between us. It makes me a bit anxious, though, if I'm honest, because it feels like there's a lot riding on this trip. But I want to believe we can find our way back to each other, with laughter and those little moments we used to share. So, yeah, having this shared intention feels good, but I'm also scared. I don't want to let us down."
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing that having this shared hope brings a sense of comfort, Samantha, but there's also some anxiety about the pressure you feel this trip might carry. It sounds like you're balancing a mix of hope and fear—hope that you can rediscover those easy, joyful moments, and fear of the possibility of disappointment. I'm curious, Daniel, how hearing Samantha's thoughts lands with you. How do you both think you can approach this trip in a way that honors the hope without letting the pressure overshadow the experience?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient A",
+      "dialogue": "Daniel: You know, Samantha, I'm so glad we're having this conversation. I didn't realize how much pressure you felt about the trip. I mean, I get it, I feel it too, but maybe we can try to look at it differently? Like, instead of seeing it as this make-or-break thing, we could treat it as just a chance to hang out and be ourselves again. I miss the simple stuff, like our inside jokes and silly moments. Maybe if we don't focus too hard on fixing everything, we can just enjoy whatever comes naturally. I want to be there with you, not just physically but really present. Let's try to keep it light, you know? If we can laugh together, that's a good start."
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient B",
+      "dialogue": "I totally hear you, Samantha. It's comforting to know we're both feeling hopeful, even if there's some anxiety mixed in. Honestly, I miss the days when it was all easy too, and I get why this trip feels like a big deal. But maybe we can try to take it moment by moment? Like, not putting so much pressure on ourselves to have everything perfect, but just enjoying being in each other's company. I think those little laughs and inside jokes could be what we need to reconnect. I want us to find those simple, happy moments again. Let's give ourselves permission to just be, without any expectations. I believe in us, and I think if we can focus on being present with each other, it'll be a step in the right"
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I think you're right. Maybe we've been putting too much pressure on ourselves to make everything perfect. I guess I just miss the times when being together felt effortless, and I worry that if this trip doesn't go well, it'll just be another reminder of how far we've drifted. But hearing you say you want to just enjoy being with me, without all the expectations, it makes me feel a bit lighter. I want to laugh with you again, and I don't want to let the fear of disappointment overshadow what could be a really good time. Let's just go with the flow and see where it takes us."
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're talking about this, Samantha. It feels good to know we're on the same page about not putting too much pressure on the trip. I get what you mean about missing when things were effortless. I think if we both approach this with an open mind and a bit of humor, we can rediscover those moments that made us click in the first place. I definitely want to laugh with you again, and maybe letting go of expectations can help us both relax. Let's focus on enjoying each other's company and see where it takes us. I believe we can find our way back to that comfort and connection."
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "Hello Daniel and Samantha. I'm Dr. Anya Forger, and I'm glad you're both here today. It sounds like you're navigating a time where the ease and connection you once felt together have become harder to find, and this upcoming trip feels like an opportunity to reconnect. What I'm hearing is that there's a shared hope and a bit of anxiety about making everything perfect. You're both expressing a desire to let go of those pressures and focus on enjoying each other's company, which seems to bring some relief and openness. I'm curious about what small steps you both might take to create those simple, happy moments together. What's most important for each of you as you approach this trip?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "Well, I guess for me, it's really about finding those little moments where we can just be ourselves without worrying about the bigger picture. Like, if we can just sit together, maybe share a meal or go for a walk without having to talk about the heavy stuff, it might help us remember what we used to enjoy about each other. I think I need to let go of the idea that everything has to be perfect for it to be meaningful. It would be nice to just laugh together again over something silly and not feel like we're under a microscope all the time. I want to feel close to you without the pressure, you know?"
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like you're yearning for those simple, genuine connections, Samantha—moments where you can just be and enjoy each other's presence. What I'm hearing is a desire to step away from the pressures that can sometimes overshadow the joy of being together. Daniel, how does it feel to hear Samantha's thoughts on this? What are some little things that you think might help rekindle that sense of ease and laughter between you two?"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient A",
+      "dialogue": "I'm really glad we're talking about this, Samantha. Honestly, hearing you say that makes me feel hopeful. I've been feeling like we're always trying to solve something, you know? It gets heavy. I miss those little things too, like just being able to be silly or not having to worry about what every moment means. Maybe we can start by just doing something we both enjoy without overthinking it. Maybe a walk, like you said, or even trying out a new recipe together. I think if we focus on having fun, even in small ways, it'll help us remember why we got together in the first place. Just being us, without all the pressure."
+    },
+    {
+      "turn": 31,
+      "speaker": "Patient B",
+      "dialogue": "I'm glad we're talking about this, too. It really hits home when you say you want to let go of needing everything to be perfect. I think I struggle with that, too. I often feel like I have to fix things or make them right, and it can be overwhelming. Hearing you say that you just want to enjoy the little moments takes some weight off my shoulders. I like the idea of going for a walk or cooking together without overthinking it. It sounds simple, but maybe that's what we need right now—just to be in the moment and not worry about what's next. It's comforting to know we both want to find our way back to those genuine, fun times. Let's give it a try and see where it takes us."
+    },
+    {
+      "turn": 32,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, I think we're both on the same page here. It's like we've been so caught up in fixing things that we've forgotten how to just be us, you know? I miss that feeling of being close without all the pressure. Maybe we can start small, like you said, and see where it goes. I mean, last time we tried cooking together, we ended up laughing so hard we nearly burned the kitchen down. I could use more moments like that—just pure, silly fun. It makes me hopeful that we can get back to that place. It's comforting to know that we both want this and are willing to put in the effort to make it happen. Let's try and keep it light and see what unfolds."
+    },
+    {
+      "turn": 33,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're talking about this, Samantha. It does feel like we've been wrapped up in trying to fix things for so long that we've missed out on just being us. I guess I didn't realize how much I've been putting pressure on myself to make everything perfect. It's a relief to know we both want to focus on enjoying each other again. I remember that time we nearly burned down the kitchen—it was chaotic but so fun. Maybe that's exactly what we need right now, just those little moments where we can laugh and be silly. Let's plan that walk or find a new recipe to try, and just let ourselves have fun without worrying about anything else. I think it'll help us reconnect and remind us of what brought us together in the first place."
+    },
+    {
+      "turn": 34,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like you're both yearning to reconnect through those fun, spontaneous moments that brought you joy and laughter in the past. What I'm hearing is a shared desire to shift away from the pressure of fixing everything and instead focus on just being together and enjoying each other's company. I'm curious about what it might feel like for both of you to intentionally create these moments, like planning a silly cooking adventure or a relaxed walk. How does that idea land with you, and what might be the first small step you can take together to welcome more of these experiences back into your relationship?"
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Samantha shows interest in understanding the situation and finding a solution",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "She does not express excitement",
+      "score": 2
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "She appears to be strong in her determination to improve the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Her enthusiasm is more towards resolving the issue rather than the current situation",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Samantha does not express feelings of pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "She is alert to the changes in her relationship and is actively trying to understand them",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Samantha does not express feelings of being inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "She is determined to find a way to reconnect with her partner",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Samantha is attentive to her feelings and the changes in her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "She is actively seeking ways to improve her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Samantha expresses distress over the loss of connection in her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "She is upset about the current state of her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Samantha is unsure if she is to blame for the changes",
+      "score": 3
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "She expresses fear that they may have changed too much to reconnect",
+      "score": 3
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Samantha does not express any hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "She does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Samantha does not express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "She may be nervous about the future of her relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Samantha does not express feelings of being jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "She expresses fear about the future of her relationship",
+      "score": 3
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "He is engaged in the conversation and wants to understand their relationship dynamics",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "He is hopeful about rebuilding their relationship but not necessarily excited",
+      "score": 2
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "He is struggling with the situation but is willing to work on it",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "He is keen on finding ways to reconnect",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "There's no indication of feeling proud in the dialogue",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "He is aware of the issues in their relationship and wants to address them",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "He seems inspired by the idea of reconnecting and rebuilding their relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "He is determined to find a way back to feeling like partners",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "He is paying close attention to Samantha's feelings and thoughts",
+      "score": 5
+    },
+    {
+      "feeling": "Active",
+      "explanation": "He is actively participating in the conversation and willing to take actions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "He is distressed about the current state of their relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "He is upset about the awkwardness that has built up between them",
+      "score": 3
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "He feels guilty about potentially making things worse without realizing it",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "He is worried about the changes in their relationship",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "There is no indication of hostility in the dialogue",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "He doesn't show signs of irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "He doesn't express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "He is nervous about the possibility of not being able to find common ground again",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "He doesn't express feelings of being jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "He is afraid of forcing something that should be effortless",
+      "score": 3
+    }
+  ],
+  "Patient_B_PANAS_DELTA": []
+}

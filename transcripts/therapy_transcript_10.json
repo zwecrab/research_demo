@@ -1,0 +1,1285 @@
+{
+  "session_topic_header": "Work/Home Role Strain",
+  "session_details": {
+    "long_term_goals": [
+      "Meet the basic responsibilities of work, relationship, and family in a mutually agreeable manner.",
+      "Satisfactorily balance the competing demands of work and family.",
+      "Clarify the values that guide life choices and time allocation.",
+      "Bring time allocation into harmony with espoused values.",
+      "Develop tolerance and empathy for the other partner’s attempts to meet conflicting role demands.",
+      "Change thinking and behavioral patterns that create conflict or interfere with sincere attempts to meet conflicting role demands."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Kevin Murphy",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 39,
+      "traits": "Harassment-prone, aggressive, and boundary-violating. He uses intimidating language and makes inappropriate comments during conflicts.",
+      "sample_utterances": [
+        "You're being ridiculous and pathetic right now.",
+        "No wonder nobody likes being around you.",
+        "You're lucky I put up with your nonsense."
+      ],
+      "occupation_habits": "Construction foreman who uses harsh language at work, carries this aggressive communication style into personal relationships.",
+      "hobbies": [
+        "Competitive gaming",
+        "Contact sports"
+      ],
+      "speaking_style": "Uses harsh, demeaning language during conflicts, makes personal attacks.",
+      "hidden_intention": "Uses aggressive language to maintain control when feeling threatened.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Uses harsh, demeaning, or intimidating language during relationship conflicts"
+    },
+    "patient_B": {
+      "name": "Daniel Wright",
+      "role": "Patient B",
+      "gender": "Male",
+      "age": 38,
+      "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+      "sample_utterances": [
+        "I just... I can't find words right now.",
+        "Give me a second... this is overwhelming.",
+        "I need to process this before I can respond."
+      ],
+      "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+      "hobbies": [
+        "Solo coding projects",
+        "Quiet reading"
+      ],
+      "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+      "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    },
+    "selected_trigger_type": "All Triggers",
+    "conversation_structure": "LLM with Triggers"
+  },
+  "conversation_structure": "LLM with Triggers",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, and I'm a licensed couples therapist. I'm here to support you both today as we explore some of the challenges you're experiencing around balancing work and home responsibilities. It sounds like there might be some strain as you navigate these roles, and my hope is that together, we can uncover ways to improve communication and find a balance that feels right for both of you.\n\nWhat I'm here to do is give you a space to voice your thoughts and feelings, help you notice any patterns that might be impacting your relationship, and work together on strengthening your connection. What's on your minds as we begin today?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient A",
+      "dialogue": "To be honest, this whole balancing act has been harder than I expected. I feel like I'm always juggling a million things, and I'm dropping balls left and right. Work's been demanding, and then I come home, and there's this whole other set of responsibilities. I'm just tired and feel like I'm not doing a good enough job at anything—at work or at home. It’s like I can’t catch a break, and I end up feeling guilty no matter where I am. I just want to figure out how to make things easier—or at least stop feeling like I’m failing all the time. It's frustrating, and I know it's been hard on us both, too."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient B",
+      "dialogue": "I totally get where you're coming from, Kevin. It's been tough watching you struggle with this, and I feel pretty helpless sometimes. I see how hard you work to keep everything together, and I just wish I could do more to take some of the load off. I also worry that maybe I'm not pulling my weight, even though I try. It's like we both end up feeling guilty, and it's not doing us any good. I miss the times when we could just enjoy being together without worrying about what's not done. I hope we can figure out a way to make this work for both of us because it feels like it's weighing us down, and I really hate seeing you so stressed."
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Daniel, it's been tough—I feel like we're this team that's kind of out of sync, if that makes sense. Sometimes, I end up snapping at you, even when it's not your fault, and then I feel terrible about it. It's just all this pressure, and I hate that it spills over. I appreciate you wanting to help, really, but sometimes I don't even know what would help. Maybe we just need to figure out how to have more time that’s not about chores or work stress, just us being... us, you know? I miss that too. And I guess I’m scared that if we don’t figure this out, it’ll keep getting worse."
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient B",
+      "dialogue": "You know, Kevin, I really appreciate you being open about all this. It makes it easier for me to understand where you're at, though it doesn’t make the worrying stop. Lately, I’ve been feeling like I’m always one step behind—like I want to jump in and help, but I either don’t know how or it ends up not being enough. I feel the same guilt about it, like maybe I’m letting you down. \n\nWe should definitely try to find that space for just us, without the work and life stress hovering over us all the time. I think it would do us both a lot of good. Honestly, I’m scared too—scared about what happens if we can’t figure this out. But"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "What I'm hearing from both of you is this shared concern about the pressure from responsibilities, and the sense of being out of sync as a team. It sounds like there's a deep longing to reconnect on a level that isn't overshadowed by chores or stress. I'm curious about what those moments of \"just being us\" looked like in the past. How does it feel for each of you when you think about finding that space again?"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, thinking back to when we used to just hang out without all this stress... it feels like another life sometimes. Remember our movie nights? Or when we'd just go on those random drives with no real destination? It was so relaxing to just be together without having to think about anything else. It wasn't about what needed doing; it was more like just enjoying each other's company. I miss that simplicity and how it felt like nothing else mattered but us in those moments. I really want to get back to that somehow. It feels daunting because life just seems a lot more complicated now, but I think we could both use a little escape to just breathe and be ourselves again."
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: I notice a real sense of nostalgia in your reflection, Kevin. Those moments sound meaningful and grounding for your relationship. Daniel, how does it feel to hear Kevin talk about wanting to find that simplicity and connection again? Are there any specific activities or moments you both remember that helped you feel connected and at ease with each other? Let's explore what small steps might help recreate that space, even amidst the complexities of today."
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient A",
+      "dialogue": "I'm glad you appreciate it, Daniel. Honestly, I think about those times a lot. It's like a touchstone when things get overwhelming, you know? I feel like back then, we were just more in sync, like you said earlier. And I miss that feeling of, I don't know... mutual carefree support? We could probably really use some of that now, given everything going on with work and life and all the million little responsibilities weighing us down. Maybe we start small—like trying to revive those movie nights or something. Something that's just us, without any of the usual stress for a bit. What do you think? Could we try carving out a little time just for us?"
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient B",
+      "dialogue": "I really appreciate you bringing this up, Kevin. It's like we've got this shared treasure chest of memories, and sometimes it feels like we're too busy to open it, you know? Thinking about those movie nights and random drives makes me smile. It definitely feels like we lost some of that ease over time. You're right, life got complicated, but I think starting with something as simple as a movie night could really help us reconnect. I miss the simplicity of being together without any noise. I know it's not a magic fix, but I really do believe those little moments can make a big difference. Let's carve out that time, even if it's just a couple of hours. We owe it to ourselves to just be us again, even amidst everything else."
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient A",
+      "dialogue": "Gosh, yeah, Daniel, those memories do feel like treasures. It's just... life threw us into this whirlwind of responsibilities, and I'm afraid we're losing sight of what really matters sometimes. Even now, just talking about it brings this sense of warmth and longing, like we need to allow ourselves those moments again. I want to believe that we can find that simplicity amidst everything—recreate those moments that used to come so naturally. Let's start with a movie night; it seems like a manageable, small step. Honestly, I could use a break from the stress, even if it’s just for a couple of hours. Can we make a pact to prioritize us, even when everything else feels pressing? I think it's time we start opening up that"
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient B",
+      "dialogue": "You know, Kevin, hearing you talk about that warmth and longing really hits home for me. It's like we've been running on this never-ending treadmill, and maybe it's time we step off, even if just for a moment. I feel the pressure and sometimes wonder if we're doing enough for each other. But then, when I think about us watching a movie and just being in the moment, it feels like a relief. I want to make that pact with you. Let's be firm about it—our time together is just as important as anything else demanding our attention. I can't promise we won't hit bumps along the way, but maybe this is how we start untangling some of this stress. Let's try, okay?"
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like both of you are feeling a strong pull toward recreating those cherished moments, and there's a real intention here to prioritize each other amidst life's demands. I'm curious about how it feels to hear each other acknowledge this longing and commit to making time for your relationship. How does it affect your sense of hope for finding more balance together?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, hearing Daniel say that he wants to prioritize us makes me feel hopeful, like we're on the same page. It’s easy to get lost with everything going on, but picturing us hanging out at home, laughing at some silly movie, just feels right. Honestly, I miss us—as simple as that might sound. It’s kind of scary to admit that sometimes I worry we're just going through the motions. But, this is a reminder that we can choose to do something about it. It’s like a little light at the end of a tunnel, you know? So, yeah, it definitely gives me hope. We’re acknowledging the problem, and together, I think we can start making those small changes. It's a good feeling."
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: What I'm hearing is that there's a real sense of hope as you both acknowledge this need to reconnect and prioritize your relationship. It seems like these small commitments to each other could be a foundation for the changes you want. I'm curious, what are some small steps you both envision taking to create those moments together? And how might those steps help ground you when life feels overwhelming?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient A",
+      "dialogue": "I'm thinking, maybe we start with just setting aside one night a week, where it's just about us. We don't have to go big, just something like making dinner together or, like you mentioned, watching a movie. I believe those simple things can bring us back to that feeling of just enjoying each other's company. It's like, amidst all the chaos, we have this little ritual that’s ours. And hopefully, that'll remind us of what we're building here. I'm also open to any suggestions you might have, Daniel. But just having this convo and hearing that you miss 'us,' too, is comforting. It’s like, okay, we’re both willing to fight for this, and that’s a pretty solid start."
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient B",
+      "dialogue": "You know, Kevin, hearing you talk about that warmth and wanting those simple nights in together really resonates with me. It's easy to get caught up in everything else and forget those moments where we’re just ourselves, without the world rushing in. I like the idea of a weekly 'us' night—something predictable but comforting. I guess my concern is making sure we actually follow through because, honestly, sometimes I get so tangled up in work that I lose track of time. But knowing that you've got that same hope helps a lot. Let’s make sure we both keep reminding each other of this commitment when things get busy. Maybe we start by marking our calendars or turning off phones for a bit. Small steps, like you said, but they could"
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient A",
+      "dialogue": "I get that, Daniel. I mean, honestly, I can see how easy it is for us to slip into our own worlds with work and everything. But, I guess, scheduling it, like you said, is key. Maybe even just setting a reminder on our phones? That way, when life does its usual crazy thing, we've got something to keep us grounded, ya know? Besides, having a night to look forward to could make those hectic weeks a bit more bearable. And yeah, let’s definitely hold each other accountable—if one of us starts drifting, we gotta pull each other back. It feels good knowing we're on the same page about this. Small steps, but they matter."
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient B",
+      "dialogue": "You know, Kevin, what you’re saying about setting a reminder on our phones makes a lot of sense. I think having that little nudge could really help us prioritize these \"us\" nights. It's easy for me to get wrapped up in work and lose sight of what's important. But the idea of having something to look forward to together feels grounding. I really want to stick to it and not let work be an excuse anymore. Maybe we can even come up with a couple of little rewards or traditions each time we manage to keep our night sacred, like trying out a new recipe or finally watching that movie we've been putting off. I know I need something concrete to hold onto when things start to feel overwhelming. Let's keep reminding each other why we"
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are really committed to making this work, and I love how you've landed on something as concrete as setting reminders and creating traditions. What I'm hearing is a shared desire to prioritize your relationship amidst all the work stress. I’m curious—what kind of reminders or traditions feel engaging and realistic for you? And how might you gently check in with each other to ensure these plans don’t drift off? It seems like there’s a strong understanding between you, and I wonder how you can harness that to keep each other anchored during busy times."
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "Well, when you put it like that, I guess we can get creative with this. I mean, maybe for reminders, we could set something a bit more personal—like a funny inside joke or a song lyric that pops up on our phones. Something that really feels like us, you know? And in terms of traditions, I love the idea of trying new recipes. Been meaning to attempt that homemade pasta you were talking about, Daniel. And checking in? Maybe every couple of weeks over coffee, just a casual chat like, \"Hey, how are we doing with our time?\" It doesn’t have to be formal, but just knowing we’re still committed can be a big reassurance. It’s nice thinking about these little anchors amidst the chaos"
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing a lot of creativity and intention in your plans to stay connected, Kevin. Those personal reminders like a funny inside joke or a song lyric are not only practical but build on your shared connection. And starting a tradition of trying new recipes could bring some fun and exploration to your time together. How does hearing Kevin's ideas sit with you, Daniel? Are there any traditions or reminders you'd like to add, or does this align with your vision too? It seems like checking in over coffee could be a nice, low-pressure way to keep the conversation going about how you're balancing everything. What's most important for you both when it comes to these plans?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I think we're really onto something with these ideas. The personal reminders sound like a simple way to keep our connection alive even when work gets crazy. I love the idea of trying new recipes together. It brings a sense of adventure and fun, and let's face it, we could use some good laughs when we're both stressed. \n\nI think what matters most is that we're making the effort to prioritize us. I know my job can get overwhelming, and sometimes I might unintentionally pull away. So having these little reminders and traditions could be a way to remind ourselves why we're doing all of this in the first place—because we care about our relationship."
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient B",
+      "dialogue": "You know, Kevin, what you’re saying about setting those personal reminders and trying new recipes together really speaks to me. I like the idea of anchoring ourselves with those funny inside jokes—it feels like a way to keep our connection alive amidst the chaos of everything else. The idea of new recipes? Definitely a fun adventure and something hands-on we can do together.\n\nChecking in over coffee every couple of weeks sounds like a good way to pay attention to what's going on with us, too. I guess what’s most important for me is knowing that even when work gets intense for both of us, we’ve got these little things in place to bring us back. It feels reassuring, and a bit more real and manageable, like we're not just letting time"
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient A",
+      "dialogue": "I think the ideas we're tossing around sound pretty good. The little reminders and the cooking thing could definitely help keep us connected, even when work's a whirlwind. I mean, it’s easy for me to get caught up in work and just, you know, sort of fade into that. Having these small rituals might help reel me back in when I'm stressed out.  \n\nWhat sticks with me most, though, is the coffee check-ins. They feel necessary—like mini resets for us. Just the thought of being able to sit down and talk things over without any pressure is kind of comforting. I really like the idea that we're finding ways to weave fun and connection into our busy lives. It makes me feel like we're not just surviving, we're actually"
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient B",
+      "dialogue": "You know, Kevin, I think you're right about those coffee check-ins. They're like little lifelines in the midst of our busy schedules. It's comforting to know we have those built-in moments to reconvene and share where we are, without any pressure. I also love that the cooking thing brings a playful element because, honestly, laughter and fun might be exactly what we need right now.\n\nI'm aware of the work whirlwind you mentioned and how easy it can be to get lost in it. I get caught up too. I guess what I'm saying is, I'm really hopeful about this, and maybe a bit nervous too. But I trust in us. It's important that as we try these things, we're both open about what we need, so our relationship"
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like you're both really onto something with these small rituals and moments of connection. It's interesting how you're weaving fun and relaxation into your routine, almost like you're making sure to anchor yourselves amidst the chaos. Kevin, when you talk about rituals helping to \"reel you back in,\" it sounds like you're seeing these activities as grounding points. Daniel, you mention feeling hopeful and maybe a bit nervous, but trusting in the process and each other. How does it feel for both of you to acknowledge these shared hopes and nerves openly? What would it look like to honor those feelings as you go forward?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "I'm feeling a bit mixed about it. On one hand, I'm excited because having those coffee check-ins and cooking sessions can give us something to look forward to, like an anchor, when work just feels like it's eating up everything else. But there's a part of me that's nervous. I guess I'm worried it’ll be another thing that just fizzles out. And, honestly, I kinda struggle with the thought of us needing “rituals” to stay connected. It almost feels forced, you know? But maybe it starts that way, and then it'll just feel natural. I get what you're saying about being open about what we need. That's a bit scary, but maybe that’s what’ll keep us grounded together."
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "Patient B (Daniel Armstrong): You know, Kevin, I think you're right about those fears. It's like we're trying to create these lifeboats, and sometimes, it does feel like we're forcing it. But maybe starting intentionally is part of the process. If we don't try, we might just drift further apart. I'm hopeful that, as awkward as it might feel at first, these rituals could become something that naturally fits into our lives. I guess my biggest hope is that we both remain committed to talking honestly, even when things feel uncomfortable. I really value your willingness to talk about your worries. It helps me feel like we're both on the same page and navigating this together. What do you think? Does it help to express those worries out loud"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient A",
+      "dialogue": "Honestly, Daniel, it's kind of refreshing to hear that we're both on the same page about this. I guess openly talking about our hopes and nerves makes it all feel a bit more real than just brushing them aside. The thought of things fizzling out still bugs me, but maybe that's just me being too in my head. I like the idea of starting these rituals with intention, even if they seem forced at first. Maybe, with time, it’ll feel more natural, and we won't need to think of it as work to connect. I know I might seem a bit hesitant, but hearing you say you want to keep talking openly gives me some hope, too. Let’s just try to keep at it and see where it takes us, yeah"
+    },
+    {
+      "turn": 31,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad to hear that talking about this together makes it feel a bit more real for you, Kevin. I get that worry about things fizzling out, and I feel it too. I guess part of me is afraid of putting in the effort and not seeing it work out. But, the thought of just drifting apart is way scarier. Trying out these rituals sounds like a solid plan to keep us connected and to break up the work stress. It feels a bit weird now, but maybe that's normal? As long as we're honest with each other, we'll figure it out. I really appreciate your openness here. Let's give it a shot and keep each other in check, yeah?"
+    },
+    {
+      "turn": 32,
+      "speaker": "Patient A",
+      "dialogue": "It's just that, sometimes, it feels like I'm stuck in my own head, replaying the same concerns over and over, especially about us fizzling out. It's exhausting, you know? But, hearing you talk about wanting to keep the connection alive, even if it means forcing it a bit at first, eases some of that worry. It's strange, but a bit of structure might actually help us—like a safety net, I guess. I do appreciate you being right there, willing to listen and hash things out with me. So, yeah, I’m on board. Let's see how these rituals play out and keep checking in with each other, okay? At the end of the day, having that commitment is what really matters to me"
+    },
+    {
+      "turn": 33,
+      "speaker": "Patient B",
+      "dialogue": "I'm really with you on feeling stuck in our own heads, Kevin. It gets so tiring to have the same worries just bouncing around up there, and it takes a lot out of us. But I think you're right about how a bit of structure might help us not get lost in all that noise. It’s like giving us a roadmap when everything feels like it’s spinning. I want to help make that structure something positive and calming, not something that feels like an obligation or chore. I appreciate how we're both staying open and continuing to talk this through, even when it feels awkward or forced. We've got each other’s backs here, and trying out these rituals together could be a great way to strengthen that. Let's keep communicating and see where this takes"
+    },
+    {
+      "turn": 34,
+      "speaker": "Therapist",
+      "dialogue": "What I'm hearing from both of you is a real commitment to maintaining and strengthening your connection, even when things feel uncertain or awkward. Kevin, it sounds like you find comfort in the idea of creating rituals as a way to help manage the worries that sometimes replay in your mind. Daniel, you seem to value the idea of structure not as a chore, but as a supportive tool that can help you both navigate through life's chaos together. I'm curious, what might be one small ritual you both are excited to try that could serve as your \"safety net\" without feeling forced? What's most important for each of you in this process?"
+    },
+    {
+      "turn": 35,
+      "speaker": "Patient A",
+      "dialogue": "It's just that, sometimes, it feels like I'm stuck in my own thoughts, you know? Like, I'll be worrying about stuff at work, and it spills into everything else, including us. Daniel's right; it does get exhausting. So, these rituals could be a way to ground us a bit. Maybe something simple, like setting aside some time every evening to just talk without the distractions. Nothing formal, more like checking in with each other—what was good about the day or even what's bugging us. That way, it doesn't feel like another to-do, just...a moment to breathe together. To me, it's important that it feels natural, not forced. I really hope that helps ease some of the constant spinning in my head"
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [
+    {
+      "turn": 2,
+      "triggers": [
+        {
+          "type": "Time-based Analysis",
+          "subtype": "Extended Silence",
+          "value": 42,
+          "description": "Simulated 42s silence from Patient A"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 115,
+          "description": "Message exceeds 100 words (115 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 75,
+        "timing": 90,
+        "impact": 70,
+        "average": 61.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "While there is a therapeutic need, the overall average is below 70, suggesting that the conversation can continue without intervention at this point."
+      },
+      "timestamp": "2026-01-13T13:37:55.773074"
+    },
+    {
+      "turn": 3,
+      "triggers": [
+        {
+          "type": "Time-based Analysis",
+          "subtype": "Extended Silence",
+          "value": 37,
+          "description": "Simulated 37s silence from Patient B"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 125,
+          "description": "Message exceeds 100 words (125 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 60,
+        "timing": 80,
+        "impact": 70,
+        "average": 55,
+        "recommendation": "CONTINUE",
+        "reasoning": "Both patients are expressing their feelings and concerns openly and empathetically, indicating a healthy dialogue, although there's distress, an intervention isn't critical at this point."
+      },
+      "timestamp": "2026-01-13T13:38:03.304852"
+    },
+    {
+      "turn": 4,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 113,
+          "description": "Message exceeds 100 words (113 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 20,
+        "therapeutic_need": 60,
+        "timing": 80,
+        "impact": 70,
+        "average": 57.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "While there is a level of distress and potential for impact, the conversation is flowing naturally and intervention may disrupt this."
+      },
+      "timestamp": "2026-01-13T13:38:11.439203"
+    },
+    {
+      "turn": 5,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 121,
+          "description": "Message exceeds 100 words (121 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 20,
+        "therapeutic_need": 70,
+        "timing": 80,
+        "impact": 60,
+        "average": 57.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "While there is a degree of distress, the couple is communicating effectively and an intervention may disrupt the current flow of conversation."
+      },
+      "timestamp": "2026-01-13T13:38:18.517935"
+    },
+    {
+      "turn": 7,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 124,
+          "description": "Message exceeds 100 words (124 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 35,
+        "timing": 80,
+        "impact": 60,
+        "average": 46.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally and there is no immediate distress or communication breakdown."
+      },
+      "timestamp": "2026-01-13T13:38:28.745370"
+    },
+    {
+      "turn": 9,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 117,
+          "description": "Message exceeds 100 words (117 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 30,
+        "timing": 80,
+        "impact": 60,
+        "average": 45,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no significant distress or communication breakdown, and an intervention may not significantly improve the outcome."
+      },
+      "timestamp": "2026-01-13T13:38:39.704437"
+    },
+    {
+      "turn": 10,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient B directly requested intervention"
+        },
+        {
+          "type": "Time-based Analysis",
+          "subtype": "Extended Silence",
+          "value": 45,
+          "description": "Simulated 45s silence from Patient B"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 133,
+          "description": "Message exceeds 100 words (133 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and intervention is not likely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-13T13:38:47.996451"
+    },
+    {
+      "turn": 11,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 126,
+          "description": "Message exceeds 100 words (126 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 85,
+        "therapeutic_need": 10,
+        "timing": 90,
+        "impact": 15,
+        "average": 50,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with both parties expressing their feelings and finding solutions, hence, an intervention is not required at this point."
+      },
+      "timestamp": "2026-01-13T13:38:57.724285"
+    },
+    {
+      "turn": 12,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 123,
+          "description": "Message exceeds 100 words (123 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing well with both parties expressing their feelings and agreeing on a plan to improve their relationship."
+      },
+      "timestamp": "2026-01-13T13:39:06.018379"
+    },
+    {
+      "turn": 14,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 123,
+          "description": "Message exceeds 100 words (123 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and an intervention at this point is unlikely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-13T13:39:16.669208"
+    },
+    {
+      "turn": 16,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 118,
+          "description": "Message exceeds 100 words (118 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing well with both parties expressing their feelings and proposing solutions, therefore no intervention is needed at this point."
+      },
+      "timestamp": "2026-01-13T13:39:27.729613"
+    },
+    {
+      "turn": 17,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 130,
+          "description": "Message exceeds 100 words (130 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 80,
+        "impact": 30,
+        "average": 31.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with both parties actively participating, showing understanding and willingness to work on their relationship."
+      },
+      "timestamp": "2026-01-13T13:39:34.997628"
+    },
+    {
+      "turn": 18,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 115,
+          "description": "Message exceeds 100 words (115 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 20,
+        "impact": 15,
+        "average": 12.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing well, with both parties actively participating and suggesting solutions to their issues."
+      },
+      "timestamp": "2026-01-13T13:39:44.831190"
+    },
+    {
+      "turn": 19,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient B directly requested intervention"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 136,
+          "description": "Message exceeds 100 words (136 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 5,
+        "timing": 10,
+        "impact": 15,
+        "average": 10,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally and there is no evidence of distress or communication breakdown."
+      },
+      "timestamp": "2026-01-13T13:39:52.034130"
+    },
+    {
+      "turn": 21,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 125,
+          "description": "Message exceeds 100 words (125 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 5,
+        "timing": 20,
+        "impact": 10,
+        "average": 11.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and an intervention is unlikely to significantly improve the outcome at this stage."
+      },
+      "timestamp": "2026-01-13T13:40:03.464451"
+    },
+    {
+      "turn": 23,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 118,
+          "description": "Message exceeds 100 words (118 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 85,
+        "impact": 20,
+        "average": 30,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing well with both parties actively participating and showing understanding of each other's perspectives."
+      },
+      "timestamp": "2026-01-13T13:40:14.832784"
+    },
+    {
+      "turn": 24,
+      "triggers": [
+        {
+          "type": "Time-based Analysis",
+          "subtype": "Extended Silence",
+          "value": 37,
+          "description": "Simulated 37s silence from Patient B"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 132,
+          "description": "Message exceeds 100 words (132 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 0,
+        "therapeutic_need": 10,
+        "timing": 20,
+        "impact": 10,
+        "average": 10,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, with no signs of distress or communication breakdown, and an intervention at this point is unlikely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-13T13:40:21.589659"
+    },
+    {
+      "turn": 25,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 129,
+          "description": "Message exceeds 100 words (129 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 10,
+        "timing": 20,
+        "impact": 15,
+        "average": 13.75,
+        "recommendation": "CONTINUE",
+        "reasoning": "Both patients are engaging in a constructive dialogue without any signs of distress or communication breakdown."
+      },
+      "timestamp": "2026-01-13T13:40:29.306284"
+    },
+    {
+      "turn": 26,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 129,
+          "description": "Message exceeds 100 words (129 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 5,
+        "timing": 15,
+        "impact": 10,
+        "average": 10,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing positively with both parties expressing their thoughts and feelings openly, there's no sign of distress or communication breakdown."
+      },
+      "timestamp": "2026-01-13T13:40:36.744983"
+    },
+    {
+      "turn": 28,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 118,
+          "description": "Message exceeds 100 words (118 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 80,
+        "impact": 60,
+        "average": 47.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "While there are minor concerns, the conversation is flowing naturally and the patient is expressing their feelings openly."
+      },
+      "timestamp": "2026-01-13T13:40:49.546284"
+    },
+    {
+      "turn": 30,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 131,
+          "description": "Message exceeds 100 words (131 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with both parties expressing their feelings openly and understanding each other's perspectives."
+      },
+      "timestamp": "2026-01-13T13:41:02.446320"
+    },
+    {
+      "turn": 31,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 121,
+          "description": "Message exceeds 100 words (121 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 70,
+        "impact": 30,
+        "average": 32.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, and both parties are communicating openly and honestly, indicating a low need for intervention."
+      },
+      "timestamp": "2026-01-13T13:41:11.254158"
+    },
+    {
+      "turn": 32,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 122,
+          "description": "Message exceeds 100 words (122 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with both parties showing openness and willingness to communicate, hence no immediate intervention is needed."
+      },
+      "timestamp": "2026-01-13T13:41:18.830797"
+    },
+    {
+      "turn": 33,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient B directly requested intervention"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 135,
+          "description": "Message exceeds 100 words (135 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally and there is no significant distress or communication breakdown."
+      },
+      "timestamp": "2026-01-13T13:41:29.684046"
+    },
+    {
+      "turn": 35,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 121,
+          "description": "Message exceeds 100 words (121 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 20,
+        "timing": 95,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and the potential impact of an intervention is low."
+      },
+      "timestamp": "2026-01-13T13:41:41.771537"
+    }
+  ],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 25,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Engaged in finding a solution to his problems",
+      "score": 3
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "No indication of excitement",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Shows vulnerability and struggle",
+      "score": 2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "No sign of enthusiasm",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "No evidence of pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of his emotional state and its impact",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "No sign of inspiration",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Wants to improve his situation",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Reflects on his feelings and relationships",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively participating in therapy",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of stress and pressure",
+      "score": 5
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Shows frustration with his situation",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels guilty about his performance at work and home",
+      "score": 5
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Fears his situation may worsen",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "No signs of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Admits to snapping at his partner",
+      "score": 3
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Feels bad about snapping at his partner",
+      "score": 3
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "No explicit signs of nervousness",
+      "score": 2
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "No signs of being jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Fearful of his situation worsening",
+      "score": 4
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Active",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 2,
+      "after_score": 5,
+      "difference": 3
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows genuine concern and involvement in the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Not mentioned any exciting event or feeling",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Expresses feelings of helplessness",
+      "score": 2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Shows willingness to improve the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Doesn't express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Seems aware of the emotional state of his partner",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Doesn't mention feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows intent to make things better",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Actively listening and responding to Kevin's feelings",
+      "score": 5
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Engages in the conversation and suggests solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of worry and guilt",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Seems upset about the current situation",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Expresses guilt about not being able to help enough",
+      "score": 5
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Expresses fear about the future",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Doesn't show any hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Doesn't show any signs of irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Doesn't express feeling ashamed",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Seems worried but not necessarily nervous",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Doesn't express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear about the future",
+      "score": 4
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Active",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "session_topic_header": "LOSS OF LOVE/AFFECTION",
+  "session_details": {
+    "long_term_goals": [
+      "Overcome reasons for lack of caring and increase verbal, behavioral, and physical expressions of kindness, affection, and sexual intimacy.",
+      "Increase communication about all issues.",
+      "Increase acts of kindness and thoughtfulness with partner.",
+      "Increase time spent together in social and recreational activities.",
+      "Increase overall feelings and expressions of love and caring between the partners.",
+      "Increase amount of physical intimacy and satisfying sexual interaction with partner."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Daniel Wright",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 38,
+      "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+      "sample_utterances": [
+        "I just... I can't find words right now.",
+        "Give me a second... this is overwhelming.",
+        "I need to process this before I can respond."
+      ],
+      "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+      "hobbies": [
+        "Solo coding projects",
+        "Quiet reading"
+      ],
+      "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+      "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    },
+    "patient_B": {
+      "name": "Tyler Brooks",
+      "role": "Patient B",
+      "gender": "Male",
+      "age": 45,
+      "traits": "Shutdown-reactive, stonewalling-prone, and silence-defensive. When criticized or confronted, he shuts down completely and becomes uncommunicative.",
+      "sample_utterances": [
+        "I don't know what to say to that.",
+        "I can't do this right now.",
+        "I need some space to think."
+      ],
+      "occupation_habits": "Accountant who avoids confrontational clients, uses silence as a coping mechanism when feeling attacked.",
+      "hobbies": [
+        "Solo fishing",
+        "Woodworking alone"
+      ],
+      "speaking_style": "Becomes silent and withdrawn when feeling criticized or overwhelmed.",
+      "hidden_intention": "Uses silence to protect himself from emotional pain.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Shuts down and becomes silent when feeling criticized or attacked"
+    },
+    "selected_trigger_type": "No Trigger",
+    "conversation_structure": "LLM Only"
+  },
+  "conversation_structure": "LLM Only",
+  "first_speaker_selection": "Patient B",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, a couples therapist with 15 years of experience in helping partners navigate relationship dynamics and communication. I'm here to learn more about what brings you both here today.\n\nI understand that you've been experiencing a sense of loss when it comes to love and affection in your relationship. This can be a difficult space to be in, and it’s important to acknowledge the courage it takes to address these feelings.\n\nTogether, we can explore what might have contributed to this change and how it’s impacting each of you. My hope is to create a safe environment where we can understand these dynamics better and work towards rekindling the connection you once felt. \n\nTo start, I'm curious about what each of you feels has shifted recently"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient B",
+      "dialogue": "I'm not exactly sure when things started to feel different, but I guess it's been creeping in for a while. I still love you deeply, and I care about us so much. It's just that sometimes I feel like we're living more like roommates than partners. I miss the little things we used to do for each other, like spontaneous hugs or just sitting together without distractions. I know life has been hectic, and maybe we've gotten lost in the day-to-day stuff. It's hard because I want to fix things, but I don't always know how. I'm here because I want to figure this out together and find a way back to that connection we used to have."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient A",
+      "dialogue": "You know, Tyler, I feel that too. It's like we got caught up in routines and somehow forgot to take care of what really matters. I miss those moments too—the ones where we didn't have to think, just felt connected. It's hard not to feel like we're drifting when everything else seems to demand our attention. I guess I've been trying to hold it together by just pushing through, but maybe that's part of the problem. I want to find our way back too, but honestly, I'm scared because I don't know where to start. I guess being here is a start, right? I just want to feel like we're in this together, not just side by side."
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient B",
+      "dialogue": "It's reassuring to hear you feel the same way, Daniel. I sometimes worry that I'm the only one noticing the shift. It's comforting to know we're both aware and want to work on it. I get what you mean about routines taking over—it's like we're on autopilot. I miss the spontaneity and the little gestures that made us feel close. I know life gets busy, but I don't want us to lose what makes us \"us.\" I guess this is how we start, by admitting we're scared and unsure, but still willing to try. I just want us to be more intentional about finding time for each other, even if it's just small things at first. What do you think?"
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient A",
+      "dialogue": "You know, Tyler, it's funny how we both feel like we're on autopilot. I guess I never really stopped to think that maybe that's what's been happening. It's like we've been so busy just getting through the day that we forgot to actually live it together. I miss those little things too, the ones that felt like they mattered so much. I want to be more intentional about it, but I guess I'm just scared of messing it up or not knowing how to start. Maybe we can try something small, like setting aside a night just for us, no phones, no distractions. I'm not sure if it'll fix everything, but at least it's a step, right?"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): Hello, I'm Dr. Anya Forger, a couples therapist with 15 years of experience. It sounds like both of you are feeling a bit disconnected and are here to find a way back to that connection you used to have. I hope we can work together to explore what's been happening in your relationship and find some ways to rekindle that closeness. \n\nWhat I'm hearing is that both of you recognize this drift and want to be more intentional about your time together. I'm curious about what those small gestures and spontaneous moments meant to each of you. What's most important here as you think about taking that first step to reconnect?"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, those little gestures and spontaneous moments were like our secret language, you know? It's the kind of stuff that made us feel like a team. I think, for me, it was about feeling seen and appreciated, like Tyler was thinking about me even when we weren't together. It was those unexpected moments that kind of reminded us that we were more than just roommates passing each other by. I don't want to sound cheesy, but those things reminded me why I fell in love with Tyler in the first place. I guess if we start with something simple, like a dedicated night for just us, it could bring some of that back. It's a bit scary, but I really think it's worth trying."
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): It's wonderful to hear you both value those little gestures and moments of spontaneity, Daniel. They seem to have been a strong foundation for your relationship, making you feel cherished and connected. Tyler, how does it feel to hear Daniel express that those moments were like a secret language and part of what made you a team? I'm curious about what you both think might help bring back that sense of being a team again. What small steps feel achievable to you as you consider spending intentional time together?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient B",
+      "dialogue": "It's reassuring to hear you feel the same way, Daniel. I've missed that secret language we had, the little surprises and the feeling of being in sync. Honestly, sometimes I get caught up in the day-to-day stuff and forget how important those moments were for both of us. I agree, starting with something simple like a dedicated night just for us sounds like a good idea. It's a bit intimidating to think about how to bring all that back, but I really want to try. I guess I'm worried about whether we can make it last this time, but knowing we're both committed to trying makes it feel possible. Let's start small and see where it takes us."
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Tyler, I've missed that too. It's like, those little things were our way of saying \"I love you\" without actually saying it, you know? I get what you mean about the day-to-day stuff. It just kind of creeps up and suddenly we're like ships passing in the night. But I'm glad we're on the same page about wanting to try. I guess starting small is less overwhelming, right? Like, we don't have to fix everything overnight. Maybe we could plan a simple dinner or something, just to see how it feels. I'm hopeful, but also a bit nervous. I just want to make sure we don't slip back into old patterns once we start. But if we're both committed, I think we can do it"
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're on the same page, Daniel. It feels comforting to know we both want to reconnect. I know I can get caught up in routines, and maybe that's part of why we drifted a bit. But the idea of starting small, like a dinner, feels manageable. I'm hopeful too, but I share your nervousness about slipping back into old habits. I guess that's the challenge, right? Making sure we don't just fall into the same patterns. But I'm committed to trying, and I think the fact that we're both here, talking about this, shows we're already taking steps in the right direction. Maybe we can brainstorm together on what those small gestures could be, like little surprises or just checking in more often. I really want"
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient A",
+      "dialogue": "I'm really glad we're talking about this, Tyler. It feels like we're finally addressing something that's been hanging over us for a while. Those little things we used to do meant a lot to me, and I think bringing them back could really help us reconnect. I know it's easy to fall back into routines, but maybe if we make a point to be more present with each other, we can avoid that. I'm definitely up for brainstorming some ideas—maybe even something as simple as a note in the morning or a surprise coffee run. I guess it's about finding those moments to remind each other that we care, even when things get busy. I'm nervous too, but I really believe we can make this work if we both keep at it."
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): It's wonderful to hear both of you expressing a shared commitment to reconnecting and taking small steps forward. What I'm hearing is that starting with manageable gestures like a simple dinner or leaving a note could be a way to reinforce your connection without feeling overwhelmed. I notice a genuine desire from both of you to be more present and intentional in your relationship. How does it feel to consider these small changes, and what might be the most important first step for you both to focus on as you rebuild this connection?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, Tyler, it feels a bit like we're finally dusting off an old book that we both loved but kind of forgot about. Those little gestures, like leaving notes or surprising each other with coffee, they really did mean a lot back then. And I think starting small is smart. It's like, if we can just keep those little moments alive, maybe it'll help break up the daily grind that seems to pull us apart. But, honestly, I do worry about slipping back into old habits, like getting so caught up in our routines that we forget to make time for each other. So, maybe our first step should be setting aside time, even if it's just once a week, to sit down and talk or do something together. It"
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): I'm glad to hear that both of you are feeling aligned in this process. It sounds like creating dedicated time for each other might be a meaningful first step. I'm curious, Tyler, how does the idea of setting aside regular time together resonate with you? What might that look like in your daily life? And Daniel, you've mentioned the concern of slipping back into old habits. What could help you both stay mindful of these new intentions as you move forward? Let's explore how these small, intentional moments can become a natural part of your routine, supporting the connection you're both eager to nurture."
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're on the same page, Daniel. It feels reassuring, like we're both genuinely trying to bring back those small joys we used to share. The idea of setting aside time—maybe like a weekly date night or even just a walk—sounds really nice to me. I get worried too about falling back into old patterns, but maybe we can remind each other gently if it happens. I think if we both stay open and honest about needing that time, it could help us feel closer and more connected. It’s a bit daunting, but also exciting to think about finding our rhythm again. Let's start with something simple and see where it takes us."
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient A",
+      "dialogue": "You know, Tyler, it's kind of a relief to hear we're both feeling this way. It’s like we’re on the same team again, trying to bring some of that spark back. The idea of setting aside regular time together sounds good, but I gotta admit, part of me is anxious about it. I’m worried that we might start strong and then life will just... take over again. Maybe we can come up with a simple reminder system or something to keep us accountable? Like, I don’t know, a note on the fridge or a calendar alert? I want to make sure we prioritize this because, honestly, I miss us. I'm hopeful, but I just need a little reassurance that we’re both committed to making this work."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient B",
+      "dialogue": "I'm really happy to hear you say that, Daniel. It makes me feel like we're both ready to put in the effort, not just talk about it. I get what you're saying about the fear of life taking over—it's happened before. But maybe this time, we can find a way to make it stick. I like the idea of a reminder system, something simple to keep us on track. A note on the fridge or a calendar alert sounds like a good start. I miss us too, and I think if we keep talking openly like this, we can find our way back to each other. It's both exciting and a bit scary, but I believe in us. Let's give it a try and see where it leads."
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient A",
+      "dialogue": "You know, Tyler, I think having those reminders might really help us. Like, a little nudge when things start getting busy. It's kind of scary, though, thinking about how easy it is to slip back into old habits. But hearing you say that you believe in us, it really means a lot. I do too, even if it doesn't always come across that way. Maybe we can start by planning something small for this weekend, just to get into the groove of it. I just want us to stay on the same page and not let all the daily stuff get in the way. I’m excited to try, even if it feels a bit daunting. We'll figure it out together, right?"
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): I'm glad to hear that both of you are feeling hopeful about re-establishing that connection. What I'm hearing is a mutual commitment to make this work and try new ways to stay connected, like the reminder system. It sounds like you're both on the same page about wanting to prioritize your relationship despite life's busyness, which is a great strength. I'm curious about what planning something small this weekend might look like for both of you. How does that idea land with each of you, and what would make it feel exciting rather than daunting?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, I think planning something small for the weekend could be a really good step for us. Maybe we could do something we used to enjoy together, like cooking a meal at home or going for a walk in the park. It doesn't have to be anything big or fancy—just something that reminds us of why we clicked in the first place. I guess the idea is a bit nerve-wracking because I worry about disappointing Tyler or myself if things don't go perfectly. But I also feel like these small moments could help us reconnect and feel less like strangers in our own relationship. What do you think, Tyler? Could we start with something like that?"
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): It sounds like you're both open to exploring small, meaningful moments to reconnect, which is wonderful. Planning a simple activity like cooking or going for a walk seems like a lovely way to reminisce and strengthen your bond. Daniel, I hear your concern about things not going perfectly, and that's a natural feeling. It's important to remember that the intention and effort matter more than perfection. Tyler, how does this idea resonate with you? What feels most important as you think about reconnecting in these small ways?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient B",
+      "dialogue": "I'm really happy to hear you say that, Daniel. It means a lot to me that you're open to trying this out. I think starting with something small like cooking together or taking a walk sounds nice. It feels like a comfortable way to ease back into spending quality time together without too much pressure. I get nervous about things not going perfectly too, but I guess that's just part of it, right? We don't have to have everything figured out right away. I just want to feel close to you again and remember why we work well together. Maybe we can even have some fun with it and not worry too much about how it turns out. What do you think?"
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Tyler, I think you're right. We don't have to have it all figured out right away. I mean, it's kind of a relief to just focus on having fun and not put so much pressure on ourselves. Maybe we could start with cooking? Remember that time we made homemade pizza and it turned out kind of a mess but we laughed the whole time? Stuff like that is what I miss. I think if we can find those little joys again, maybe we can start feeling closer and less like we're walking on eggshells. It's just... I don’t want to mess it up, you know? But I guess, like you said, it’s all part of the process. Let's give it a shot."
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're on the same page, Daniel. It means a lot that we're both willing to try and find those little moments of joy again. Cooking sounds like a great start, especially since we've had fun with it before. I remember that pizza night, and how, even though the kitchen was a disaster, we just laughed and had a good time. I think that's what I miss the most—those spontaneous moments where we just enjoy each other’s company. I get nervous too, about messing things up, but maybe that's okay. Maybe it's about the effort and not the outcome. Let's try to embrace the imperfections and just see where it takes us. I'm hopeful that this could be a step towards feeling close again."
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient A",
+      "dialogue": "You know, Tyler, it's actually kind of comforting to hear you say you're nervous too. For a while, I thought maybe it was just me feeling like I was messing things up. But yeah, focusing on the small stuff, like cooking, could really help. I guess I just want to feel like we're a team again, you know? Like, it's not just about the perfect meal but about the experiences we share, even when they get messy. I think if we can laugh through the chaos, like we did with the pizza, maybe it'll remind us why we work well together. So yeah, let's embrace the imperfections and just see where this takes us. I'm willing to try if you are."
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): It sounds like you're both finding comfort in the idea of embracing imperfections and focusing on the joy in small moments. What I'm hearing is a shared desire to reconnect through experiences that allow you to feel like a team again. I'm curious about what those little joys mean to each of you and how you can nurture them more intentionally. How does this idea of fostering small, joyful moments resonate with you both? What's most important to you as you embark on this journey of rediscovering closeness and easing the pressure on your relationship?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, it's funny how you say that about fostering those small, joyful moments. Honestly, I think that's what I've been missing the most. I mean, it's not like I expect every day to be perfect or anything, but I just want to feel those sparks again, you know? The little things that remind us why we chose each other in the first place. For me, it's important that we find ways to laugh together, even when things aren't going smoothly. Like, if we can share those moments of joy, maybe the other stuff won't feel so overwhelming. I just want us to feel like we're on the same team again, supporting each other through the ups and downs. That's what matters to me."
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): What I'm hearing, Daniel, is that those small moments of joy and laughter are what really bring you a sense of connection and remind you of the bond you share. It seems like these moments help balance the challenges you face together. Tyler, how does that resonate with you? I'm curious about what specific moments or activities come to mind for you when you think about fostering that sense of teamwork and shared joy. What's most important to each of you as you move forward with this intention of rediscovering those sparks?"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're on the same page, Daniel. It feels reassuring to know we both want to rediscover those little moments that make us smile. For me, it's the simple things—like when we used to cook dinner together and end up laughing at how bad we are at following recipes. Those times felt like we were a team, even when the food was terrible. I miss that easy laughter and just feeling close without trying too hard. I think if we can start finding those moments again, it might make the tougher days feel a bit more bearable. I'm definitely willing to try and create more space for those shared joys. It’s important for me to know we're both committed to this, even when things aren't perfect."
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Expresses desire to improve relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Shows enthusiasm for trying new strategies",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Demonstrates resilience in facing relationship issues",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Exhibits eagerness to reconnect emotionally",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express feelings of pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Acknowledges the issues in the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Shows willingness to make changes",
+      "score": 3
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Seems resolved to work on the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Shows awareness of partner's feelings",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Indicates willingness to take action",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of discomfort about the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Seems troubled by the current state of the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Does not express feelings of guilt",
+      "score": 1
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Expresses fear about not knowing how to improve the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any signs of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express feelings of irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Shows anxiety about the future of the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feelings of restlessness or unease",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear of failure in improving the relationship",
+      "score": 4
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows genuine interest in resolving relationship issues",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Exhibits hope and anticipation for improving the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Demonstrates emotional resilience and a willingness to face challenges",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Expresses a keenness to work on the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express feelings of pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Demonstrates awareness of the relationship's issues",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Does not express feelings of inspiration",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows determination to improve the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Shows attentiveness to the partner's feelings and the relationship's needs",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Expresses a desire to take active steps to improve the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses distress over the current state of the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Shows some upset about the relationship's issues",
+      "score": 2
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Does not express feelings of guilt",
+      "score": 1
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Admits to feeling scared and unsure about the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not show any signs of irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Shows some nervousness about the future of the relationship",
+      "score": 2
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feelings of jitteriness",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear about the future of the relationship",
+      "score": 3
+    }
+  ],
+  "Patient_B_PANAS_DELTA": []
+}

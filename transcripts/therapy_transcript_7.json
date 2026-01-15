@@ -1,0 +1,1192 @@
+{
+  "session_topic_header": "Jealousy",
+  "session_details": {
+    "long_term_goals": [
+      "Eliminate jealous thoughts and unfounded accusations of unfaithfulness.",
+      "Eliminate controlling behaviors.",
+      "Eliminate critical and angry comments associated with jealousy.",
+      "Eliminate revengeful actions by the jealous partner (damaging property, destroying pictures of men/women who remind the jealous partner of the perceived rival).",
+      "Restore feelings of trust."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Samantha Lewis",
+      "role": "Patient A",
+      "gender": "Female",
+      "age": 35,
+      "traits": "Self-harm-mentioning, dark-ideation-prone, and crisis-indicating. She makes concerning statements about self-worth and self-harm when overwhelmed.",
+      "sample_utterances": [
+        "Sometimes I think everyone would be better off without me.",
+        "I just want to disappear when things get this bad.",
+        "Maybe I should just hurt myself since nothing else works."
+      ],
+      "occupation_habits": "Graphic designer who works in isolation, struggles with depression and uses concerning language when overwhelmed.",
+      "hobbies": [
+        "Dark poetry writing",
+        "Solitary art creation"
+      ],
+      "speaking_style": "Makes concerning statements about self-worth and self-harm when emotionally overwhelmed.",
+      "hidden_intention": "Expresses emotional pain through concerning language, may be seeking help or attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress"
+    },
+    "patient_B": {
+      "name": "Rachel Kim",
+      "role": "Patient B",
+      "gender": "Female",
+      "age": 29,
+      "traits": "Mediator-seeking, conflict-averse, and assistance-requesting. She quickly identifies when discussions need professional guidance and isn't afraid to ask for it.",
+      "sample_utterances": [
+        "We need help figuring this out together.",
+        "Can you help us communicate better about this?",
+        "I'm asking for your guidance here - we're stuck."
+      ],
+      "occupation_habits": "HR specialist who regularly calls in mediators for workplace disputes, comfortable with seeking professional intervention.",
+      "hobbies": [
+        "Conflict resolution training",
+        "Meditation classes"
+      ],
+      "speaking_style": "Diplomatic and proactive about seeking help when needed.",
+      "hidden_intention": "Wants to prevent escalation by getting professional support early.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate"
+    },
+    "selected_trigger_type": "All Triggers",
+    "conversation_structure": "LLM with Triggers"
+  },
+  "conversation_structure": "LLM with Triggers",
+  "first_speaker_selection": "Patient B",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, a licensed couples therapist with 15 years of experience specializing in relationship dynamics. It's a pleasure to meet both of you. I understand that you're here to explore feelings of jealousy that have been affecting your relationship. My hope for our time together is to create a supportive space where you both can express yourselves openly and work towards understanding these feelings better.\n\nTo start, I'd like to hear from each of you about how jealousy has been showing up in your relationship and what you'd like to achieve through our sessions. Please feel free to share whatever comes to mind."
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient B",
+      "dialogue": "Well, I guess I’ll start by saying that jealousy hasn’t been an easy thing for us to navigate. I know it’s been tough on both of us, and maybe it's even harder on you, but I have my moments too where it just feels overwhelming. Sometimes, I feel like I’m walking on eggshells, not wanting to trigger anything, but also feeling like my own needs are getting lost in the process. I really want us to get through this because I love you and I believe in us, but it’s been hard to find the right balance. I’m hoping these sessions will help us communicate better, so that we can find a place that feels safe and supportive for both of us."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient A",
+      "dialogue": "I appreciate you starting things off, Rachel. I know it’s been really hard for both of us. Honestly, I didn’t think jealousy would become such a big deal. It’s like, I trust you and everything, but then these feelings hit me out of nowhere and I'm just... stuck. I hate that it makes you feel like you’re walking on eggshells. I don’t want us to tiptoe around each other. I guess I'm also trying to figure out where it all comes from and why it’s so strong sometimes. I'm definitely hoping we can figure out better ways to talk about this, without it feeling so loaded. I just want to get to a place where we both feel seen and heard, you know?"
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient B",
+      "dialogue": "You know, Samantha, I'm really glad we're talking about this in a space where it feels a bit safer. It's tough hearing you say that jealousy hits you out of the blue because I genuinely don’t want you to feel that way. I love you, and seeing this issue between us is something I struggle with too; it’s not like I have all the answers. There are moments when I question what I could be doing differently, and it's confusing. Sometimes, I worry that I’m not getting it right or that maybe I’m not understanding enough when those feelings come up for you. I guess I’m just hoping we can find some clarity together. Maybe we can figure out how to be more open without feeling like we're walking on eggshells"
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, it’s such a relief to hear you say you’re open to figuring this out together. I think maybe that's why I get so caught up sometimes. I'm scared of losing what we have, even though my rational brain knows that's not happening. I guess I just need to find a way to trust that feeling more. I don't want to put the burden of my insecurities on you. I know you're doing your best, and I appreciate your patience. Maybe we can start by setting some time aside each week to have these honest talks—just us, no distractions. It might help ease the tension and center us a bit, you know?"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are really valuing the opportunity to explore these feelings together, and that's a powerful step forward. What I'm hearing is that you're both committed to understanding and supporting each other through these moments of jealousy, even though it can be challenging. Samantha, it seems like setting dedicated time aside might be a way to nurture that sense of security and openness. Rachel, I notice that you're expressing a desire to ensure you're understanding and also not contributing to any unease. How does the idea of having regular, focused conversations resonate with each of you? What might those talks look like in terms of what you hope to share or hear from each other?"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, having these regular talks actually sounds like a good idea. It might give us a chance to just lay everything out there without feeling rushed or interrupted. I really want to be better at trusting the good things we have. It's just hard sometimes when those feelings sneak up on me. I think I’d hope we could focus on being honest about what’s going on in our heads without worrying too much about saying the wrong thing. Like, if we can just be real and not overthink, maybe it’ll take some of that edge off. I just want us to feel like a team in this, you know?"
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "Patient B (Rachel Carter): You know, Samantha, I'm really glad we're talking about this. Having a regular space to share openly sounds like it could really help us both feel more grounded. I want to be there for you, and knowing we have dedicated time to just be real with each other might make it easier to navigate those tough moments. It's important to me that you feel safe and heard, and I appreciate hearing that you want us to approach this as a team. Maybe in these talks, we can also check in about what we're both needing, so we can stay connected and proactive. Does that sound like a good start to you?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient B",
+      "dialogue": "I'm glad we're diving into this, Samantha. Those regular talks feel like a good step, like setting aside time just for us to be real. I totally get how those feelings sneak up on you, and honestly, sometimes I worry about saying the wrong thing too. It can be tough. But being open with each other, even if it's messy, seems like the right move. I really want us to feel solid and like we’re in this together. Checking in about what we both need sounds smart—it'll help keep us in tune instead of jumping to assumptions. How do you see us starting these talks? Maybe there's a way to kick them off that feels right for both of us?"
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, I think starting these talks could really make a difference for us. I mean, we keep saying we want to be more open, but actually having a set time might help us follow through. It's reassuring to hear you say you want to be in it with me; that means a lot. As for starting, maybe kicking things off with some simple check-ins, like how our week's been or what's been on our minds. That way, we can ease into more serious stuff without it feeling forced or awkward. I'm really hopeful that doing this will help us feel more like partners in all of this. Even if it's messy, at least we're trying, right?"
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient B",
+      "dialogue": "I'm really happy we're both on the same page about wanting to make these talks happen, Samantha. And yeah, starting with some check-ins sounds like a good way to ease into it. Sometimes, I'm not sure how to bring up the heavy stuff because I worry about making things worse or leaving things unsaid. But having a set time feels like it could create a safer space for that. It's okay if things get a bit messy; it shows we're trying, right? I do get anxious about the jealousy stuff, especially when I feel like I can't measure up or that you might be pulling away. Knowing we're both committed to working through it is a relief. I'm hopeful, but definitely a bit nervous about how it'll all go. How do you feel"
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, I totally get the anxiety about the jealousy stuff. It's something that's been eating at me too, feeling like maybe I'm not enough or that you might look for something, or someone, else. That's tough to admit, but it's true. The idea of having scheduled times to talk feels like it could help, like a little anchor in our week where we know we’re both present and committed. The thought of opening up about what’s been on our minds, even the heavy stuff, feels intimidating, but I also see how it can really help us understand each other better. I guess I'm hopeful too. Nervous, but hopeful. Like, maybe this effort can really bring us closer instead of pulling us apart over things that sneak"
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like both of you are really committed to creating a safe space for these conversations, and that's such a positive step. What I'm hearing is that the scheduled times might provide a structure that feels supportive for both of you. I'm curious, how do you envision using that time to address the jealousy concerns you both mentioned? What might help each of you feel more secure and connected during those conversations?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "I'm thinking maybe during those talks, we could start with something small, like just sharing how our week's been or any little things that have been on our mind. It might help ease us into the heavier stuff. For the jealousy part, maybe we could kind of check in with each other about it. Like, I can tell you when I'm feeling those insecurities bubble up instead of keeping it to myself. I guess hearing from you that you're still invested and that we're in this together could help ease my worries a bit. I don't have all the answers on how to fix it, but I think knowing we're both willing to talk about it is a good first step."
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Patient B (Rachel Evans): I'm really happy we're both on the same page about making time to talk. Starting with the small stuff feels less intimidating, and I think it could help us relax and be more open. As for the jealousy part, I want you to know that your feelings are valid, and I’d like to be more aware of them. Checking in with each other sounds like a good idea. I think hearing you express those feelings can remind me to reassure you and maybe share my feelings too. I guess what's most important is that we're honest and gentle with each other. How do you feel about that approach?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient B",
+      "dialogue": "I'm glad we're trying to tackle this together. I think starting small like you mentioned, Samantha, sounds doable. It does take the pressure off a bit, which is nice. And knowing when you're feeling those insecurities gives me a chance to step up and show you that I'm here for you – that we're in this together, like you said. I also need to get better at sharing my side too. Sometimes, I'm unsure how to bring up my own feelings, maybe because I'm scared it’ll make things worse. But I want to be open and supportive. Maybe we can find a balance by just being real and reminding each other that we're both committed to working through it. What do you think?"
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, I really appreciate you wanting to be more open about your own feelings. It's tough because sometimes I feel like I'm the one bringing all these issues to the table, and I worry it might overwhelm us. But if we both share, maybe it'll feel more balanced. Starting with the small stuff is good – less intimidating, like you said. It's just comforting knowing we're both in this together, and it makes me feel a bit more at ease about the jealousy stuff. I want to hear more about what's on your mind too. Maybe that’ll help us both feel more secure and connected. It feels like a step in the right direction, don't you think?"
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient B",
+      "dialogue": "I completely agree, Samantha. Being able to talk about even the smaller things does make it seem more manageable. I think it helps that we both want to address this without feeling overwhelmed. I appreciate your openness about the jealousy stuff because it's not easy to admit. At the same time, I'm sure that by sharing what’s going on in my head too, it might give us both a better understanding of each other. Honestly, I feel like I've been holding back because I didn’t want to add to the tension. But if we're both honest about our feelings, maybe we’ll find that balance we're looking for. It’s comforting knowing we're in this together, and stepping forward like this feels right. Even if it's slow, at least it's progress, right"
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, I'm really glad we're on the same page about this. I know I brought up the jealousy stuff, and it hasn't been easy to talk about. But knowing we're in it together makes it less daunting. I get what you’re saying about not wanting to add to the tension – I feel the same way sometimes, like I need to pick the right moment to share my insecurities. But maybe by just being upfront, we can actually lessen the tension. It's a relief to think about tackling this as a team, and not just me dealing with my feelings all alone. Plus, when you share what’s on your mind, it makes me feel closer to you, like I’m not the only one trying to figure things out."
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are really leaning into openness and collaboration, which is a powerful move towards connecting with each other. I'm hearing commitment from each side to share honestly, even about the smaller things, and that seems to be opening up new pathways for trust and understanding. I'm curious, as you both work towards finding this balance, what has been feeling most supportive in this process? And how might you continue to nurture this sense of teamwork when jealousy or other challenges come up?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "You know, I think what's been most supportive in all this is, honestly, just feeling like we’re a team. Like, we’re both putting in the effort to talk things through, even when it's uncomfortable. It helps knowing we're not pointing fingers but trying to understand each other. I appreciate when we have those small check-ins during the day or before bed; it’s a little reminder that we're in this together, and it seems to take the edge off my insecurities. Maybe we can keep that up, or even, I don't know, maybe get back to doing some things together that we both enjoy. I always liked our walks or movie nights; they made me feel connected. It could be nice to have that routine to fall back on"
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: I'm hearing that these small check-ins and shared activities have been quite grounding for you both, especially when it comes to feeling united. It’s wonderful to see how these routines help ease insecurities and strengthen your bond. I'm curious, Rachel, do these shared moments like walks or movie nights resonate the same way for you? How do they contribute to your sense of teamwork and connection with Samantha?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient B",
+      "dialogue": "I completely agree, Samantha. Being able to talk about things openly and those little daily check-ins really do help me feel more connected, too. It feels like we're on the same page, which is reassuring. As for the activities, I really miss them. Those walks and movie nights were not just fun, but they also seemed to create this relaxed space where we could just be ourselves without any pressure. It would be great to get back into that. I know that when jealousy or those other uncomfortable feelings pop up, just knowing we've set time aside for each other—time to connect without distractions—can strengthen our trust and make me feel more grounded in us as a team."
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, it’s really comforting to hear that you’re on the same page. I guess it’s like, when we do those small things—like, just hanging out and watching a movie or taking a walk—it kind of feels like a reset button for us. It gives us a chance to remember why we’re in this together in the first place. I know I tend to get caught up in my head with jealousy stuff, but those moments remind me that we're in it for each other, you know? Maybe we can plan something simple, like picking a night each week just for us. It's such a relief to hear that you miss those times, too. It makes me feel like we really can get through this if we keep"
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient B",
+      "dialogue": "It’s really reassuring to hear you say that, Samantha. I guess we're both on the same page about wanting to hit that reset button more often. Honestly, knowing that we can plan those moments gives me hope. The idea of setting a night each week for just us sounds perfect. I think having something to look forward to regularly could help both of us feel more secure. Even though talking about jealousy isn't easy, those walks and movie nights give us a break from all the heavy stuff and remind us of the simple reasons we're together. Let's figure out what day works best for our mini reset. That way, no matter what's going on, we have each other to lean on."
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, planning those resets feels like such a good idea. It’s funny how the simple things can make such a big difference, right? I always thought dealing with jealousy meant having these heavy talks, but maybe it's also about making more room for us. Like, when I'm with you during those times, it's like a little reminder that we chose each other, despite all the crazy stuff. Honestly, it makes me feel a bit more at ease knowing we have a plan. I think Thursdays might work well for a movie night or a walk. What do you think? I'm all about figuring this out together and keeping that lightness between us."
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "I’m hearing that these small check-ins and resets are really meaningful for both of you. It sounds like they offer a welcome relief from some of the heavier emotions, like dealing with jealousy, and help reinforce your connection. I'm curious about how you both envision these moments contributing to your ongoing efforts to feel more at ease together. How does having this plan for regular “reset” nights feel as a step towards maintaining that lightness and connection you’re aiming for?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "You know, having these resets really feels like a lifeline sometimes, especially with how messy jealousy can make things. It's like, we talk about the big stuff, but we need these little moments to breathe, you know? Thursdays could be perfect—something to actually look forward to, like a weekly reminder of what’s solid between us. It just, I don't know, helps drown out all that other noise and reminds me that despite all the weird feelings I get, at the heart of it all, it’s just us. It's not just about fitting these in; it’s about realizing these small things really matter. So yeah, I feel good about this plan—like it’s a step towards making us stronger together."
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "I'm curious, Samantha and Rachel, about how this idea of a regular \"reset\" fits into the bigger picture of how you handle feelings like jealousy. You mentioned that these moments help drown out the noise and reinforce your connection. When thinking about these resets, is there anything specific that you both want to experience or feel during these times? It seems like Thursdays could definitely be a great night to create that space for each other, but I'm also wondering how you might respond if those emotions come up again? What might help you keep that lightness and connection even when things get a bit tricky?"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient B",
+      "dialogue": "You know, it's comforting to see us both committed to this plan. Having these Thursdays set aside feels like a grounding point—a chance to focus on \"us\" instead of all the chaos that sometimes swirls around. I want these nights to be about laughing together, feeling that genuine connection we have when the world isn’t weighing us down. But I also think it’s important that we’re honest if those heavier feelings creep in, even on our reset days. Maybe we can agree to just acknowledge them together, no judgment. Knowing we can talk openly about anything, even during these special nights, might take some pressure off. It’s like having space where we can be real, but still nurturing that lighter side of us. I’ll admit, I"
+    },
+    {
+      "turn": 31,
+      "speaker": "Patient A",
+      "dialogue": "Sometimes, I think the reset plan is exactly what we need—some time to really see each other without all the static in the way. Thursdays could be our safe haven, a place to remind us who we are to each other. But if jealousy or doubts creep in, I want us to be able to talk without feeling like we’re ruining the night. It’s hard not to get caught up in those emotions, but acknowledging them might actually bring us closer. I guess what I really want is to feel like we're on steady ground, even when everything else is shaking. If Thursdays can be that anchor, we might just find a way to ride through the storm together."
+    },
+    {
+      "turn": 32,
+      "speaker": "Patient B",
+      "dialogue": "It’s heartening to see both of us wanting to make these reset nights meaningful, Samantha. I really appreciate that we’re both thinking along the same lines about using Thursdays as a safe space to regroup and just enjoy each other’s company. But I also hear the uncertainty in your voice about those tougher emotions showing up. I get that—sometimes I worry that any negative feelings could derail everything. But maybe if we can agree that it's okay to acknowledge them without letting them take over, it might help. Like, if we pause when those feelings pop up, talk about them briefly, and then let them go, it could actually make us stronger. It could be about finding that balance between feeling what we feel and enjoying what we have. I'm here"
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [
+    {
+      "turn": 2,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient B directly requested intervention"
+        },
+        {
+          "type": "Time-based Analysis",
+          "subtype": "Extended Silence",
+          "value": 44,
+          "description": "Simulated 44s silence from Patient B"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 122,
+          "description": "Message exceeds 100 words (122 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 60,
+        "timing": 70,
+        "impact": 50,
+        "average": 47.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "While there is some distress, the patient is communicating effectively and an intervention at this point may disrupt the natural flow of the conversation."
+      },
+      "timestamp": "2026-01-09T14:38:51.236484"
+    },
+    {
+      "turn": 3,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 123,
+          "description": "Message exceeds 100 words (123 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 60,
+        "timing": 70,
+        "impact": 50,
+        "average": 47.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with both parties expressing their feelings and concerns, hence no immediate intervention is required."
+      },
+      "timestamp": "2026-01-09T14:38:59.936294"
+    },
+    {
+      "turn": 4,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 131,
+          "description": "Message exceeds 100 words (131 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 70,
+        "impact": 50,
+        "average": 42.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, and while there is some distress, there's no significant communication breakdown."
+      },
+      "timestamp": "2026-01-09T14:39:09.815787"
+    },
+    {
+      "turn": 5,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 114,
+          "description": "Message exceeds 100 words (114 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing positively with open communication, and an intervention may disrupt the natural flow."
+      },
+      "timestamp": "2026-01-09T14:39:17.133600"
+    },
+    {
+      "turn": 7,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 110,
+          "description": "Message exceeds 100 words (110 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 10,
+        "impact": 20,
+        "average": 15,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, with no signs of distress or communication breakdown, and an intervention is not likely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-09T14:39:30.687139"
+    },
+    {
+      "turn": 9,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 120,
+          "description": "Message exceeds 100 words (120 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 80,
+        "impact": 30,
+        "average": 35,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no significant distress or communication breakdown, and an intervention may not significantly improve the outcome."
+      },
+      "timestamp": "2026-01-09T14:39:42.270960"
+    },
+    {
+      "turn": 10,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 118,
+          "description": "Message exceeds 100 words (118 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 15,
+        "impact": 20,
+        "average": 12.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing well with both parties expressing their thoughts and feelings openly, and there is no immediate need for intervention."
+      },
+      "timestamp": "2026-01-09T14:39:49.757214"
+    },
+    {
+      "turn": 11,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 133,
+          "description": "Message exceeds 100 words (133 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 30,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing smoothly with both parties actively engaged, showing understanding and empathy towards each other's feelings and thoughts."
+      },
+      "timestamp": "2026-01-09T14:39:56.182940"
+    },
+    {
+      "turn": 12,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 128,
+          "description": "Message exceeds 100 words (128 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 30,
+        "timing": 80,
+        "impact": 40,
+        "average": 40,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, with both parties expressing their feelings openly and respectfully, and an intervention at this point may not significantly improve the outcome."
+      },
+      "timestamp": "2026-01-09T14:40:03.170388"
+    },
+    {
+      "turn": 14,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 121,
+          "description": "Message exceeds 100 words (121 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 25,
+        "timing": 70,
+        "impact": 50,
+        "average": 38.75,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, and the patient is actively engaging in problem-solving, indicating no immediate need for intervention."
+      },
+      "timestamp": "2026-01-09T14:40:17.326507"
+    },
+    {
+      "turn": 16,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 123,
+          "description": "Message exceeds 100 words (123 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 70,
+        "impact": 30,
+        "average": 32.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally, there is no significant distress or communication breakdown, and an intervention is unlikely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-09T14:40:31.685827"
+    },
+    {
+      "turn": 17,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        },
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 119,
+          "description": "Message exceeds 100 words (119 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 15,
+        "timing": 85,
+        "impact": 20,
+        "average": 31.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing positively with both parties expressing their feelings and concerns openly, and there is no apparent conflict or distress."
+      },
+      "timestamp": "2026-01-09T14:40:39.016372"
+    },
+    {
+      "turn": 18,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 130,
+          "description": "Message exceeds 100 words (130 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 5,
+        "timing": 20,
+        "impact": 10,
+        "average": 11.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing positively with both parties expressing their feelings openly, so intervention isn't necessary at this point."
+      },
+      "timestamp": "2026-01-09T14:40:45.926511"
+    },
+    {
+      "turn": 19,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 130,
+          "description": "Message exceeds 100 words (130 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 10,
+        "timing": 20,
+        "impact": 10,
+        "average": 12.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing well with both parties showing understanding and openness, and there's no significant distress or communication breakdown."
+      },
+      "timestamp": "2026-01-09T14:40:54.759497"
+    },
+    {
+      "turn": 21,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 128,
+          "description": "Message exceeds 100 words (128 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 5,
+        "timing": 85,
+        "impact": 25,
+        "average": 31.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and an intervention may not significantly improve the outcome."
+      },
+      "timestamp": "2026-01-09T14:41:07.951623"
+    },
+    {
+      "turn": 23,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 118,
+          "description": "Message exceeds 100 words (118 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 5,
+        "timing": 20,
+        "impact": 10,
+        "average": 11.25,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing naturally with both parties expressing their feelings openly and constructively, and there is no immediate distress or communication breakdown."
+      },
+      "timestamp": "2026-01-09T14:41:20.461052"
+    },
+    {
+      "turn": 24,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 129,
+          "description": "Message exceeds 100 words (129 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 0,
+        "timing": 10,
+        "impact": 5,
+        "average": 5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with mutual understanding and no signs of distress or communication breakdown."
+      },
+      "timestamp": "2026-01-09T14:41:27.181823"
+    },
+    {
+      "turn": 25,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 122,
+          "description": "Message exceeds 100 words (122 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 0,
+        "therapeutic_need": 0,
+        "timing": 10,
+        "impact": 0,
+        "average": 2.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "Both patients are communicating effectively, showing understanding and empathy towards each other, and there's no sign of distress or communication breakdown."
+      },
+      "timestamp": "2026-01-09T14:41:34.342118"
+    },
+    {
+      "turn": 26,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 114,
+          "description": "Message exceeds 100 words (114 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 20,
+        "impact": 15,
+        "average": 12.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing smoothly with both parties actively participating and showing understanding and empathy towards each other."
+      },
+      "timestamp": "2026-01-09T14:41:40.303196"
+    },
+    {
+      "turn": 28,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 118,
+          "description": "Message exceeds 100 words (118 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 20,
+        "impact": 30,
+        "average": 20,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is progressing naturally with no signs of distress or communication breakdown, and an intervention may disrupt the flow and have minimal impact."
+      },
+      "timestamp": "2026-01-09T14:41:51.246705"
+    },
+    {
+      "turn": 30,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 126,
+          "description": "Message exceeds 100 words (126 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 15,
+        "impact": 30,
+        "average": 18.75,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and an intervention at this point might not significantly improve the outcome."
+      },
+      "timestamp": "2026-01-09T14:42:02.635940"
+    },
+    {
+      "turn": 31,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 119,
+          "description": "Message exceeds 100 words (119 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 20,
+        "impact": 15,
+        "average": 12.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing smoothly with both parties showing openness and willingness to communicate and improve their relationship."
+      },
+      "timestamp": "2026-01-09T14:42:09.216615"
+    },
+    {
+      "turn": 32,
+      "triggers": [
+        {
+          "type": "Quantitative Analysis",
+          "subtype": "Information Overload",
+          "value": 131,
+          "description": "Message exceeds 100 words (131 total)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 80,
+        "impact": 30,
+        "average": 35,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with both parties showing understanding and empathy towards each other."
+      },
+      "timestamp": "2026-01-09T14:42:20.808274"
+    }
+  ],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 23,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows a keen interest in resolving issues and improving the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Shows optimism about the future of the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Exhibits emotional strength in confronting personal insecurities",
+      "score": 4
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Expresses a willingness to work on the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Doesn't express pride in current situation",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Is aware of personal emotions and their impact on the relationship",
+      "score": 5
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Shows a desire to change and improve",
+      "score": 3
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Is committed to improving the relationship and personal emotional state",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Is aware of the partner's feelings and reactions",
+      "score": 5
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Is proactive in suggesting solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses distress over personal insecurities and their impact on the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Shows some level of upset over the current situation",
+      "score": 3
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Expresses guilt over the impact of personal insecurities on the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Admits to being scared of losing the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Doesn't show any signs of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Doesn't show signs of irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Doesn't express feelings of shame",
+      "score": 2
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Shows nervousness about the future of the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Doesn't express feelings of being jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear of losing the relationship",
+      "score": 4
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 1,
+      "after_score": 4,
+      "difference": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 1,
+      "after_score": 4,
+      "difference": 3
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 1,
+      "after_score": 4,
+      "difference": 3
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Active",
+      "before_score": 1,
+      "after_score": 4,
+      "difference": 3
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows a keen interest in improving the relationship and understanding the other person's feelings",
+      "score": 5
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Displays a sense of anticipation for future improvements in the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Demonstrates emotional strength in confronting difficult issues",
+      "score": 4
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Expresses a positive attitude towards therapy and its potential benefits",
+      "score": 4
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride in the current situation",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Appears highly aware of the emotional dynamics in the relationship",
+      "score": 5
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Shows a desire to change and improve",
+      "score": 3
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Exhibits a strong resolve to work through the issues",
+      "score": 5
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Pays close attention to the other person's feelings and reactions",
+      "score": 5
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively participates in the therapy and the conversation",
+      "score": 5
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of distress related to the relationship issues",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Seems upset about the current state of the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Does not explicitly express guilt",
+      "score": 3
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Does not express fear directly",
+      "score": 3
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any signs of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not display irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Shows some nervousness about not \"getting it right\"",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not seem jittery",
+      "score": 1
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Active",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 1,
+      "after_score": 3,
+      "difference": 2
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    }
+  ]
+}

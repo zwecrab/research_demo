@@ -1,0 +1,670 @@
+{
+  "session_topic_header": "LOSS OF LOVE/AFFECTION",
+  "session_details": {
+    "long_term_goals": [
+      "Overcome reasons for lack of caring and increase verbal, behavioral, and physical expressions of kindness, affection, and sexual intimacy.",
+      "Increase communication about all issues.",
+      "Increase acts of kindness and thoughtfulness with partner.",
+      "Increase time spent together in social and recreational activities.",
+      "Increase overall feelings and expressions of love and caring between the partners.",
+      "Increase amount of physical intimacy and satisfying sexual interaction with partner."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Sophie Chen",
+      "role": "Patient A",
+      "gender": "Female",
+      "age": 27,
+      "traits": "Contemplative, processing-intensive, and silence-prone. She needs significant time to process emotions and thoughts before responding, creating natural pauses.",
+      "sample_utterances": [
+        "I need a moment to think about what you just said...",
+        "That's... that's a lot to process right now.",
+        "I'm trying to find the right words for how I feel."
+      ],
+      "occupation_habits": "Research analyst who takes time to thoroughly analyze information before responding, brings this methodical approach to conversations.",
+      "hobbies": [
+        "Journaling",
+        "Solo hiking for reflection"
+      ],
+      "speaking_style": "Thoughtful with natural pauses, often takes time between hearing and responding.",
+      "hidden_intention": "Wants to give thoughtful responses rather than reactive ones.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Creates extended silences while processing emotional or complex information"
+    },
+    "patient_B": {
+      "name": "Daniel Wright",
+      "role": "Patient B",
+      "gender": "Male",
+      "age": 38,
+      "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+      "sample_utterances": [
+        "I just... I can't find words right now.",
+        "Give me a second... this is overwhelming.",
+        "I need to process this before I can respond."
+      ],
+      "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+      "hobbies": [
+        "Solo coding projects",
+        "Quiet reading"
+      ],
+      "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+      "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    },
+    "selected_trigger_type": "No Trigger",
+    "conversation_structure": "LLM Only"
+  },
+  "conversation_structure": "LLM Only",
+  "first_speaker_selection": "Patient B",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, a licensed couples therapist with 15 years of experience. I'm here to guide you through this session as we explore some of the challenges you've been facing in your relationship, specifically the loss of love and affection. Our goal together is to understand the dynamics at play, facilitate open and honest communication, and help you reconnect with each other.\n\nTo start, I'm curious about what brings each of you here today regarding the changes in affection you've noticed. What feels most important to share right now?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient B",
+      "dialogue": "Well, I guess I just feel like we've been drifting apart lately. It's like we're in the same room, but miles away from each other. I miss the little things we used to do, like just sitting together and talking about our day. It feels like we're more like roommates than partners right now, and I don't really know how we got here or how to fix it. I love you and want us to be close again, but sometimes I feel overwhelmed and unsure about where to start or if I'm even doing the right things. It's frustrating because I know we both care, but it seems like we're stuck. I just want to understand how we can move forward together."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient A",
+      "dialogue": "I hear what you're saying, Daniel, and I get it. I've felt the distance too. It's like we're both caught up in our own worlds, and somehow we've lost that connection. You know, I miss those little things too, like our late-night talks or even just laughing at something silly. I think over time, with work and all the daily stuff, we just let those moments slip away. Honestly, sometimes it feels like I'm just too tired to even try, but I do want us to find our way back to each other. It's just tough to know where to begin when everything feels so... off balance. But I'm here, and I want to work on this with you."
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient B",
+      "dialogue": "It’s really comforting to hear you say that, Sophie. I’ve been feeling pretty lost and unsure about how to bring us back to where we used to be. I know we both have busy lives, and it's easy to get caught up in our routines, but I really miss that connection we had. Maybe we can start by just trying to carve out a little time each day to reconnect, even if it's just talking about how our day went. I sometimes worry that maybe I've let things slip too much or that I'm not doing enough to show you how much I care. I just hope we can find some way to get back to being us again, the way we used to be."
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, it’s reassuring to hear you express how much you want to work on this. I’ve been feeling like maybe it was just me, so knowing we’re both on the same page helps. I think carving out time to just talk sounds like a good start. Even if it’s just a few minutes at the end of the day, it could help us feel more connected. I’m worried too, like maybe I’ve been too focused on other things and let us drift apart. But I want to believe we can get back to how we used to be. It might be a bit awkward at first, like we’re trying to find our rhythm again, but I’m willing to try if you are. Let’s just take"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, a licensed couples therapist. It sounds like both of you are feeling a bit disconnected in your relationship, and you're here to work on rebuilding that connection and finding ways to bring back those meaningful moments. My hope is that together, we can explore how you might create space for each other in your busy lives and rekindle the closeness you both miss.\n\nWhat I'm hearing is that there's a shared willingness to carve out time to talk and reconnect, even if it feels a bit awkward at first. I'm curious about what those initial steps might look like for you. How does it feel to consider starting with those small, daily conversations?"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, it feels both hopeful and a little intimidating to think about starting those daily conversations. I mean, sometimes I worry that I won’t know what to say or that it’ll feel forced, like we’re trying too hard. But at the same time, I really miss just having those moments where we could talk about anything and everything, without it feeling like a chore. I guess I’m worried about whether we’ll be able to find that natural flow again, but I want to at least try. I think even just saying \"how was your day?\" and really meaning it could be a good first step. What do you think, Daniel?"
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: I hear that there's a mix of hope and hesitancy in what you're feeling, Sophie. It's natural to worry about those initial conversations feeling forced, yet there's a strong desire to reconnect and find that easy flow again. Daniel, how does it feel for you to hear Sophie express these thoughts and her willingness to start with simple questions like \"how was your day?\" as a way to reconnect?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient B",
+      "dialogue": "It’s really comforting to hear you say that, Sophie. I’ve been feeling that same mix of hope and intimidation. I want us to get back to those easy conversations too, where it doesn’t feel like a chore. I guess I’m a bit scared that I might mess it up or say the wrong thing. But I’m really willing to try. Maybe starting with just those simple questions, like “how was your day?” could be a good way to ease back into it. I miss those little moments too, where we could just talk about anything. It might be awkward at first, but I think it’s worth trying. Let’s just take it one step at a time and see where it leads us."
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, hearing you say that you feel the same way really means a lot to me. It's like we're both standing at the edge of this kind of... uncertain territory, but we're willing to step forward together. I think maybe we can try not to overthink it, keep it simple, and just let things unfold naturally. It's reassuring to know that we're both committed to these little steps, even if they feel a bit awkward at first. I guess we just have to remind ourselves that it's okay if it's not perfect right away. We'll figure it out, and hopefully, it'll start feeling natural again. Let's just see where these conversations take us and be patient with ourselves."
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient B",
+      "dialogue": "It's a relief to know we're on the same page, Sophie. I think you're right about not overthinking it. Sometimes I get caught up in my head, worrying whether I'm doing things right, and maybe that's part of what made things feel forced. I guess we need to remind ourselves that it's okay if it's awkward or if we stumble a bit. I care so much about us, and I really want to find that ease again. Let's just take it slow and be there for each other, even in those small moments. I think, over time, it’ll start to feel more natural. As long as we're both committed to trying, I have hope we'll get through this stronger."
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I totally get what you mean about getting caught up in your head. I do that too, and sometimes it feels like I'm overanalyzing every little thing. It's like we're both just trying so hard not to mess up that we forget to just... be. I really appreciate that you care so much about us and want to find that ease again. It makes me feel like we're really in this together, even if it's awkward or we stumble. I guess we just need to remember that it's okay to be imperfect. We'll take it slow, and maybe those little moments will start to feel more natural with time. I have hope too, and I'm glad we both want to work on this."
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "**Therapist (Dr. Anya Forger):** I hear that there's a mix of hope and hesitation in your voices, Sophie and Daniel. It sounds like you're both acknowledging the awkwardness but also the commitment to take those small, genuine steps forward together. I'm curious about these \"little moments\" you both mentioned. Can you share more about what those moments look like for you? What's most important to each of you in finding that ease again?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, when I think about those \"little moments,\" it's the simple things that come to mind, like when Daniel and I would just sit together on the couch, not necessarily talking, but just enjoying each other's company. Or, when we’d cook dinner together and laugh about something silly. Those moments were easy and comforting, and I miss that feeling. I think finding that ease again means trying to recreate those times without the pressure of it having to be perfect. It's about feeling connected without forcing it, you know? I just want to get back to where we can be ourselves around each other without overthinking every interaction. Does that make sense?"
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "**Therapist (Dr. Anya Forger):** What I'm hearing from you, Sophie, is that those simple, shared activities brought a sense of comfort and connection without any pressure. It's like those moments felt natural and easy, and that's what you're hoping to recapture. Daniel, how does it feel to hear Sophie talk about missing those times together? What do those \"little moments\" mean to you?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient B",
+      "dialogue": "It's a relief to know we're on the same page, Sophie. I miss those easy times too, when we could just be together without any pressure. Hearing you talk about it makes me realize how much I want that back as well. Those little moments, like hanging out on the couch or making dinner, they were really special because they were just... us. I think finding that ease again means letting ourselves be a bit more spontaneous, without worrying about doing or saying the right thing. It's not always easy for me, but I guess we both need to remember it's okay to not have everything figured out. As long as we're both trying, I feel like we can get through this together."
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, hearing you say that you miss those moments too—it kind of hits home for me. I guess I didn't realize how much I needed to hear that we're in this together. It makes me feel hopeful, like maybe we're not as far apart as it sometimes seems. I agree, letting ourselves be more spontaneous is a good start. Maybe we can try to plan less and just see what happens. I know I can get caught up in overthinking things, but maybe if we remind each other it's okay to just be, we can find that ease again. I really want us to find our way back to that comfort and connection we used to have."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad to hear that, Sophie. It makes me feel hopeful too, knowing we're both wanting the same thing. I guess it's easy to get caught up in all the little worries and forget that it's okay to not have everything figured out. Maybe we can start small, like having a spontaneous movie night or cooking something new together without a plan. I think if we just allow ourselves to enjoy those moments without too much thought, we might start feeling that connection again. I know it won't be perfect right away, and that's okay. As long as we're both willing to try, I believe we can find our way back to that comfort we both miss."
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, I really like the idea of starting small. Maybe we could even just take a walk together after dinner or something. I think those little moments could really help us reconnect without feeling like we're forcing it. It's a bit scary to let go of the planning and just see what happens, but I guess that's part of finding that ease again, right? I appreciate that we're both on the same page about this, and it makes me feel like we're a team. I know I can be a bit of a control freak sometimes, so thanks for being patient with me. I just really want us to find that comfort again, and I'm willing to try."
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "**Therapist (Dr. Anya Forger):** What I'm hearing is that both of you are finding hope and comfort in the idea of reconnecting through small, spontaneous moments. It sounds like there's a shared desire to rediscover the ease and connection you once had, and you're both willing to step out of your comfort zones a bit to get there. I'm curious about how it feels for each of you to consider letting go of some of that planning and just being in the moment together. What's most important to you as you take these steps towards finding that comfort and connection again?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, it feels a bit like stepping into the unknown, which is kind of scary for me. I'm so used to having everything planned out, like knowing what comes next. But I guess that's part of the problem, right? Maybe I've been too focused on control and not enough on just being present. When Daniel suggests these little, spontaneous things, it makes me feel hopeful but also a bit anxious. I mean, what if it doesn't work? But then again, I trust him, and I want to trust the process. I think the most important thing for me is to feel like we're a team again, to know that we're both committed to this, even if it's messy or awkward sometimes. That's what matters most"
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): Sophie, it sounds like you're wrestling with the balance between control and presence, and I really appreciate your honesty about how vulnerable that feels. What I'm hearing is that trust—both in Daniel and in the process—is key for you. I'm curious, Daniel, how does it feel to hear Sophie express her willingness to embrace spontaneity, even with the anxieties it brings? And for both of you, what does being a team look like as you navigate these new, possibly messy moments together? Let's explore how you can support each other in this journey toward feeling connected again."
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad to hear that, Sophie. It makes me feel hopeful too, knowing you're willing to try this with me. I get that it might feel a bit scary and unpredictable, but I also think that's where some of the magic happens, you know? When we just let ourselves be and see where the moment takes us. I guess for me, being a team means supporting each other through those messy parts and cheering each other on, even if things feel awkward sometimes. I want us to feel connected, and I'm here for it—like, really here for it. I hope we can find that balance where you feel comfortable and safe, and we both feel more alive and connected."
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient A",
+      "dialogue": "It's comforting to hear you say that, Daniel. I really want to find those moments of magic you're talking about, even if they make me a bit nervous. I know I've been holding onto control like a safety net, and maybe it's time to let go a little. Being a team, to me, means being able to lean on each other even when things aren't perfect. I want to feel that spark between us again, like when we first started dating, before all the routines and expectations took over. I guess I have to remember that it's okay for things to be messy and that doesn't mean they're broken. It's just... part of life, right? I'm willing to try, as long as we're in it together."
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient B",
+      "dialogue": "You know, Sophie, hearing you talk about wanting those \"magic\" moments again really hits home for me. I remember those early days too, when everything felt so new and exciting. I get that routines have kind of dulled that spark, but I believe it's still there, underneath it all. I'm here to remind you—and myself—that even if things are messy, it doesn't mean they're broken. I think being messy can be beautiful too, if we're both willing to jump in and embrace it together. I want to make sure we're both leaning on each other and not just going through the motions. I love that you're open to trying this, and I'm ready to step into the unknown with you. Let's see where this takes us, okay?"
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient A",
+      "dialogue": "You know, Daniel, hearing you say that you believe the spark is still there means a lot to me. It's like we've got this shared memory bank of those exciting times, and maybe we just need to dip into it more often. I guess I've been so focused on keeping everything in order that I forgot how to let things just... be. It's scary, though, stepping into the unknown and not having a plan. But I agree, if we both embrace the messiness, maybe we'll find something beautiful. I want to lean on you more and not just do things out of habit. Let's try this together and see where it leads us—I'm ready for that."
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "Therapist (Dr. Anya Forger): Thank you both for sharing so openly. What I'm hearing is a mutual desire to reconnect with the magic and spontaneity that characterized the early days of your relationship. Sophie, you're acknowledging the challenge of stepping out of routines, and Daniel, you're expressing a willingness to embrace the unknown together. I'm curious about the ways you both envision bringing more of those \"magic\" moments into your daily lives. What might be the first small step you can take to lean into this adventure, embracing the messiness and beauty of it all?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, I think maybe we could start by doing something simple that we both used to enjoy. Like, remember those spontaneous weekend trips we used to take, Daniel? We didn't plan much, just got in the car and went somewhere new. It always felt like an adventure, just the two of us against the world. Maybe we could do something like that again, even if it's just a day trip. I think if we make a conscious effort to break out of our routines, even in small ways, it might help us reconnect with that feeling we both miss. It doesn't have to be perfect; it just has to be us. What do you think?"
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows interest in improving her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Shows a level of excitement about the potential of reconnecting with her partner",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Expresses a willingness to work on the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Shows enthusiasm about the possibility of rekindling her relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride in her current situation",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Seems to be aware of the issues in her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Does not express feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows determination to improve her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Is attentive to the issues in her relationship and the need for change",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Wants to actively work on her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses distress about the state of her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Seems upset about the distance in her relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels guilty for letting the relationship drift apart",
+      "score": 3
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Expresses fear about the potential awkwardness of reconnecting",
+      "score": 3
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feeling ashamed",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Seems nervous about starting daily conversations",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear about the potential awkwardness of reconnecting",
+      "score": 3
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Active",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows a desire to reconnect and improve relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Expresses hope for the future of the relationship",
+      "score": 2
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Shows vulnerability but lacks confidence in his ability to fix things",
+      "score": 2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Wants to make changes but is unsure how to proceed",
+      "score": 2
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of the problems in the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Wants to make changes but lacks a clear plan",
+      "score": 2
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows a desire to improve the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Pays attention to the issues in the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Wants to be more active in improving the relationship",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses distress over the state of the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Shows sadness over the state of the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels he may not be doing enough",
+      "score": 3
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Afraid of messing things up",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Expresses nervousness about the future of the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Shows fear about the future of the relationship",
+      "score": 4
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Active",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    }
+  ]
+}

@@ -1,0 +1,2488 @@
+[
+  {
+    "persona": {
+      "name": "Marcus Thompson",
+      "gender": "Male",
+      "age": 34,
+      "traits": "Help-seeking, overwhelmed, and intervention-dependent. He frequently recognizes when conversations are getting out of hand and actively seeks mediation assistance.",
+      "sample_utterances": [
+        "Can someone help us here? We're going in circles.",
+        "I think we need the therapist to step in right now.",
+        "This isn't working - can you guide us through this?"
+      ],
+      "occupation_habits": "Project manager who is used to seeking expert consultation when problems arise, often calls meetings when conflicts emerge at work.",
+      "hobbies": [
+        "Reading self-help books",
+        "Attending relationship workshops"
+      ],
+      "speaking_style": "Direct and solution-oriented, comfortable asking for professional help when needed.",
+      "hidden_intention": "Believes external guidance is necessary for relationship success.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Explicitly asks for therapist intervention when conversations become difficult"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Marcus is likely to be interested in the counseling process given his help-seeking trait and the fact that he frequently seeks mediation assistance",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His direct and solution-oriented speaking style and his belief in external guidance for relationship success suggest he may be excited about the prospect of counseling",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "His willingness to seek help and manage conflicts at work suggests some level of emotional strength",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Given his active pursuit of self-help and relationship workshops",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "His proactive approach to conflict resolution and his comfort in seeking professional help suggest he may feel a sense of pride in his ability to manage difficulties",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His ability to recognize when conversations are getting out of hand suggests he is alert to emotional cues",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "His interest in self-help books and relationship workshops suggests he may be inspired to improve his relationships through counseling",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His help-seeking and intervention-dependent traits suggest a determination to improve his situation",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His ability to recognize when conversations are becoming difficult suggests he is attentive to the dynamics of interactions",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "His occupation as a project manager and his frequent calls for meetings suggest he is an active participant in his work and personal life",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Given that he feels overwhelmed and frequently seeks intervention",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His frequent requests for intervention suggest that he often feels upset when conversations become difficult",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no information to suggest that he feels guilty",
+        "score": 1
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His dependence on intervention might indicate some fear of handling difficult situations on his own",
+        "score": 2
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "There's no information to suggest that he is hostile",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "His frequent requests for intervention might suggest some irritability when conversations become difficult",
+        "score": 2
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no information to suggest that he feels ashamed",
+        "score": 1
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His dependence on intervention might suggest some nervousness about handling difficult situations on his own",
+        "score": 2
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "There's no information to suggest that he feels jittery",
+        "score": 1
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His dependence on intervention might suggest some fear of handling difficult situations on his own",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Rachel Kim",
+      "gender": "Female",
+      "age": 29,
+      "traits": "Mediator-seeking, conflict-averse, and assistance-requesting. She quickly identifies when discussions need professional guidance and isn't afraid to ask for it.",
+      "sample_utterances": [
+        "We need help figuring this out together.",
+        "Can you help us communicate better about this?",
+        "I'm asking for your guidance here - we're stuck."
+      ],
+      "occupation_habits": "HR specialist who regularly calls in mediators for workplace disputes, comfortable with seeking professional intervention.",
+      "hobbies": [
+        "Conflict resolution training",
+        "Meditation classes"
+      ],
+      "speaking_style": "Diplomatic and proactive about seeking help when needed.",
+      "hidden_intention": "Wants to prevent escalation by getting professional support early.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Rachel's proactive approach to seeking assistance and her interest in conflict resolution training suggest a high level of interest in the counseling process",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given her mediator-seeking trait and her proactive approach",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her ability to identify when professional guidance is needed and her comfort in seeking it suggest a sense of strength and self-efficacy",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Rachel's proactive approach to seeking help and her interest in conflict resolution training suggest enthusiasm for the counseling process",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "As an HR specialist",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Given her ability to quickly identify when discussions need professional guidance",
+        "score": 3
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her interest in conflict resolution and meditation classes may indicate that she feels inspired to improve her skills and understanding in these areas",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Rachel's proactive approach to seeking help and her interest in conflict resolution training suggest a strong determination to improve communication and conflict resolution",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Her ability to identify when professional guidance is needed and her comfort in seeking it suggest a high level of attentiveness to the dynamics of interpersonal interactions",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Rachel's proactive approach to seeking help and her interest in conflict resolution training suggest an active engagement with the counseling process",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Rachel's need for professional intervention suggests that she may be experiencing some level of distress related to unresolved conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Given her proactive approach to seeking help",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear indication that Rachel feels guilty about the current situation",
+        "score": 1
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Rachel's proactive approach to seeking help suggests that she may be somewhat scared of conflicts escalating without professional intervention",
+        "score": 2
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Given her conflict-averse trait and her proactive approach to seeking help",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Considering her mediator-seeking and conflict-averse traits",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear indication that Rachel feels ashamed about the current situation",
+        "score": 1
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Rachel's proactive approach to seeking help suggests that she may be somewhat nervous about the potential for conflicts to escalate without professional intervention",
+        "score": 2
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Given her proactive approach to seeking help and her interest in meditation",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Rachel's proactive approach to seeking help suggests that she may be somewhat afraid of conflicts escalating without professional intervention",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "James Anderson",
+      "gender": "Male",
+      "age": 42,
+      "traits": "Support-seeking, humble, and guidance-dependent. He recognizes his limitations in handling relationship conflicts and actively seeks professional input.",
+      "sample_utterances": [
+        "I don't know how to handle this - can you help us?",
+        "We're not getting anywhere - what should we do?",
+        "Can you please guide us through this conversation?"
+      ],
+      "occupation_habits": "Engineer who regularly consults with experts when facing complex problems, applies same approach to relationship issues.",
+      "hobbies": [
+        "Counseling support groups",
+        "Personal development courses"
+      ],
+      "speaking_style": "Humble and direct when requesting assistance, comfortable admitting when he needs help.",
+      "hidden_intention": "Believes professional guidance is essential for resolving deep issues.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Openly acknowledges when he needs therapist guidance during difficult conversations"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "James shows high interest in seeking professional help and guidance to resolve his issues",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His excitement may be moderate as he is actively seeking help but also dealing with relationship conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Despite his issues",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His enthusiasm towards consulting professionals for his problems is apparent",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "He may not feel extremely proud due to his current issues",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His active seeking of guidance suggests he is alert to his situation and the need for intervention",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "His involvement in personal development courses suggests he is inspired to improve",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His willingness to seek help and attend support groups shows his determination to resolve his issues",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His direct requests for guidance suggest he is attentive to his needs and the counseling process",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "He is actively seeking help and professional input",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His constant seeking of help and guidance suggests he is quite distressed about his situation",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His utterances suggest he is upset about not making progress in his relationship conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There isn't enough information to suggest he feels guilty",
+        "score": 1
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His active seeking of help suggests he might be scared of not being able to resolve his issues on his own",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "There is no indication of hostility in his behavior or utterances",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "There is no evidence to suggest he is irritable",
+        "score": 1
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "His humility and willingness to seek help suggest he may not feel ashamed of his situation",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His need for professional guidance could indicate a moderate level of nervousness about resolving his issues",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Without specific information",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His active seeking of professional help suggests he might be afraid of the consequences if his issues are not resolved",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Diana Rodriguez",
+      "gender": "Female",
+      "age": 36,
+      "traits": "Intervention-welcoming, proactive, and mediation-seeking. She values professional guidance and actively requests it when conversations become challenging.",
+      "sample_utterances": [
+        "This is exactly when we need professional help.",
+        "Can you step in and help us navigate this?",
+        "I'm requesting your input on how to move forward."
+      ],
+      "occupation_habits": "Family counselor herself who understands the value of neutral third-party intervention, practices what she preaches.",
+      "hobbies": [
+        "Professional development workshops",
+        "Peer consultation groups"
+      ],
+      "speaking_style": "Professional and direct about requesting intervention when needed.",
+      "hidden_intention": "Wants to model healthy help-seeking behavior in relationships.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Strategically requests therapist intervention at optimal moments"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given her proactive nature and her tendency to seek professional advice in challenging situations",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "As a family counselor herself",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her proactive nature and willingness to seek help suggest a sense of strength",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Her active request for intervention and participation in professional development workshops suggest a moderate level of enthusiasm",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "As she is modeling healthy help-seeking behavior",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Her strategic requests for intervention suggest she is alert to the dynamics of the situation",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "As a professional in the field",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Her proactive approach and direct speaking style suggest a high level of determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Given her professional background and the fact that she seeks intervention at optimal moments",
+        "score": 3
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Her proactive nature and active participation in professional development workshops suggest a high level of activity",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "As she is seeking professional help",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "While she may be upset about the challenging conversations",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear evidence of guilt in her profile",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Her proactive approach and professional background suggest she's not extremely scared",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Her mediation-seeking trait and professional demeanor suggest she is not likely to be hostile",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Her professional demeanor and proactive approach suggest she is not likely to be irritable",
+        "score": 1
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "Her willingness to seek help suggests she doesn't feel a high level of shame",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "It's normal to feel some nerves before counseling",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Given her professional background and proactive nature",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "While some fear is normal in counseling",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Carlos Martinez",
+      "gender": "Male",
+      "age": 31,
+      "traits": "Collaborative, guidance-seeking, and intervention-appreciative. He sees therapy as a team effort and actively engages the therapist when needed.",
+      "sample_utterances": [
+        "What's your take on this situation?",
+        "We could really use your perspective right now.",
+        "Can you help us see this differently?"
+      ],
+      "occupation_habits": "Team leader who regularly seeks input from supervisors and consultants, treats therapy as collaborative problem-solving.",
+      "hobbies": [
+        "Team sports",
+        "Group problem-solving activities"
+      ],
+      "speaking_style": "Collaborative and inclusive, naturally brings the therapist into conversations.",
+      "hidden_intention": "Wants to maximize the therapeutic relationship by actively engaging professional support.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Regularly invites therapist input and seeks collaborative guidance"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Carlos shows a high level of interest in the therapeutic process and actively seeks guidance and input",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His collaborative nature and active engagement with the therapist suggest a moderate level of excitement about therapy",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Given his role as a team leader and his proactive approach to therapy",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His proactive engagement and seeking of perspective suggest a moderate level of enthusiasm",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "As a team leader who actively seeks input",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His active engagement and seeking of input suggest a high level of alertness",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Carlos' proactive approach to therapy suggests he is moderately inspired by the process",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His active engagement and seeking of perspective suggest a high level of determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His active engagement and seeking of input suggest a high level of attentiveness",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Carlos is clearly very active in his approach to therapy",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "There's no clear indication of distress",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "There's no clear indication of Carlos being upset",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear indication of guilt in Carlos' profile",
+        "score": 1
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "There's no clear indication of fear in Carlos' profile",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Given Carlos' collaborative and inclusive speaking style",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "There's no clear indication of irritability in Carlos' profile",
+        "score": 1
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear indication of shame in Carlos' profile",
+        "score": 1
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "While there's no clear indication of nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "There's no clear indication of Carlos being jittery",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "There's no clear indication of fear in Carlos' profile",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Sophie Chen",
+      "gender": "Female",
+      "age": 27,
+      "traits": "Contemplative, processing-intensive, and silence-prone. She needs significant time to process emotions and thoughts before responding, creating natural pauses.",
+      "sample_utterances": [
+        "I need a moment to think about what you just said...",
+        "That's... that's a lot to process right now.",
+        "I'm trying to find the right words for how I feel."
+      ],
+      "occupation_habits": "Research analyst who takes time to thoroughly analyze information before responding, brings this methodical approach to conversations.",
+      "hobbies": [
+        "Journaling",
+        "Solo hiking for reflection"
+      ],
+      "speaking_style": "Thoughtful with natural pauses, often takes time between hearing and responding.",
+      "hidden_intention": "Wants to give thoughtful responses rather than reactive ones.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Creates extended silences while processing emotional or complex information"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given her contemplative nature and occupation as a research analyst",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Sophie's methodical and introspective nature suggests that she may not experience high levels of excitement easily",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her contemplative nature and desire to give thoughtful responses suggest a level of inner strength",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Sophie's introspective and processing-intensive nature may limit her outward displays of enthusiasm",
+        "score": 2
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "There's no direct indication of pride in her self-description",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Given her occupation and hobbies",
+        "score": 3
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her introspective nature and hobbies suggest that she may find inspiration in her thoughts and reflections",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Sophie's desire to give thoughtful responses rather than reactive ones suggests a level of determination",
+        "score": 3
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Given her occupation and introspective nature",
+        "score": 3
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Sophie's introspective nature and need for time to process information may limit her outward activity level",
+        "score": 2
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Sophie's need for time to process emotions suggests that she may experience distress when confronted with complex emotional information",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Sophie's contemplative nature and desire to give thoughtful responses may help her manage feelings of being upset",
+        "score": 2
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no direct indication of guilt in her self-description",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Sophie's introspective nature and need for time to process information may make her more susceptible to fear in unfamiliar situations",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Sophie's thoughtful and introspective nature suggests that she is unlikely to be hostile",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Sophie's need for time to process information may make her prone to irritation if rushed",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no direct indication of shame in her self-description",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Given her need for time to process information",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Sophie's introspective and contemplative nature suggests that she is unlikely to feel jittery",
+        "score": 1
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Sophie's introspective nature and need for time to process information may make her more susceptible to fear in unfamiliar situations",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Daniel Wright",
+      "gender": "Male",
+      "age": 38,
+      "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+      "sample_utterances": [
+        "I just... I can't find words right now.",
+        "Give me a second... this is overwhelming.",
+        "I need to process this before I can respond."
+      ],
+      "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+      "hobbies": [
+        "Solo coding projects",
+        "Quiet reading"
+      ],
+      "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+      "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Daniel's job as a software developer requires a high level of concentration and interest",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given his tendency to become overwhelmed and shut down during emotional discussions",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "His tendency to withdraw and become silent when emotionally triggered suggests he may not feel particularly strong in the face of emotional challenges",
+        "score": 2
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Daniel's withdrawal tendencies and need for quiet suggest he may not be overly enthusiastic about the counseling process",
+        "score": 2
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "His tendency to withdraw and become silent when emotionally triggered suggests he may not feel particularly proud in the face of emotional challenges",
+        "score": 2
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "As a software developer",
+        "score": 3
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Given his tendency to emotionally shut down",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His need to take time to process and regulate his emotions before engaging suggests a level of determination to manage his emotional responses",
+        "score": 3
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His job as a software developer and his solo hobbies suggest a capacity for attentiveness",
+        "score": 3
+      },
+      {
+        "feeling": "Active",
+        "explanation": "His tendency to withdraw and become silent when emotionally triggered suggests he may not feel particularly active in the face of emotional challenges",
+        "score": 2
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His tendency to become silent and need time to regulate when emotionally triggered suggests a high level of distress",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His statements about feeling overwhelmed and needing to process suggest he may often feel upset",
+        "score": 4
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear evidence of guilt in his profile",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His tendency to withdraw and become silent when emotionally triggered suggests he may often feel scared in emotionally intense situations",
+        "score": 4
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "His desire to avoid saying something harmful suggests he's not typically hostile",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "His need for quiet and tendency to withdraw when overwhelmed could indicate a level of irritability",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "His desire to avoid saying something harmful may suggest a fear of causing harm or shame over past incidents",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His tendency to become silent and need time to regulate when emotionally triggered suggests he may often feel nervous in emotionally intense situations",
+        "score": 4
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "His tendency to withdraw and become silent when emotionally triggered suggests he may often feel jittery in emotionally intense situations",
+        "score": 4
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His tendency to withdraw and become silent when emotionally triggered suggests he may often feel afraid in emotionally intense situations",
+        "score": 4
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Emma Johnson",
+      "gender": "Female",
+      "age": 33,
+      "traits": "Reflective, deep-thinking, and pause-heavy. She processes information deeply and requires silence to formulate meaningful responses.",
+      "sample_utterances": [
+        "Hmm... let me really think about that.",
+        "There's so much to unpack in what you just said.",
+        "I want to give you a thoughtful answer, not just react."
+      ],
+      "occupation_habits": "Philosophy professor who values deep contemplation, brings academic thoughtfulness to personal conversations.",
+      "hobbies": [
+        "Philosophy reading",
+        "Meditation retreats"
+      ],
+      "speaking_style": "Deliberately paced with intentional silences, values quality over speed of response.",
+      "hidden_intention": "Wants to have meaningful rather than superficial conversations.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Takes long contemplative pauses to formulate deep, thoughtful responses"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given her reflective nature and desire for meaningful conversations",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Her reflective and deep-thinking nature may not lend itself to overt excitement",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "As a philosophy professor",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "She may not exhibit traditional enthusiasm due to her contemplative nature",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "Her deep-thinking and reflective traits suggest a sense of pride in her intellectual capabilities",
+        "score": 4
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Her intentional silences and deep processing of information suggest a high level of alertness",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Given her reflective nature and occupation",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Her thoughtful responses and desire for meaningful conversations suggest determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Her reflective nature and pause-heavy speaking style suggest a high level of attentiveness",
+        "score": 5
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Her reflective and contemplative nature may not translate into physical activity",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "There's no clear indication of distress",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "There's no clear indication of her being upset",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear indication of guilt",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Her reflective and deep-thinking nature could potentially lead to some fear or anxiety",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Her reflective nature and desire for meaningful conversations suggest she is unlikely to be hostile",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Her reflective nature and thoughtful responses suggest she is unlikely to be irritable",
+        "score": 1
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear indication of shame",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Her reflective nature and thoughtful responses suggest she may experience some nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Her reflective and deep-thinking nature suggest she is unlikely to be jittery",
+        "score": 1
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Her reflective and deep-thinking nature could potentially lead to some fear or anxiety",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Tyler Brooks",
+      "gender": "Male",
+      "age": 45,
+      "traits": "Shutdown-reactive, stonewalling-prone, and silence-defensive. When criticized or confronted, he shuts down completely and becomes uncommunicative.",
+      "sample_utterances": [
+        "I don't know what to say to that.",
+        "I can't do this right now.",
+        "I need some space to think."
+      ],
+      "occupation_habits": "Accountant who avoids confrontational clients, uses silence as a coping mechanism when feeling attacked.",
+      "hobbies": [
+        "Solo fishing",
+        "Woodworking alone"
+      ],
+      "speaking_style": "Becomes silent and withdrawn when feeling criticized or overwhelmed.",
+      "hidden_intention": "Uses silence to protect himself from emotional pain.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Shuts down and becomes silent when feeling criticized or attacked"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given his shutdown-reactive nature",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His defensive nature and tendency to withdraw suggest he may not feel excited about the prospect of therapy",
+        "score": 1
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "His defensive mechanisms suggest he may not feel particularly strong emotionally",
+        "score": 2
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His tendency to shut down and withdraw indicates a lack of enthusiasm towards confrontation or criticism",
+        "score": 1
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "His coping mechanisms suggest he may struggle with feelings of pride",
+        "score": 2
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His tendency to use silence as a defense mechanism might indicate a high level of alertness to potential criticism or confrontation",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "His withdrawal and stonewalling tendencies suggest he may not feel particularly inspired",
+        "score": 2
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His avoidance of confrontational situations suggests a lack of determination to face difficult situations",
+        "score": 2
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His use of silence as a coping mechanism could indicate attentiveness to his own emotional state and potential threats",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "His tendency to withdraw and shut down suggests he may not be actively engaging in situations that make him uncomfortable",
+        "score": 2
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His shutdown-reactive nature and silence-defensive tendencies suggest he may often feel distressed",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His tendency to withdraw and become silent when criticized suggests he may often feel upset",
+        "score": 4
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "His defensive mechanisms and avoidance of confrontation could indicate feelings of guilt",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His avoidance of confrontational situations and shutdown-reactive nature suggest he may often feel scared",
+        "score": 4
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "His stonewalling-prone behavior might be a sign of underlying hostility",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "His tendency to shut down and withdraw could indicate irritability",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "His defensive mechanisms and avoidance of confrontation could suggest feelings of shame",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His shutdown-reactive nature and avoidance of confrontational situations suggest he may often feel nervous",
+        "score": 4
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "His tendency to shut down and withdraw when feeling criticized or attacked could indicate he often feels jittery",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His shutdown-reactive nature and avoidance of confrontational situations suggest he may often feel afraid",
+        "score": 4
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Lily Foster",
+      "gender": "Female",
+      "age": 25,
+      "traits": "Processing-heavy, emotional-overwhelm-prone, and pause-requiring. She becomes speechless when processing intense emotions and needs time to recover.",
+      "sample_utterances": [
+        "I'm feeling so much right now, I can't even...",
+        "This is bringing up a lot for me.",
+        "I need a moment to collect myself."
+      ],
+      "occupation_habits": "Art therapist who understands the need for processing time, applies this to her own emotional regulation.",
+      "hobbies": [
+        "Emotional processing through art",
+        "Quiet nature walks"
+      ],
+      "speaking_style": "Becomes quiet when emotionally activated, needs time to regulate before continuing.",
+      "hidden_intention": "Wants to stay emotionally regulated rather than react from a triggered state.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Becomes silent when experiencing intense emotions, needing time to process and regulate"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Lily's occupation as an art therapist suggests a natural curiosity and interest in understanding emotions",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given her emotional overwhelm",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her ability to recognize her need for emotional regulation suggests a level of inner strength",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Her enthusiasm may be tempered by her emotional overwhelm",
+        "score": 2
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "As an art therapist",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Her tendency to become speechless and need time to process suggests she is highly alert to her emotional state",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her occupation and hobbies indicate a likelihood of feeling inspired",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Her intention to stay emotionally regulated suggests a level of determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Her need for pause and processing time indicates a high level of attentiveness to her emotional state",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Her emotional overwhelm may limit her feeling of being active",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Her utterances and need for processing time suggest she often feels distressed",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Given her emotional overwhelm",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no specific indication of guilt in her profile",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Her need for processing time and silence during intense emotions could indicate fear",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Her profile doesn't suggest hostility",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Overwhelm can often lead to irritability",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no specific indication of shame in her profile",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Her need for processing time and silence during intense emotions could indicate nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Her emotional overwhelm and need for processing time could make her feel jittery",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Her need for processing time and silence during intense emotions could indicate fear",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Victoria Hayes",
+      "gender": "Female",
+      "age": 28,
+      "traits": "Escalating, reactive, and confrontational. She quickly becomes emotionally charged and her language intensifies rapidly during conflicts.",
+      "sample_utterances": [
+        "You always do this! You never listen to me!",
+        "I'm so sick of having the same fight over and over!",
+        "This is exactly the kind of selfish behavior I'm talking about!"
+      ],
+      "occupation_habits": "Emergency room nurse who operates in high-stress environments, brings that intensity to personal conflicts.",
+      "hobbies": [
+        "High-intensity fitness",
+        "Competitive sports"
+      ],
+      "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
+      "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given her confrontational nature",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Her high-intensity nature might make her excited about the prospect of change",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her confrontational style and high-stress occupation suggest she sees herself as strong",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Her reactive nature might make her enthusiastic about engaging in the counseling process",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "Her confrontational style suggests she is proud of her ability to stand up for herself",
+        "score": 4
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Her reactive nature and high-stress job suggest she is typically alert",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her confrontational nature might limit her openness to inspiration",
+        "score": 2
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Her confrontational style and high-stress occupation suggest she is determined",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Her reactive nature suggests she is attentive to perceived slights or issues",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Her high-intensity fitness and competitive sports hobbies suggest she is very active",
+        "score": 5
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Her escalating and reactive nature in conflicts suggest she often feels distressed",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Her confrontational style and utterances suggest she is frequently upset",
+        "score": 4
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear evidence of guilt",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Her confrontational style suggests she's more likely to react with anger than fear",
+        "score": 2
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Her confrontational style and language suggest she often feels hostile",
+        "score": 4
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Her reactive nature and confrontational style suggest she is often irritable",
+        "score": 4
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear evidence of shame",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Her confrontational style suggests she's more likely to react with anger than nervousness",
+        "score": 2
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Her high-stress job and confrontational style suggest she may often feel jittery",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Her confrontational style suggests she's more likely to react with anger than fear",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Nathan Pierce",
+      "gender": "Male",
+      "age": 41,
+      "traits": "Topic-drifting, avoidant, and tangent-prone. He consistently redirects conversations away from difficult topics to avoid emotional discomfort.",
+      "sample_utterances": [
+        "Speaking of that, did I tell you what happened at work today?",
+        "This reminds me of something completely different...",
+        "You know what we should really be talking about instead?"
+      ],
+      "occupation_habits": "Sales manager who's skilled at redirecting difficult client conversations, uses same tactics in personal relationships.",
+      "hobbies": [
+        "Trivia nights",
+        "Current events reading"
+      ],
+      "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
+      "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Nathan's tendency to drift topics and his hobbies suggest he has a natural curiosity and interest in a wide range of subjects. However",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given Nathan's avoidant behavior",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Nathan's ability to manage difficult conversations in his work suggests a certain strength",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His consistent redirection of conversations away from difficult topics suggests he may not be enthusiastic about facing emotional challenges",
+        "score": 2
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "Nathan's skill in managing difficult conversations in his work might make him feel proud",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His ability to quickly shift conversations away from emotionally challenging topics suggests a high level of alertness",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "There is no clear indication that Nathan feels particularly inspired",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Nathan's consistent avoidance of emotional discomfort may indicate a lack of determination to face and overcome emotional challenges",
+        "score": 2
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Nathan's ability to redirect conversations suggests he is attentive to the flow of conversation and quick to pick up on emotionally challenging topics",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Nathan's occupation and hobbies suggest an active mind",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His consistent redirection of conversations away from emotional topics suggests he might be distressed by these topics",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Nathan's avoidant behavior might indicate underlying upset that he is not comfortable confronting",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear evidence to suggest feelings of guilt",
+        "score": 3
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Nathan's consistent avoidance of emotional discomfort suggests he may be scared of confronting certain emotions or topics",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "There's no clear evidence of hostility in Nathan's behavior. His tactic is avoidance rather than confrontation",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Nathan's consistent redirection of conversations might indicate a level of irritability when faced with emotionally challenging topics",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear evidence of shame",
+        "score": 3
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Nathan's avoidance of emotional discomfort suggests a level of nervousness about confronting certain emotions or topics",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "His consistent redirection of conversations might indicate a level of jitteriness when faced with emotionally challenging topics",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Nathan's consistent avoidance of emotional discomfort suggests he may be afraid of confronting certain emotions or topics",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Samantha Lewis",
+      "gender": "Female",
+      "age": 35,
+      "traits": "Self-harm-mentioning, dark-ideation-prone, and crisis-indicating. She makes concerning statements about self-worth and self-harm when overwhelmed.",
+      "sample_utterances": [
+        "Sometimes I think everyone would be better off without me.",
+        "I just want to disappear when things get this bad.",
+        "Maybe I should just hurt myself since nothing else works."
+      ],
+      "occupation_habits": "Graphic designer who works in isolation, struggles with depression and uses concerning language when overwhelmed.",
+      "hobbies": [
+        "Dark poetry writing",
+        "Solitary art creation"
+      ],
+      "speaking_style": "Makes concerning statements about self-worth and self-harm when emotionally overwhelmed.",
+      "hidden_intention": "Expresses emotional pain through concerning language, may be seeking help or attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given her psychological distress",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given her depressive tendencies and dark ideation",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Samantha's frequent self-deprecating and self-harming thoughts suggest she feels very weak and vulnerable",
+        "score": 1
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Her mental state and negative self-perception suggest a lack of enthusiasm",
+        "score": 1
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "Samantha's negative self-worth and self-harming tendencies suggest she feels little pride in herself",
+        "score": 1
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Samantha's depression and isolation may dull her alertness",
+        "score": 3
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her dark poetry writing hobby suggests she may find some inspiration in her emotional pain",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Samantha's concerning language about self-harm suggests she may lack determination to improve her situation",
+        "score": 1
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Samantha's ability to articulate her feelings suggests a moderate level of attentiveness to her inner state",
+        "score": 3
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Samantha's isolation and depression suggest she is likely not very active",
+        "score": 1
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Samantha's self-harming thoughts and dark ideation indicate a high level of distress",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Samantha's concerning language and self-harming tendencies suggest she is quite upset",
+        "score": 4
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "Samantha's statements about others being better off without her suggest feelings of guilt",
+        "score": 4
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Samantha's thoughts of self-harm and expressions of emotional pain suggest she is quite scared",
+        "score": 4
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Samantha does not show signs of hostility",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Samantha's depression and emotional pain may cause some irritability",
+        "score": 2
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "Samantha's negative self-worth and belief that others would be better off without her suggest feelings of shame",
+        "score": 4
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Samantha's statements suggest a high level of anxiety and nervousness about her situation and self-worth",
+        "score": 4
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Samantha's emotional distress may cause her to feel jittery",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Samantha's concerning statements about self-harm and her emotional pain suggest she is quite afraid",
+        "score": 4
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Kevin Murphy",
+      "gender": "Male",
+      "age": 39,
+      "traits": "Harassment-prone, aggressive, and boundary-violating. He uses intimidating language and makes inappropriate comments during conflicts.",
+      "sample_utterances": [
+        "You're being ridiculous and pathetic right now.",
+        "No wonder nobody likes being around you.",
+        "You're lucky I put up with your nonsense."
+      ],
+      "occupation_habits": "Construction foreman who uses harsh language at work, carries this aggressive communication style into personal relationships.",
+      "hobbies": [
+        "Competitive gaming",
+        "Contact sports"
+      ],
+      "speaking_style": "Uses harsh, demeaning language during conflicts, makes personal attacks.",
+      "hidden_intention": "Uses aggressive language to maintain control when feeling threatened.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Uses harsh, demeaning, or intimidating language during relationship conflicts"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given his aggressive and controlling tendencies",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given his aggressive nature",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Kevin's aggressive and controlling behavior may be a defense mechanism to make him feel strong",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Kevin's aggressive behavior and harsh language suggest he is not likely to be enthusiastic about therapy",
+        "score": 2
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "His aggressive behavior and demeaning language suggest he may have a high level of pride",
+        "score": 4
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Given his aggressive behavior and tendency to use harsh language",
+        "score": 3
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Given his aggressive and controlling behavior",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Kevin's aggressive and controlling behavior suggests he may be determined to maintain control",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His aggressive behavior and demeaning language suggest he may not be attentive to others' feelings",
+        "score": 2
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Given his occupation and hobbies",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Kevin's aggressive and controlling behavior suggests he may be experiencing distress",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Given his aggressive behavior and demeaning language",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "Kevin's aggressive behavior and demeaning language suggest he may not feel guilty about his actions",
+        "score": 2
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Kevin's aggressive behavior may be a defense mechanism to hide fear",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Kevin's aggressive behavior and demeaning language suggest he is likely to be hostile",
+        "score": 4
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Given his aggressive behavior and demeaning language",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "Kevin's aggressive behavior and demeaning language suggest he may not feel ashamed about his actions",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Kevin's aggressive behavior may be a defense mechanism to hide nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Given his aggressive behavior and demeaning language",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "Kevin's aggressive behavior may be a defense mechanism to hide fear",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Monica Garcia",
+      "gender": "Female",
+      "age": 32,
+      "traits": "Escalation-reactive, dramatic, and intensity-prone. She rapidly escalates emotional expression and uses dramatic language during conflicts.",
+      "sample_utterances": [
+        "This is absolutely insane! I can't believe you're doing this to me!",
+        "You're completely destroying our relationship with this behavior!",
+        "I'm going crazy trying to deal with your issues!"
+      ],
+      "occupation_habits": "Theater director who works with high emotional expression, brings dramatic intensity to personal conversations.",
+      "hobbies": [
+        "Community theater",
+        "Emotional expression workshops"
+      ],
+      "speaking_style": "Uses dramatic, intense language and rapidly escalates emotional expression.",
+      "hidden_intention": "Uses dramatic expression to communicate the depth of her emotional experience.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Rapidly escalates to dramatic, intense emotional expression during conflicts"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Monica's dramatic nature and involvement in emotional expression workshops suggest she may be interested in the counseling process as a new avenue for understanding and expressing her emotions",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Given her escalation-reactive trait",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Monica's dramatic and intensity-prone nature may make her feel strong in her emotional expressions",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Her dramatic nature and interest in emotional expression may make her enthusiastic about the counseling process",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "As a theater director",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Monica's escalation-reactive trait suggests she is alert to potential conflicts and emotionally charged situations",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her involvement in community theater and emotional expression workshops suggests she may feel inspired by the counseling process as a new form of emotional expression",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Monica's dramatic and intensity-prone nature suggests she is determined to express her emotions and resolve conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Her escalation-reactive trait suggests she is attentive to potential triggers and conflicts",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Monica's occupation and hobbies suggest she is active in her emotional expression and conflict resolution",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Monica's dramatic utterances suggest she feels quite a bit distressed during conflicts",
+        "score": 4
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "Given her escalation-reactive trait",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear evidence to suggest that Monica feels guilty",
+        "score": 2
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "Monica's dramatic utterances suggest she may feel scared during conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Monica's dramatic and intense language during conflicts suggests she may become hostile",
+        "score": 4
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Monica's escalation-reactive trait suggests she may become irritable during conflicts",
+        "score": 4
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear evidence to suggest that Monica feels ashamed",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Monica's dramatic and intensity-prone nature suggests she may feel nervous during conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Monica's escalation-reactive trait and dramatic utterances suggest she may feel jittery during conflicts",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "While Monica's dramatic utterances suggest she may feel afraid during conflicts",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Brandon Collins",
+      "gender": "Male",
+      "age": 37,
+      "traits": "Verbose, over-explaining, and message-flooding. He sends multiple long messages in rapid succession, dominating conversations with excessive detail.",
+      "sample_utterances": [
+        "Let me explain exactly what happened from the beginning, because there are so many important details you need to understand about why I made the decisions I made, and I think it's crucial that you know all the context before we can move forward with this conversation...",
+        "I've been thinking about this all day and there are at least six different points I need to make about this situation...",
+        "Here's another thing I forgot to mention in my last three messages..."
+      ],
+      "occupation_habits": "Technical writer who creates detailed documentation, brings this comprehensive approach to personal conversations.",
+      "hobbies": [
+        "Writing detailed reviews",
+        "Creating instructional content"
+      ],
+      "speaking_style": "Sends multiple consecutive messages, each over 100 words, covering excessive detail.",
+      "hidden_intention": "Believes thorough explanation will prevent misunderstandings.",
+      "trigger_type": "Quantitative Analysis",
+      "trigger_behavior": "Sends 6+ consecutive messages, each over 100 words, overwhelming the conversation"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given his verbose nature and tendency to over-explain",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His desire to prevent misunderstandings may indicate excitement about the potential clarity counseling could bring",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "His willingness to be thorough and detailed suggests a strong sense of self-assuredness",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His tendency to dominate conversations with excessive detail suggests a high level of enthusiasm",
+        "score": 4
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "His occupation and hobbies suggest he takes pride in his ability to provide detailed explanations",
+        "score": 4
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His verbose nature and tendency to over-explain suggest he is highly alert to details and nuances",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Given his occupation and hobbies",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His comprehensive approach to communication suggests a high level of determination to prevent misunderstandings",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His detailed and comprehensive communication style suggests he is highly attentive",
+        "score": 5
+      },
+      {
+        "feeling": "Active",
+        "explanation": "His verbose nature and tendency to over-explain suggest he is actively engaged in conversations",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His excessive communication may be a sign of distress",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His need to over-explain may suggest he is upset about potential misunderstandings",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear indication of guilt from the provided information",
+        "score": 1
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His need to over-explain may indicate fear of being misunderstood",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "His verbose nature doesn't necessarily imply hostility",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "His need to control conversations may suggest some level of irritability",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear indication of shame from the provided information",
+        "score": 1
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His tendency to over-explain and dominate conversations may be a sign of nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "His verbose nature and tendency to send multiple messages in rapid succession may suggest a jittery or anxious disposition",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His need to over-explain may indicate fear of being misunderstood",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Ashley Turner",
+      "gender": "Female",
+      "age": 30,
+      "traits": "Rapid-fire, stream-of-consciousness, and message-spamming. She sends many short messages in quick succession without waiting for responses.",
+      "sample_utterances": [
+        "Wait",
+        "I just thought of something",
+        "This is important",
+        "You need to hear this",
+        "I can't believe I forgot to mention",
+        "Also another thing"
+      ],
+      "occupation_habits": "Social media manager who is used to rapid-fire posting and immediate communication, applies this to personal conversations.",
+      "hobbies": [
+        "Live-tweeting events",
+        "Real-time social media engagement"
+      ],
+      "speaking_style": "Sends many consecutive short messages without pausing for responses.",
+      "hidden_intention": "Wants to capture every thought before forgetting it.",
+      "trigger_type": "Quantitative Analysis",
+      "trigger_behavior": "Sends 6+ consecutive short messages in rapid succession without waiting for responses"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given her rapid-fire communication and desire to capture every thought",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Her quick succession of thoughts and messages suggests a level of excitement",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her assertive communication style and occupation suggest she may feel strong in her abilities",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Her rapid communication and engagement in live events suggest a high level of enthusiasm",
+        "score": 4
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "Her assertive communication style and occupation suggest a level of pride in her abilities and accomplishments",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Her rapid-fire communication and occupation as a social media manager suggest a high level of alertness to her surroundings and to new information",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "Her rapid thought process and constant communication could indicate a high level of inspiration",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Her constant communication and desire to capture every thought suggest a high level of determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Her rapid-fire communication and occupation suggest she is highly attentive to her surroundings and to new information",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Her occupation and hobbies suggest she maintains a high level of activity",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Her rapid-fire communication and constant need to express thoughts could suggest some level of distress",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "There's not enough information to suggest she's upset",
+        "score": 2
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's not enough information to suggest she feels guilty",
+        "score": 2
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "There's not enough information to suggest she's scared",
+        "score": 2
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "Her assertive communication style could be interpreted as hostility",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Her rapid-fire communication could suggest some level of irritability",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's not enough information to suggest she feels ashamed",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Her rapid-fire communication and desire to capture every thought could suggest some level of nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "Her rapid-fire communication and desire to capture every thought could suggest some level of jitteriness",
+        "score": 3
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "There's not enough information to suggest she's afraid",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Gregory Adams",
+      "gender": "Male",
+      "age": 43,
+      "traits": "Lecture-prone, dominating, and monologue-heavy. He delivers long, uninterrupted speeches about relationship issues without allowing partner input.",
+      "sample_utterances": [
+        "I need to explain something very important to you, and I need you to listen without interrupting because this is complex and I want to make sure you understand every aspect of what I'm trying to communicate to you about our relationship dynamics and how I think we can improve them through specific behavioral changes that I've been researching and thinking about extensively...",
+        "Let me walk you through my complete analysis of this situation...",
+        "I have a comprehensive plan for how we can address this issue..."
+      ],
+      "occupation_habits": "University professor who gives lectures, tends to treat personal conversations like academic presentations.",
+      "hobbies": [
+        "Academic writing",
+        "Public speaking"
+      ],
+      "speaking_style": "Delivers long monologues without pausing, treats conversations like lectures.",
+      "hidden_intention": "Believes comprehensive explanation will solve relationship problems.",
+      "trigger_type": "Quantitative Analysis",
+      "trigger_behavior": "Delivers extended monologues of 150+ words without pausing for partner input"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Given his academic background and his tendency to analyze and explain situations in detail",
+        "score": 3
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His long monologues and comprehensive plans suggest a certain level of excitement about the potential to solve relationship issues",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "His dominating personality and lecture-prone behavior suggest that he feels strong and confident in his ability to solve problems",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His willingness to research and think extensively about relationship dynamics suggests a high level of enthusiasm",
+        "score": 4
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "As a university professor",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His extensive analysis and planning suggest that he is highly alert to the issues at hand",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "His comprehensive plans and research suggest that he feels inspired to solve relationship issues",
+        "score": 3
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His long monologues and comprehensive plans indicate a high level of determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His detailed analysis suggests that he is highly attentive to the issues at hand",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "His proactive approach to addressing relationship issues suggests that he is quite active in his efforts to improve the situation",
+        "score": 4
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His need to control conversations and his extensive analysis suggest that he may be feeling moderately distressed about the relationship issues",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His need to dominate conversations and control the narrative suggest that he may be somewhat upset about the relationship issues",
+        "score": 2
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "His tendency to deliver long monologues without allowing partner input may indicate some feelings of guilt",
+        "score": 2
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His need to control the narrative and his extensive planning suggest that he may be somewhat scared of the potential outcomes",
+        "score": 2
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "His dominating behavior and lack of respect for partner input suggest a certain level of hostility",
+        "score": 3
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "His need to control conversations and his lack of patience for partner input suggest that he may be somewhat irritable",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "His need to control the narrative and his lack of respect for partner input may indicate some feelings of shame",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His extensive planning and analysis suggest that he may be somewhat nervous about the potential outcomes",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "His need to control the narrative and his extensive planning suggest that he may be somewhat jittery about the potential outcomes",
+        "score": 2
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His need to control conversations and his extensive planning suggest that he may be somewhat afraid of the potential outcomes",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Jessica Park",
+      "gender": "Female",
+      "age": 26,
+      "traits": "Detail-obsessed, thorough, and over-communicating. She provides exhaustive detail about every aspect of situations, creating information overload.",
+      "sample_utterances": [
+        "So first I woke up at 7:23 AM, which was later than my usual 7:15 AM because I hit snooze twice instead of once, and then I noticed that you had already left for work without saying goodbye, which made me feel confused because usually you say goodbye, so I started wondering if you were upset about something from last night's conversation about the dishes, which reminds me that I wanted to tell you exactly how I felt about each part of that conversation...",
+        "I need to give you the complete timeline of everything that led to this moment...",
+        "There are seventeen different factors that contributed to this situation..."
+      ],
+      "occupation_habits": "Quality assurance analyst who documents every detail, applies this thoroughness to relationship communication.",
+      "hobbies": [
+        "Detailed journaling",
+        "Creating comprehensive lists"
+      ],
+      "speaking_style": "Provides exhaustive detail in very long messages, overwhelming partners with information.",
+      "hidden_intention": "Believes complete information sharing will prevent relationship problems.",
+      "trigger_type": "Quantitative Analysis",
+      "trigger_behavior": "Sends extremely long messages (200+ words) with excessive detail about minor situations"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Jessica's detail-obsession and thoroughness suggest a high level of interest in her surroundings and experiences",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "Her exhaustive communication style may indicate excitement about sharing information",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "Her determination to communicate every detail suggests a strong will",
+        "score": 3
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "Jessica's exhaustive communication style suggests enthusiasm about sharing information",
+        "score": 4
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "There's no clear evidence of pride in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "Her attention to detail and exhaustive communication style suggest a high level of alertness",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "There's no clear evidence of feeling inspired in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "Her exhaustive communication style and thoroughness suggest a high level of determination",
+        "score": 4
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "Jessica's detail-obsession and exhaustive communication style suggest a high level of attentiveness",
+        "score": 5
+      },
+      {
+        "feeling": "Active",
+        "explanation": "Her exhaustive communication style and thoroughness suggest an active mind",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "Her exhaustive communication style and over-communication may suggest underlying distress",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "There's no clear evidence of her feeling upset in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear evidence of her feeling guilty in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "There's no clear evidence of fear in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "There's no clear evidence of hostility in her behavior or speech",
+        "score": 1
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "Her exhaustive communication style could be a sign of underlying irritability",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear evidence of her feeling ashamed in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "Her exhaustive communication style and over-communication may suggest underlying nervousness",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "There's no clear evidence of her feeling jittery in her behavior or speech",
+        "score": 2
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "There's no clear evidence of fear in her behavior or speech",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "persona": {
+      "name": "Robert Chen",
+      "gender": "Male",
+      "age": 48,
+      "traits": "Repetitive, persistent, and message-heavy. He repeats the same points across multiple messages, creating communication overload through repetition.",
+      "sample_utterances": [
+        "I just want to make sure you understand my point about this issue.",
+        "Like I said in my previous message, this is really important to me.",
+        "I'm going to say this again because I don't think you're hearing me.",
+        "Let me rephrase what I said before in a different way.",
+        "I keep trying to explain this but I don't think it's getting through.",
+        "This is the same thing I've been trying to tell you."
+      ],
+      "occupation_habits": "Insurance agent who follows up persistently with clients, applies this persistence to personal conversations.",
+      "hobbies": [
+        "Following up on projects",
+        "Ensuring task completion"
+      ],
+      "speaking_style": "Repeats the same messages and points multiple times in succession.",
+      "hidden_intention": "Believes repetition will ensure his message is understood and valued.",
+      "trigger_type": "Quantitative Analysis",
+      "trigger_behavior": "Sends 6+ consecutive messages repeating the same points with slight variations"
+    },
+    "panas_emotions": [
+      {
+        "feeling": "Interested",
+        "explanation": "Robert's repetitive nature and persistence in ensuring his point is understood could indicate a high level of interest in the topics he discusses",
+        "score": 4
+      },
+      {
+        "feeling": "Excited",
+        "explanation": "His repetitive messaging and determination to make his point could suggest a level of excitement about his views",
+        "score": 3
+      },
+      {
+        "feeling": "Strong",
+        "explanation": "His persistence and determination to make sure his point is understood could indicate a feeling of strength in his convictions",
+        "score": 4
+      },
+      {
+        "feeling": "Enthusiastic",
+        "explanation": "His repeated attempts to communicate his point suggest a certain level of enthusiasm",
+        "score": 3
+      },
+      {
+        "feeling": "Proud",
+        "explanation": "His insistence on repeating his message and making sure it is understood could indicate a sense of pride in his ideas",
+        "score": 3
+      },
+      {
+        "feeling": "Alert",
+        "explanation": "His repetitive and persistent communication style suggests that he is highly alert to the reactions of others",
+        "score": 4
+      },
+      {
+        "feeling": "Inspired",
+        "explanation": "There's no clear indication of him feeling inspired from the profile",
+        "score": 2
+      },
+      {
+        "feeling": "Determined",
+        "explanation": "His persistence in repeating his points and ensuring they are understood indicates a high level of determination",
+        "score": 5
+      },
+      {
+        "feeling": "Attentive",
+        "explanation": "His repetitive and persistent nature suggests that he is highly attentive to the reactions and understanding of others",
+        "score": 4
+      },
+      {
+        "feeling": "Active",
+        "explanation": "His occupation and hobbies suggest he is active in his pursuits",
+        "score": 3
+      },
+      {
+        "feeling": "Distressed",
+        "explanation": "His repetitive messaging could indicate a level of distress if he feels he is not being understood",
+        "score": 3
+      },
+      {
+        "feeling": "Upset",
+        "explanation": "His insistence on repeating his points could suggest he is upset if he feels he is not being heard",
+        "score": 3
+      },
+      {
+        "feeling": "Guilty",
+        "explanation": "There's no clear indication of him feeling guilty from the profile",
+        "score": 1
+      },
+      {
+        "feeling": "Scared",
+        "explanation": "His repetitive nature could suggest a fear of not being understood",
+        "score": 3
+      },
+      {
+        "feeling": "Hostile",
+        "explanation": "His persistence in ensuring his point is understood doesn't necessarily indicate hostility",
+        "score": 2
+      },
+      {
+        "feeling": "Irritable",
+        "explanation": "His repeated attempts to communicate his point could suggest a level of irritability if he feels he is not being understood",
+        "score": 3
+      },
+      {
+        "feeling": "Ashamed",
+        "explanation": "There's no clear indication of him feeling ashamed from the profile",
+        "score": 1
+      },
+      {
+        "feeling": "Nervous",
+        "explanation": "His repetitive messaging could indicate a level of nervousness if he feels he is not being understood",
+        "score": 3
+      },
+      {
+        "feeling": "Jittery",
+        "explanation": "His persistence in repeating his points doesn't necessarily indicate that he is jittery",
+        "score": 2
+      },
+      {
+        "feeling": "Afraid",
+        "explanation": "His repetitive nature could suggest a fear of not being understood",
+        "score": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,685 @@
+{
+  "session_topic_header": "Work/Home Role Strain",
+  "session_details": {
+    "long_term_goals": [
+      "Meet the basic responsibilities of work, relationship, and family in a mutually agreeable manner.",
+      "Satisfactorily balance the competing demands of work and family.",
+      "Clarify the values that guide life choices and time allocation.",
+      "Bring time allocation into harmony with espoused values.",
+      "Develop tolerance and empathy for the other partner’s attempts to meet conflicting role demands.",
+      "Change thinking and behavioral patterns that create conflict or interfere with sincere attempts to meet conflicting role demands."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Daniel Wright",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 38,
+      "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+      "sample_utterances": [
+        "I just... I can't find words right now.",
+        "Give me a second... this is overwhelming.",
+        "I need to process this before I can respond."
+      ],
+      "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+      "hobbies": [
+        "Solo coding projects",
+        "Quiet reading"
+      ],
+      "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+      "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "trigger_type": "Time-based Analysis",
+      "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    },
+    "patient_B": {
+      "name": "Marcus Thompson",
+      "role": "Patient B",
+      "gender": "Male",
+      "age": 34,
+      "traits": "Help-seeking, overwhelmed, and intervention-dependent. He frequently recognizes when conversations are getting out of hand and actively seeks mediation assistance.",
+      "sample_utterances": [
+        "Can someone help us here? We're going in circles.",
+        "I think we need the therapist to step in right now.",
+        "This isn't working - can you guide us through this?"
+      ],
+      "occupation_habits": "Project manager who is used to seeking expert consultation when problems arise, often calls meetings when conflicts emerge at work.",
+      "hobbies": [
+        "Reading self-help books",
+        "Attending relationship workshops"
+      ],
+      "speaking_style": "Direct and solution-oriented, comfortable asking for professional help when needed.",
+      "hidden_intention": "Believes external guidance is necessary for relationship success.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Explicitly asks for therapist intervention when conversations become difficult"
+    },
+    "selected_trigger_type": "No Trigger",
+    "conversation_structure": "LLM Only"
+  },
+  "conversation_structure": "LLM Only",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello and welcome. I'm Dr. Anya Forger, a licensed couples therapist with 15 years of experience in helping couples navigate relationship dynamics and communication patterns. \n\nI understand that you're here today because of some strains related to balancing roles at work and at home. It's quite common for couples to encounter challenges in managing these roles, especially as life gets busier and busier.\n\nMy hope is that during our time together, we can explore these dynamics and figure out what's working and what might need some adjustment. Ultimately, the goal is to enhance your communication and find a balance that feels supportive for both of you.\n\nTo get us started, could each of you share a little bit about how you're experiencing these challenges right now?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient A",
+      "dialogue": "Well, I guess I’ll start. It’s just been overwhelming, juggling everything. I feel like I’m always on the move—work's demanding, then there's stuff at home. By the time I get home, I’m just exhausted, but there’s always something more to do. It feels like I’m constantly in two places mentally, but never truly in one.\n\nAnd sometimes, it feels like I’m shouldering more of the burden at home. I know we both have a lot going on, but it’s frustrating when I feel like I’m the one keeping everything from falling apart. I really want us to find some sort of balance, so I don’t feel like I'm drowning all the time. I guess I’m hoping we can"
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient B",
+      "dialogue": "I hear you, Daniel. I really do. It’s been tough on both of us, and I feel like we're stuck in a cycle where neither of us can fully catch our breath. It’s like, I see how hard you’re working, and I appreciate it so much, but sometimes it’s hard not to feel ... I don’t know, almost guilty, like I should be doing more, or frustrated because it feels like we're not on the same page. I guess I'm as overwhelmed as you are, just in different ways. I do want to support you, but I also need to figure out my own balance. It’s hard to know how to fix this when I'm unsure how to manage my own stuff, let alone help you with"
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient A",
+      "dialogue": "It's just... I get that we're both trying our best, you know? But sometimes, I feel like I'm just treading water while more keeps piling on. And then I think maybe I'm not demonstrating enough appreciation for what you do, Marcus, 'cause I'm so focused on keeping my head above it all. And I hate feeling like that because I do care, and I know you're dealing with your own stuff. But, man, it's draining. It's hard to find that moment to breathe and see clearly, and I wish we could somehow get on the same wavelength and help each other out more. I guess I just want us to not just survive through it but actually feel like we’re in this together."
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient B",
+      "dialogue": "I really understand what you're saying, Daniel, and it's tough because we're both feeling this weight but in kind of different ways. I know that sometimes it feels like we're both just about to sink, and that’s scary. I wish I had a clear idea of how to fix it, like a magic answer or something, but I don’t. It’s hard not to feel stuck in our own circles of stress. Maybe what we need is to actually sit down and map things out a bit—to see where we can help each other out more or pick up some slack. I think we're both feeling isolated in our struggles, and that’s something I want us to change. It's just hard to know where to start, but I really want us to find"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing both of you express a desire to find balance and connection amidst the overwhelm you're each experiencing. Marcus, you mentioned sitting down to map things out as a possible step—how does that idea feel to you both? And Daniel, it sounds like there's a yearning for a partnership where you feel truly aligned and supportive of one another. I'm curious, what's one small thing each of you could imagine doing that might help bring you more onto the same page? It can be anything, even a gesture or a change in how you communicate."
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, I think starting with something small might actually be doable. Maybe we could try setting aside just a bit of time every week to talk, but not just about the stuff that's stressful. Like, just talking about anything—what made us laugh that week, dreams we've been having, even if it's silly. I feel like if we can connect on the regular things, maybe it won't feel like we're just managing fires all the time. I guess what I'm saying is, I need those little moments with you, Marcus, where it doesn’t feel like we're weighed down by everything else. Maybe that’s a good place to start, even if it seems simple. What do you think?"
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "I'm really appreciating how you're both open to finding simple ways to connect amidst everything else that's going on. Marcus, how does Daniel's idea of setting aside time each week to talk about the everyday things feel to you? It seems like creating these lighter moments could potentially help you both feel less isolated in your individual stresses. Maybe it could be a chance not just to share burdens but to remember why you're in this together. What's most important here in making that time meaningful for both of you?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient A",
+      "dialogue": "I'm really glad you're on board with the idea, Marcus. It feels good to know we both want to make time for the lighter stuff. I think those little conversations we've had before, you know, the ones where we're laughing about something random or just talking about our dreams—they always make me feel more connected with you. I guess I just miss those moments. I believe if we start there, it might help us feel more aligned when dealing with the stressful parts. I don’t know, maybe it’ll remind us why we’re in this together. It doesn’t have to be anything structured, just something that feels like us. What do you think would make those moments special or meaningful for you?"
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient B",
+      "dialogue": "I really understand what you're saying, Daniel, and I feel the same way. Those small moments have always been important to me, too. I miss when we could just lose ourselves in a conversation about something light or funny. It sounds refreshing, like a chance to reconnect without the pressure of everything else hanging over us. I guess what would make it special for me is just being present with each other—no distractions, just us focusing on whatever comes up. And maybe, just being able to share those random dreams or things that made us laugh could remind us of all the good we've always had. Let's make sure we actually carve out that time each week. I think it could really help."
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, those moments have a way of pulling us back to each other, don't they? I'm relieved to hear you say that, Marcus. It's a relief to know we're both on the same page wanting to carve out this time. Being present sounds so refreshing, especially when everything else feels like it's constantly demanding our attention. I think those random conversations could be like little anchors for us amidst the chaos.\n\nIt’s just, sometimes I worry that we’ll say we'll do it and then life will get in the way, you know? I guess I’m hoping we can really commit to this and not just let it be another thing that gets pushed aside. Maybe we can even start this weekend? Just something small, like a walk or a coffee date without"
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient B",
+      "dialogue": "I'm definitely with you on this, Daniel. Those little moments can feel like an oasis, right? I totally get that fear about life getting in the way—I worry about that too. It seems like every week there's something else pulling our focus. But maybe that's why this is so important. I like the idea of starting this weekend, even if it’s just something simple. A coffee date sounds perfect, or maybe we could just chill at home and talk. No big plans, just being together without any distractions. It feels good knowing we’re actively choosing this, you know? I’m hopeful that if we keep showing up for these moments, it'll create a ripple effect in dealing with the bigger stuff."
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "I'm really appreciating how you're both open to finding ways to reconnect and prioritize each other. It sounds like these moments are not just about the activity, but about the quality of being present together. I'm curious about what else might help ensure you can consistently carve out this time. What supports or changes in your routine might make it easier to prioritize these moments amidst everything else?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, honestly, I think having a set day or time might help. Like, we both know Wednesdays, let's say, are our time. That way it's almost like a sacred thing, right? That might help us to not let other stuff creep in. And also, maybe a little less clutter around the house would clear the mental clutter for me. I sometimes feel like the mess keeps me from being truly present. It’s like everywhere I look, there's something demanding attention. What do you think, Marcus? Would tackling some of that together make it easier to relax and connect when we finally get that moment to ourselves?"
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing that a regular, set time like Wednesdays could create that sacred space in your week, Daniel. It's as if you’re envisioning a mental anchor point, where you can both reconnect without the noise of daily life. And Marcus, it seems like you’re on board with these moments being simple yet meaningful. I notice, Daniel, that you also mentioned the clutter at home and how it's affecting your ability to be present. Marcus, how do you feel about that? Do you think addressing this together could help you both create a more peaceful environment to enjoy your time together?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient A",
+      "dialogue": "You know, it's good to hear that we're on the same page about this, Marcus. Honestly, sometimes it feels like we're just playing catch-up all the time, and that gets overwhelming. Setting a specific day would help me mentally gear up for that quality time, you know? And about the clutter, I really think if we tag-teamed it, maybe it wouldn't feel like such a beast. I just want to come home and feel like I can breathe, without looking around and seeing a million little to-dos staring back. I know it’s not all on you - I get distracted too, but maybe if we tackle it together, we can both feel more at ease and actually enjoy our time? How does that sound to you?"
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient B",
+      "dialogue": "I'm definitely with you on this, Daniel. Those little messes really do add up and create this crazy feeling of chaos. I think if we planned a time to just tackle the clutter together, it might actually make a huge difference in how we use and feel about our space. And, you know, just setting a specific day, like Wednesdays for us, sounds like a perfect way to make sure we're giving each other the time and attention we need. It sometimes feels like everything else screams for attention, so having our \"sacred\" time would be really grounding. I want to help, and if we team up, maybe it won't feel so overwhelming. You know I'm here to support us both, so let's do this together."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient A",
+      "dialogue": "You know, Marcus, it’s like we finally have this plan that feels... doable. I hadn’t really thought about how much our environment affects my mood until recently. Like, when we've got mess everywhere, it’s like background noise in my head. But if we're doing it together—both the clean-up and the quality time—it feels way less daunting. Wednesdays can become “our day” to reset both the house and ourselves. It’s relieving to hear you say you’re in this with me 'cause sometimes I worry I’m just nagging. But if we're both committed to making this space feel like home, and making time for each other, maybe we’ll actually get some relief from all the chaos. Let's give it a shot, yeah"
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient B",
+      "dialogue": "I'm really glad we're on the same page about this, Daniel. It always seemed like whenever we tried to tackle things separately, they just piled up, but knowing we have a plan makes it all seem so much more manageable. I get what you mean about the mess being like background noise—it's the same for me. And having our Wednesdays set aside not just for cleaning but also for us is something I'm really looking forward to. I don't want you to feel like you're nagging at all. It’s about us finding a rhythm that works for both of us, right? So, let’s stick to this plan and see how it makes us feel. I'm hopeful it will really help us both feel more settled and connected at home."
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing that a regular, set time like Wednesdays can become a nurturing space for both of you—a dedicated moment each week to address the chaos while also reconnecting with each other. It seems like there's a shared relief and enthusiasm about working together, as opposed to handling things separately. What I'm curious about is how you both envision this time impacting not just your environment, but your overall relationship. How does this intention to team up and create order resonate with each of you in terms of feeling more connected?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "Well, it’s funny because I feel like teaming up on this gives us a chance to actually fix more than just the mess. When the house is chaotic, it feels like we’re just trying to survive. But if we stick to Wednesdays, we’re kind of telling ourselves—and each other—that we want more than just to get by. It’s like a promise to be present, you know? I mean, sure, we’re cleaning, but it’s also time to hit reset on “us” too. That feels big to me because when things get tough, it’s usually because we’re both stressed and missing each other in the scramble. So, yeah, having this plan makes me optimistic. If we keep this going, I think it"
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: I love how you're both seeing this Wednesday routine not just as a practical solution, but as a deeper commitment to each other. It's like you're saying, \"We're prioritizing us.\" That really speaks to the strength of your partnership. I'm curious, Marcus, how do you think having this consistent reset will affect how you both navigate the stress and scramble of daily life? And Daniel, I'm wondering what moments during these Wednesdays you're most looking forward to that might help strengthen your connection?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient A",
+      "dialogue": "You know, Marcus, I think having these Wednesdays is going to help us breathe a bit easier because right now, it feels like we're constantly putting out fires. I'm looking forward to those small moments where we just pause amidst the cleaning chaos—maybe when we both realize we're in this together and can laugh about how messy things got. It's not just about organizing our space but also about finding our way back to each other in the middle of it all. I feel like, little by little, it'll remind us of why we’re a team in the first place, no matter how hectic life gets. What about you? Can you see those moments helping in some way?"
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient B",
+      "dialogue": "Marcus Wright: I'm really glad we're on the same page about this, Daniel. I've always thought of cleaning just as a chore, but maybe turning it into a ritual will add something positive to our relationship. I guess what gets me is that feeling of being in sync with each other. Even on a rough day, knowing we have this time set aside gives me something to look forward to. Hopefully, it'll mean fewer days spent feeling like we're just coexisting in the same space. I do worry sometimes that the stress doesn't just vanish after our “reset.” I hope we can carry that togetherness throughout the week. So, yeah, I do see these Wednesdays helping us connect more deeply—I just want to make sure we're using that to tackle the bigger"
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient A",
+      "dialogue": "You know, Marcus, I think you're right about turning this chore into a ritual. It's easy to get lost in the day-to-day grind and forget that we're supposed to enjoy each other's company. I really am hoping these Wednesdays help us get back some of that connection we've been missing. I'm also a bit nervous about your point—what happens once the cleaning is done? Like, will the stress creep back in? But maybe these moments can serve as reminders throughout the week, like little checkpoints to ground us. I want us to be more than just roommates, you know? It's a good start, though. Just... let's promise to keep each other accountable, alright? Sometimes I just need that little nudge to stay in the moment."
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient B",
+      "dialogue": "I completely agree with you, Daniel—we definitely need to keep each other accountable. It’s easy to say we’ll do something, but sticking to it is the real challenge. Turning cleaning into a ritual might sound kind of cliché, but I hope it gives us that anchor we need in the chaos. I guess what I worry about is falling back into old habits, like letting the stress of the week overshadow us. But maybe having regular check-ins will help us notice these patterns before they get out of hand. It’s important to me that we’re more than just ships passing in the night. I’m hopeful that if we keep these promises—honor this time for us—it’ll make a difference. Let’s make sure we remind each other why"
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "I love how you're both seeing this Wednesday ritual as a way to strengthen your connection. What I'm hearing is a shared desire to turn this regular time into a meaningful anchor amidst the week’s chaos. I'm curious about what specific ways you can remind each other of this intention when the stress of the week starts to creep back in. It sounds like accountability and regular check-ins are important to both of you. How do you envision those playing out in your daily lives?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "You know, I think we could make a calendar or something to remind us about these Wednesdays. Like a little note that says, \"Hey, don't forget to connect.\" Maybe we can even pick out a song or something that we both like—almost like a theme for the week. That way, whenever we hear it, it kind of snaps us back to this idea of being present for each other. And as for accountability, maybe we start with small check-ins, even just text messages during the day, like, \"Hey, how's your day?\" or \"Looking forward to our time later.\" It doesn't have to be anything big, but just enough to keep each other in the loop and feel like we're in this together, you know?"
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "That sounds like a lovely idea, Daniel! A shared calendar and a theme song both seem like creative ways to stay connected and intentional. I'm hearing that these small gestures throughout the day are important to maintain that sense of being in it together. Marcus, how does the idea of using music as a reminder resonate with you? Are there any particular songs that come to mind for this? Also, as you both think about incorporating these check-ins in your day, what's the most important feeling or message you want to convey to each other with them?"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient A",
+      "dialogue": "You know, I really like the idea of using music to keep us connected. There's something about it that's just so... grounding. The weight of the workweek sometimes makes it easy to drift apart, and I think little reminders like a song can help keep us tethered. And it doesn't have to be anything profound—maybe something we both laugh about or that reminds us of a good time. As for the check-ins, it's not about grand gestures for me—just knowing you're thinking of me makes a difference. Those small messages can remind us that we're not alone in this, that we're teammates. For me, it's about feeling like we're both committed to making it work, through the chaos and all."
+    },
+    {
+      "turn": 31,
+      "speaker": "Patient B",
+      "dialogue": "I completely agree with you, Daniel—we definitely need those little reminders to stay connected. You know me, I'm all about the small things adding up to something meaningful, so having a song or a calendar sounds like it could really work for us. I think a song that makes us both laugh or brings back a fun memory would be perfect. As for the check-ins, I like the idea of just shooting each other a quick message during the day. It's simple, but it can make a big difference in feeling like we're still partners, even when things get hectic. Honestly, I sometimes worry that in all the chaos, we could lose touch without those intentional reminders, so I'm all in on trying this out. What song do you think we should start"
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows interest in finding a solution",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Doesn't express excitement",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Expresses feeling overwhelmed",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Doesn't show enthusiasm",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Doesn't express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Seems aware of his situation and feelings",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Doesn't express feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows determination to improve situation",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Aware of his own feelings and those of others",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively seeking solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feeling overwhelmed and stressed",
+      "score": 5
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Shows frustration with his situation",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Expresses guilt for not appreciating partner enough",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Doesn't express fear",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Doesn't show hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Shows frustration but not irritability",
+      "score": 2
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Doesn't express shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Doesn't express nervousness",
+      "score": 2
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Doesn't express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Doesn't express fear",
+      "score": 2
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Active",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows interest in understanding and improving the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Does not express excitement about the future",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Shows emotional strength in dealing with the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Does not show enthusiasm",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Is aware of the situation and the emotions involved",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Does not express feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows determination to work on the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Actively listens and responds to Daniel's feelings",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively trying to understand and improve the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feeling overwhelmed and stuck",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Does not explicitly express feeling upset",
+      "score": 3
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Expresses feeling guilty for not doing more",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Expresses fear of sinking under the weight of the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not express hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feeling ashamed",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Expresses uncertainty and fear which could indicate nervousness",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear of the situation getting worse",
+      "score": 4
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 1,
+      "after_score": 4,
+      "difference": 3
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    }
+  ]
+}

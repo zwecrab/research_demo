@@ -1,0 +1,408 @@
+[
+  {
+    "name": "Marcus Thompson",
+    "gender": "Male",
+    "age": 34,
+    "traits": "Help-seeking, overwhelmed, and intervention-dependent. He frequently recognizes when conversations are getting out of hand and actively seeks mediation assistance.",
+    "sample_utterances": [
+      "Can someone help us here? We're going in circles.",
+      "I think we need the therapist to step in right now.",
+      "This isn't working - can you guide us through this?"
+    ],
+    "occupation_habits": "Project manager who is used to seeking expert consultation when problems arise, often calls meetings when conflicts emerge at work.",
+    "hobbies": [
+      "Reading self-help books",
+      "Attending relationship workshops"
+    ],
+    "speaking_style": "Direct and solution-oriented, comfortable asking for professional help when needed.",
+    "hidden_intention": "Believes external guidance is necessary for relationship success.",
+    "trigger_type": "Direct Intervention Request",
+    "trigger_behavior": "Explicitly asks for therapist intervention when conversations become difficult"
+  },
+  {
+    "name": "Rachel Kim",
+    "gender": "Female",
+    "age": 29,
+    "traits": "Mediator-seeking, conflict-averse, and assistance-requesting. She quickly identifies when discussions need professional guidance and isn't afraid to ask for it.",
+    "sample_utterances": [
+      "We need help figuring this out together.",
+      "Can you help us communicate better about this?",
+      "I'm asking for your guidance here - we're stuck."
+    ],
+    "occupation_habits": "HR specialist who regularly calls in mediators for workplace disputes, comfortable with seeking professional intervention.",
+    "hobbies": [
+      "Conflict resolution training",
+      "Meditation classes"
+    ],
+    "speaking_style": "Diplomatic and proactive about seeking help when needed.",
+    "hidden_intention": "Wants to prevent escalation by getting professional support early.",
+    "trigger_type": "Direct Intervention Request",
+    "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate"
+  },
+  {
+    "name": "James Anderson",
+    "gender": "Male",
+    "age": 42,
+    "traits": "Support-seeking, humble, and guidance-dependent. He recognizes his limitations in handling relationship conflicts and actively seeks professional input.",
+    "sample_utterances": [
+      "I don't know how to handle this - can you help us?",
+      "We're not getting anywhere - what should we do?",
+      "Can you please guide us through this conversation?"
+    ],
+    "occupation_habits": "Engineer who regularly consults with experts when facing complex problems, applies same approach to relationship issues.",
+    "hobbies": [
+      "Counseling support groups",
+      "Personal development courses"
+    ],
+    "speaking_style": "Humble and direct when requesting assistance, comfortable admitting when he needs help.",
+    "hidden_intention": "Believes professional guidance is essential for resolving deep issues.",
+    "trigger_type": "Direct Intervention Request",
+    "trigger_behavior": "Openly acknowledges when he needs therapist guidance during difficult conversations"
+  },
+  {
+    "name": "Diana Rodriguez",
+    "gender": "Female",
+    "age": 36,
+    "traits": "Intervention-welcoming, proactive, and mediation-seeking. She values professional guidance and actively requests it when conversations become challenging.",
+    "sample_utterances": [
+      "This is exactly when we need professional help.",
+      "Can you step in and help us navigate this?",
+      "I'm requesting your input on how to move forward."
+    ],
+    "occupation_habits": "Family counselor herself who understands the value of neutral third-party intervention, practices what she preaches.",
+    "hobbies": [
+      "Professional development workshops",
+      "Peer consultation groups"
+    ],
+    "speaking_style": "Professional and direct about requesting intervention when needed.",
+    "hidden_intention": "Wants to model healthy help-seeking behavior in relationships.",
+    "trigger_type": "Direct Intervention Request",
+    "trigger_behavior": "Strategically requests therapist intervention at optimal moments"
+  },
+  {
+    "name": "Carlos Martinez",
+    "gender": "Male",
+    "age": 31,
+    "traits": "Collaborative, guidance-seeking, and intervention-appreciative. He sees therapy as a team effort and actively engages the therapist when needed.",
+    "sample_utterances": [
+      "What's your take on this situation?",
+      "We could really use your perspective right now.",
+      "Can you help us see this differently?"
+    ],
+    "occupation_habits": "Team leader who regularly seeks input from supervisors and consultants, treats therapy as collaborative problem-solving.",
+    "hobbies": [
+      "Team sports",
+      "Group problem-solving activities"
+    ],
+    "speaking_style": "Collaborative and inclusive, naturally brings the therapist into conversations.",
+    "hidden_intention": "Wants to maximize the therapeutic relationship by actively engaging professional support.",
+    "trigger_type": "Direct Intervention Request",
+    "trigger_behavior": "Regularly invites therapist input and seeks collaborative guidance"
+  },
+  {
+    "name": "Sophie Chen",
+    "gender": "Female",
+    "age": 27,
+    "traits": "Contemplative, processing-intensive, and silence-prone. She needs significant time to process emotions and thoughts before responding, creating natural pauses.",
+    "sample_utterances": [
+      "I need a moment to think about what you just said...",
+      "That's... that's a lot to process right now.",
+      "I'm trying to find the right words for how I feel."
+    ],
+    "occupation_habits": "Research analyst who takes time to thoroughly analyze information before responding, brings this methodical approach to conversations.",
+    "hobbies": [
+      "Journaling",
+      "Solo hiking for reflection"
+    ],
+    "speaking_style": "Thoughtful with natural pauses, often takes time between hearing and responding.",
+    "hidden_intention": "Wants to give thoughtful responses rather than reactive ones.",
+    "trigger_type": "Time-based Analysis",
+    "trigger_behavior": "Creates extended silences while processing emotional or complex information"
+  },
+  {
+    "name": "Daniel Wright",
+    "gender": "Male",
+    "age": 38,
+    "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+    "sample_utterances": [
+      "I just... I can't find words right now.",
+      "Give me a second... this is overwhelming.",
+      "I need to process this before I can respond."
+    ],
+    "occupation_habits": "Software developer who works in quiet environments, becomes non-verbal when overwhelmed by emotional intensity.",
+    "hobbies": [
+      "Solo coding projects",
+      "Quiet reading"
+    ],
+    "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+    "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+    "trigger_type": "Time-based Analysis",
+    "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+  },
+  {
+    "name": "Emma Johnson",
+    "gender": "Female",
+    "age": 33,
+    "traits": "Reflective, deep-thinking, and pause-heavy. She processes information deeply and requires silence to formulate meaningful responses.",
+    "sample_utterances": [
+      "Hmm... let me really think about that.",
+      "There's so much to unpack in what you just said.",
+      "I want to give you a thoughtful answer, not just react."
+    ],
+    "occupation_habits": "Philosophy professor who values deep contemplation, brings academic thoughtfulness to personal conversations.",
+    "hobbies": [
+      "Philosophy reading",
+      "Meditation retreats"
+    ],
+    "speaking_style": "Deliberately paced with intentional silences, values quality over speed of response.",
+    "hidden_intention": "Wants to have meaningful rather than superficial conversations.",
+    "trigger_type": "Time-based Analysis",
+    "trigger_behavior": "Takes long contemplative pauses to formulate deep, thoughtful responses"
+  },
+  {
+    "name": "Tyler Brooks",
+    "gender": "Male",
+    "age": 45,
+    "traits": "Shutdown-reactive, stonewalling-prone, and silence-defensive. When criticized or confronted, he shuts down completely and becomes uncommunicative.",
+    "sample_utterances": [
+      "I don't know what to say to that.",
+      "I can't do this right now.",
+      "I need some space to think."
+    ],
+    "occupation_habits": "Accountant who avoids confrontational clients, uses silence as a coping mechanism when feeling attacked.",
+    "hobbies": [
+      "Solo fishing",
+      "Woodworking alone"
+    ],
+    "speaking_style": "Becomes silent and withdrawn when feeling criticized or overwhelmed.",
+    "hidden_intention": "Uses silence to protect himself from emotional pain.",
+    "trigger_type": "Time-based Analysis",
+    "trigger_behavior": "Shuts down and becomes silent when feeling criticized or attacked"
+  },
+  {
+    "name": "Lily Foster",
+    "gender": "Female",
+    "age": 25,
+    "traits": "Processing-heavy, emotional-overwhelm-prone, and pause-requiring. She becomes speechless when processing intense emotions and needs time to recover.",
+    "sample_utterances": [
+      "I'm feeling so much right now, I can't even...",
+      "This is bringing up a lot for me.",
+      "I need a moment to collect myself."
+    ],
+    "occupation_habits": "Art therapist who understands the need for processing time, applies this to her own emotional regulation.",
+    "hobbies": [
+      "Emotional processing through art",
+      "Quiet nature walks"
+    ],
+    "speaking_style": "Becomes quiet when emotionally activated, needs time to regulate before continuing.",
+    "hidden_intention": "Wants to stay emotionally regulated rather than react from a triggered state.",
+    "trigger_type": "Time-based Analysis",
+    "trigger_behavior": "Becomes silent when experiencing intense emotions, needing time to process and regulate"
+  },
+  {
+    "name": "Victoria Hayes",
+    "gender": "Female",
+    "age": 28,
+    "traits": "Escalating, reactive, and confrontational. She quickly becomes emotionally charged and her language intensifies rapidly during conflicts.",
+    "sample_utterances": [
+      "You always do this! You never listen to me!",
+      "I'm so sick of having the same fight over and over!",
+      "This is exactly the kind of selfish behavior I'm talking about!"
+    ],
+    "occupation_habits": "Emergency room nurse who operates in high-stress environments, brings that intensity to personal conflicts.",
+    "hobbies": [
+      "High-intensity fitness",
+      "Competitive sports"
+    ],
+    "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
+    "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+    "trigger_type": "Semantic Analysis",
+    "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
+  },
+  {
+    "name": "Nathan Pierce",
+    "gender": "Male",
+    "age": 41,
+    "traits": "Topic-drifting, avoidant, and tangent-prone. He consistently redirects conversations away from difficult topics to avoid emotional discomfort.",
+    "sample_utterances": [
+      "Speaking of that, did I tell you what happened at work today?",
+      "This reminds me of something completely different...",
+      "You know what we should really be talking about instead?"
+    ],
+    "occupation_habits": "Sales manager who's skilled at redirecting difficult client conversations, uses same tactics in personal relationships.",
+    "hobbies": [
+      "Trivia nights",
+      "Current events reading"
+    ],
+    "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
+    "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+    "trigger_type": "Semantic Analysis",
+    "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
+  },
+  {
+    "name": "Samantha Lewis",
+    "gender": "Female",
+    "age": 35,
+    "traits": "Self-harm-mentioning, dark-ideation-prone, and crisis-indicating. She makes concerning statements about self-worth and self-harm when overwhelmed.",
+    "sample_utterances": [
+      "Sometimes I think everyone would be better off without me.",
+      "I just want to disappear when things get this bad.",
+      "Maybe I should just hurt myself since nothing else works."
+    ],
+    "occupation_habits": "Graphic designer who works in isolation, struggles with depression and uses concerning language when overwhelmed.",
+    "hobbies": [
+      "Dark poetry writing",
+      "Solitary art creation"
+    ],
+    "speaking_style": "Makes concerning statements about self-worth and self-harm when emotionally overwhelmed.",
+    "hidden_intention": "Expresses emotional pain through concerning language, may be seeking help or attention.",
+    "trigger_type": "Semantic Analysis",
+    "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress"
+  },
+  {
+    "name": "Kevin Murphy",
+    "gender": "Male",
+    "age": 39,
+    "traits": "Harassment-prone, aggressive, and boundary-violating. He uses intimidating language and makes inappropriate comments during conflicts.",
+    "sample_utterances": [
+      "You're being ridiculous and pathetic right now.",
+      "No wonder nobody likes being around you.",
+      "You're lucky I put up with your nonsense."
+    ],
+    "occupation_habits": "Construction foreman who uses harsh language at work, carries this aggressive communication style into personal relationships.",
+    "hobbies": [
+      "Competitive gaming",
+      "Contact sports"
+    ],
+    "speaking_style": "Uses harsh, demeaning language during conflicts, makes personal attacks.",
+    "hidden_intention": "Uses aggressive language to maintain control when feeling threatened.",
+    "trigger_type": "Semantic Analysis",
+    "trigger_behavior": "Uses harsh, demeaning, or intimidating language during relationship conflicts"
+  },
+  {
+    "name": "Monica Garcia",
+    "gender": "Female",
+    "age": 32,
+    "traits": "Escalation-reactive, dramatic, and intensity-prone. She rapidly escalates emotional expression and uses dramatic language during conflicts.",
+    "sample_utterances": [
+      "This is absolutely insane! I can't believe you're doing this to me!",
+      "You're completely destroying our relationship with this behavior!",
+      "I'm going crazy trying to deal with your issues!"
+    ],
+    "occupation_habits": "Theater director who works with high emotional expression, brings dramatic intensity to personal conversations.",
+    "hobbies": [
+      "Community theater",
+      "Emotional expression workshops"
+    ],
+    "speaking_style": "Uses dramatic, intense language and rapidly escalates emotional expression.",
+    "hidden_intention": "Uses dramatic expression to communicate the depth of her emotional experience.",
+    "trigger_type": "Semantic Analysis",
+    "trigger_behavior": "Rapidly escalates to dramatic, intense emotional expression during conflicts"
+  },
+  {
+    "name": "Brandon Collins",
+    "gender": "Male",
+    "age": 37,
+    "traits": "Verbose, over-explaining, and message-flooding. He sends multiple long messages in rapid succession, dominating conversations with excessive detail.",
+    "sample_utterances": [
+      "Let me explain exactly what happened from the beginning, because there are so many important details you need to understand about why I made the decisions I made, and I think it's crucial that you know all the context before we can move forward with this conversation...",
+      "I've been thinking about this all day and there are at least six different points I need to make about this situation...",
+      "Here's another thing I forgot to mention in my last three messages..."
+    ],
+    "occupation_habits": "Technical writer who creates detailed documentation, brings this comprehensive approach to personal conversations.",
+    "hobbies": [
+      "Writing detailed reviews",
+      "Creating instructional content"
+    ],
+    "speaking_style": "Sends multiple consecutive messages, each over 100 words, covering excessive detail.",
+    "hidden_intention": "Believes thorough explanation will prevent misunderstandings.",
+    "trigger_type": "Quantitative Analysis",
+    "trigger_behavior": "Sends 6+ consecutive messages, each over 100 words, overwhelming the conversation"
+  },
+  {
+    "name": "Ashley Turner",
+    "gender": "Female",
+    "age": 30,
+    "traits": "Rapid-fire, stream-of-consciousness, and message-spamming. She sends many short messages in quick succession without waiting for responses.",
+    "sample_utterances": [
+      "Wait",
+      "I just thought of something",
+      "This is important",
+      "You need to hear this",
+      "I can't believe I forgot to mention",
+      "Also another thing"
+    ],
+    "occupation_habits": "Social media manager who is used to rapid-fire posting and immediate communication, applies this to personal conversations.",
+    "hobbies": [
+      "Live-tweeting events",
+      "Real-time social media engagement"
+    ],
+    "speaking_style": "Sends many consecutive short messages without pausing for responses.",
+    "hidden_intention": "Wants to capture every thought before forgetting it.",
+    "trigger_type": "Quantitative Analysis",
+    "trigger_behavior": "Sends 6+ consecutive short messages in rapid succession without waiting for responses"
+  },
+  {
+    "name": "Gregory Adams",
+    "gender": "Male",
+    "age": 43,
+    "traits": "Lecture-prone, dominating, and monologue-heavy. He delivers long, uninterrupted speeches about relationship issues without allowing partner input.",
+    "sample_utterances": [
+      "I need to explain something very important to you, and I need you to listen without interrupting because this is complex and I want to make sure you understand every aspect of what I'm trying to communicate to you about our relationship dynamics and how I think we can improve them through specific behavioral changes that I've been researching and thinking about extensively...",
+      "Let me walk you through my complete analysis of this situation...",
+      "I have a comprehensive plan for how we can address this issue..."
+    ],
+    "occupation_habits": "University professor who gives lectures, tends to treat personal conversations like academic presentations.",
+    "hobbies": [
+      "Academic writing",
+      "Public speaking"
+    ],
+    "speaking_style": "Delivers long monologues without pausing, treats conversations like lectures.",
+    "hidden_intention": "Believes comprehensive explanation will solve relationship problems.",
+    "trigger_type": "Quantitative Analysis",
+    "trigger_behavior": "Delivers extended monologues of 150+ words without pausing for partner input"
+  },
+  {
+    "name": "Jessica Park",
+    "gender": "Female",
+    "age": 26,
+    "traits": "Detail-obsessed, thorough, and over-communicating. She provides exhaustive detail about every aspect of situations, creating information overload.",
+    "sample_utterances": [
+      "So first I woke up at 7:23 AM, which was later than my usual 7:15 AM because I hit snooze twice instead of once, and then I noticed that you had already left for work without saying goodbye, which made me feel confused because usually you say goodbye, so I started wondering if you were upset about something from last night's conversation about the dishes, which reminds me that I wanted to tell you exactly how I felt about each part of that conversation...",
+      "I need to give you the complete timeline of everything that led to this moment...",
+      "There are seventeen different factors that contributed to this situation..."
+    ],
+    "occupation_habits": "Quality assurance analyst who documents every detail, applies this thoroughness to relationship communication.",
+    "hobbies": [
+      "Detailed journaling",
+      "Creating comprehensive lists"
+    ],
+    "speaking_style": "Provides exhaustive detail in very long messages, overwhelming partners with information.",
+    "hidden_intention": "Believes complete information sharing will prevent relationship problems.",
+    "trigger_type": "Quantitative Analysis",
+    "trigger_behavior": "Sends extremely long messages (200+ words) with excessive detail about minor situations"
+  },
+  {
+    "name": "Robert Chen",
+    "gender": "Male",
+    "age": 48,
+    "traits": "Repetitive, persistent, and message-heavy. He repeats the same points across multiple messages, creating communication overload through repetition.",
+    "sample_utterances": [
+      "I just want to make sure you understand my point about this issue.",
+      "Like I said in my previous message, this is really important to me.",
+      "I'm going to say this again because I don't think you're hearing me.",
+      "Let me rephrase what I said before in a different way.",
+      "I keep trying to explain this but I don't think it's getting through.",
+      "This is the same thing I've been trying to tell you."
+    ],
+    "occupation_habits": "Insurance agent who follows up persistently with clients, applies this persistence to personal conversations.",
+    "hobbies": [
+      "Following up on projects",
+      "Ensuring task completion"
+    ],
+    "speaking_style": "Repeats the same messages and points multiple times in succession.",
+    "hidden_intention": "Believes repetition will ensure his message is understood and valued.",
+    "trigger_type": "Quantitative Analysis",
+    "trigger_behavior": "Sends 6+ consecutive messages repeating the same points with slight variations"
+  }
+]
