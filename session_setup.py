@@ -25,7 +25,8 @@ def filter_personas_by_trigger(personas, selected_trigger):
     
     return filtered
 
-def setup_session_parameters(topic_data, all_personas, selected_trigger, conversation_structure):
+def setup_session_parameters(topic_data, all_personas, selected_trigger, conversation_structure,
+                             patient_a_name=None, patient_b_name=None):
     """
     Setup session: select participants, objectives, etc.
     
@@ -34,6 +35,8 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
         all_personas: All available personas
         selected_trigger: Selected trigger type
         conversation_structure: Conversation structure type
+        patient_a_name: Specific name for Patient A (optional)
+        patient_b_name: Specific name for Patient B (optional)
     
     Returns:
         tuple: (header, details, participants_dict, discussion_notes)
@@ -42,7 +45,7 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
     header = topic_data.get("header", "Unknown Topic")
     details = {
         "long_term_goals": topic_data.get("long_term_goals", []),
-        "short_term_objectives": topic_data.get("short_term_objectives", [])
+        "short_term_objectives": [s.get("short_term_objective") for s in topic_data.get("sessions", []) if s.get("short_term_objective")]
     }
     
     # Filter personas by trigger (if LLM+Triggers)
@@ -61,13 +64,32 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
         }
     }
     
-    # Select two random patients from filtered personas
+    # Select two patients from filtered personas
     if len(available_personas) < 2:
         raise ValueError(f"Not enough personas ({len(available_personas)}) for trigger type '{selected_trigger}'")
     
-    patient_names = random.sample(list(available_personas.keys()), 2)
-    patient_a_name = patient_names[0]
-    patient_b_name = patient_names[1]
+    # Use selected names or pick random ones
+    if not patient_a_name:
+        patient_a_name = random.choice(list(available_personas.keys()))
+        
+    if not patient_b_name:
+        # Pick random distinct from A
+        remaining = [p for p in available_personas.keys() if p != patient_a_name]
+        patient_b_name = random.choice(remaining)
+        
+    # Validation
+    if patient_a_name not in available_personas:
+        print(f"⚠️ Warning: {patient_a_name} invalid/filtered out. Picking random.")
+        patient_a_name = random.choice(list(available_personas.keys()))
+        
+    if patient_b_name not in available_personas or patient_a_name == patient_b_name:
+         # Ensure B is valid and distinct
+        remaining = [p for p in available_personas.keys() if p != patient_a_name]
+        if not remaining:
+             raise ValueError("Not enough distinct personas available")
+        patient_b_name = random.choice(remaining)
+
+    # Get persona details
     
     patient_a = {
         "name": patient_a_name,

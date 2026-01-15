@@ -58,8 +58,10 @@ Return ONLY valid JSON (no markdown, no extra text):
     "reasoning": "brief 1-sentence explanation"
 }}
 
-CRITICAL: Only recommend "INTERVENE" if average >= 70.
-Most healthy therapeutic conversations score below 70."""
+CRITICAL:
+1. If there are clear signs of distress (guilt, shame, fear, withdrawal) or communication breakdown, the average score SHOULD exceed 50.
+2. Only recommend "INTERVENE" if average >= 35.
+3. Healthy therapeutic conversations typically score below 35, but do not suppress the score if issues are present."""
     
     try:
         response = client.chat.completions.create(

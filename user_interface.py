@@ -125,6 +125,44 @@ def select_first_speaker():
             pass
         print("❌ Invalid choice. Try again.")
 
+def select_specific_persona(available_personas, role_label, exclude_name=None):
+    """
+    Let user select a specific persona for a role.
+    
+    Args:
+        available_personas: dict of persona objects
+        role_label: Label for the role (e.g., "Patient A")
+        exclude_name: Name of persona to exclude (e.g., already selected for Patient A)
+        
+    Returns:
+        str: Selected persona name
+    """
+    print("\n" + DIVIDER)
+    print(f"SELECT PERSONA FOR {role_label.upper()}")
+    print(DIVIDER)
+    
+    # Filter out excluded persona
+    options = [name for name in available_personas.keys() if name != exclude_name]
+    options.sort()  # Alphabetical order
+    
+    for i, name in enumerate(options, 1):
+        p = available_personas[name]
+        trigger_behavior = p.get("trigger_behavior", "N/A")
+        # Truncate behavior if too long
+        if len(trigger_behavior) > 60:
+            trigger_behavior = trigger_behavior[:57] + "..."
+            
+        print(f" {i}: {name:<20} | {trigger_behavior}")
+    
+    while True:
+        try:
+            choice = int(input("\nEnter number: "))
+            if 1 <= choice <= len(options):
+                return options[choice - 1]
+        except ValueError:
+            pass
+        print("❌ Invalid choice. Try again.")
+
 def display_session_configuration(config):
     """Display session configuration summary."""
     print("\n" + DIVIDER)

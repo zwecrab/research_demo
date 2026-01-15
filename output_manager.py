@@ -218,7 +218,8 @@ def generate_experiment_report(output_json, panas_data=None):
     transcript = output_json.get('session_transcript', [])
     report.append(f"- Total Turns: {len(transcript)}")
     report.append(f"- AI Facilitator Interventions: {output_json.get('intervention_count', 0)}")
-    report.append(f"- Rejected Interventions (score < 70): {output_json.get('scored_interventions_rejected', 0)}")
+    from config import INTERVENTION_THRESHOLD
+    report.append(f"- Rejected Interventions (score < {INTERVENTION_THRESHOLD}): {output_json.get('scored_interventions_rejected', 0)}")
     
     report.append("\n## MODELS")
     models = output_json.get('models_used', {})

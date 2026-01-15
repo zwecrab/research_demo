@@ -166,6 +166,24 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
                 print(f"📊 Score: {intervention_score.get('average', 0):.1f}/100 - {intervention_score.get('recommendation', '?')}")
                 print(f"💭 Reasoning: {intervention_score.get('reasoning', 'N/A')}")
                 
+                # ====================================================================
+                # STEP 3.5: LOG REGULAR TURN FIRST
+                # ====================================================================
+                
+                output_json["session_transcript"].append({
+                    "turn": current_turn_number,
+                    "speaker": current_speaker,
+                    "dialogue": dialogue
+                })
+                
+                full_log_entry = f"{speaker_name_for_history}: {dialogue}"
+                conversation_history.append(full_log_entry)
+                
+                # Update history string for intervention context
+                full_history_str = "\n".join(conversation_history)
+                
+                print(f"{speaker_name_for_history}: {dialogue[:80]}..." if len(dialogue) > 80 else f"{speaker_name_for_history}: {dialogue}")
+
                 # ============================================================
                 # STEP 4: CONDITIONAL INTERVENTION
                 # ============================================================
@@ -200,7 +218,7 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
                         
                         # Log the intervention
                         output_json["trigger_log"].append({
-                            "turn": current_turn_number - 1,
+                            "turn": current_turn_number - 1, # Referencing the trigger turn
                             "triggers": triggers_detected,
                             "intervention": intervention,
                             "score": intervention_score,
@@ -212,21 +230,6 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
                 else:
                     print("❌ Score below threshold - No intervention")
                     output_json["scored_interventions_rejected"] += 1
-        
-        # ====================================================================
-        # STEP 5: LOG REGULAR TURN
-        # ====================================================================
-        
-        output_json["session_transcript"].append({
-            "turn": current_turn_number,
-            "speaker": current_speaker,
-            "dialogue": dialogue
-        })
-        
-        full_log_entry = f"{speaker_name_for_history}: {dialogue}"
-        conversation_history.append(full_log_entry)
-        
-        print(f"{speaker_name_for_history}: {dialogue[:80]}..." if len(dialogue) > 80 else f"{speaker_name_for_history}: {dialogue}")
         
         # ====================================================================
         # STEP 6: FIRST SPEAKER OVERRIDE (Turn 1 → Turn 2 transition)
@@ -364,13 +367,33 @@ def main():
     # First speaker selection (NEW FEATURE)
     first_speaker = select_first_speaker()
     
+    # ------------------------------------------------------------------------
+    # Manual Persona Selection
+    # ------------------------------------------------------------------------
+    from session_setup import filter_personas_by_trigger
+    from user_interface import select_specific_persona
+
+    # Get available personas based on trigger filter
+    if conversation_structure == "LLM with Triggers":
+        valid_personas = filter_personas_by_trigger(assets["personas"], selected_trigger)
+    else:
+        valid_personas = assets["personas"]
+
+    # Select Patient A
+    selected_patient_a = select_specific_persona(valid_personas, "Patient A")
+    
+    # Select Patient B (exclude A)
+    selected_patient_b = select_specific_persona(valid_personas, "Patient B", exclude_name=selected_patient_a)
+
     # Display configuration summary
     config_summary = {
         "topic": session_topic_data["header"],
         "temperature": session_temperature,
         "structure": conversation_structure,
         "trigger_type": selected_trigger,
-        "first_speaker": first_speaker
+        "first_speaker": first_speaker,
+        "patient_a": selected_patient_a,
+        "patient_b": selected_patient_b
     }
     display_session_configuration(config_summary)
     
@@ -386,7 +409,9 @@ def main():
         session_topic_data,
         assets["personas"],
         selected_trigger,
-        conversation_structure
+        conversation_structure,
+        patient_a_name=selected_patient_a,
+        patient_b_name=selected_patient_b
     )
     
     output_json = initialize_session_state(

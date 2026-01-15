@@ -53,7 +53,7 @@ SESSION_MAX_TURNS = 35
 # INTERVENTION THRESHOLDS & SCORING
 # ============================================================================
 
-INTERVENTION_THRESHOLD = 70  # 0-100 average score needed to intervene
+INTERVENTION_THRESHOLD = 40  # 0-100 average score needed to intervene
 
 # Trigger Type Keywords
 DIRECT_INTERVENTION_KEYWORDS = [
