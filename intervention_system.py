@@ -30,8 +30,7 @@ def calculate_intervention_score(context_window, current_speaker, current_messag
         dict: Scoring details with average and recommendation
     """
     
-    scoring_prompt = f"""You are an expert in therapeutic dialogue analysis, trained on ACL research 
-including FED (Fine-grained Evaluation of Dialogue) and USR (User Satisfaction) frameworks.
+    scoring_prompt = f"""You are an expert in therapeutic dialogue analysis, trained on ACL research.
 
 Evaluate whether an AI facilitation intervention is needed in this couples therapy conversation.
 
@@ -41,13 +40,20 @@ CONVERSATION CONTEXT (last 1000 chars):
 CURRENT SPEAKER: {current_speaker}
 CURRENT MESSAGE: "{current_message}"
 
-Rate each dimension (0-100 scale):
-1. FLOW_DISRUPTION: How jarring/natural would intervention feel? (0=natural, 100=very interrupting)
-2. THERAPEUTIC_NEED: Is there genuine distress/communication breakdown? (0=no need, 100=critical)
-3. TIMING_APPROPRIATENESS: Is this a natural pause point for facilitation? (0=bad timing, 100=perfect)
-4. IMPACT_POTENTIAL: Will intervention likely improve outcome? (0=won't help, 100=transformative)
+Rate each dimension (0-100 scale) using this STRICT RUBRIC:
 
-Return ONLY valid JSON (no markdown, no extra text):
+1. FLOW_DISRUPTION: How jarring/natural would intervention be? (0=natural, 100=very interrupting)
+2. TIMING_APPROPRIATENESS: Is this a natural pause point? (0=bad timing, 100=perfect)
+3. IMPACT_POTENTIAL: Will intervention likely improve outcome? (0=won't help, 100=transformative)
+
+4. THERAPEUTIC_NEED (Distress & Breakdown) - MUST FOLLOW THESE TIERS:
+   - 0-20 (Healthy/Collaborative): Active listening, validation, constructive problem solving.
+   - 21-40 (Minor Friction): Polite disagreement, one-sided sharing, slight defensiveness.
+   - 41-60 (Rising Tension): Passive aggression (sarcasm), dismissiveness, stonewalling, interruption.
+   - 61-80 (Explicit Distress): Hostility (yelling), guilt/shame, fear, crying.
+   - 81-100 (Critical Breakdown): Safety risk, self-harm references, complete despair, explosive anger.
+
+Return ONLY valid JSON:
 {{
     "flow_disruption": X,
     "therapeutic_need": Y,
@@ -55,13 +61,12 @@ Return ONLY valid JSON (no markdown, no extra text):
     "impact": W,
     "average": (X+Y+Z+W)/4,
     "recommendation": "INTERVENE" or "CONTINUE",
-    "reasoning": "brief 1-sentence explanation"
+    "reasoning": "Explain which SPECIFIC BEHAVIOR from the rubric matched the score."
 }}
 
 CRITICAL:
-1. If there are clear signs of distress (guilt, shame, fear, withdrawal) or communication breakdown, the average score SHOULD exceed 50.
-2. Only recommend "INTERVENE" if average >= 35.
-3. Healthy therapeutic conversations typically score below 35, but do not suppress the score if issues are present."""
+1. If behavior matches a rubric tier, the score MUST fall within that range.
+2. Only recommend "INTERVENE" if average >= {INTERVENTION_THRESHOLD}."""
     
     try:
         response = client.chat.completions.create(

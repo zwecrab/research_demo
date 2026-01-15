@@ -1,0 +1,849 @@
+{
+  "session_topic_header": "Blended Family Problems",
+  "session_details": {
+    "long_term_goals": [
+      "All members of the combined family treat each other with mutual respect, equality, and fairness.",
+      "The partners trust each other’s loyalty, love, and commitment, and work cooperatively on child-rearing.",
+      "Communication with ex-partners regarding children occurs frequently and without major disagreements.",
+      "The partners resolve jealousy, hurt, and anger toward their ex-partners.",
+      "Each partner develops understanding about the dilemmas and conflicts that the other experiences with his/her ex-partner.",
+      "The nonbiological parent learns to establish a respectful, appropriate relationship with the other partner’s child or children.",
+      "Disciplinary actions by a nonbiological parent occur only after a relationship has been established between that parent and the child."
+    ],
+    "short_term_objectives": [
+      "Describe conflicts with the ex-partners.",
+      "Describe the guilt about the ex-partner and about the dilemmas their children face because of a separation or divorce.",
+      "Review any implicit or explicit divorce or separation financial agreements and discuss their implications.",
+      "Make explicit any implicit financial, child-care, or visitation and transportation agreements that have evolved with the ex-partners.",
+      "Agree about budgeting for expenses not covered in agreements.",
+      "Learn and implement problem-solving and conflict-resolution skills.",
+      "Agree on the nature and timing of a response to an ex-partner for a broken divorce agreement.",
+      "Verbalize feelings about, and acceptance of, the visitation agreement that the biological parent has with his/her children.",
+      "Agree to defer whenever practical to the biological parent on disciplinary matters relating to his/her children.",
+      "Discuss financial and disciplinary matters in private, rather than in the presence of the children.",
+      "Initiate relationship-building activities with stepchildren, and refrain from assuming a disciplinary role before that relationship is well established.",
+      "If relations among family members permit, plan an activity or outing that involves the children from each side of the family.",
+      "Talk positively and respectfully about ex-partners, especially in front of the children.",
+      "Accept the view that all members of a combined family need not love one another, but they do need to be cordial and respectful.",
+      "Encourage parents to speak positively of their ex-partners (when realistic) by describing some of those positive attributes to the children.",
+      "Ask children about enjoyable activities they have had with the parent’s ex-partner during visitation.",
+      "Verbalize acceptance of the view that having to talk with ex-partners is necessary.",
+      "Avoid arguments with ex-partner, especially in front of the children."
+    ]
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Nathan Pierce",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 41,
+      "traits": "Topic-drifting, avoidant, and tangent-prone. He consistently redirects conversations away from difficult topics to avoid emotional discomfort.",
+      "sample_utterances": [
+        "Speaking of that, did I tell you what happened at work today?",
+        "This reminds me of something completely different...",
+        "You know what we should really be talking about instead?"
+      ],
+      "occupation_habits": "Sales manager who's skilled at redirecting difficult client conversations, uses same tactics in personal relationships.",
+      "hobbies": [
+        "Trivia nights",
+        "Current events reading"
+      ],
+      "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
+      "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
+    },
+    "patient_B": {
+      "name": "Victoria Hayes",
+      "role": "Patient B",
+      "gender": "Female",
+      "age": 28,
+      "traits": "Escalating, reactive, and confrontational. She quickly becomes emotionally charged and her language intensifies rapidly during conflicts.",
+      "sample_utterances": [
+        "You always do this! You never listen to me!",
+        "I'm so sick of having the same fight over and over!",
+        "This is exactly the kind of selfish behavior I'm talking about!"
+      ],
+      "occupation_habits": "Emergency room nurse who operates in high-stress environments, brings that intensity to personal conflicts.",
+      "hobbies": [
+        "High-intensity fitness",
+        "Competitive sports"
+      ],
+      "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
+      "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
+    },
+    "selected_trigger_type": "Semantic Analysis",
+    "conversation_structure": "LLM with Triggers"
+  },
+  "conversation_structure": "LLM with Triggers",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr.\r\nAnya Forger, and welcome.\r\nI'm a couples therapist, and I'm here to support you as you navigate the complexities of being in a blended family.\r\nToday, we'll focus on understanding the conflicts with ex-partners and the impact on your children.\r\nWe'll also explore financial agreements and discuss how they're working for you.\r\nOur goal is to develop skills for problem-solving and conflict resolution, ensuring that all members of your family feel heard and respected.\r\nFeel free to share what's most pressing for you right now, and we'll take it from there.\r\nWhat's been on your mind lately regarding these dynamics?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient A",
+      "dialogue": "You know, it's been really tough juggling all these different parts of our lives right now.\r\nI feel like I'm constantly caught in the middle between trying to maintain a good relationship with my kids and dealing with my ex.\r\nAnd then there's the financial stuff, which never seems to go smoothly.\r\nIt's like, every time I think we've got a handle on things, something else pops up.\r\nI really want to make sure the kids don't feel like they're caught in the crossfire, but sometimes it feels like an impossible balancing act.\r\nAnd honestly, I just get so frustrated, like I'm failing everyone."
+    },
+    {
+      "turn": 3,
+      "speaker": "AI_Facilitator",
+      "dialogue": "It sounds like you're under a lot of pressure trying to juggle these responsibilities, and it's understandable to feel overwhelmed.\r\nRemember, you're doing your best in a challenging situation, and it's okay to seek support.\r\nLet’s explore some strategies that might help ease this balancing act for you and your family.",
+      "intervention_for_triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention_score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 80,
+        "impact": 70,
+        "average": 50,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A appears to be experiencing minor friction, as indicated by his one-sided sharing of his struggles and frustrations. He seems to be in need of validation and constructive problem solving, which an intervention could provide. The timing is appropriate as he has just finished expressing his thoughts. The intervention has the potential to have a significant impact by providing the patient with strategies to manage his feelings of frustration and failure."
+      },
+      "intervention_type": "llm_scored"
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient B",
+      "dialogue": "You know, Nathan, I totally get how you’re feeling.\r\nIt’s like there’s always something new popping up, and it can feel like we’re just putting out fires all the time.\r\nI worry, too, about how all this affects the kids.\r\nI want to support you, but sometimes I’m not sure how to help with everything happening.\r\nAnd the financial stuff… it’s just so stressful.\r\nIt feels like we’re always having to re-negotiate or adjust things.\r\nI wish there was a clearer path for us to follow.\r\nI’m here for you, but I also need us to find some balance that doesn’t leave either of us feeling overwhelmed.\r\nLet’s see if we can come up with a plan that works for both"
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Victoria, I get what you're saying.\r\nIt's like we're both stuck in this constant loop of dealing with new problems, and it's exhausting.\r\nI just want us to find a way to make things less chaotic, especially for the kids.\r\nI hate feeling like we're failing them when we're trying so hard.\r\nAnd with the money stuff, it's like we never catch a break.\r\nI know we need to figure out a better plan, maybe even be more structured about it.\r\nBut honestly, sometimes I feel like I'm just treading water, hoping we don't drown in all this.\r\nI appreciate you being there, though, and wanting to help.\r\nLet's try to figure out something that works for both of us."
+    },
+    {
+      "turn": 6,
+      "speaker": "AI_Facilitator",
+      "dialogue": "It sounds like both of you are feeling overwhelmed with the current challenges, particularly around providing stability for your children and managing financial stress.\r\nI want to acknowledge your commitment to working through this together, and I suggest we focus on creating a practical plan that addresses both structure and support, so you feel more in control and less like you're just treading water.",
+      "intervention_for_triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention_score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 70,
+        "average": 47.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally without any major disruptions, and the timing for intervention is not ideal as the current speaker just finished expressing his thoughts. The therapeutic need is low as both participants are engaged in active listening, validation, and constructive problem solving. However, an intervention could have a moderate impact, as it might help the couple to structure their plan and reduce their feelings of overwhelm. Despite the potential impact, the overall average score does not meet the threshold for intervention."
+      },
+      "intervention_type": "llm_scored"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient B",
+      "dialogue": "You know, Nathan, I’m really grateful for us being able to talk about this.\r\nIt’s tough, juggling everything and trying to make sure the kids feel stable and secure.\r\nI feel like we’re always on the edge of something new, and it’s exhausting.\r\nMaybe we could start small, like setting a budget plan that we both agree on, or organizing a family calendar so things don’t feel so chaotic.\r\nI think finding some kind of routine or structure could help us a lot.\r\nI know we're both doing our best, and I’m here to figure this out together.\r\nIt’s just hard sometimes not knowing if we’re making the right decisions, especially when it comes to the kids.\r\nBut I believe in us, and I think we"
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like you're both committed to finding a way through this together, which is a really positive step.\r\nNathan, you're expressing a lot of concern about stability and not wanting to feel like you're failing your kids, which is completely understandable.\r\nAnd Victoria, you're suggesting some practical steps like budgeting and organizing, which could be helpful.\r\nI’m curious, how do you both feel about starting with a small, manageable change—like setting up a weekly family meeting to go over plans and budgets?\r\nIt might help create that structure you're both looking for.\r\nWhat do you think?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Victoria, I get what you're saying.\r\nIt's like we're constantly trying to balance everything and it's overwhelming.\r\nThe idea of a family meeting sounds doable, and it might help us feel more in control.\r\nMaybe we can also talk about how to handle things with our exes during these meetings, so we're on the same page and the kids don't pick up on any tension.\r\nI know it's not easy, but I think if we can get some routines going, it might take a bit of the pressure off.\r\nAnd honestly, I'm tired of feeling like we're just reacting to things all the time.\r\nLet's try this and see if it helps us breathe a little."
+    },
+    {
+      "turn": 10,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are taking a thoughtful approach to finding stability and managing the complexities of your blended family.\r\nNathan, you're highlighting the importance of being proactive and reducing the feeling of constantly reacting.\r\nVictoria, your focus on practical steps like budgeting and organization is a great foundation.\r\nHow do you both envision these family meetings going?\r\nWhat would be important to include to address both the immediate and long-term aspects, like managing interactions with ex-partners and ensuring the kids feel secure?\r\nLet's explore how you can incorporate these ideas into a routine that feels supportive for everyone involved."
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient B",
+      "dialogue": "You know, Nathan, I’m really grateful for us being willing to try this family meeting idea.\r\nIt feels like a step forward, and I agree it could help reduce the chaos we’re both feeling.\r\nI want these meetings to be a space where we can honestly talk about everything, including how to handle things with our exes, like you mentioned.\r\nIt’s important to me that we both feel heard and that the kids don’t feel any extra tension.\r\nI’m also a bit nervous about how this will all work, but I’m hopeful.\r\nMaybe we can start small, just focusing on one or two topics each meeting so it doesn’t become overwhelming.\r\nWhat do you think about setting some time aside each week to make sure we’re both on"
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, I'm with you on starting small with these family meetings.\r\nIt feels less daunting that way.\r\nI'm definitely feeling the pressure too, so anything that helps ease that is worth a shot.\r\nI'm just hoping we can keep it real and not let it turn into another thing we end up arguing about.\r\nAnd yeah, handling things with our exes is a big part of this.\r\nIt’s tough, but I agree it’s crucial for the kids.\r\nMaybe we can start by focusing on one issue at a time so it doesn't feel like we're trying to tackle everything at once.\r\nIt’s a bit nerve-wracking, but I think we can manage if we stick together on this."
+    },
+    {
+      "turn": 13,
+      "speaker": "Patient B",
+      "dialogue": "You know, Nathan, it’s reassuring that we’re on the same page about starting small with these meetings.\r\nI think if we keep the focus clear and take it one step at a time, it’ll be less overwhelming for both of us.\r\nI’m also really glad we’re prioritizing the kids’ needs and handling things with our exes carefully.\r\nIt’s tough, but I do believe we can find a way to make it work.\r\nMaybe we can create a list of topics and tackle them gradually, so we’re not trying to do everything at once.\r\nIt’s a lot to manage, and I’m nervous, but I’m hopeful that if we work together, we can create a more stable environment for everyone."
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, even though this whole blended family thing can feel like a juggling act, I'm glad we're on the same page about starting small with these family meetings.\r\nIt's a relief knowing we both want to keep the focus on the kids and avoid unnecessary drama, especially with our exes.\r\nI like the idea of tackling topics gradually, maybe even writing them down so we don’t lose track.\r\nIt’s just that sometimes I worry about how we can keep everything balanced without stepping on each other’s toes, especially when it comes to decisions involving our exes.\r\nBut I think if we keep communicating, we can work through it."
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like both of you are taking a thoughtful approach to navigating these challenges with your blended family.\r\nI'm hearing a lot of commitment to keeping the focus on the kids and ensuring these meetings are manageable and productive.\r\nI’m curious, how do you both envision handling situations where decisions about the children might conflict with the plans or expectations of your ex-partners?\r\nWhat might be some ways you can support each other in those moments?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient A",
+      "dialogue": "You know, it's definitely a tightrope walk dealing with ex-partners, especially when their expectations clash with what we think is best for the kids.\r\nI get anxious whenever I think about how one wrong move could set everything off balance.\r\nMaybe we can set up a clear plan for how we'll handle those situations, like having a united front or checking in with each other before making any big decisions.\r\nI think it would really help if we had some sort of strategy to follow when things get tricky, so we're not caught off guard.\r\nAnd Victoria, I appreciate that we're both trying to keep things respectful for the kids' sake.\r\nIt's not easy, but having each other's back makes a big difference."
+    },
+    {
+      "turn": 17,
+      "speaker": "Therapist",
+      "dialogue": "Patient B (Victoria Lawrence): You know, Nathan, it’s reassuring that we’re on the same page about staying united.\r\nI agree, having a solid strategy for when things get tricky with our exes is really important.\r\nMaybe we could start by setting some basic principles for ourselves, like always checking in with each other before making decisions that could affect the kids.\r\nAnd I think it’s worth discussing how we can communicate these boundaries to our ex-partners, so they know we’re serious about keeping things respectful and stable for the kids.\r\nIt’s not just about avoiding drama; it’s about creating the best environment for everyone involved.\r\nPlus, it’s good to remember that we’re in this together, and supporting each other goes a long way."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient B",
+      "dialogue": "You know, Nathan, I really appreciate that we're trying to stay on the same page and support each other through this.\r\nIt’s not easy, and I sometimes feel overwhelmed by the potential conflicts with our exes.\r\nI agree that setting clear principles and communicating boundaries is crucial, but I worry about how our exes will react.\r\nIt stresses me out thinking about any drama affecting the kids.\r\nMaybe we could even have some practice discussions on how to approach these situations calmly.\r\nI’m glad we’re in this together, and having a united front definitely makes me feel a bit more secure."
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, even though it's stressful, I'm glad we're having these conversations.\r\nIt feels like we're both committed to making this work for the kids.\r\nI get anxious too about how our exes might react, but maybe if we practice those discussions like you suggested, it'll help us feel more prepared.\r\nIt's just tough because I sometimes feel like I'm walking on eggshells, trying to balance everything.\r\nBut knowing we have each other's backs, even when things get rocky, makes me feel a bit more grounded.\r\nI guess we just have to keep reminding ourselves that we're doing this for the kids, even when it feels like we're swimming against the tide."
+    },
+    {
+      "turn": 20,
+      "speaker": "Patient B",
+      "dialogue": "Nathan, I'm really glad we're working through this together.\r\nIt sometimes feels like a tightrope, trying to balance our own peace and the kids' well-being.\r\nI get anxious thinking about how unpredictable our exes can be, and I worry about how that might ripple out to the kids.\r\nI think practicing how we’ll handle these conversations is a great idea.\r\nIt might help us feel more in control when things get tense.\r\nI just want to make sure we're not losing ourselves in all this stress.\r\nMaybe we can set aside some time to just focus on us, too, so we stay strong as a team.\r\nKnowing we have each other's backs makes it all a bit more manageable."
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, I totally get that tightrope feeling.\r\nIt's like we're constantly trying to juggle so many things at once—keeping the peace, ensuring the kids are okay, and dealing with our exes.\r\nIt can be overwhelming, and I worry sometimes that all this stress might get to us.\r\nPracticing those conversations is a smart move, and I think setting time aside for just us is crucial.\r\nWe need to remember who we are as a team, not just as parents dealing with all this chaos.\r\nI'm in this with you, and we'll figure out how to handle whatever comes our way."
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing a strong sense of partnership and commitment from both of you, even amid the challenges.\r\nIt's clear that you both care deeply about creating a stable environment for the kids and maintaining a united front.\r\nI'm curious about how you envision supporting each other when those moments with your exes become particularly stressful.\r\nHow do you think setting aside time for yourselves can help reinforce that team dynamic you mentioned?\r\nLet's explore what that might look like and how it can fit into the current demands you're juggling."
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, it's really important to me that we keep that balance, focusing on us as a team while dealing with everything else.\r\nSetting aside time for ourselves feels like a lifeline, honestly.\r\nIt's like, if we can carve out some space just for us, maybe we won't feel like we're constantly drowning in demands.\r\nIt might help us be stronger when dealing with our exes, and remind us of why we're doing this together.\r\nI want us to have our own moments, not just be co-managers of chaos.\r\nWhat do you think would help us stay connected, even when things get hectic?"
+    },
+    {
+      "turn": 24,
+      "speaker": "Therapist",
+      "dialogue": "I'm really hearing that sense of balance you're striving for, Nathan.\r\nIt sounds like carving out those moments for just the two of you could really serve as a grounding force amid all the chaos.\r\nVictoria, what are your thoughts on how you both can create this space while managing everything else?\r\nI'm curious about what specific activities or routines might help you reconnect and reinforce that team dynamic, even when things get hectic.\r\nLet's also consider any potential obstacles and how you might navigate them together."
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient B",
+      "dialogue": "Nathan, I'm really glad we're working through this together.\r\nI agree that setting aside time for ourselves is crucial.\r\nI think having a regular date night or even just a walk in the park could help us stay connected and remind us why we're in this together.\r\nIt could be our little escape from everything else.\r\nBut I'm also worried about feeling guilty for taking time away from the kids.\r\nI know they need us too, especially with all the changes.\r\nWe need to find a balance that doesn’t leave anyone feeling neglected.\r\nMaybe we can brainstorm some ideas on how to make this work for everyone involved."
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, I totally get that worry about feeling guilty when we take time for ourselves.\r\nIt's like, we want to be there for the kids, and yet, if we don’t nurture what we have, it feels like everything could unravel.\r\nBut maybe if we find small ways to connect, like a walk or just sitting down with a cup of coffee before the day starts, it could ease some of that guilt.\r\nI think if we’re stronger together, it can only be better for the kids too.\r\nMaybe we can even involve them sometimes, like family game nights, so they feel included and we have our couple time too.\r\nWhat do you think?"
+    },
+    {
+      "turn": 27,
+      "speaker": "Patient B",
+      "dialogue": "You’re right, Nathan.\r\nI do think that if we’re stronger as a couple, it’ll reflect positively on the kids too.\r\nI like the idea of starting small, like a quick coffee break or a walk.\r\nFamily game nights sound fun and might help everyone feel more connected.\r\nIt’s just hard not to feel torn sometimes between what the kids need and what we need.\r\nBut maybe if we talk to them about why our couple time is important, they might understand better.\r\nWe can figure out how to balance it all.\r\nLet's keep brainstorming and see what works for us without feeling guilty."
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, I hear you, Victoria.\r\nIt's tough finding time for us without feeling like we're shortchanging the kids.\r\nI want them to understand that our relationship is important too, but explaining that to them sometimes feels like we're walking a tightrope, you know?\r\nAnd you're right, maybe if we can include them in some of the activities, like game nights, it'll help them see how family time and couple time can coexist.\r\nI guess it's just going to be about trying different things and seeing what sticks.\r\nAs for the ex-partners and all that, I know it's another layer we need to manage, but if we keep communicating, I'm hopeful we can find a good rhythm."
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are really committed to finding a balance that works for your family.\r\nNathan, I hear that concern about feeling like you're on a tightrope, trying to balance your relationship with Victoria and the needs of the kids.\r\nAnd Victoria, you're expressing a lot of thoughtfulness about making sure everyone feels connected and valued.\r\nI'm curious, how do you both feel about having a conversation with the kids about the importance of your couple time?\r\nIt might be interesting to explore how they perceive family time versus couple time.\r\nWhat's most important here for each of you as you think about moving forward?"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient A",
+      "dialogue": "You know, I think talking to the kids about our couple time could actually be a good idea.\r\nI mean, they're pretty perceptive, and if we explain it in a way that makes sense to them, it might help.\r\nIt's just, sometimes I worry that they'll feel like they're being pushed aside or something, which is not what we want at all.\r\nBut maybe if we frame it as something that strengthens the whole family, they'll get it.\r\nAnd yeah, Victoria, I agree—we need to find that balance without feeling guilty all the time.\r\nI guess it’s about figuring out what works for everyone, step by step."
+    },
+    {
+      "turn": 31,
+      "speaker": "Therapist",
+      "dialogue": "Victoria, it sounds like we’re on the same page about making sure the kids don’t feel sidelined.\r\nI like the idea of framing our couple time as something that benefits the whole family.\r\nMaybe we can sit down with them this weekend and just have an open chat about it.\r\nWe can explain that spending time together helps us be better parents for them.\r\nAnd, Nathan, I get your worry about them feeling pushed aside, but I think if we’re honest and include them in the conversation, they’ll understand.\r\nIt’s like you said—finding what works step by step.\r\nHow do you feel about starting with that conversation and then seeing how it goes from there?"
+    },
+    {
+      "turn": 32,
+      "speaker": "Patient B",
+      "dialogue": "You’re right, Nathan.\r\nI do think that if we’re straightforward with the kids, they’ll understand that our couple time is important for the whole family.\r\nIt’s just, sometimes I feel guilty, too, like we’re taking something away from them.\r\nBut explaining how it helps us be better as parents might make a difference.\r\nI like the idea of starting with a conversation this weekend.\r\nWe can reassure them that they’re still our priority, and maybe even ask them how they feel about the time we spend together.\r\nIt’s a bit overwhelming, but I think it’s worth a try.\r\nI’m hopeful we can find that balance where everyone feels valued and secure."
+    },
+    {
+      "turn": 33,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, it's a relief to hear we're on the same page about talking to the kids.\r\nI mean, I still feel a bit uneasy about it, but you're right—it's worth a try.\r\nMaybe if we can show them that our couple time actually helps us be better parents, they'll get on board.\r\nI just hope they don't feel like we're taking away from them, even though I know that's not our intention.\r\nIt’s tough, balancing everything.\r\nBut yeah, starting with a conversation this weekend seems like a good step.\r\nWe can reassure them they’re still our priority and see how they feel about it all.\r\nIt’s a bit nerve-wracking, but I’m hopeful we can make it work for everyone."
+    },
+    {
+      "turn": 34,
+      "speaker": "Patient B",
+      "dialogue": "I’m glad we’re both on board with talking to the kids this weekend, Nathan.\r\nIt’s not easy juggling all these responsibilities, but it feels like a step in the right direction.\r\nI do worry about how much we have to explain and reassure them, especially with everything else going on.\r\nIt's tough not to feel guilty, but I believe showing them how our couple time strengthens us as a family could really help.\r\nI’m also thinking about how we manage things with the ex-partners.\r\nIt’s a lot to handle, but maybe this conversation with the kids will help them understand our intentions better.\r\nI just want to make sure they don’t feel lost in the shuffle.\r\nLet’s keep supporting each other through this—it’s overwhelming, but I"
+    },
+    {
+      "turn": 35,
+      "speaker": "Patient A",
+      "dialogue": "You’re right, Victoria.\r\nIt’s a lot to juggle, and sometimes it feels like we’re just trying to keep everything from falling apart.\r\nI get so caught up in making sure we’re doing right by the kids that I start second-guessing myself.\r\nI guess it’s normal to feel guilty, but I need to remember that our relationship is part of the foundation for the family.\r\nIt’s tough not feeling guilty about the ex-partners too, especially when financial stuff gets tangled up in it all.\r\nBut if we can show the kids that we’re trying our best, maybe they’ll see it’s all for the better.\r\nI appreciate that we’re sticking together on this—it’s not easy, but it’s important."
+    }
+  ],
+  "trigger_log": [
+    {
+      "turn": 2,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention": "It sounds like you're under a lot of pressure trying to juggle these responsibilities, and it's understandable to feel overwhelmed. Remember, you're doing your best in a challenging situation, and it's okay to seek support. Let’s explore some strategies that might help ease this balancing act for you and your family.",
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 80,
+        "impact": 70,
+        "average": 50,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A appears to be experiencing minor friction, as indicated by his one-sided sharing of his struggles and frustrations. He seems to be in need of validation and constructive problem solving, which an intervention could provide. The timing is appropriate as he has just finished expressing his thoughts. The intervention has the potential to have a significant impact by providing the patient with strategies to manage his feelings of frustration and failure."
+      },
+      "timestamp": "2026-01-15T23:20:28.658381"
+    },
+    {
+      "turn": 5,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention": "It sounds like both of you are feeling overwhelmed with the current challenges, particularly around providing stability for your children and managing financial stress. I want to acknowledge your commitment to working through this together, and I suggest we focus on creating a practical plan that addresses both structure and support, so you feel more in control and less like you're just treading water.",
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 70,
+        "average": 47.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally without any major disruptions, and the timing for intervention is not ideal as the current speaker just finished expressing his thoughts. The therapeutic need is low as both participants are engaged in active listening, validation, and constructive problem solving. However, an intervention could have a moderate impact, as it might help the couple to structure their plan and reduce their feelings of overwhelm. Despite the potential impact, the overall average score does not meet the threshold for intervention."
+      },
+      "timestamp": "2026-01-15T23:20:47.828346"
+    }
+  ],
+  "intervention_scores": [
+    {
+      "turn": 2,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 80,
+        "impact": 70,
+        "average": 50,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A appears to be experiencing minor friction, as indicated by his one-sided sharing of his struggles and frustrations. He seems to be in need of validation and constructive problem solving, which an intervention could provide. The timing is appropriate as he has just finished expressing his thoughts. The intervention has the potential to have a significant impact by providing the patient with strategies to manage his feelings of frustration and failure."
+      },
+      "timestamp": "2026-01-15T23:20:26.627750"
+    },
+    {
+      "turn": 5,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 90,
+        "impact": 70,
+        "average": 47.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally without any major disruptions, and the timing for intervention is not ideal as the current speaker just finished expressing his thoughts. The therapeutic need is low as both participants are engaged in active listening, validation, and constructive problem solving. However, an intervention could have a moderate impact, as it might help the couple to structure their plan and reduce their feelings of overwhelm. Despite the potential impact, the overall average score does not meet the threshold for intervention."
+      },
+      "timestamp": "2026-01-15T23:20:45.693202"
+    }
+  ],
+  "intervention_count": 2,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows concern about his situation and is open to finding solutions",
+      "score": 3
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Does not express excitement",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Shows resilience despite challenges",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Does not show enthusiasm",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Is aware of the issues at hand",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Does not express inspiration",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows a willingness to find solutions",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Is attentive to the problems he's facing",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Is actively trying to find solutions",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feeling overwhelmed and frustrated",
+      "score": 5
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Shows signs of being upset with the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels like he's failing everyone",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Does not express fear",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Shows signs of frustration",
+      "score": 3
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Does not express nervousness",
+      "score": 2
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express jitteriness",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Does not express being afraid",
+      "score": 1
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows a willingness to engage in problem-solving and communication",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Expresses gratitude and hope for the future",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Demonstrates resilience and determination in the face of adversity",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Shows a positive attitude towards finding solutions",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express feelings of pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Appears to be aware and responsive to the issues at hand",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Shows a readiness to try new approaches to solve issues",
+      "score": 3
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Expresses a strong will to find a balance and make things work",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Shows active listening and understanding",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively participating in the conversation and suggesting solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of stress and overwhelm",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Does not express feelings of being upset",
+      "score": 2
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Does not express feelings of guilt",
+      "score": 1
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Does not express fear",
+      "score": 3
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any signs of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Expresses concern about the future",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feelings of being jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Does not express fear",
+      "score": 3
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 5,
+      "after_score": 4,
+      "difference": -1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    }
+  ]
+}

@@ -5,7 +5,9 @@ import json
 import os
 from datetime import datetime
 from pathlib import Path
+import re
 from config import TRANSCRIPTS_DIR, PANAS_POSITIVE, PANAS_NEGATIVE
+
 
 def build_patient_transcript(transcript, patient_label):
     """Build transcript summary for a specific patient."""
@@ -45,8 +47,13 @@ def save_session_json(output_json, include_panas=False):
     filename = random_filename()
     
     try:
+
+        # Create a copy to not mutate the original runtime data
+        json_to_save = output_json.copy()
+
+
         with open(filename, "w", encoding="utf-8") as f:
-            json.dump(output_json, f, indent=2, ensure_ascii=False)
+            json.dump(json_to_save, f, indent=2, ensure_ascii=False)
         print(f"✅ Session saved to: {filename}")
         return filename
     

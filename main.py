@@ -128,6 +128,22 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
             speaker_name_for_history = f"Patient B ({participants['patient_B']['name']})"
         
         # ====================================================================
+        # STEP 1.5: LOG TURN
+        # ====================================================================
+        
+        output_json["session_transcript"].append({
+            "turn": current_turn_number,
+            "speaker": current_speaker,
+            "dialogue": dialogue
+        })
+        
+        full_log_entry = f"{speaker_name_for_history}: {dialogue}"
+        conversation_history.append(full_log_entry)
+        full_history_str = "\n".join(conversation_history)
+        
+        print(f"{speaker_name_for_history}: {dialogue[:80]}..." if len(dialogue) > 80 else f"{speaker_name_for_history}: {dialogue}")
+
+        # ====================================================================
         # STEP 2: TRIGGER DETECTION (if applicable)
         # ====================================================================
         
@@ -166,23 +182,8 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
                 print(f"📊 Score: {intervention_score.get('average', 0):.1f}/100 - {intervention_score.get('recommendation', '?')}")
                 print(f"💭 Reasoning: {intervention_score.get('reasoning', 'N/A')}")
                 
-                # ====================================================================
-                # STEP 3.5: LOG REGULAR TURN FIRST
-                # ====================================================================
-                
-                output_json["session_transcript"].append({
-                    "turn": current_turn_number,
-                    "speaker": current_speaker,
-                    "dialogue": dialogue
-                })
-                
-                full_log_entry = f"{speaker_name_for_history}: {dialogue}"
-                conversation_history.append(full_log_entry)
-                
-                # Update history string for intervention context
+                # Update history string for intervention context (re-generating in case it changed, though it shouldn't have)
                 full_history_str = "\n".join(conversation_history)
-                
-                print(f"{speaker_name_for_history}: {dialogue[:80]}..." if len(dialogue) > 80 else f"{speaker_name_for_history}: {dialogue}")
 
                 # ============================================================
                 # STEP 4: CONDITIONAL INTERVENTION

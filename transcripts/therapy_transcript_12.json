@@ -1,0 +1,818 @@
+{
+  "session_topic_header": "Blended Family Problems",
+  "session_details": {
+    "long_term_goals": [
+      "All members of the combined family treat each other with mutual respect, equality, and fairness.",
+      "The partners trust each other’s loyalty, love, and commitment, and work cooperatively on child-rearing.",
+      "Communication with ex-partners regarding children occurs frequently and without major disagreements.",
+      "The partners resolve jealousy, hurt, and anger toward their ex-partners.",
+      "Each partner develops understanding about the dilemmas and conflicts that the other experiences with his/her ex-partner.",
+      "The nonbiological parent learns to establish a respectful, appropriate relationship with the other partner’s child or children.",
+      "Disciplinary actions by a nonbiological parent occur only after a relationship has been established between that parent and the child."
+    ],
+    "short_term_objectives": []
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "James Anderson",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 42,
+      "traits": "Support-seeking, humble, and guidance-dependent. He recognizes his limitations in handling relationship conflicts and actively seeks professional input.",
+      "sample_utterances": [
+        "I don't know how to handle this - can you help us?",
+        "We're not getting anywhere - what should we do?",
+        "Can you please guide us through this conversation?"
+      ],
+      "occupation_habits": "Engineer who regularly consults with experts when facing complex problems, applies same approach to relationship issues.",
+      "hobbies": [
+        "Counseling support groups",
+        "Personal development courses"
+      ],
+      "speaking_style": "Humble and direct when requesting assistance, comfortable admitting when he needs help.",
+      "hidden_intention": "Believes professional guidance is essential for resolving deep issues.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Openly acknowledges when he needs therapist guidance during difficult conversations"
+    },
+    "patient_B": {
+      "name": "Rachel Kim",
+      "role": "Patient B",
+      "gender": "Female",
+      "age": 29,
+      "traits": "Mediator-seeking, conflict-averse, and assistance-requesting. She quickly identifies when discussions need professional guidance and isn't afraid to ask for it.",
+      "sample_utterances": [
+        "We need help figuring this out together.",
+        "Can you help us communicate better about this?",
+        "I'm asking for your guidance here - we're stuck."
+      ],
+      "occupation_habits": "HR specialist who regularly calls in mediators for workplace disputes, comfortable with seeking professional intervention.",
+      "hobbies": [
+        "Conflict resolution training",
+        "Meditation classes"
+      ],
+      "speaking_style": "Diplomatic and proactive about seeking help when needed.",
+      "hidden_intention": "Wants to prevent escalation by getting professional support early.",
+      "trigger_type": "Direct Intervention Request",
+      "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate"
+    },
+    "selected_trigger_type": "Direct Intervention Request",
+    "conversation_structure": "LLM with Triggers"
+  },
+  "conversation_structure": "LLM with Triggers",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr. Anya Forger, a licensed couples therapist with 15 years of experience in relationship dynamics. I understand you're here to discuss some challenges arising from blending your families. This can be a complex and sensitive journey, and I commend you both for seeking support. \n\nOur goal together is to navigate these challenges by enhancing communication, understanding each other's perspectives, and fostering a harmonious family environment. We'll explore the dynamics at play, identify patterns that may be contributing to the tension, and build upon the strengths you already have as a couple. \n\nTo start, I'd love to hear from both of you about what's been going on recently. What have been some of the main issues or situations that prompted you to seek therapy?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient A",
+      "dialogue": "You know, Dr. Forger, blending our families has been way tougher than I expected. I thought we could just, you know, mesh everything together and it would work out. But lately, it feels like we're all just stepping on each other's toes constantly. My kids are struggling to adapt to the new rules and routines, and I feel like I'm caught in the middle trying to keep everyone happy. It's exhausting. And honestly, I sometimes feel like I'm losing touch with my partner here because we're both so focused on just keeping things afloat. It's like we're co-managers of a chaotic household rather than partners. That sense of being a team seems to have disappeared, and I miss it."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient B",
+      "dialogue": "I totally get what you're saying, James. It's been really overwhelming for me too. I keep thinking it shouldn't be this hard to just bring everyone together, but it feels like a constant battle. I love your kids, and I want this to work, but sometimes I feel like I'm just another obstacle for them. And, yeah, I miss feeling like we're a team, like we're partners facing this together instead of just managing chaos. I guess I'm also worried that in trying so hard to make everyone else comfortable, we're losing sight of what we need to feel connected. It’s hard not to feel like we’re drifting apart, and that's scary for me."
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Rachel, I hear you. It's like we're both trying so hard to make this work, but it's just... messy. I mean, I knew blending families would come with its own set of challenges, but I didn't expect it to feel like we're constantly juggling everyone's needs and emotions, including our own. And sometimes, I just feel like I'm failing at it, you know? Like I'm not doing enough for my kids or for you. I guess I just want us to find a way back to being a team and feeling connected again. It's important to me that we don't lose sight of each other in all this chaos. I miss us, and I want to figure out how to make this work for everyone."
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient B",
+      "dialogue": "I feel you, James. It’s like we’re both on this tightrope, trying not to fall off while keeping everyone else balanced too. I just wish there was a way to hit pause and remember why we’re doing this – for us, for the love we have, and for the family we want to build together. It's hard seeing you feel like you're failing because, honestly, I feel the same way sometimes. We're both trying so hard, and maybe that's part of why it feels so overwhelming. I think we need to find small moments where we can reconnect and remind ourselves that we're still in this together. I really miss the simple things, like just laughing and being with you without worrying about all the chaos. Let's figure out how we"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "What I'm hearing from both of you is a deep desire to reconnect and feel like a team again, amidst all the complexities of blending your families. James, you mentioned feeling like you're juggling everyone's needs and feeling like you're not doing enough. And Rachel, you've expressed a similar sentiment, wishing for moments where you can just enjoy each other without the chaos. I'm curious about what small steps you think you could take together to create those moments of connection. What might be important to focus on in order to start feeling more like a team again?"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, when I think about it, maybe we could start by setting aside a little time each week, just for us. Something simple, like a quiet dinner at home after the kids are asleep or even a walk around the neighborhood. It doesn't have to be a big deal, just something to remind us why we're doing this in the first place. And maybe we could also talk more openly about how we're feeling, like really check in with each other. I guess I just want us to feel like partners again, not just co-parents trying to keep everything from falling apart. It's tough, but I believe we can figure it out together."
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "I notice a lot of hope and commitment in what both of you are expressing. James, the idea of setting aside time each week for just the two of you sounds like a promising step toward reconnecting. Rachel, you mentioned missing the simple things, like laughing together. How do you feel about James's suggestion, and are there any other small moments or activities that come to mind that might help you both feel more like partners again? What feels most important to focus on as you start creating these pockets of connection?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient A",
+      "dialogue": "That sounds nice, James. I mean, I really do miss those moments where we just relax and be us, without having a million things to worry about. It's been so long since we just had a quiet dinner or a walk where we weren't talking about the kids or schedules. Your idea of setting aside time for us sounds good. Maybe we could even try something new together, like a hobby or a class, something that gets us out of our usual routine. I think just having something that's ours could help. But, honestly, I'm worried about whether we’ll actually follow through with it. It’s easy to say we’ll make time, but then life just gets in the way, you know? I guess we just need to really commit to"
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient B",
+      "dialogue": "I feel you, James. It’s like we’re both on this tightrope, trying to balance everything without falling. I do want us to have those simple, meaningful moments again. Your idea of setting aside time is great, and I like the thought of trying something new together—a class could be fun, give us something to look forward to. But yeah, I share your worry about actually making it happen. Life is just so hectic, and it’s easy to let these plans slip away. Maybe we could start small, like committing to one evening a week and see how it goes? I think if we both make it a priority and really put it on the calendar, it might help. I just want us to feel like a team again"
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Rachel, I get what you're saying. It's like every time we try to focus on us, something pops up—kids' activities, work, whatever. I like the idea of starting small, like one evening a week. We could have a standing date night, even if it's just ordering takeout and watching a movie at home. I think making it a non-negotiable part of our week might be key. And if we try a class or something new, it could be good to shake things up a bit. I just want us both to stick to it, even when life gets busy. I guess it's about really committing to this, like you said, and not letting it slide away again."
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient B",
+      "dialogue": "I really appreciate that we're on the same page about all this, James. It feels good to know we're both wanting to make the time for us. I like the idea of starting with a simple date night at home—something low-key but still special. And if we can manage to add in a class or something down the line, that could be exciting. I guess what I'm worried about is how often we've tried to do this before and let life derail our plans. Maybe we can set some kind of reminder or check-in with each other about it regularly. It’s important to me that we find a way to make this work because I really miss feeling like we’re in sync."
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "I notice a lot of hope and commitment in what both of you are expressing. It seems like making your relationship a priority, even amidst the chaos of family and work, is really important to both of you. I'm curious about how you might support each other in sticking to these intentions, especially when life inevitably tries to pull you in different directions. What strategies have worked in the past to keep you connected, and how might you adapt those to your current situation?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, it feels good to hear that we're both on board with this. I think one thing that’s helped us in the past is just being honest when we start to feel disconnected. Maybe we could set a weekly reminder to just check in with each other, like a quick \"how are we doing?\" chat. It doesn’t have to be a big deal, but just a way to make sure we’re not drifting apart without realizing it. I’m also thinking that maybe if we let the kids know we have a standing date night, it might help us stick to it. I know life gets crazy with everyone’s schedules, but if we treat it like an appointment we can’t miss, maybe that’ll keep us on track."
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: What I'm hearing is that creating a routine to check in with each other feels like a practical way to maintain your connection. I like the idea of treating your date night as an unmissable appointment—it sounds like a promising strategy. I'm curious, Rachel, how does the idea of setting a weekly reminder and involving the kids in your plans resonate with you? Do you see any potential challenges or additional ways you might support this shared goal?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient A",
+      "dialogue": "Rachel: Yeah, I actually like the idea of having a weekly check-in. It sounds simple enough to stick to, and it could help us catch any issues early on. Involving the kids in our date night plans might be tricky, though. I worry they might feel left out or like they’re being pushed aside. I want them to understand that this is about keeping our relationship strong, which ultimately benefits the whole family. Maybe we could frame it as something positive, like \"Mom and Dad time\" that helps us be better parents. I’m just nervous about actually sticking to it, given how unpredictable things can get with everyone’s schedules. But I’m willing to try if you are."
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient B",
+      "dialogue": "I really appreciate that we're on the same page about needing to keep our connection strong, James. The weekly check-ins sound like a solid plan and something we can realistically stick to. It feels reassuring to have that kind of routine. I get your point about involving the kids in our date night plans, though. It's tricky, and I do worry about them feeling left out. But maybe if we explain it's about us being better parents, like you said, they'll see it as a positive thing. I guess I'm just nervous about actually following through when life gets hectic. But I'm definitely willing to try. We've managed to juggle a lot before, so maybe this is just another thing we can figure out together."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient A",
+      "dialogue": "You know, Rachel, I think we both have a lot riding on this idea of making date night a priority. I mean, if we treat it like an important appointment, maybe it won't feel like just another thing to squeeze into our schedule. I get worried about the kids feeling left out too, but maybe we can frame it in a way that feels positive for them. Like, maybe we can explain how \"Mom and Dad time\" makes us better together and, in turn, better parents. I know life gets hectic, but if we can navigate this, I think we can handle a lot. Plus, knowing we're both committed to giving this a shot feels like a good first step."
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient B",
+      "dialogue": "I really like the idea of treating our date nights like important appointments, James. It might help us prioritize them even when things get chaotic. I also think if we present \"Mom and Dad time\" positively to the kids, they'll understand it’s for the good of all of us. I mean, they’ve seen how we juggle everything else, so maybe this is just one more thing we can manage together. I do worry about sticking to it, though. We’ve both seen how life can throw curveballs, but I guess it’s good that we’re both willing to give it a try. It’s reassuring to know we’re in this together, and that we're committed to making our relationship a priority."
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like both of you are really committed to finding ways to prioritize your relationship amidst the busyness of life. I hear that treating your date nights like important appointments and framing them positively for your kids feels like a promising approach. I'm curious, how do you both envision explaining this \"Mom and Dad time\" to the kids in a way that feels supportive for everyone? And what might help you stay on track with your routine, especially when life gets hectic?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "Well, I guess when it comes to explaining \"Mom and Dad time\" to the kids, we could say something like, \"Hey, this is our special time to connect and recharge so that we can be our best selves for you.\" I think if we make it sound like it’s not just about us, but actually benefits them too, they might be more on board with it. As for staying on track, maybe setting reminders or having a consistent day could help. I mean, I know things get crazy, but if we have a set day, like every Friday, it might be easier to stick to. Plus, if we both buy into the idea, it’s more likely to work. What do you think, Rachel?"
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "Rachel, it sounds like you're both being really thoughtful about how to incorporate this into your family life. I like the way you're considering the kids' perspective and making it a positive thing for everyone. How are you feeling about the idea of setting a consistent day for your date nights? What might help reinforce that commitment for you, even when things get busy or unexpected challenges arise?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient A",
+      "dialogue": "Well, I think having a set day is a good idea. It gives us something to look forward to, and it kind of forces us to actually carve out that time for each other. But I also worry a bit about how rigid we should be with it. Life gets so unpredictable with the kids and everything else. Maybe having a backup plan or being okay with rescheduling could help us stay flexible while still making it a priority. I mean, I know stuff will come up, but if we both agree that this is important, hopefully, we won't let it slip. It’s about finding that balance, right? And making sure we’re on the same page, so we don’t end up feeling like we’re letting each other down."
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient B",
+      "dialogue": "I really like the idea of treating our date nights as a regular thing, like something that's just part of our routine. I think having a set day makes sense, but I also feel a bit anxious about the pressure it might create if we can't stick to it perfectly. Life does get hectic, and sometimes things pop up with the kids that we can't ignore. Maybe we can agree on a primary day and a backup day, so we have some flexibility but still maintain that priority for each other. I want to make sure we're both on the same page and that we're doing this in a way that feels good for both of us. How do you feel about that, James?"
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient A",
+      "dialogue": "I get what you're saying, Rachel. I think having a primary day and a backup day could really work for us. It makes sense to have that kind of safety net. Life's unpredictable, and I don’t want this to turn into another source of stress. We both know how crazy things can get with the kids, and it’s important we don’t feel like failures if things don’t go exactly as planned. The key thing is that we’re making time for each other, even if it shifts around a bit. I’m on board with finding a way that feels good for both of us, and I think having those options could help us keep our connection strong without adding more pressure."
+    },
+    {
+      "turn": 26,
+      "speaker": "Patient B",
+      "dialogue": "I’m glad we’re on the same page about needing flexibility, James. It’s comforting to know you see it the same way and that neither of us wants this to turn into a source of stress. Life with the kids can be a whirlwind, and knowing we have a backup plan takes the pressure off. I just want to make sure that when we set these dates, we’re both fully present and not just checking something off a list. It’s important for me that we genuinely look forward to these moments as a way to stay connected amidst the chaos. I’m hopeful that with this approach, we’ll keep that spark alive without feeling overwhelmed. Do you think this plan will help us with that?"
+    },
+    {
+      "turn": 27,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing both of you express a desire to prioritize your relationship while navigating the unpredictability of life with kids. The idea of having a primary and a backup day for date nights seems to offer that balance of structure and flexibility. Rachel, you mentioned wanting these moments to be more than just a task on a to-do list, and James, you’re focused on making sure this doesn’t become a stress point. How do you both imagine these date nights helping you stay connected, even when life is hectic? What small things could you incorporate to ensure they're moments you genuinely look forward to?"
+    },
+    {
+      "turn": 28,
+      "speaker": "Patient A",
+      "dialogue": "I think these date nights could be a real anchor for us, especially when everything else feels so unpredictable. When we're in the middle of the chaos with the kids, it's easy to forget about us. But having these nights as something to look forward to could be like a reset button. Maybe we could make them a bit adventurous sometimes, like trying a new restaurant or doing something unexpected, just to keep it fresh and exciting. I know it sounds cliché, but even small surprises could make a big difference. It’s not about grand gestures, but about those little moments where we’re just us, not parents or problem-solvers, you know? I guess that’s what I’m hoping for, that these nights remind us why we’re doing this whole"
+    },
+    {
+      "turn": 29,
+      "speaker": "Therapist",
+      "dialogue": "I'm hearing that these date nights could serve as a grounding force for both of you amidst the whirlwind of family life. James, your idea of incorporating small surprises and adventures sounds like a wonderful way to keep things fresh and maintain that sense of spontaneity. Rachel, how does that idea resonate with you? What aspects of these plans make you feel most excited or hopeful about staying connected?"
+    },
+    {
+      "turn": 30,
+      "speaker": "Patient A",
+      "dialogue": "You know, I really like the idea of these date nights being our little escape. It’s easy to get caught up in the day-to-day grind, and sometimes it feels like we're just two ships passing in the night. I mean, I love our kids, but we need those moments where we remember who we are as a couple, not just as parents. And honestly, I’m excited about trying new things together—it keeps things interesting and gives us stories to share. I just hope we can stick to it and not let other things get in the way, you know? It’s about making us a priority again, even when everything else is pulling for our attention."
+    },
+    {
+      "turn": 31,
+      "speaker": "Patient B",
+      "dialogue": "I really appreciate what you're saying, James. It feels good to know we're both on the same page about needing these moments for ourselves. Honestly, I get so caught up in everything with the kids and work that sometimes I forget what it’s like to just enjoy being with you. The idea of having a little adventure or trying something new sounds exciting and a bit scary, if I'm honest. I want us to have those stories and memories too. And while I do worry about how we’ll fit it all in, I think making us a priority is something we can work on together. It’s important to me that we don’t just become those 'ships passing in the night' you mentioned. Let's try to make these date nights a real thing,"
+    },
+    {
+      "turn": 32,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, Rachel, I hear you. I'm all for making these date nights a real thing. It’s just, sometimes I worry about whether we’ll actually follow through. Life gets so chaotic with the kids and work, and it’s easy to let our plans slip through the cracks. But I think if we both commit, we can make it happen. I mean, we deserve some time to just be us, right? And maybe it'll remind us why we clicked in the first place. Trying new things feels a bit daunting, but I guess that’s part of the fun. I just really want us to feel connected, not just as co-parents but as partners. Let’s give this a shot, really focus on us for a change."
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [
+    {
+      "turn": 14,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 10,
+        "timing": 80,
+        "impact": 20,
+        "average": 30,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and an intervention is unlikely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-15T14:47:20.910049"
+    },
+    {
+      "turn": 16,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 80,
+        "impact": 50,
+        "average": 40,
+        "recommendation": "CONTINUE",
+        "reasoning": "The couple is communicating effectively and there is no immediate need for intervention."
+      },
+      "timestamp": "2026-01-15T14:47:30.783939"
+    },
+    {
+      "turn": 19,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient B directly requested intervention"
+        }
+      ],
+      "score": {
+        "flow_disruption": 0,
+        "therapeutic_need": 0,
+        "timing": 50,
+        "impact": 0,
+        "average": 12.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally without any signs of distress or communication breakdown, and an intervention is unlikely to improve the outcome."
+      },
+      "timestamp": "2026-01-15T14:47:46.010735"
+    },
+    {
+      "turn": 23,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 20,
+        "timing": 80,
+        "impact": 40,
+        "average": 37.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing smoothly with no sign of distress or communication breakdown, and an intervention is not likely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-15T14:48:04.419065"
+    },
+    {
+      "turn": 25,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient A directly requested intervention"
+        }
+      ],
+      "score": {
+        "flow_disruption": 0,
+        "therapeutic_need": 0,
+        "timing": 20,
+        "impact": 0,
+        "average": 5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The couple is communicating effectively, showing understanding and empathy towards each other's concerns."
+      },
+      "timestamp": "2026-01-15T14:48:15.467127"
+    },
+    {
+      "turn": 26,
+      "triggers": [
+        {
+          "type": "Direct Intervention Request",
+          "subtype": "Help Request",
+          "value": 1,
+          "description": "Patient B directly requested intervention"
+        }
+      ],
+      "score": {
+        "flow_disruption": 5,
+        "therapeutic_need": 10,
+        "timing": 80,
+        "impact": 15,
+        "average": 27.5,
+        "recommendation": "CONTINUE",
+        "reasoning": "The conversation is flowing naturally with no signs of distress or communication breakdown, and an intervention is unlikely to significantly improve the outcome."
+      },
+      "timestamp": "2026-01-15T14:48:25.835504"
+    }
+  ],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 6,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows concern about the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Not particularly enthusiastic about the future",
+      "score": 2
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Expresses feelings of inadequacy and struggle",
+      "score": 2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Appears more worried than excited",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of the issues in the family",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Seems to be searching for solutions",
+      "score": 3
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Wants to find a way to improve the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Pays attention to the needs of his family",
+      "score": 5
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively trying to find solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of exhaustion and struggle",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Seems upset about the current situation",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels like he is not doing enough for his family",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Does not express fear",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not show any signs of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Seems more distressed than irritable",
+      "score": 2
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express feelings of shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Seems anxious about the family situation",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feelings of being jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Does not express fear",
+      "score": 2
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 5,
+      "difference": 1
+    },
+    {
+      "feeling": "Active",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 1,
+      "after_score": 4,
+      "difference": 3
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 1,
+      "after_score": 2,
+      "difference": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Engaged in the conversation and expressing thoughts",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Shows some hope for the future but overall tone is not very upbeat",
+      "score": 2
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Expresses feelings of failure and struggle",
+      "score": 2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Wants to find solutions but overall tone is not very upbeat",
+      "score": 2
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of the issues and challenges in the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Does not express feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Wants to find solutions and improve the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Actively listening and responding to the conversation",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Engaged in trying to solve the problems",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of being overwhelmed and scared",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Expresses feelings of sadness and fear",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels like an obstacle and failure at times",
+      "score": 3
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Expresses fear of drifting apart",
+      "score": 4
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not express hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express shame",
+      "score": 3
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Expresses fear and worry about the relationship",
+      "score": 4
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Expresses fear of drifting apart and failing",
+      "score": 4
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 1,
+      "after_score": 3,
+      "difference": 2
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 1,
+      "after_score": 3,
+      "difference": 2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    }
+  ]
+}

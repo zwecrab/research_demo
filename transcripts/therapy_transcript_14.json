@@ -1,0 +1,692 @@
+{
+  "session_topic_header": "COMMUNICATION",
+  "session_details": {
+    "long_term_goals": [
+      "Partners communicate about feelings without escalating hostility.",
+      "Partners discuss and resolve problems effectively without verbal fighting.",
+      "Each partner listens to and understands the other partner’s perspective.",
+      "Arguments no longer feel like uncontrollable, inevitable events, as partners learn to recognize cues of verbal fighting, and control them before they start.",
+      "Each partner notices and verbalizes appreciation to the other for acts of kindness, thoughtfulness, and caring."
+    ],
+    "short_term_objectives": [
+      "Identify specific communication deficits.",
+      "Identify the core themes of arguments.",
+      "Identify process by which the partners become increasingly polarized.",
+      "Identify the “mutual trap” whereby one partner’s response (e.g., withdrawal) evokes the other partner’s response (e.g., demand for closeness) and vice versa.",
+      "Partners implement the two overarching communication skills of: “Be Clear” and “Be Considerate.”",
+      "Practice defining problems in specific, nonblaming terms.",
+      "Practice listening in a manner that promotes empathy and understanding.",
+      "Practice sharing thoughts and feelings in a manner that promotes intimacy.",
+      "Demonstrate an understanding of communication that is focused on problem-solving and on venting.",
+      "Practice accepting and rejecting requests for positive activities.",
+      "Set aside 10 to 15 minutes several times per week for discussion of personal issues.",
+      "Demonstrate de-escalating conflict.",
+      "Identify cues for arguments and practice argument-control strategies.",
+      "List the cues that each partner will use to judge that the other is receptive to problem-solving at a specific time.",
+      "Verbalize how a problem may be opened for discussion.",
+      "Define the exact nature of one problem before trying to resolve it.",
+      "Use problem-solving skills to resolve a problem.",
+      "Attend to and compliment other partner for helpful or caring behaviors."
+    ]
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Nathan Pierce",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 41,
+      "traits": "Topic-drifting, avoidant, and tangent-prone. He consistently redirects conversations away from difficult topics to avoid emotional discomfort.",
+      "sample_utterances": [
+        "Speaking of that, did I tell you what happened at work today?",
+        "This reminds me of something completely different...",
+        "You know what we should really be talking about instead?"
+      ],
+      "occupation_habits": "Sales manager who's skilled at redirecting difficult client conversations, uses same tactics in personal relationships.",
+      "hobbies": [
+        "Trivia nights",
+        "Current events reading"
+      ],
+      "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
+      "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
+    },
+    "patient_B": {
+      "name": "Victoria Hayes",
+      "role": "Patient B",
+      "gender": "Female",
+      "age": 28,
+      "traits": "Escalating, reactive, and confrontational. She quickly becomes emotionally charged and her language intensifies rapidly during conflicts.",
+      "sample_utterances": [
+        "You always do this! You never listen to me!",
+        "I'm so sick of having the same fight over and over!",
+        "This is exactly the kind of selfish behavior I'm talking about!"
+      ],
+      "occupation_habits": "Emergency room nurse who operates in high-stress environments, brings that intensity to personal conflicts.",
+      "hobbies": [
+        "High-intensity fitness",
+        "Competitive sports"
+      ],
+      "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
+      "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
+    },
+    "selected_trigger_type": "Semantic Analysis",
+    "conversation_structure": "LLM with Triggers"
+  },
+  "conversation_structure": "LLM with Triggers",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 8,
+      "speaker": "Patient A",
+      "dialogue": "You know, I think our biggest issue is that we both get stuck in these same old patterns.\nLike, I feel like whenever I try to talk to you about something that's bothering me, it always turns into a fight.\nI don't understand why it has to be that way.\nI get frustrated because it feels like you're not listening, and then I probably just shut down.\nI know that's not helpful, but it's like I don't know how else to deal with it.\nI want us to actually hear each other, but I don't know if we're even speaking the same language sometimes."
+    },
+    {
+      "turn": 9,
+      "speaker": "AI_Facilitator",
+      "dialogue": "It sounds like you're both feeling unheard and stuck in a cycle that's frustrating for both of you.\nLet's take a step back and try to focus on what each of you truly wants to express.\nPerhaps we can explore a way to communicate these feelings without it escalating into an argument.",
+      "intervention_for_triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention_score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 90,
+        "impact": 70,
+        "average": 52.5,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A is expressing frustration and a sense of being unheard, which indicates a minor friction in their communication (therapeutic need score of 40). An intervention at this point would not be very disruptive (flow disruption score of 10) as the patient has finished their thought. The timing is appropriate for an intervention (timing score of 90). An intervention could potentially help the couple improve their communication and understand each other better (impact score of 70)."
+      },
+      "intervention_type": "llm_scored"
+    },
+    {
+      "turn": 15,
+      "speaker": "Patient A",
+      "dialogue": "You know, it's tough because I really do want to listen and be there for you, but sometimes it feels like we're just talking past each other.\nI don’t know if it’s the way I say things or if I just pick the wrong moments, but it seems like it always spirals.\nI hate feeling like I'm walking on eggshells, but I also hate shutting down and closing off.\nMaybe we need some kind of code word or something to hit pause before things get heated.\nI just want us to find a way to talk without it turning into a battle every time."
+    },
+    {
+      "turn": 16,
+      "speaker": "AI_Facilitator",
+      "dialogue": "It sounds like you're both really committed to improving your communication and that's a great first step.\nI appreciate your idea of using a code word to pause when things feel heated—it's a practical tool to help you both feel safe and heard.\nLet's explore together how you might implement this in a way that feels comfortable for both of you.",
+      "intervention_for_triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention_score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 30,
+        "timing": 90,
+        "impact": 70,
+        "average": 50,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A is expressing feelings of frustration and difficulty in communication, which aligns with the 'Minor Friction' tier of the therapeutic need rubric. The flow disruption score is low as Patient A has finished his thought, making it a natural point for an intervention. The timing appropriateness is high as this is a good pause point. The impact potential is also high as an intervention could provide strategies for effective communication and conflict resolution, which could significantly improve the outcome of the conversation."
+      },
+      "intervention_type": "llm_scored"
+    }
+  ],
+  "trigger_log": [
+    {
+      "turn": 8,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention": "It sounds like you're both feeling unheard and stuck in a cycle that's frustrating for both of you. Let's take a step back and try to focus on what each of you truly wants to express. Perhaps we can explore a way to communicate these feelings without it escalating into an argument.",
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 90,
+        "impact": 70,
+        "average": 52.5,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A is expressing frustration and a sense of being unheard, which indicates a minor friction in their communication (therapeutic need score of 40). An intervention at this point would not be very disruptive (flow disruption score of 10) as the patient has finished their thought. The timing is appropriate for an intervention (timing score of 90). An intervention could potentially help the couple improve their communication and understand each other better (impact score of 70)."
+      },
+      "timestamp": "2026-01-15T22:55:47.853423"
+    },
+    {
+      "turn": 15,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "intervention": "It sounds like you're both really committed to improving your communication and that's a great first step. I appreciate your idea of using a code word to pause when things feel heated—it's a practical tool to help you both feel safe and heard. Let's explore together how you might implement this in a way that feels comfortable for both of you.",
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 30,
+        "timing": 90,
+        "impact": 70,
+        "average": 50,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A is expressing feelings of frustration and difficulty in communication, which aligns with the 'Minor Friction' tier of the therapeutic need rubric. The flow disruption score is low as Patient A has finished his thought, making it a natural point for an intervention. The timing appropriateness is high as this is a good pause point. The impact potential is also high as an intervention could provide strategies for effective communication and conflict resolution, which could significantly improve the outcome of the conversation."
+      },
+      "timestamp": "2026-01-15T22:56:24.185038"
+    }
+  ],
+  "intervention_scores": [
+    {
+      "turn": 8,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 40,
+        "timing": 90,
+        "impact": 70,
+        "average": 52.5,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A is expressing frustration and a sense of being unheard, which indicates a minor friction in their communication (therapeutic need score of 40). An intervention at this point would not be very disruptive (flow disruption score of 10) as the patient has finished their thought. The timing is appropriate for an intervention (timing score of 90). An intervention could potentially help the couple improve their communication and understand each other better (impact score of 70)."
+      },
+      "timestamp": "2026-01-15T22:55:45.789861"
+    },
+    {
+      "turn": 15,
+      "triggers": [
+        {
+          "type": "Semantic Analysis",
+          "subtype": "Emotional Escalation",
+          "value": 1,
+          "description": "High emotional intensity detected (keywords + caps + punctuation)"
+        }
+      ],
+      "score": {
+        "flow_disruption": 10,
+        "therapeutic_need": 30,
+        "timing": 90,
+        "impact": 70,
+        "average": 50,
+        "recommendation": "INTERVENE",
+        "reasoning": "Patient A is expressing feelings of frustration and difficulty in communication, which aligns with the 'Minor Friction' tier of the therapeutic need rubric. The flow disruption score is low as Patient A has finished his thought, making it a natural point for an intervention. The timing appropriateness is high as this is a good pause point. The impact potential is also high as an intervention could provide strategies for effective communication and conflict resolution, which could significantly improve the outcome of the conversation."
+      },
+      "timestamp": "2026-01-15T22:56:21.429737"
+    }
+  ],
+  "intervention_count": 2,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows interest in improving communication",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Doesn't express excitement",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Shows strength in admitting issues and seeking solutions",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Doesn't express enthusiasm",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Doesn't express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of the patterns and issues in communication",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Doesn't express feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows determination to improve the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Pays attention to the patterns and issues in communication",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively seeking solutions for better communication",
+      "score": 3
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses distress over communication issues",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Seems upset about the recurring patterns",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Doesn't express guilt",
+      "score": 1
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Doesn't express fear",
+      "score": 1
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Doesn't show hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Shows frustration over communication issues",
+      "score": 3
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Doesn't express shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Doesn't express nervousness",
+      "score": 1
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Doesn't express feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Doesn't express fear",
+      "score": 1
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Seems curious about learning new coping mechanisms",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Shows optimism about the future",
+      "score": 3
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Demonstrates resilience and strength in dealing with issues",
+      "score": 4
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Expresses eagerness in continuing the healing process",
+      "score": 3
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Displays pride in the progress made",
+      "score": 4
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Appears aware and responsive to the environment",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Shows motivation to make positive changes",
+      "score": 4
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Exhibits resolve to overcome challenges",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Pays close attention to the therapy process",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Engages actively in therapy sessions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Shows minimal signs of distress",
+      "score": 2
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Appears less upset than before",
+      "score": 2
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Expresses less guilt over past actions",
+      "score": 2
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Shows reduced fear about the future",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Displays minimal hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Shows less irritability",
+      "score": 2
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Expresses less shame about past actions",
+      "score": 2
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Appears less nervous about the therapy process",
+      "score": 2
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Shows less restlessness or nervousness",
+      "score": 2
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Exhibits less fear or anxiety",
+      "score": 2
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 2,
+      "after_score": 4,
+      "difference": 2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 5,
+      "after_score": 4,
+      "difference": -1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    }
+  ]
+}

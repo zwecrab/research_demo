@@ -1,0 +1,29 @@
+SESSION: COMMUNICATION
+Structure: LLM with Triggers
+======================================================================
+
+Patient A:
+You know, I think our biggest issue is that we both get stuck in these same old patterns.
+Like, I feel like whenever I try to talk to you about something that's bothering me, it always turns into a fight.
+I don't understand why it has to be that way.
+I get frustrated because it feels like you're not listening, and then I probably just shut down.
+I know that's not helpful, but it's like I don't know how else to deal with it.
+I want us to actually hear each other, but I don't know if we're even speaking the same language sometimes.
+
+AI_Facilitator:
+It sounds like you're both feeling unheard and stuck in a cycle that's frustrating for both of you.
+Let's take a step back and try to focus on what each of you truly wants to express.
+Perhaps we can explore a way to communicate these feelings without it escalating into an argument.
+
+Patient A:
+You know, it's tough because I really do want to listen and be there for you, but sometimes it feels like we're just talking past each other.
+I don’t know if it’s the way I say things or if I just pick the wrong moments, but it seems like it always spirals.
+I hate feeling like I'm walking on eggshells, but I also hate shutting down and closing off.
+Maybe we need some kind of code word or something to hit pause before things get heated.
+I just want us to find a way to talk without it turning into a battle every time.
+
+AI_Facilitator:
+It sounds like you're both really committed to improving your communication and that's a great first step.
+I appreciate your idea of using a code word to pause when things feel heated—it's a practical tool to help you both feel safe and heard.
+Let's explore together how you might implement this in a way that feels comfortable for both of you.
+

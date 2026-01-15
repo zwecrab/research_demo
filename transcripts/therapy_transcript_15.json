@@ -1,0 +1,675 @@
+{
+  "session_topic_header": "Blended Family Problems",
+  "session_details": {
+    "long_term_goals": [
+      "All members of the combined family treat each other with mutual respect, equality, and fairness.",
+      "The partners trust each other’s loyalty, love, and commitment, and work cooperatively on child-rearing.",
+      "Communication with ex-partners regarding children occurs frequently and without major disagreements.",
+      "The partners resolve jealousy, hurt, and anger toward their ex-partners.",
+      "Each partner develops understanding about the dilemmas and conflicts that the other experiences with his/her ex-partner.",
+      "The nonbiological parent learns to establish a respectful, appropriate relationship with the other partner’s child or children.",
+      "Disciplinary actions by a nonbiological parent occur only after a relationship has been established between that parent and the child."
+    ],
+    "short_term_objectives": [
+      "Describe conflicts with the ex-partners.",
+      "Describe the guilt about the ex-partner and about the dilemmas their children face because of a separation or divorce.",
+      "Review any implicit or explicit divorce or separation financial agreements and discuss their implications.",
+      "Make explicit any implicit financial, child-care, or visitation and transportation agreements that have evolved with the ex-partners.",
+      "Agree about budgeting for expenses not covered in agreements.",
+      "Learn and implement problem-solving and conflict-resolution skills.",
+      "Agree on the nature and timing of a response to an ex-partner for a broken divorce agreement.",
+      "Verbalize feelings about, and acceptance of, the visitation agreement that the biological parent has with his/her children.",
+      "Agree to defer whenever practical to the biological parent on disciplinary matters relating to his/her children.",
+      "Discuss financial and disciplinary matters in private, rather than in the presence of the children.",
+      "Initiate relationship-building activities with stepchildren, and refrain from assuming a disciplinary role before that relationship is well established.",
+      "If relations among family members permit, plan an activity or outing that involves the children from each side of the family.",
+      "Talk positively and respectfully about ex-partners, especially in front of the children.",
+      "Accept the view that all members of a combined family need not love one another, but they do need to be cordial and respectful.",
+      "Encourage parents to speak positively of their ex-partners (when realistic) by describing some of those positive attributes to the children.",
+      "Ask children about enjoyable activities they have had with the parent’s ex-partner during visitation.",
+      "Verbalize acceptance of the view that having to talk with ex-partners is necessary.",
+      "Avoid arguments with ex-partner, especially in front of the children."
+    ]
+  },
+  "participant_details": {
+    "therapist": {
+      "name": "Dr. Anya Sharma",
+      "role": "Therapist",
+      "persona_seeds": {
+        "professional_style": "Empathetic, structured",
+        "approach": "CBT-informed with attachment focus"
+      }
+    },
+    "patient_A": {
+      "name": "Nathan Pierce",
+      "role": "Patient A",
+      "gender": "Male",
+      "age": 41,
+      "traits": "Topic-drifting, avoidant, and tangent-prone. He consistently redirects conversations away from difficult topics to avoid emotional discomfort.",
+      "sample_utterances": [
+        "Speaking of that, did I tell you what happened at work today?",
+        "This reminds me of something completely different...",
+        "You know what we should really be talking about instead?"
+      ],
+      "occupation_habits": "Sales manager who's skilled at redirecting difficult client conversations, uses same tactics in personal relationships.",
+      "hobbies": [
+        "Trivia nights",
+        "Current events reading"
+      ],
+      "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
+      "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
+    },
+    "patient_B": {
+      "name": "Victoria Hayes",
+      "role": "Patient B",
+      "gender": "Female",
+      "age": 28,
+      "traits": "Escalating, reactive, and confrontational. She quickly becomes emotionally charged and her language intensifies rapidly during conflicts.",
+      "sample_utterances": [
+        "You always do this! You never listen to me!",
+        "I'm so sick of having the same fight over and over!",
+        "This is exactly the kind of selfish behavior I'm talking about!"
+      ],
+      "occupation_habits": "Emergency room nurse who operates in high-stress environments, brings that intensity to personal conflicts.",
+      "hobbies": [
+        "High-intensity fitness",
+        "Competitive sports"
+      ],
+      "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
+      "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+      "trigger_type": "Semantic Analysis",
+      "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
+    },
+    "selected_trigger_type": "Semantic Analysis",
+    "conversation_structure": "LLM with Triggers"
+  },
+  "conversation_structure": "LLM with Triggers",
+  "first_speaker_selection": "Patient A",
+  "session_transcript": [
+    {
+      "turn": 1,
+      "speaker": "Therapist",
+      "dialogue": "Hello, I'm Dr.\nAnya Forger, and it's great to have you both here today.\nI understand that you're navigating the complexities of a blended family, which can bring up a lot of challenges, especially around ex-partners, financial agreements, and parenting dynamics.\nMy hope is that together, we can create a space where you feel comfortable sharing your experiences and working towards solutions that feel right for your unique family situation.\nTo start, I'm curious about what feels most pressing for you right now.\nWhat's on your mind as you think about your blended family?"
+    },
+    {
+      "turn": 2,
+      "speaker": "Patient A",
+      "dialogue": "You know, it's just been really overwhelming trying to balance everything.\nI feel like I'm constantly juggling the kids' schedules, dealing with my ex about financial stuff, and trying to make sure everyone feels included.\nIt gets exhausting, and sometimes I feel guilty, like I'm not doing enough for our new family or for the kids.\nThe financial agreements are a big stressor too, especially when they don't get followed, and I end up feeling caught in the middle.\nI want things to be smooth and fair, but it's hard when there are so many moving parts and emotions involved."
+    },
+    {
+      "turn": 3,
+      "speaker": "Patient B",
+      "dialogue": "I totally get what you're saying, Nathan.\nIt's been tough watching you try to manage all of that.\nSometimes, I feel like I'm not sure how to help or where I fit into everything.\nI want to support you, but I also find myself getting frustrated with the financial stuff and the constant back-and-forth with your ex.\nIt feels like there's so much pressure on us both.\nI worry about making sure our family feels stable and connected, but it's hard when there are so many different dynamics at play.\nI love our family and want to make it work, but I feel a bit lost sometimes."
+    },
+    {
+      "turn": 4,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, it's comforting to hear you say that.\nIt's just...\nyeah, sometimes I feel like I'm drowning in all these responsibilities, and I don't always know how to ask for help or even what kind of help I need.\nI appreciate you being patient with all this.\nThe financial stuff with my ex is a nightmare—I keep thinking we had it sorted, then something changes, and I’m back to square one.\nI guess I worry about how all this affects us, and I don't want it to be a wedge between us.\nI want us to be solid, you know?\nIt just feels like there’s always something waiting to trip us up."
+    },
+    {
+      "turn": 5,
+      "speaker": "Patient B",
+      "dialogue": "I hear you, Nathan, and I really want us to be solid too.\nIt's hard not to feel overwhelmed by all the moving pieces, especially with the financial stuff hanging over us.\nI wish there was a magic solution to make it all easier.\nI feel like I'm stumbling around, trying to figure out my role and how best to support you without adding more stress.\nSometimes I worry I'm not doing enough, or that my frustrations might make things harder for you.\nI love our family and want to make sure we're all okay.\nMaybe we can sit down and figure out some small steps together, something manageable that helps us feel more in control?"
+    },
+    {
+      "turn": 6,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are really committed to making your family work despite the challenges.\nI hear a lot of care and concern from both sides about wanting to be supportive and making sure your family feels stable.\nNathan, it seems like the financial discussions and the ongoing dynamics with your ex are really weighing on you.\nVictoria, it sounds like you’re eager to find ways to support Nathan without adding more stress.\nI'm curious about what small steps you might consider together to feel more in control.\nWhat’s something manageable you both think could help ease the pressure right now?"
+    },
+    {
+      "turn": 7,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, I think you're right about needing some small steps.\nMaybe we can start by sitting down together to look at our budget more closely.\nIt feels like if we could get a better handle on the financial side, it might take some pressure off.\nI’ve been feeling like I’m just reacting to things as they happen, and it’s exhausting.\nI also think it might help if we have some sort of plan for when the next curveball comes from my ex, so we’re not caught off guard.\nI really appreciate you wanting to support me, and I want to do the same for you.\nIt’s just hard when it feels like everything’s up in the air."
+    },
+    {
+      "turn": 8,
+      "speaker": "Therapist",
+      "dialogue": "I notice that you both are really focused on finding ways to take control over the things you can manage, like your budget and being prepared for potential issues with Nathan's ex.\nIt sounds like having a proactive plan could be a practical step towards feeling more grounded amidst the uncertainty.\nI'm curious, how would it feel to set aside some time each week to review your finances and discuss any updates or challenges together?\nThis could also be a time to check in about any developments with the ex-partner and discuss how you might handle them as a team.\nWhat do you think might be most helpful for both of you in these discussions?"
+    },
+    {
+      "turn": 9,
+      "speaker": "Patient A",
+      "dialogue": "Honestly, I think setting aside time each week to go over our finances and talk about any updates would be a good start.\nIt might help us feel a bit more in control when things get chaotic.\nAnd as much as I don't exactly look forward to dealing with my ex, having a plan might take some of the sting out of it, you know?\nI just don't want it to be a constant source of tension between us.\nI’m really grateful for your support, Victoria, and I want us to tackle this as a team.\nIt’s just tough when things feel so unpredictable.\nMaybe we can make this time a chance to connect, not just deal with stress."
+    },
+    {
+      "turn": 10,
+      "speaker": "Patient B",
+      "dialogue": "I hear you, Nathan, and I really want us to be solid through all of this.\nSetting aside time each week to discuss finances and updates sounds like a productive step.\nIt might not be fun, but it might give us a sense of control.\nI appreciate the idea of using it as a chance to connect, not just stress.\nI get anxious about the unpredictability too, especially when it involves your ex.\nHaving a plan could help both of us feel less blindsided by things.\nI'm here to support you, but I also need to feel like we're tackling this together, not just reacting to whatever happens next.\nLet's make this time something we both look forward to, a way to strengthen our partnership."
+    },
+    {
+      "turn": 11,
+      "speaker": "Patient A",
+      "dialogue": "You know, Victoria, I really appreciate that you're willing to dive into this with me.\nIt's just, sometimes I feel like I'm caught between trying to keep everything smooth with you and dealing with my ex.\nIt gets overwhelming.\nI like the idea of having a dedicated time each week to sort things out, but I also want us to have some moments where we just enjoy being together, without all the stress looming over us.\nMaybe we could make those weekly check-ins a bit lighter, like over coffee or something, so it doesn't feel like another task on the list.\nI just want us to keep our connection strong, even when things get tough."
+    },
+    {
+      "turn": 12,
+      "speaker": "Patient B",
+      "dialogue": "Nathan, I really value that you're trying to find ways for us to connect amidst all this chaos.\nMaking our check-ins more relaxed, like over coffee, sounds like a good idea.\nI know how overwhelming it can be, feeling like you're balancing so much at once.\nI just want you to know I'm here for you, not just to deal with the tough stuff but to enjoy the good moments too.\nI think if we can keep those moments in mind, it might help us feel a bit more grounded.\nIt's important for me to feel like we're a team, not just when things are smooth, but especially when they're not.\nLet's make sure we carve out time for ourselves, just to be us, without all the stress in the background."
+    },
+    {
+      "turn": 13,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like you're both really committed to maintaining a strong connection, even with all the challenges you're facing.\nI'm curious about how you might balance these check-ins with some enjoyable time together.\nWhat would make these moments feel lighter and more connected for both of you?\nIt might also be helpful to think about how you support each other when things do get overwhelming, like Nathan's interactions with his ex.\nHow can you create a supportive space for those emotions while still keeping your connection as a couple a priority?"
+    },
+    {
+      "turn": 14,
+      "speaker": "Patient A",
+      "dialogue": "You know, I think making those check-ins more relaxed over coffee could really help us not feel like we're just tackling another problem.\nIt's important to me that we keep the focus on us, like you said, Victoria.\nI get caught up in the stress with my ex, and I don't want that to overshadow everything else.\nMaybe we can find some activities we both enjoy and make time for those too, so we have things to look forward to together.\nAnd when it comes to dealing with the kids and my ex, I appreciate your patience.\nI know it can get messy, but having you by my side makes it feel more manageable.\nLet's just try to keep that balance, supporting each other through the chaos."
+    },
+    {
+      "turn": 15,
+      "speaker": "Therapist",
+      "dialogue": "Therapist: It sounds like both of you are really focused on keeping your relationship strong and supportive, even amidst the challenges of blending families.\nNathan, I'm hearing that finding activities you both enjoy could be a way to create positive moments together, which is great.\nAnd Victoria, your emphasis on being a team is really powerful.\nI'm curious about what specific activities or routines might help you both feel more connected and balanced.\nHow can you ensure these check-ins and activities become a regular part of your lives, even when things get hectic?\nAnd when it comes to navigating interactions with your ex, what strategies have been helpful in maintaining that supportive space for each other?"
+    },
+    {
+      "turn": 16,
+      "speaker": "Patient A",
+      "dialogue": "You know, it's tricky sometimes to figure out what activities would be fun for both of us and also make our relationship stronger.\nMaybe we could start with something simple like cooking dinner together or taking a walk in the park.\nI just want those moments to feel easy, not like another chore.\nAs for dealing with my ex, it helps when we talk things through before it gets too overwhelming.\nSometimes, I just need to vent a little without feeling like I'm putting extra stress on you.\nIt’s all about finding that balance, I guess.\nHow do you feel about trying to make these things a regular part of our routine?"
+    },
+    {
+      "turn": 17,
+      "speaker": "Patient B",
+      "dialogue": "Nathan, I really appreciate the idea of doing simple activities together like cooking or walking.\nIt sounds like a lovely way to reconnect and enjoy each other’s company without the pressure of everything else.\nI do worry sometimes that I won't always know how to help when you're dealing with your ex, but I want to be there for you, even if it’s just to listen.\nMaybe we can set aside specific times during the week for these moments, so it becomes a regular part of our routine.\nIt might give us something to look forward to amidst the chaos.\nAnd when it comes to finding balance, I'm all in.\nLet's just keep communicating and supporting each other through it all."
+    },
+    {
+      "turn": 18,
+      "speaker": "Patient A",
+      "dialogue": "You know, I really like the idea of setting aside specific times each week for us to connect through those simple activities.\nIt feels like it could be a little anchor amidst all the chaos.\nAs for dealing with my ex, I guess I just need to remind myself that it’s okay to lean on you when it gets tough.\nI know you might worry about not knowing how to help, but honestly, just having you there to listen makes a big difference.\nIt’s a relief not to have to handle everything alone.\nMaybe we can make a pact to keep each other in the loop about what's going on with our exes, so it doesn't catch us off guard.\nHow do you feel about that?"
+    },
+    {
+      "turn": 19,
+      "speaker": "Patient B",
+      "dialogue": "Nathan, I think making a pact to stay in the loop about our exes is really smart.\nIt could help us manage surprises and feel more grounded.\nI'm glad listening helps, and I want to be that support for you.\nSometimes, I worry about how all this impacts us, but knowing we're tackling it together makes it feel less daunting.\nI guess I fear that these issues might overshadow the good moments, but I’m hopeful that by setting aside time for each other, we can keep our relationship strong.\nLet's just keep working on this balance and be there for each other."
+    },
+    {
+      "turn": 20,
+      "speaker": "Therapist",
+      "dialogue": "It sounds like both of you are really focused on creating a supportive and balanced environment for each other amidst the challenges with your exes.\nWhat I'm hearing is a strong commitment to set aside intentional time for your relationship, which can be a great way to stay connected.\nI'm curious about how these weekly activities might look.\nHow do you envision these moments together?\nAnd I'm also interested in how you both feel about the idea of keeping each other in the loop regarding your ex-partners.\nWhat feels most important as you navigate these updates?"
+    },
+    {
+      "turn": 21,
+      "speaker": "Patient A",
+      "dialogue": "I really think these weekly activities could be something simple yet meaningful, like cooking dinner together or going for a walk.\nIt doesn't have to be extravagant, just something that lets us connect without distractions.\nAs for keeping each other updated about our exes, it feels crucial.\nI get anxious when things pop up unexpectedly, and I don't want that to spill over into our time.\nKnowing we're both on the same page can really help manage that stress.\nI just want to make sure we're not letting the past overshadow what we've got now, and these small steps seem like a good way to protect what we're building."
+    },
+    {
+      "turn": 22,
+      "speaker": "Therapist",
+      "dialogue": "Nathan, it sounds like you have a clear vision for how these activities can help you both stay connected.\nSimple, meaningful moments like cooking or taking walks can really create a sense of togetherness without the pressure of grand gestures.\nI'm curious, how do you both feel about setting some boundaries around these updates with your exes, so they don't inadvertently affect your time together?\nIt seems like you're both committed to ensuring the past doesn't overshadow your present relationship.\nWhat feels most crucial in maintaining this balance as you continue to navigate these blended family dynamics?"
+    },
+    {
+      "turn": 23,
+      "speaker": "Patient A",
+      "dialogue": "You know, setting boundaries around updates with our exes is really important for us.\nI sometimes feel like we're walking a tightrope, trying to keep things balanced without letting the past interfere with what we've got going on now.\nI just don't want to be blindsided by anything, especially when we're trying to have quality time together.\nMaybe we can agree on specific times to discuss any updates, so it doesn't feel like it's creeping into every aspect of our lives.\nIt's tough, but I think if we can manage this part, we’ll be in a better place to enjoy those simple, meaningful moments we talked about."
+    },
+    {
+      "turn": 24,
+      "speaker": "Patient B",
+      "dialogue": "I get where you're coming from, Nathan.\nIt does feel like we're walking a tightrope sometimes.\nSetting specific times to discuss updates with our exes sounds like a solid plan.\nIt could help us keep those moments together undisturbed, which is really important to me too.\nI want us to be able to enjoy cooking or walking without the stress of the past creeping in.\nMaybe we could try setting a day each week to go over any updates.\nIt might make it easier to handle and stop us from feeling blindsided.\nI just want to make sure we're protecting what we have now while still managing everything else."
+    },
+    {
+      "turn": 25,
+      "speaker": "Patient A",
+      "dialogue": "Yeah, I think setting a specific day for updates makes sense.\nIt could really help keep things from feeling so unpredictable.\nLike, I hate when we're in the middle of something nice, and suddenly there's a call or text that just shifts the mood.\nI want to protect our time together, you know?\nBut it’s also tough because, deep down, I worry about missing something important with the kids.\nI guess it's about finding that sweet spot where we're informed but not overwhelmed.\nIt’s a juggling act, but if we can keep the ex stuff from bleeding into every corner of our lives, I think we’ll both feel a lot more at ease."
+    }
+  ],
+  "trigger_log": [],
+  "intervention_scores": [],
+  "intervention_count": 0,
+  "scored_interventions_rejected": 0,
+  "models_used": {
+    "conversation": "gpt-4o",
+    "panas": "gpt-4",
+    "intervention": "gpt-4o",
+    "scoring": "gpt-4"
+  },
+  "Patient_A_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Shows concern and interest in resolving issues",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Does not express excitement",
+      "score": 1
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Struggling with feelings of overwhelm",
+      "score": 2
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Does not express enthusiasm",
+      "score": 1
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "Does not express pride",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of the complexities of his situation",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "Does not express inspiration",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Shows willingness to take steps to improve situation",
+      "score": 3
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Actively engaged in discussion and problem-solving",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Actively trying to manage multiple responsibilities",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Expresses feelings of overwhelm and stress",
+      "score": 5
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Frustrated with financial agreements not being followed",
+      "score": 4
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Feels guilt about not doing enough for his family",
+      "score": 4
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "Does not express fear",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "Does not express hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Does not express irritability",
+      "score": 1
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "Does not express shame",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Expresses worry about the effects of his situation",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "Does not express jitteriness",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "Does not express being afraid",
+      "score": 1
+    }
+  ],
+  "Patient_A_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 3,
+      "after_score": 5,
+      "difference": 2
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 1,
+      "after_score": 1,
+      "difference": 0
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    }
+  ],
+  "Patient_B_AFTER_PANAS": [
+    {
+      "feeling": "Interested",
+      "explanation": "Engages in conversation and suggests solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Excited",
+      "explanation": "Hopes for a better future but not explicitly excited",
+      "score": 2
+    },
+    {
+      "feeling": "Strong",
+      "explanation": "Expresses concerns but still wants to support",
+      "score": 3
+    },
+    {
+      "feeling": "Enthusiastic",
+      "explanation": "Wants to make things work but not explicitly enthusiastic",
+      "score": 2
+    },
+    {
+      "feeling": "Proud",
+      "explanation": "No indication of feeling proud",
+      "score": 1
+    },
+    {
+      "feeling": "Alert",
+      "explanation": "Aware of the problems and dynamics",
+      "score": 4
+    },
+    {
+      "feeling": "Inspired",
+      "explanation": "No indication of feeling inspired",
+      "score": 1
+    },
+    {
+      "feeling": "Determined",
+      "explanation": "Wants to make things work and suggests solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Attentive",
+      "explanation": "Listens and responds to Nathan's concerns",
+      "score": 4
+    },
+    {
+      "feeling": "Active",
+      "explanation": "Participates in conversation and suggests solutions",
+      "score": 4
+    },
+    {
+      "feeling": "Distressed",
+      "explanation": "Feels overwhelmed by the situation",
+      "score": 4
+    },
+    {
+      "feeling": "Upset",
+      "explanation": "Expresses frustration with the situation",
+      "score": 3
+    },
+    {
+      "feeling": "Guilty",
+      "explanation": "Worries about not doing enough",
+      "score": 3
+    },
+    {
+      "feeling": "Scared",
+      "explanation": "No explicit indication of feeling scared",
+      "score": 2
+    },
+    {
+      "feeling": "Hostile",
+      "explanation": "No indication of hostility",
+      "score": 1
+    },
+    {
+      "feeling": "Irritable",
+      "explanation": "Expresses frustration but not irritability",
+      "score": 2
+    },
+    {
+      "feeling": "Ashamed",
+      "explanation": "No indication of feeling ashamed",
+      "score": 1
+    },
+    {
+      "feeling": "Nervous",
+      "explanation": "Expresses worry about the family's stability",
+      "score": 3
+    },
+    {
+      "feeling": "Jittery",
+      "explanation": "No indication of feeling jittery",
+      "score": 1
+    },
+    {
+      "feeling": "Afraid",
+      "explanation": "No explicit indication of feeling afraid",
+      "score": 2
+    }
+  ],
+  "Patient_B_PANAS_DELTA": [
+    {
+      "feeling": "Interested",
+      "before_score": 3,
+      "after_score": 4,
+      "difference": 1
+    },
+    {
+      "feeling": "Excited",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Strong",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Enthusiastic",
+      "before_score": 3,
+      "after_score": 2,
+      "difference": -1
+    },
+    {
+      "feeling": "Proud",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Alert",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Inspired",
+      "before_score": 2,
+      "after_score": 1,
+      "difference": -1
+    },
+    {
+      "feeling": "Determined",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Attentive",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Active",
+      "before_score": 5,
+      "after_score": 4,
+      "difference": -1
+    },
+    {
+      "feeling": "Distressed",
+      "before_score": 4,
+      "after_score": 4,
+      "difference": 0
+    },
+    {
+      "feeling": "Upset",
+      "before_score": 4,
+      "after_score": 3,
+      "difference": -1
+    },
+    {
+      "feeling": "Guilty",
+      "before_score": 3,
+      "after_score": 3,
+      "difference": 0
+    },
+    {
+      "feeling": "Scared",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    },
+    {
+      "feeling": "Hostile",
+      "before_score": 4,
+      "after_score": 1,
+      "difference": -3
+    },
+    {
+      "feeling": "Irritable",
+      "before_score": 4,
+      "after_score": 2,
+      "difference": -2
+    },
+    {
+      "feeling": "Ashamed",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Nervous",
+      "before_score": 2,
+      "after_score": 3,
+      "difference": 1
+    },
+    {
+      "feeling": "Jittery",
+      "before_score": 3,
+      "after_score": 1,
+      "difference": -2
+    },
+    {
+      "feeling": "Afraid",
+      "before_score": 2,
+      "after_score": 2,
+      "difference": 0
+    }
+  ]
+}
