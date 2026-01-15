@@ -61,7 +61,7 @@ Return ONLY valid JSON:
     "impact": W,
     "average": (X+Y+Z+W)/4,
     "recommendation": "INTERVENE" or "CONTINUE",
-    "reasoning": "Explain which SPECIFIC BEHAVIOR from the rubric matched the score."
+    "reasoning": "Explain which SPECIFIC BEHAVIOR from the rubric matched the score in brief 1-sentence explanation."
 }}
 
 CRITICAL:
