@@ -161,7 +161,14 @@ END
 | Therapeutic Need | 0-100 | Is there genuine distress? |
 | Timing | 0-100 | Is it a natural pause point? |
 | Impact | 0-100 | Will it help (USR framework)? |
-| **Average** | **0-100** | **Trigger threshold: ≥70** |
+| **Average** | **0-100** | **Trigger threshold: ≥40** |
+
+#### Therapeutic Need Rubric:
+- **0-20**: Healthy/Collaborative
+- **21-40**: Minor Friction
+- **41-60**: Rising Tension (Passive Aggression, etc.)
+- **61-80**: Explicit Distress (Hostility, Guilt)
+- **81-100**: Critical Breakdown (Safety Risk)
  
 ### Intervention Transparency
 - **Reasoning**: The system now provides an explicit explanation for *why* an intervention was triggered, referencing the specific scoring dimension and observed behavior.
@@ -373,8 +380,18 @@ Used for testing and validating the system without running a full session.
 ## 🎓 ACADEMIC GROUNDING
 
 ### ACL Research Integration
-- **FED Framework**: 4D intervention scoring reflects dialogue quality metrics
-- **USR Framework**: Impact Potential dimension measures user satisfaction
+The 4-factor scoring system is a **hybrid metric** synthesizing two established dialogue evaluation frameworks published at ACL:
+
+1.  **USR Framework (Impact & Flow)**
+    *   *Citation*: Mehri, S., & Eskenazi, M. (2020). **"USR: An Unsupervised and Reference Free Evaluation Metric for Dialog Generation."** *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL).*
+    *   *Application*: The **Impact Potential** and **Flow Disruption** dimensions are adapted from USR's "Naturalness" and "Overall Quality" metrics.
+
+2.  **FED Framework (Timing)**
+    *   *Citation*: Mehri, S., & Eskenazi, M. (2020). **"Unsupervised Evaluation of Interactive Dialog with DialoGPT."** *Proceedings of the 21st Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL).*
+    *   *Application*: The **Timing Appropriateness** dimension leverages FED's coherence and turn-taking quality measures to identify natural pause points.
+
+3.  **Clinical Domain Adaptation**
+    *   **Therapeutic Need**: This fourth dimension is a novel addition, weighing the *urgency* of intervention (clinical safety/distress) against the linguistic quality metrics above.
 
 ### Therapeutic Practice
 - **PANAS**: Validated 20-item emotion inventory (Watson & Clark, 1988)
