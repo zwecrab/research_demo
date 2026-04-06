@@ -3,12 +3,26 @@
 
 from openai import OpenAI
 import re
+import os
 from config import (
     PANAS_MODEL, PANAS_MAX_TOKENS, OPENAI_API_KEY,
-    PANAS_POSITIVE, PANAS_NEGATIVE
+    PANAS_POSITIVE, PANAS_NEGATIVE, PROMPTS_DIR
 )
 
 client = OpenAI(api_key=OPENAI_API_KEY)
+
+# ============================================================================
+# PROMPT LOADING
+# ============================================================================
+
+def load_prompt(filename):
+    """Load prompt from external file in prompts directory."""
+    prompt_path = os.path.join(PROMPTS_DIR, filename)
+    with open(prompt_path, 'r', encoding='utf-8') as f:
+        return f.read()
+
+# Load PANAS scoring prompt
+PANAS_PROMPT_TEMPLATE = load_prompt("panas_scoring_prompt.txt")
 
 def get_after_panas_scores(persona, transcript_text):
     """
@@ -25,54 +39,19 @@ def get_after_panas_scores(persona, transcript_text):
     persona_name = persona.get("name", "Patient")
     persona_desc = persona.get("description", "")
     
-    panas_prompt = f"""You are a clinical psychologist evaluating emotional state after therapy.
-
-PATIENT: {persona_name}
-PROFILE: {persona_desc}
-
-THEIR DIALOGUE (from therapy session):
-{transcript_text[:1500]}
-
-Rate this person on all 20 PANAS emotions (1-5 scale):
-
-POSITIVE (1-5):
-- Interested
-- Excited
-- Strong
-- Enthusiastic
-- Proud
-- Alert
-- Inspired
-- Determined
-- Attentive
-- Active
-
-NEGATIVE (1-5):
-- Distressed
-- Upset
-- Guilty
-- Scared
-- Hostile
-- Irritable
-- Ashamed
-- Nervous
-- Jittery
-- Afraid
-
-For EACH emotion, provide EXACTLY this format on a new line:
-emotion_name, brief_explanation, score_number
-
-Example:
-Interested, Shows genuine curiosity, 4
-Excited, Optimistic about future, 3
-
-CRITICAL: Use EXACT emotion names from the lists above. Provide ALL 20 emotions."""
+    # Format the PANAS prompt from template
+    transcript_truncated = transcript_text[-2000:] if len(transcript_text) > 2000 else transcript_text
+    panas_prompt = PANAS_PROMPT_TEMPLATE.format(
+        persona_name=persona_name,
+        persona_desc=persona_desc,
+        transcript_text=transcript_truncated
+    )
     
     try:
         response = client.chat.completions.create(
             model=PANAS_MODEL,
             messages=[{"role": "user", "content": panas_prompt}],
-            temperature=0.4,
+            temperature=0.1,
             max_tokens=PANAS_MAX_TOKENS
         )
         

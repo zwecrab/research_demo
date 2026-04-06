@@ -1,0 +1,88 @@
+
+======================================================================
+🤖 AI COUPLES THERAPY SIMULATION WITH ADAPTIVE INTERVENTION
+======================================================================
+📦 Loading assets...
+  ✅ Loaded 33 therapy domains
+  ✅ Loaded 20 personas
+  ✅ Loaded baseline PANAS for 20 personas
+  ✅ Loaded 3 agent prompts (therapist, patient A, patient B)
+
+======================================================================
+CONFIGURATION STAGE
+======================================================================
+
+======================================================================
+SELECT SESSION TOPIC
+======================================================================
+ 1: ALCOHOL ABUSE
+ 2: ANGER
+ 3: ANXIETY
+ 4: BLAME
+ 5: Blended Family Problems
+ 6: COMMUNICATION
+ 7: Dependency
+ 8: DEPRESSION DUE TO RELATIONSHIP PROBLEMS
+ 9: DEPRESSION INDEPENDENT OF RELATIONSHIP PROBLEMS
+ 10: Disillusionment with Relationship
+ 11: EATING DISORDERS
+ 12: Financial Conflict
+ 13: INFIDELITY
+ 14: Internet Sexual Use
+ 15: INTOLERANCE
+ 16: Jealousy
+ 17: Job Stress
+ 18: LIFE-CHANGING EVENTS
+ 19: LOSS OF LOVE/AFFECTION
+ 20: Midlife Transition Problems
+ 21: ONLY ONE PARTNER WILLING TO ATTEND THERAPY
+ 22: Parenting Conflicts—Adolescents
+ 23: Parenting Conflicts—Children
+ 24: PERSONALITY DIFFERENCES
+ 25: PSYCHOLOGICAL ABUSE
+ 26: Recreational Activities Dispute
+ 27: RELIGIOUS/SPIRITUALITY DIFFERENCES
+ 28: RETIREMENT
+ 29: Separation and Divorce
+ 30: Sexual Abuse
+ 31: SEXUAL DYSFUNCTION
+ 32: Transition to Parenthood Strains
+ 33: Work/Home Role Strain
+
+Enter number: 
+======================================================================
+SELECT TEMPERATURE
+======================================================================
+Temperature controls response randomness:
+ 0.0  = Deterministic (same response every time)
+ 0.5  = Balanced
+ 1.0  = Maximum creativity (very varied)
+
+Enter temperature (0.0-1.0): 
+======================================================================
+SELECT CONVERSATION STRUCTURE
+======================================================================
+ 1: Sequential
+    → Fixed order: Therapist → Patient A → Patient B (cycle)
+ 2: LLM Only
+    → AI chooses speaker for balance (no intervention triggers)
+ 3: LLM with Triggers
+    → AI chooses speaker + detects triggers + intervenes
+
+Enter number: 
+======================================================================
+SELECT TRIGGER TYPE
+======================================================================
+ 1: Direct Intervention Request
+    → Patient directly asks for help (keywords)
+ 2: Emotional Escalation
+Traceback (most recent call last):
+  File "D:\DSAI\MSC\testing\testing\pdf\demo\main.py", line 483, in <module>
+    main()
+  File "D:\DSAI\MSC\testing\testing\pdf\demo\main.py", line 366, in main
+    selected_trigger = select_trigger_type()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\DSAI\MSC\testing\testing\pdf\demo\user_interface.py", line 86, in select_trigger_type
+    print(f"    → {trigger_desc[ttype]}")
+                   ~~~~~~~~~~~~^^^^^^^
+KeyError: 'Emotional Escalation'

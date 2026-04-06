@@ -1,6 +1,7 @@
 # main.py
 # Main orchestrator - calls functions from all modules to run the simulation
 
+import os
 import random
 import time
 from datetime import datetime
@@ -10,18 +11,16 @@ from config import SESSION_MIN_TURNS, SESSION_MAX_TURNS
 from data_loader import load_all_assets
 from user_interface import (
     select_session_topic, select_temperature, select_conversation_structure,
-    select_trigger_type, select_first_speaker, display_session_configuration
+    select_first_speaker, display_session_configuration
 )
 from session_setup import (
     setup_session_parameters, initialize_session_state, log_session_start
 )
 from conversation_engine import (
-    generate_agent_turn, sequential_speaker_selection, intelligent_speaker_selection
+    generate_agent_turn, sequential_speaker_selection,
+    decide_next_speaker, extract_therapist_addressee
 )
-from trigger_system import detect_triggers
-from intervention_system import (
-    calculate_intervention_score, generate_intervention, should_intervene
-)
+from emotion_tracker import EmotionTracker
 from panas_analyzer import (
     get_after_panas_scores, parse_panas_output, compute_panas_delta,
     summarize_panas_changes
@@ -32,7 +31,9 @@ from output_manager import (
 )
 
 def run_session_loop(output_json, participants, discussion_notes, conversation_structure,
-                    first_speaker, session_temperature, prompts, baseline_panas):
+                    first_speaker, session_temperature, prompts, baseline_panas, max_turns_override=None,
+                    turn_callback=None, enable_progress=False, therapist_mode='standard',
+                    therapist_model=None):
     """
     Main simulation loop - runs conversation turns until completion.
     
@@ -45,14 +46,45 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
         session_temperature: Model temperature
         prompts: System prompts for agents
         baseline_panas: Pre-computed baseline PANAS scores
+        max_turns_override: Optional integer to force specific number of turns
     
     Returns:
         Updated output_json with conversation data
     """
     conversation_history = []
-    max_turns = random.randint(SESSION_MIN_TURNS, SESSION_MAX_TURNS)
+
+    if max_turns_override:
+        max_turns = int(max_turns_override)
+    else:
+        max_turns = random.randint(SESSION_MIN_TURNS, SESSION_MAX_TURNS)
+
+    # Load session arc template once if progress is enabled
+    arc_template = None
+    if enable_progress:
+        arc_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts", "session_arc_prompt.txt")
+        try:
+            with open(arc_file, 'r', encoding='utf-8') as f:
+                arc_template = f.read()
+            print("📈 Session progress arc: ENABLED")
+        except FileNotFoundError:
+            print(f"⚠️  session_arc_prompt.txt not found — progress arc disabled.")
+
     current_turn_number = 1
     current_speaker = "Therapist"  # Always start with therapist
+    emotion_tracker = EmotionTracker()
+
+    therapist_last_addressed = None  # "Patient A", "Patient B", or None
+    therapist_last_dialogue = None   # raw therapist utterance for injection
+    current_is_silent = False        # whether the current speaker chose silence
+    last_silent_speaker = None       # prevents the same patient from going silent twice in a row
+
+    # Resolve first_speaker to clean "Patient A" or "Patient B" for sequential cycle
+    if first_speaker == "Patient B First":
+        resolved_first_speaker = "Patient B"
+    elif first_speaker == "Patient A First":
+        resolved_first_speaker = "Patient A"
+    else:
+        resolved_first_speaker = first_speaker if first_speaker in ["Patient A", "Patient B"] else "Patient A"
     
     session_topic_header = output_json["session_topic_header"]
     
@@ -67,6 +99,31 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
     # ========================================================================
     
     while current_turn_number <= max_turns:
+        # ====================================================================
+        # CONSECUTIVE SILENCE GUARD
+        # Same patient cannot be silent two turns in a row.
+        # If the LLM chose that, skip the turn without consuming the slot.
+        # ====================================================================
+        if current_is_silent and current_speaker == last_silent_speaker:
+            print(f"⏭️  {current_speaker} already silent last turn — skipping, re-selecting.")
+            if conversation_structure.strip().lower() != "sequential":
+                next_speaker, is_silent = decide_next_speaker(
+                    conversation_history,
+                    participants['patient_A']['name'],
+                    participants['patient_B']['name']
+                )
+                # Fallback: prevent infinite loop if LLM insists on same silent patient
+                if is_silent and next_speaker == last_silent_speaker:
+                    is_silent = False
+                current_speaker = next_speaker
+                current_is_silent = is_silent
+            else:
+                current_speaker = sequential_speaker_selection(
+                    current_turn_number, first_speaker=resolved_first_speaker
+                )
+                current_is_silent = False
+            continue  # restart loop — turn_number NOT incremented
+
         print(f"\n--- Turn {current_turn_number} of {max_turns} ---")
         
         full_history_str = "\n".join(conversation_history)
@@ -90,47 +147,88 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
         
         if current_speaker == "Therapist":
             print("🤔 Therapist is thinking...")
+            therapist_prompt = prompts['therapist_individual_focus'] if therapist_mode == 'individual_focus' else prompts['therapist']
             dialogue = generate_agent_turn(
-                prompts['therapist'],
-                participants['therapist'].get('persona_seeds', {}),
+                therapist_prompt,
+                participants['therapist'],
                 session_topic_header,
                 discussion_notes,
                 full_history_str,
                 last_responses,
-                session_temperature
+                session_temperature,
+                turn_number=current_turn_number,
+                therapist_model=therapist_model
             )
             speaker_name_for_history = "Therapist"
-        
+            # Track which patient the therapist directly addressed (if any)
+            therapist_last_addressed = extract_therapist_addressee(
+                dialogue,
+                participants['patient_A']['name'],
+                participants['patient_B']['name']
+            )
+            therapist_last_dialogue = dialogue
+
         elif current_speaker == "Patient A":
-            print(f"🤔 Patient A ({participants['patient_A']['name']}) is thinking...")
-            dialogue = generate_agent_turn(
-                prompts['patient_a'],
-                participants['patient_A'],
-                session_topic_header,
-                discussion_notes,
-                full_history_str,
-                last_responses,
-                session_temperature
-            )
+            if current_is_silent:
+                dialogue = "*(silence)*"
+                print(f"🤫 Patient A ({participants['patient_A']['name']}) stays silent.")
+            else:
+                print(f"🤔 Patient A ({participants['patient_A']['name']}) is thinking...")
+                patient_a_prompt = prompts['patient_a']
+                if arc_template:
+                    progress_pct = round((current_turn_number / max_turns) * 100)
+                    patient_a_prompt = patient_a_prompt + "\n\n" + arc_template.replace("[PROGRESS_PCT]", str(progress_pct))
+                therapist_q = therapist_last_dialogue if therapist_last_addressed == "Patient A" else None
+                dialogue = generate_agent_turn(
+                    patient_a_prompt,
+                    participants['patient_A'],
+                    session_topic_header,
+                    discussion_notes,
+                    full_history_str,
+                    last_responses,
+                    session_temperature,
+                    turn_number=current_turn_number,
+                    therapist_question=therapist_q
+                )
             speaker_name_for_history = f"Patient A ({participants['patient_A']['name']})"
-        
+            therapist_last_addressed = None
+            therapist_last_dialogue = None
+
         elif current_speaker == "Patient B":
-            print(f"🤔 Patient B ({participants['patient_B']['name']}) is thinking...")
-            dialogue = generate_agent_turn(
-                prompts['patient_b'],
-                participants['patient_B'],
-                session_topic_header,
-                discussion_notes,
-                full_history_str,
-                last_responses,
-                session_temperature
-            )
+            if current_is_silent:
+                dialogue = "*(silence)*"
+                print(f"🤫 Patient B ({participants['patient_B']['name']}) stays silent.")
+            else:
+                print(f"🤔 Patient B ({participants['patient_B']['name']}) is thinking...")
+                patient_b_prompt = prompts['patient_b']
+                if arc_template:
+                    progress_pct = round((current_turn_number / max_turns) * 100)
+                    patient_b_prompt = patient_b_prompt + "\n\n" + arc_template.replace("[PROGRESS_PCT]", str(progress_pct))
+                therapist_q = therapist_last_dialogue if therapist_last_addressed == "Patient B" else None
+                dialogue = generate_agent_turn(
+                    patient_b_prompt,
+                    participants['patient_B'],
+                    session_topic_header,
+                    discussion_notes,
+                    full_history_str,
+                    last_responses,
+                    session_temperature,
+                    turn_number=current_turn_number,
+                    therapist_question=therapist_q
+                )
             speaker_name_for_history = f"Patient B ({participants['patient_B']['name']})"
+            therapist_last_addressed = None
+            therapist_last_dialogue = None
         
+        # Update consecutive-silence tracker
+        last_silent_speaker = current_speaker if dialogue == "*(silence)*" else None
+
         # ====================================================================
         # STEP 1.5: LOG TURN
         # ====================================================================
         
+        emotion_label = None
+        trajectory = None
         output_json["session_transcript"].append({
             "turn": current_turn_number,
             "speaker": current_speaker,
@@ -144,101 +242,29 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
         print(f"{speaker_name_for_history}: {dialogue[:80]}..." if len(dialogue) > 80 else f"{speaker_name_for_history}: {dialogue}")
 
         # ====================================================================
-        # STEP 2: TRIGGER DETECTION (if applicable)
+        # STEP 2: TRIGGER DETECTION (REMOVED - LLM ONLY MODE)
         # ====================================================================
         
         intervention_occurred = False
         next_speaker_override = None
         
-        if conversation_structure == "LLM with Triggers" and current_speaker != "Therapist":
-            triggers_detected = detect_triggers(
-                conversation_history,
-                current_speaker,
-                dialogue,
-                participants['selected_trigger_type']
-            )
-            
-            if triggers_detected:
-                print(f"🔍 Triggers detected: {[t['subtype'] for t in triggers_detected]}")
-                
-                # ============================================================
-                # STEP 3: INTERVENTION SCORING
-                # ============================================================
-                
-                intervention_score = calculate_intervention_score(
-                    full_history_str,
-                    current_speaker,
-                    dialogue,
-                    participants
-                )
-                
-                output_json["intervention_scores"].append({
-                    "turn": current_turn_number,
-                    "triggers": triggers_detected,
-                    "score": intervention_score,
-                    "timestamp": datetime.now().isoformat()
-                })
-                
-                print(f"📊 Score: {intervention_score.get('average', 0):.1f}/100 - {intervention_score.get('recommendation', '?')}")
-                print(f"💭 Reasoning: {intervention_score.get('reasoning', 'N/A')}")
-                
-                # Update history string for intervention context (re-generating in case it changed, though it shouldn't have)
-                full_history_str = "\n".join(conversation_history)
-
-                # ============================================================
-                # STEP 4: CONDITIONAL INTERVENTION
-                # ============================================================
-                
-                if should_intervene(intervention_score):
-                    print("✅ INTERVENING...")
-                    
-                    intervention = generate_intervention(
-                        triggers_detected,
-                        full_history_str,
-                        participants,
-                        intervention_score
-                    )
-                    
-                    if intervention:
-                        # Add intervention turn to transcript
-                        current_turn_number += 1
-                        
-                        output_json["session_transcript"].append({
-                            "turn": current_turn_number,
-                            "speaker": "AI_Facilitator",
-                            "dialogue": intervention,
-                            "intervention_for_triggers": triggers_detected,
-                            "intervention_score": intervention_score,
-                            "intervention_type": "llm_scored"
-                        })
-                        
-                        facilitator_entry = f"AI Facilitator: {intervention}"
-                        conversation_history.append(facilitator_entry)
-                        
-                        print(f"🤖 AI Facilitator: {intervention}")
-                        
-                        # Log the intervention
-                        output_json["trigger_log"].append({
-                            "turn": current_turn_number - 1, # Referencing the trigger turn
-                            "triggers": triggers_detected,
-                            "intervention": intervention,
-                            "score": intervention_score,
-                            "timestamp": datetime.now().isoformat()
-                        })
-                        
-                        output_json["intervention_count"] += 1
-                        intervention_occurred = True
-                else:
-                    print("❌ Score below threshold - No intervention")
-                    output_json["scored_interventions_rejected"] += 1
+        # Fire turn_callback AFTER emotion tracking so labels are available
+        if turn_callback:
+            turn_callback(speaker_name_for_history, dialogue,
+                          emotion_label=emotion_label, trajectory=trajectory)
         
         # ====================================================================
         # STEP 6: FIRST SPEAKER OVERRIDE (Turn 1 → Turn 2 transition)
         # ====================================================================
         
         if current_turn_number == 1 and first_speaker != "Random":
-            next_speaker_override = first_speaker
-            print(f"🎯 First speaker override: {first_speaker}")
+            if first_speaker == "Patient A First":
+                next_speaker_override = "Patient A"
+            elif first_speaker == "Patient B First":
+                next_speaker_override = "Patient B"
+            else:
+                next_speaker_override = first_speaker
+            print(f"🎯 First speaker override: {next_speaker_override}")
         else:
             next_speaker_override = None
         
@@ -248,14 +274,24 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
         
         if next_speaker_override:
             next_speaker = next_speaker_override
-        elif conversation_structure == "Sequential":
-            next_speaker = sequential_speaker_selection(current_turn_number + 1)
-        else:  # LLM Only or LLM with Triggers
-            next_speaker = intelligent_speaker_selection(
+            current_is_silent = False
+        elif conversation_structure.strip().lower() == "sequential":
+            next_speaker = sequential_speaker_selection(current_turn_number + 1, first_speaker=resolved_first_speaker)
+            current_is_silent = False
+        else:
+            # LLM-based natural turn selection (respects therapist addressee + allows silence)
+            next_speaker, is_silent = decide_next_speaker(
                 conversation_history,
-                current_speaker,
-                intervention_occurred
+                participants['patient_A']['name'],
+                participants['patient_B']['name'],
+                therapist_addressed=therapist_last_addressed
             )
+            # Hard enforcement: LLM must not return the same speaker twice in a row
+            if next_speaker == current_speaker and not is_silent:
+                candidates = [s for s in ["Therapist", "Patient A", "Patient B"] if s != current_speaker]
+                next_speaker = candidates[0]
+                print(f"⚠️  Same-speaker repeat blocked — forced to {next_speaker}")
+            current_is_silent = is_silent
         
         current_speaker = next_speaker
         current_turn_number += 1
@@ -359,26 +395,26 @@ def main():
     session_temperature = select_temperature()
     conversation_structure = select_conversation_structure()
     
-    # Trigger type selection (only for LLM with Triggers)
-    if conversation_structure == "LLM with Triggers":
-        selected_trigger = select_trigger_type()
-    else:
-        selected_trigger = "No Trigger"
-    
-    # First speaker selection (NEW FEATURE)
+    # First speaker selection
     first_speaker = select_first_speaker()
+
+    # Progress arc toggle
+    arc_choice = input("\nEnable session progress arc? (y/n, default n): ").strip().lower()
+    enable_progress = arc_choice == "y"
+
+    # Therapist mode toggle
+    print("\nTherapist mode:")
+    print("  1 = Standard (addresses both partners per turn)")
+    print("  2 = Individual Focus (addresses one partner per turn)")
+    mode_choice = input("Select (default 1): ").strip()
+    therapist_mode = 'individual_focus' if mode_choice == '2' else 'standard'
     
     # ------------------------------------------------------------------------
     # Manual Persona Selection
     # ------------------------------------------------------------------------
-    from session_setup import filter_personas_by_trigger
     from user_interface import select_specific_persona
 
-    # Get available personas based on trigger filter
-    if conversation_structure == "LLM with Triggers":
-        valid_personas = filter_personas_by_trigger(assets["personas"], selected_trigger)
-    else:
-        valid_personas = assets["personas"]
+    valid_personas = assets["personas"]
 
     # Select Patient A
     selected_patient_a = select_specific_persona(valid_personas, "Patient A")
@@ -391,7 +427,6 @@ def main():
         "topic": session_topic_data["header"],
         "temperature": session_temperature,
         "structure": conversation_structure,
-        "trigger_type": selected_trigger,
         "first_speaker": first_speaker,
         "patient_a": selected_patient_a,
         "patient_b": selected_patient_b
@@ -409,7 +444,6 @@ def main():
     header, details, participants, discussion_notes = setup_session_parameters(
         session_topic_data,
         assets["personas"],
-        selected_trigger,
         conversation_structure,
         patient_a_name=selected_patient_a,
         patient_b_name=selected_patient_b
@@ -438,7 +472,9 @@ def main():
         first_speaker,
         session_temperature,
         assets["prompts"],
-        assets["baseline_panas"]
+        assets["baseline_panas"],
+        enable_progress=enable_progress,
+        therapist_mode=therapist_mode
     )
     
     # ========================================================================
@@ -450,6 +486,11 @@ def main():
         assets["baseline_panas"],
         conversation_history
     )
+    
+    # Evaluate Therapist
+    from evaluate_therapist import evaluate_therapeutic_alliance
+    alliance_scores = evaluate_therapeutic_alliance(output_json.get('session_transcript', []))
+    output_json['therapist_alliance'] = alliance_scores
     
     # ========================================================================
     # STAGE 6: OUTPUT & SUMMARY

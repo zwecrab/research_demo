@@ -4,28 +4,8 @@
 import random
 from config import PANAS_POSITIVE, PANAS_NEGATIVE
 
-def filter_personas_by_trigger(personas, selected_trigger):
-    """
-    Filter personas by their assigned trigger type.
-    
-    Args:
-        personas: dict of all personas
-        selected_trigger: selected trigger type or "All Triggers"
-    
-    Returns:
-        dict of filtered personas
-    """
-    if selected_trigger == "All Triggers":
-        return personas
-    
-    filtered = {}
-    for name, persona in personas.items():
-        if persona.get("trigger_type") == selected_trigger:
-            filtered[name] = persona
-    
-    return filtered
 
-def setup_session_parameters(topic_data, all_personas, selected_trigger, conversation_structure,
+def setup_session_parameters(topic_data, all_personas, conversation_structure,
                              patient_a_name=None, patient_b_name=None):
     """
     Setup session: select participants, objectives, etc.
@@ -33,7 +13,6 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
     Args:
         topic_data: Selected therapy domain data
         all_personas: All available personas
-        selected_trigger: Selected trigger type
         conversation_structure: Conversation structure type
         patient_a_name: Specific name for Patient A (optional)
         patient_b_name: Specific name for Patient B (optional)
@@ -48,15 +27,11 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
         "short_term_objectives": [s.get("short_term_objective") for s in topic_data.get("sessions", []) if s.get("short_term_objective")]
     }
     
-    # Filter personas by trigger (if LLM+Triggers)
-    if conversation_structure == "LLM with Triggers":
-        available_personas = filter_personas_by_trigger(all_personas, selected_trigger)
-    else:
-        available_personas = all_personas
+    available_personas = all_personas
     
-    # Select therapist (always Dr. Anya Sharma)
+    # Select therapist (always Dr. Anya Forger)
     therapist = {
-        "name": "Dr. Anya Sharma",
+        "name": "Dr. Anya Forger",
         "role": "Therapist",
         "persona_seeds": {
             "professional_style": "Empathetic, structured",
@@ -65,25 +40,22 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
     }
     
     # Select two patients from filtered personas
-    if len(available_personas) < 2:
+    if len(available_personas) < 2 and not (patient_a_name and patient_b_name):
         raise ValueError(f"Not enough personas ({len(available_personas)}) for trigger type '{selected_trigger}'")
     
-    # Use selected names or pick random ones
-    if not patient_a_name:
+    # Validation / Selection
+    if patient_a_name:
+        if patient_a_name not in all_personas:
+             raise ValueError(f"Patient A '{patient_a_name}' not found in personas.")
+        # If specifically requested, use them even if filtered out
+    else:
         patient_a_name = random.choice(list(available_personas.keys()))
         
-    if not patient_b_name:
-        # Pick random distinct from A
-        remaining = [p for p in available_personas.keys() if p != patient_a_name]
-        patient_b_name = random.choice(remaining)
-        
-    # Validation
-    if patient_a_name not in available_personas:
-        print(f"⚠️ Warning: {patient_a_name} invalid/filtered out. Picking random.")
-        patient_a_name = random.choice(list(available_personas.keys()))
-        
-    if patient_b_name not in available_personas or patient_a_name == patient_b_name:
-         # Ensure B is valid and distinct
+    if patient_b_name:
+        if patient_b_name not in all_personas:
+             raise ValueError(f"Patient B '{patient_b_name}' not found in personas.")
+    else:
+        # Pick random distinct from A from AVAILABLE list
         remaining = [p for p in available_personas.keys() if p != patient_a_name]
         if not remaining:
              raise ValueError("Not enough distinct personas available")
@@ -94,20 +66,19 @@ def setup_session_parameters(topic_data, all_personas, selected_trigger, convers
     patient_a = {
         "name": patient_a_name,
         "role": "Patient A",
-        **available_personas[patient_a_name]
+        **all_personas[patient_a_name]
     }
     
     patient_b = {
         "name": patient_b_name,
         "role": "Patient B",
-        **available_personas[patient_b_name]
+        **all_personas[patient_b_name]
     }
     
     participants = {
         "therapist": therapist,
         "patient_A": patient_a,
         "patient_B": patient_b,
-        "selected_trigger_type": selected_trigger,
         "conversation_structure": conversation_structure
     }
     

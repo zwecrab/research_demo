@@ -2,7 +2,9 @@ import json
 from pathlib import Path
 from config import (
     THERAPY_PLANS_FILE, PERSONAS_FILE, PERSONAS_PANAS_FILE,
-    THERAPIST_PROMPT_FILE, PATIENT_A_PROMPT_FILE, PATIENT_B_PROMPT_FILE
+    THERAPIST_PROMPT_FILE, THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE,
+    PATIENT_A_PROMPT_FILE, PATIENT_B_PROMPT_FILE,
+    THERAPIST_INTERVENTION_PROMPT_FILE
 )
 
 def load_json(filepath):
@@ -89,15 +91,19 @@ def load_baseline_panas():
     return baseline
 
 def load_prompts():
-    """Load system prompts for all three agents."""
+    """Load system prompts for all agents and decision points."""
     therapist_prompt = load_txt(THERAPIST_PROMPT_FILE)
+    therapist_individual_focus_prompt = load_txt(THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE)
     patient_a_prompt = load_txt(PATIENT_A_PROMPT_FILE)
     patient_b_prompt = load_txt(PATIENT_B_PROMPT_FILE)
-    
+    therapist_intervention_decision = load_txt(THERAPIST_INTERVENTION_PROMPT_FILE)
+
     return {
         "therapist": therapist_prompt,
+        "therapist_individual_focus": therapist_individual_focus_prompt,
         "patient_a": patient_a_prompt,
-        "patient_b": patient_b_prompt
+        "patient_b": patient_b_prompt,
+        "therapist_intervention": therapist_intervention_decision
     }
 
 def load_all_assets():
@@ -121,7 +127,7 @@ def load_all_assets():
         print(f"  ✅ Loaded baseline PANAS for {len(baseline_panas)} personas")
         
         prompts = load_prompts()
-        print(f"  ✅ Loaded 3 agent prompts (therapist, patient A, patient B)")
+        print(f"  ✅ Loaded 4 agent prompts (therapist, therapist individual focus, patient A, patient B)")
         
         return {
             "therapy_plans": therapy_plans,

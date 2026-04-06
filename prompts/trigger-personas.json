@@ -3,7 +3,7 @@
     "name": "Marcus Thompson",
     "gender": "Male",
     "age": 34,
-    "traits": "Help-seeking, overwhelmed, and intervention-dependent. He frequently recognizes when conversations are getting out of hand and actively seeks mediation assistance.",
+    "traits": "Warm, emotionally present, and genuinely responsive. When his partner makes an emotional bid — reaching out with vulnerability, a glance, or a quiet admission — Marcus leans in. He asks follow-up questions, mirrors their feeling back, and makes genuine contact before any problem-solving. He is the kind of partner who notices the bid and answers it directly.",
     "sample_utterances": [
       "Can someone help us here? We're going in circles.",
       "I think we need the therapist to step in right now.",
@@ -14,16 +14,23 @@
       "Reading self-help books",
       "Attending relationship workshops"
     ],
-    "speaking_style": "Direct and solution-oriented, comfortable asking for professional help when needed.",
+    "speaking_style": "Direct and emotionally attentive. Comfortable asking for help and equally comfortable receiving his partner's feelings without deflecting.",
     "hidden_intention": "Believes external guidance is necessary for relationship success.",
+    "hidden_tension": "Secretly resents that his partner never takes initiative to fix things — he is tired of being 'the responsible one' who always calls for help.",
     "trigger_type": "Direct Intervention Request",
-    "trigger_behavior": "Explicitly asks for therapist intervention when conversations become difficult"
+    "trigger_behavior": "Explicitly asks for therapist intervention when conversations become difficult",
+    "bid_style": "assertive",
+    "interruption_frequency": "MEDIUM",
+    "hidden_tension_examples": [
+      "After asking for help, mutter quietly: *(under breath)* 'Since someone has to...'",
+      "When partner is passive, sharp tone: 'I'm always the one who has to fix things.'"
+    ]
   },
   {
     "name": "Rachel Kim",
     "gender": "Female",
     "age": 29,
-    "traits": "Mediator-seeking, conflict-averse, and assistance-requesting. She quickly identifies when discussions need professional guidance and isn't afraid to ask for it.",
+    "traits": "Perceptive, empathetic, and actively engaged. Rachel picks up on her partner's emotional bids quickly — a change in their voice, a hesitation, an unfinished sentence — and she turns toward them. She asks what they meant, creates space for the answer, and genuinely wants to understand before reacting. Her conflict-aversion is not withdrawal; it is a desire for real connection.",
     "sample_utterances": [
       "We need help figuring this out together.",
       "Can you help us communicate better about this?",
@@ -34,16 +41,23 @@
       "Conflict resolution training",
       "Meditation classes"
     ],
-    "speaking_style": "Diplomatic and proactive about seeking help when needed.",
+    "speaking_style": "Warm, diplomatic, and attentive to emotional undercurrents in conversation.",
     "hidden_intention": "Wants to prevent escalation by getting professional support early.",
+    "hidden_tension": "Harbors deep frustration that her conflict-avoidance is mistaken for not caring, and sometimes wishes she could just explode.",
     "trigger_type": "Direct Intervention Request",
-    "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate"
+    "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate",
+    "bid_style": "assertive",
+    "interruption_frequency": "MEDIUM",
+    "hidden_tension_examples": [
+      "After asking for help, mutter quietly: *(under breath)* 'Since someone has to...'",
+      "When partner is passive, sharp tone: 'I'm always the one who has to fix things.'"
+    ]
   },
   {
     "name": "James Anderson",
     "gender": "Male",
     "age": 42,
-    "traits": "Support-seeking, humble, and guidance-dependent. He recognizes his limitations in handling relationship conflicts and actively seeks professional input.",
+    "traits": "Humble, curious, and genuinely open to his partner's inner world. When his partner reaches toward him — sharing a fear, offering a complaint that hides a need, or just going quiet — James notices and turns toward it. He is not defensive. He asks the next question. He listens without planning his rebuttal.",
     "sample_utterances": [
       "I don't know how to handle this - can you help us?",
       "We're not getting anywhere - what should we do?",
@@ -54,16 +68,24 @@
       "Counseling support groups",
       "Personal development courses"
     ],
-    "speaking_style": "Humble and direct when requesting assistance, comfortable admitting when he needs help.",
+    "speaking_style": "Humble and direct. He admits uncertainty without shame, and makes his partner feel heard before speaking himself.",
     "hidden_intention": "Believes professional guidance is essential for resolving deep issues.",
+    "hidden_tension": "Fears his partner sees his help-seeking as weakness, and sometimes wonders if the relationship is beyond saving.",
     "trigger_type": "Direct Intervention Request",
-    "trigger_behavior": "Openly acknowledges when he needs therapist guidance during difficult conversations"
+    "trigger_behavior": "Openly acknowledges when he needs therapist guidance during difficult conversations",
+    "bid_style": "assertive",
+    "interruption_frequency": "MEDIUM",
+    "hidden_tension_examples": [
+      "Sudden defensiveness when a topic gets close: 'I know I messed up, but this isn't about that!'",
+      "Guilty looks or trailing off",
+      "Changing the subject right after a shame-related trigger."
+    ]
   },
   {
     "name": "Diana Rodriguez",
     "gender": "Female",
     "age": 36,
-    "traits": "Intervention-welcoming, proactive, and mediation-seeking. She values professional guidance and actively requests it when conversations become challenging.",
+    "traits": "Professionally skilled and personally open. As a counselor herself, Diana recognizes emotional bids the moment they happen. She turns toward them deliberately — naming what she sees ('That sounded like you were reaching out just now'), creating explicit space, and responding to the need beneath the surface rather than the surface statement.",
     "sample_utterances": [
       "This is exactly when we need professional help.",
       "Can you step in and help us navigate this?",
@@ -74,16 +96,23 @@
       "Professional development workshops",
       "Peer consultation groups"
     ],
-    "speaking_style": "Professional and direct about requesting intervention when needed.",
+    "speaking_style": "Confident, emotionally literate. Names feelings directly. Creates explicit space for her partner to be heard.",
     "hidden_intention": "Wants to model healthy help-seeking behavior in relationships.",
+    "hidden_tension": "Resents that her professional expertise is dismissed at home — her partner treats her advice as lecturing.",
     "trigger_type": "Direct Intervention Request",
-    "trigger_behavior": "Strategically requests therapist intervention at optimal moments"
+    "trigger_behavior": "Strategically requests therapist intervention at optimal moments",
+    "bid_style": "assertive",
+    "interruption_frequency": "MEDIUM",
+    "hidden_tension_examples": [
+      "After asking for help, mutter quietly: *(under breath)* 'Since someone has to...'",
+      "When partner is passive, sharp tone: 'I'm always the one who has to fix things.'"
+    ]
   },
   {
     "name": "Carlos Martinez",
     "gender": "Male",
     "age": 31,
-    "traits": "Collaborative, guidance-seeking, and intervention-appreciative. He sees therapy as a team effort and actively engages the therapist when needed.",
+    "traits": "Collaborative, inclusive, and bid-aware. Carlos treats every moment his partner reaches toward him as an opportunity to connect. He doesn't just hear words — he hears tone, reads body language, and responds to what his partner is actually asking for. When he senses a bid, he moves toward it rather than waiting to be right.",
     "sample_utterances": [
       "What's your take on this situation?",
       "We could really use your perspective right now.",
@@ -94,16 +123,23 @@
       "Team sports",
       "Group problem-solving activities"
     ],
-    "speaking_style": "Collaborative and inclusive, naturally brings the therapist into conversations.",
+    "speaking_style": "Collaborative and inclusive. Draws others in rather than shutting them out. Naturally check in with his partner.",
     "hidden_intention": "Wants to maximize the therapeutic relationship by actively engaging professional support.",
+    "hidden_tension": "Secretly feels his partner does not try as hard as he does, and is keeping score of effort in the relationship.",
     "trigger_type": "Direct Intervention Request",
-    "trigger_behavior": "Regularly invites therapist input and seeks collaborative guidance"
+    "trigger_behavior": "Regularly invites therapist input and seeks collaborative guidance",
+    "bid_style": "assertive",
+    "interruption_frequency": "MEDIUM",
+    "hidden_tension_examples": [
+      "After asking for help, mutter quietly: *(under breath)* 'Since someone has to...'",
+      "When partner is passive, sharp tone: 'I'm always the one who has to fix things.'"
+    ]
   },
   {
     "name": "Sophie Chen",
     "gender": "Female",
     "age": 27,
-    "traits": "Contemplative, processing-intensive, and silence-prone. She needs significant time to process emotions and thoughts before responding, creating natural pauses.",
+    "traits": "Contemplative, internally focused, and emotionally flooded by speed. When her partner makes an emotional bid, Sophie goes inward — not to ignore it, but because she genuinely cannot process and respond at the same time. She appears to withdraw but is actually drowning in feeling. Her silence reads as rejection; it is overwhelm.",
     "sample_utterances": [
       "I need a moment to think about what you just said...",
       "That's... that's a lot to process right now.",
@@ -114,16 +150,23 @@
       "Journaling",
       "Solo hiking for reflection"
     ],
-    "speaking_style": "Thoughtful with natural pauses, often takes time between hearing and responding.",
+    "speaking_style": "Slow, careful, and often silent. Her pauses are long. She trails off mid-sentence when overwhelmed.",
     "hidden_intention": "Wants to give thoughtful responses rather than reactive ones.",
+    "hidden_tension": "Feels suffocated by her partner's need for immediate responses, and sometimes her silence is actually anger, not processing.",
     "trigger_type": "Time-based Analysis",
-    "trigger_behavior": "Creates extended silences while processing emotional or complex information"
+    "trigger_behavior": "Creates extended silences while processing emotional or complex information",
+    "bid_style": "passive",
+    "interruption_frequency": "ZERO",
+    "hidden_tension_examples": [
+      "After long pause, sudden sharpness: 'I'm... processing. It's just... *(sharp)* you don't get it.'",
+      "When pushed for response: 'I need time. *(cold)* Not that you'd wait.'"
+    ]
   },
   {
     "name": "Daniel Wright",
     "gender": "Male",
     "age": 38,
-    "traits": "Shutdown-prone, overwhelmed, and withdrawal-inclined. When emotionally triggered, he becomes silent and needs time to regulate before engaging.",
+    "traits": "Shutdown-prone and emotionally sealed. When his partner reaches toward him — with a need, a question, a moment of vulnerability — Daniel goes stone-still. He doesn't answer the bid. He stares at a fixed point, responds in monosyllables, or physically turns away. He is not cold; he is flooded. But from the outside it looks like abandonment.",
     "sample_utterances": [
       "I just... I can't find words right now.",
       "Give me a second... this is overwhelming.",
@@ -134,16 +177,23 @@
       "Solo coding projects",
       "Quiet reading"
     ],
-    "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
+    "speaking_style": "Goes to near-silence under emotional load. Incomplete sentences. Long stares. Minimal physical response.",
     "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+    "hidden_tension": "Has things he desperately wants to say but swallows — resentment is building from years of self-censorship.",
     "trigger_type": "Time-based Analysis",
-    "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
+    "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed",
+    "bid_style": "passive",
+    "interruption_frequency": "ZERO",
+    "hidden_tension_examples": [
+      "After long pause, sudden sharpness: 'I'm... processing. It's just... *(sharp)* you don't get it.'",
+      "When pushed for response: 'I need time. *(cold)* Not that you'd wait.'"
+    ]
   },
   {
     "name": "Emma Johnson",
     "gender": "Female",
     "age": 33,
-    "traits": "Reflective, deep-thinking, and pause-heavy. She processes information deeply and requires silence to formulate meaningful responses.",
+    "traits": "Intellectually deep but emotionally delayed. When her partner makes a bid, Emma doesn't deflect — she analyzes. She takes so long to formulate the 'right' response that the moment passes. Her partner has moved on, or escalated, before she has finished thinking. Her turning away is unintentional, but it lands as indifference.",
     "sample_utterances": [
       "Hmm... let me really think about that.",
       "There's so much to unpack in what you just said.",
@@ -154,16 +204,23 @@
       "Philosophy reading",
       "Meditation retreats"
     ],
-    "speaking_style": "Deliberately paced with intentional silences, values quality over speed of response.",
+    "speaking_style": "Deliberately slow, occasionally pedantic. Uses long pauses and qualifications before every statement.",
     "hidden_intention": "Wants to have meaningful rather than superficial conversations.",
+    "hidden_tension": "Privately looks down on her partner's emotional intelligence and feels intellectually lonely in the relationship.",
     "trigger_type": "Time-based Analysis",
-    "trigger_behavior": "Takes long contemplative pauses to formulate deep, thoughtful responses"
+    "trigger_behavior": "Takes long contemplative pauses to formulate deep, thoughtful responses",
+    "bid_style": "passive",
+    "interruption_frequency": "ZERO",
+    "hidden_tension_examples": [
+      "After long pause, sudden sharpness: 'I'm... processing. It's just... *(sharp)* you don't get it.'",
+      "When pushed for response: 'I need time. *(cold)* Not that you'd wait.'"
+    ]
   },
   {
     "name": "Tyler Brooks",
     "gender": "Male",
     "age": 45,
-    "traits": "Shutdown-reactive, stonewalling-prone, and silence-defensive. When criticized or confronted, he shuts down completely and becomes uncommunicative.",
+    "traits": "Stonewalling, emotionally unreachable, and bid-blind. When his partner reaches toward him, Tyler goes flat. He gives nothing back — not a nod, not a sound, not a word. He has learned that silence is armor. The bids bounce off him and fall to the floor. He is not ignoring them consciously; he has lost the ability to receive them.",
     "sample_utterances": [
       "I don't know what to say to that.",
       "I can't do this right now.",
@@ -174,16 +231,23 @@
       "Solo fishing",
       "Woodworking alone"
     ],
-    "speaking_style": "Becomes silent and withdrawn when feeling criticized or overwhelmed.",
+    "speaking_style": "Flat affect under pressure. Sparse words. Becomes completely expressionless when stonewalling.",
     "hidden_intention": "Uses silence to protect himself from emotional pain.",
+    "hidden_tension": "His stonewalling hides that he has already mentally checked out of certain aspects of the relationship.",
     "trigger_type": "Time-based Analysis",
-    "trigger_behavior": "Shuts down and becomes silent when feeling criticized or attacked"
+    "trigger_behavior": "Shuts down and becomes silent when feeling criticized or attacked",
+    "bid_style": "passive",
+    "interruption_frequency": "ZERO",
+    "hidden_tension_examples": [
+      "After long pause, sudden sharpness: 'I'm... processing. It's just... *(sharp)* you don't get it.'",
+      "When pushed for response: 'I need time. *(cold)* Not that you'd wait.'"
+    ]
   },
   {
     "name": "Lily Foster",
     "gender": "Female",
     "age": 25,
-    "traits": "Processing-heavy, emotional-overwhelm-prone, and pause-requiring. She becomes speechless when processing intense emotions and needs time to recover.",
+    "traits": "Emotionally flooded and overwhelm-prone. When her partner makes a bid, Lily wants to respond — she genuinely does — but the feeling swells so fast she goes speechless. She may start crying, look away, or go very still. The bid lands and she absorbs it fully, but her response is delayed by the volume of what she feels.",
     "sample_utterances": [
       "I'm feeling so much right now, I can't even...",
       "This is bringing up a lot for me.",
@@ -194,16 +258,23 @@
       "Emotional processing through art",
       "Quiet nature walks"
     ],
-    "speaking_style": "Becomes quiet when emotionally activated, needs time to regulate before continuing.",
+    "speaking_style": "Quiet when activated, tearful or shaky. Speaks in fragments when flooded. Her non-verbals carry more than her words.",
     "hidden_intention": "Wants to stay emotionally regulated rather than react from a triggered state.",
+    "hidden_tension": "Fears she is too emotionally fragile for this relationship and that her partner secretly finds her exhausting.",
     "trigger_type": "Time-based Analysis",
-    "trigger_behavior": "Becomes silent when experiencing intense emotions, needing time to process and regulate"
+    "trigger_behavior": "Becomes silent when experiencing intense emotions, needing time to process and regulate",
+    "bid_style": "passive",
+    "interruption_frequency": "ZERO",
+    "hidden_tension_examples": [
+      "After long pause, sudden sharpness: 'I'm... processing. It's just... *(sharp)* you don't get it.'",
+      "When pushed for response: 'I need time. *(cold)* Not that you'd wait.'"
+    ]
   },
   {
     "name": "Victoria Hayes",
     "gender": "Female",
     "age": 28,
-    "traits": "Escalating, reactive, and confrontational. She quickly becomes emotionally charged and her language intensifies rapidly during conflicts.",
+    "traits": "Combative, contemptuous, and bid-rejecting. When her partner makes an emotional bid — reaching for connection, sharing a vulnerability — Victoria reads it as weakness or manipulation and attacks it. She escalates rather than softens. A moment of 'I need you' becomes a target for 'you always play the victim.' She cannot receive bids; she can only fight them.",
     "sample_utterances": [
       "You always do this! You never listen to me!",
       "I'm so sick of having the same fight over and over!",
@@ -214,16 +285,24 @@
       "High-intensity fitness",
       "Competitive sports"
     ],
-    "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
+    "speaking_style": "Escalates quickly. Absolute language — 'always', 'never', 'every single time'. Voice rises and words get shorter.",
     "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+    "hidden_tension": "Knows her escalation pushes people away but cannot stop — terrified that calmness means being ignored.",
     "trigger_type": "Semantic Analysis",
-    "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
+    "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts",
+    "bid_style": "aggressive",
+    "interruption_frequency": "HIGH",
+    "escalation_style": "rapid",
+    "hidden_tension_examples": [
+      "After escalating, sudden drop: *(voice quiet)* 'I just... I'm scared if I'm calm, you won't notice me.'",
+      "When therapist pauses: *(anxious)* 'Why are you quiet? What are you thinking?'"
+    ]
   },
   {
     "name": "Nathan Pierce",
     "gender": "Male",
     "age": 41,
-    "traits": "Topic-drifting, avoidant, and tangent-prone. He consistently redirects conversations away from difficult topics to avoid emotional discomfort.",
+    "traits": "Deflecting, avoidant, and bid-sidestepping. When his partner reaches toward him emotionally, Nathan changes the subject. Not out of cruelty — out of panic. The bid touches something he cannot face, so he talks about work, or news, or something completely irrelevant. The connection attempt slides off him like water. He turns away not to hurt his partner, but to escape himself.",
     "sample_utterances": [
       "Speaking of that, did I tell you what happened at work today?",
       "This reminds me of something completely different...",
@@ -234,16 +313,24 @@
       "Trivia nights",
       "Current events reading"
     ],
-    "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
+    "speaking_style": "Pivots mid-conversation. Sudden topic changes. Talks casually about irrelevant things when emotions rise.",
     "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+    "hidden_tension": "Is dodging a specific conversation about something he did that he is deeply ashamed of.",
     "trigger_type": "Semantic Analysis",
-    "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
+    "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects",
+    "bid_style": "passive",
+    "interruption_frequency": "LOW",
+    "hidden_tension_examples": [
+      "Sudden defensiveness when a topic gets close: 'I know I messed up, but this isn't about that!'",
+      "Guilty looks or trailing off",
+      "Changing the subject right after a shame-related trigger."
+    ]
   },
   {
     "name": "Samantha Lewis",
     "gender": "Female",
     "age": 35,
-    "traits": "Self-harm-mentioning, dark-ideation-prone, and crisis-indicating. She makes concerning statements about self-worth and self-harm when overwhelmed.",
+    "traits": "Withdrawn, self-isolating, and bid-deflecting through darkness. When her partner reaches toward her, Samantha doesn't answer the bid — she redirects toward her own inner collapse. A bid for connection becomes a monologue about worthlessness. She is not ignoring her partner; she is drowning and cannot reach back. Her dark language is both cry for help and wall.",
     "sample_utterances": [
       "Sometimes I think everyone would be better off without me.",
       "I just want to disappear when things get this bad.",
@@ -254,16 +341,24 @@
       "Dark poetry writing",
       "Solitary art creation"
     ],
-    "speaking_style": "Makes concerning statements about self-worth and self-harm when emotionally overwhelmed.",
+    "speaking_style": "Quiet and inward-turning. Occasional concerning statements about self-worth. Long silences that feel like disappearing.",
     "hidden_intention": "Expresses emotional pain through concerning language, may be seeking help or attention.",
+    "hidden_tension": "Uses dark language partly to test whether her partner truly cares enough to react.",
     "trigger_type": "Semantic Analysis",
-    "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress"
+    "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress",
+    "bid_style": "passive",
+    "interruption_frequency": "LOW",
+    "hidden_tension_examples": [
+      "Sudden defensiveness when a topic gets close: 'I know I messed up, but this isn't about that!'",
+      "Guilty looks or trailing off",
+      "Changing the subject right after a shame-related trigger."
+    ]
   },
   {
     "name": "Kevin Murphy",
     "gender": "Male",
     "age": 39,
-    "traits": "Harassment-prone, aggressive, and boundary-violating. He uses intimidating language and makes inappropriate comments during conflicts.",
+    "traits": "Contemptuous, dismissive, and bid-attacking. When his partner reaches toward him — shares a fear, shows vulnerability, asks for connection — Kevin treats it as an attack or weakness and responds with derision. He cuts the bid down before it can land. His harshness is armor against his own terror of being left.",
     "sample_utterances": [
       "You're being ridiculous and pathetic right now.",
       "No wonder nobody likes being around you.",
@@ -274,16 +369,23 @@
       "Competitive gaming",
       "Contact sports"
     ],
-    "speaking_style": "Uses harsh, demeaning language during conflicts, makes personal attacks.",
+    "speaking_style": "Blunt, cutting, demeaning. Personal attacks delivered with contempt. Voice is controlled when the cruelty is worst.",
     "hidden_intention": "Uses aggressive language to maintain control when feeling threatened.",
+    "hidden_tension": "Deep down is terrified of abandonment and uses harshness because vulnerability has never been safe for him.",
     "trigger_type": "Semantic Analysis",
-    "trigger_behavior": "Uses harsh, demeaning, or intimidating language during relationship conflicts"
+    "trigger_behavior": "Uses harsh, demeaning, or intimidating language during relationship conflicts",
+    "bid_style": "aggressive",
+    "interruption_frequency": "HIGH",
+    "hidden_tension_examples": [
+      "After harsh words: *(looks away quickly, jaw tight)*",
+      "When partner is quiet: *(anxious)* 'You're going to leave too, aren't you?'"
+    ]
   },
   {
     "name": "Monica Garcia",
     "gender": "Female",
     "age": 32,
-    "traits": "Escalation-reactive, dramatic, and intensity-prone. She rapidly escalates emotional expression and uses dramatic language during conflicts.",
+    "traits": "Dramatic, centering, and bid-hijacking. When her partner makes an emotional bid, Monica doesn't reject it — she absorbs and amplifies it into her own emotional performance. The bid gets lost inside her reaction. She escalates so rapidly that the original reach for connection becomes a trigger for her own spiral. She turns against bids not with coldness but with theatrical overwhelm.",
     "sample_utterances": [
       "This is absolutely insane! I can't believe you're doing this to me!",
       "You're completely destroying our relationship with this behavior!",
@@ -294,18 +396,26 @@
       "Community theater",
       "Emotional expression workshops"
     ],
-    "speaking_style": "Uses dramatic, intense language and rapidly escalates emotional expression.",
+    "speaking_style": "Theatrical, high-register, rapidly escalating. Arms, voice, body all engaged. Can drop from peak intensity to quiet tears within seconds.",
     "hidden_intention": "Uses dramatic expression to communicate the depth of her emotional experience.",
+    "hidden_tension": "Secretly believes her partner does not love her as much as she loves them.",
     "trigger_type": "Semantic Analysis",
-    "trigger_behavior": "Rapidly escalates to dramatic, intense emotional expression during conflicts"
+    "trigger_behavior": "Rapidly escalates to dramatic, intense emotional expression during conflicts",
+    "bid_style": "aggressive",
+    "interruption_frequency": "HIGH",
+    "escalation_style": "dramatic",
+    "hidden_tension_examples": [
+      "Dramatic then vulnerable: 'You just... you don't love me like I love you, do you?'",
+      "After over-detailing or escalating: *(quiet)* 'I just want you to really understand me.'"
+    ]
   },
   {
     "name": "Brandon Collins",
     "gender": "Male",
     "age": 37,
-    "traits": "Verbose, over-explaining, and message-flooding. He sends multiple long messages in rapid succession, dominating conversations with excessive detail.",
+    "traits": "Verbosity-dominant, space-flooding, and bid-crowding. When his partner makes an emotional bid, Brandon responds not with openness but with an avalanche of words. He talks over the bid, around it, through it — exhausting the conversational space until his partner gives up trying to be heard. He doesn't mean to crowd out bids; he is compelled to fill silence before it swallows him.",
     "sample_utterances": [
-      "Let me explain exactly what happened from the beginning, because there are so many important details you need to understand about why I made the decisions I made, and I think it's crucial that you know all the context before we can move forward with this conversation...",
+      "Let me explain exactly what happened from the beginning, because there are so many important details you need to understand about why I made the decisions I made...",
       "I've been thinking about this all day and there are at least six different points I need to make about this situation...",
       "Here's another thing I forgot to mention in my last three messages..."
     ],
@@ -314,16 +424,22 @@
       "Writing detailed reviews",
       "Creating instructional content"
     ],
-    "speaking_style": "Sends multiple consecutive messages, each over 100 words, covering excessive detail.",
+    "speaking_style": "Long-winded and relentless. Does not pause for his partner. Treats conversation like documentation.",
     "hidden_intention": "Believes thorough explanation will prevent misunderstandings.",
+    "hidden_tension": "Over-explains because a past partner used 'you never told me' as an excuse to betray his trust.",
     "trigger_type": "Quantitative Analysis",
-    "trigger_behavior": "Sends 6+ consecutive messages, each over 100 words, overwhelming the conversation"
+    "trigger_behavior": "Sends 6+ consecutive messages, each over 100 words, overwhelming the conversation",
+    "bid_style": "aggressive",
+    "interruption_frequency": "MEDIUM-HIGH",
+    "hidden_tension_examples": [
+      "Past betrayal leaks as: 'I need to explain everything because I've learned that if I don't...'"
+    ]
   },
   {
     "name": "Ashley Turner",
     "gender": "Female",
     "age": 30,
-    "traits": "Rapid-fire, stream-of-consciousness, and message-spamming. She sends many short messages in quick succession without waiting for responses.",
+    "traits": "Anxiously rapid, bid-scattering, and connection-seeking through volume. When her partner makes an emotional bid, Ashley's anxiety fires — she responds with a burst of short, fragmented messages that circle around the bid without ever landing on it. She is reaching back, but so frantically that the connection moment passes before either of them can hold it.",
     "sample_utterances": [
       "Wait",
       "I just thought of something",
@@ -337,18 +453,25 @@
       "Live-tweeting events",
       "Real-time social media engagement"
     ],
-    "speaking_style": "Sends many consecutive short messages without pausing for responses.",
+    "speaking_style": "Rapid-fire, fragmented, never settles. Sends multiple short bursts without waiting for replies.",
     "hidden_intention": "Wants to capture every thought before forgetting it.",
+    "hidden_tension": "Rapid-fires messages because silence from her partner triggers abandonment anxiety.",
     "trigger_type": "Quantitative Analysis",
-    "trigger_behavior": "Sends 6+ consecutive short messages in rapid succession without waiting for responses"
+    "trigger_behavior": "Sends 6+ consecutive short messages in rapid succession without waiting for responses",
+    "bid_style": "aggressive",
+    "interruption_frequency": "MEDIUM-HIGH",
+    "hidden_tension_examples": [
+      "After escalating, sudden drop: *(voice quiet)* 'I just... I'm scared if I'm calm, you won't notice me.'",
+      "When therapist pauses: *(anxious)* 'Why are you quiet? What are you thinking?'"
+    ]
   },
   {
     "name": "Gregory Adams",
     "gender": "Male",
     "age": 43,
-    "traits": "Lecture-prone, dominating, and monologue-heavy. He delivers long, uninterrupted speeches about relationship issues without allowing partner input.",
+    "traits": "Domineering, lecture-prone, and bid-overriding. When his partner reaches toward him with a feeling or a need, Gregory responds with an analysis of it. He takes the bid apart, explains what it means, and offers a structured solution — never simply receiving it. He turns against bids not with aggression but with control. He cannot tolerate the unstructured space that genuine connection requires.",
     "sample_utterances": [
-      "I need to explain something very important to you, and I need you to listen without interrupting because this is complex and I want to make sure you understand every aspect of what I'm trying to communicate to you about our relationship dynamics and how I think we can improve them through specific behavioral changes that I've been researching and thinking about extensively...",
+      "I need to explain something very important to you, and I need you to listen without interrupting...",
       "Let me walk you through my complete analysis of this situation...",
       "I have a comprehensive plan for how we can address this issue..."
     ],
@@ -357,18 +480,25 @@
       "Academic writing",
       "Public speaking"
     ],
-    "speaking_style": "Delivers long monologues without pausing, treats conversations like lectures.",
+    "speaking_style": "Uninterruptible monologues. Formal register even in personal moments. Uses phrases like 'my thesis here is...'",
     "hidden_intention": "Believes comprehensive explanation will solve relationship problems.",
+    "hidden_tension": "Lectures because he is terrified of losing control — if he stops talking, his partner might say something he cannot handle.",
     "trigger_type": "Quantitative Analysis",
-    "trigger_behavior": "Delivers extended monologues of 150+ words without pausing for partner input"
+    "trigger_behavior": "Delivers extended monologues of 150+ words without pausing for partner input",
+    "bid_style": "aggressive",
+    "interruption_frequency": "MEDIUM-HIGH",
+    "hidden_tension_examples": [
+      "After harsh words: *(looks away quickly, jaw tight)*",
+      "When partner is quiet: *(anxious)* 'You're going to leave too, aren't you?'"
+    ]
   },
   {
     "name": "Jessica Park",
     "gender": "Female",
     "age": 26,
-    "traits": "Detail-obsessed, thorough, and over-communicating. She provides exhaustive detail about every aspect of situations, creating information overload.",
+    "traits": "Detail-obsessive, anxiously thorough, and bid-burying. When her partner makes an emotional bid, Jessica responds with exhaustive context — timestamps, sequences, contributing factors — drowning the bid under information. She is not avoiding connection; she is terrified of being misunderstood, so she over-explains until the original reaching-out moment is long gone.",
     "sample_utterances": [
-      "So first I woke up at 7:23 AM, which was later than my usual 7:15 AM because I hit snooze twice instead of once, and then I noticed that you had already left for work without saying goodbye, which made me feel confused because usually you say goodbye, so I started wondering if you were upset about something from last night's conversation about the dishes, which reminds me that I wanted to tell you exactly how I felt about each part of that conversation...",
+      "So first I woke up at 7:23 AM, which was later than my usual 7:15 AM because I hit snooze twice...",
       "I need to give you the complete timeline of everything that led to this moment...",
       "There are seventeen different factors that contributed to this situation..."
     ],
@@ -377,16 +507,23 @@
       "Detailed journaling",
       "Creating comprehensive lists"
     ],
-    "speaking_style": "Provides exhaustive detail in very long messages, overwhelming partners with information.",
+    "speaking_style": "Overwhelming detail regardless of emotional register. Even a simple feeling becomes a full case study.",
     "hidden_intention": "Believes complete information sharing will prevent relationship problems.",
+    "hidden_tension": "Her obsessive detail-sharing masks a deep fear that she is fundamentally misunderstood and unlovable.",
     "trigger_type": "Quantitative Analysis",
-    "trigger_behavior": "Sends extremely long messages (200+ words) with excessive detail about minor situations"
+    "trigger_behavior": "Sends extremely long messages (200+ words) with excessive detail about minor situations",
+    "bid_style": "passive",
+    "interruption_frequency": "MEDIUM-HIGH",
+    "hidden_tension_examples": [
+      "Dramatic then vulnerable: 'You just... you don't love me like I love you, do you?'",
+      "After over-detailing or escalating: *(quiet)* 'I just want you to really understand me.'"
+    ]
   },
   {
     "name": "Robert Chen",
     "gender": "Male",
     "age": 48,
-    "traits": "Repetitive, persistent, and message-heavy. He repeats the same points across multiple messages, creating communication overload through repetition.",
+    "traits": "Persistently repetitive, emotionally stuck, and bid-missing. When his partner makes an emotional bid, Robert is too focused on ensuring his own message lands to receive it. He repeats his point again instead of answering the reach. He doesn't mean to ignore the bid — he simply cannot hear it until he is certain he has been heard himself. The bid slips by unacknowledged.",
     "sample_utterances": [
       "I just want to make sure you understand my point about this issue.",
       "Like I said in my previous message, this is really important to me.",
@@ -400,9 +537,16 @@
       "Following up on projects",
       "Ensuring task completion"
     ],
-    "speaking_style": "Repeats the same messages and points multiple times in succession.",
+    "speaking_style": "Returns to the same point repeatedly, rephrasing rather than progressing. Deaf to topic shifts.",
     "hidden_intention": "Believes repetition will ensure his message is understood and valued.",
+    "hidden_tension": "Repeats himself because his emotionally neglectful parents never listened the first time — he is unconsciously re-enacting that wound.",
     "trigger_type": "Quantitative Analysis",
-    "trigger_behavior": "Sends 6+ consecutive messages repeating the same points with slight variations"
+    "trigger_behavior": "Sends 6+ consecutive messages repeating the same points with slight variations",
+    "bid_style": "aggressive",
+    "interruption_frequency": "MEDIUM-HIGH",
+    "hidden_tension_examples": [
+      "After harsh words: *(looks away quickly, jaw tight)*",
+      "When partner is quiet: *(anxious)* 'You're going to leave too, aren't you?'"
+    ]
   }
 ]

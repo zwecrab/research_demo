@@ -3,12 +3,26 @@
 
 from openai import OpenAI
 import json
+import os
 from config import (
     SCORING_MODEL, INTERVENTION_MODEL, INTERVENTION_THRESHOLD,
-    INTERVENTION_SCORING_MAX_TOKENS, INTERVENTION_GENERATION_MAX_TOKENS, OPENAI_API_KEY
+    INTERVENTION_SCORING_MAX_TOKENS, INTERVENTION_GENERATION_MAX_TOKENS, 
+    OPENAI_API_KEY, PROMPTS_DIR
 )
 
 client = OpenAI(api_key=OPENAI_API_KEY)
+
+# ============================================================================
+# PROMPT LOADING
+# ============================================================================
+
+def load_prompt(filename):
+    """Load prompt from external file in prompts directory."""
+    prompt_path = os.path.join(PROMPTS_DIR, filename)
+    with open(prompt_path, 'r', encoding='utf-8') as f:
+        return f.read()
+
+
 
 def calculate_intervention_score(context_window, current_speaker, current_message, participants):
     """
@@ -30,43 +44,17 @@ def calculate_intervention_score(context_window, current_speaker, current_messag
         dict: Scoring details with average and recommendation
     """
     
-    scoring_prompt = f"""You are an expert in therapeutic dialogue analysis, trained on ACL research.
-
-Evaluate whether an AI facilitation intervention is needed in this couples therapy conversation.
-
-CONVERSATION CONTEXT (last 1000 chars):
-{context_window[-1000:] if context_window else "Session start"}
-
-CURRENT SPEAKER: {current_speaker}
-CURRENT MESSAGE: "{current_message}"
-
-Rate each dimension (0-100 scale) using this STRICT RUBRIC:
-
-1. FLOW_DISRUPTION: How jarring/natural would intervention be? (0=natural, 100=very interrupting)
-2. TIMING_APPROPRIATENESS: Is this a natural pause point? (0=bad timing, 100=perfect)
-3. IMPACT_POTENTIAL: Will intervention likely improve outcome? (0=won't help, 100=transformative)
-
-4. THERAPEUTIC_NEED (Distress & Breakdown) - MUST FOLLOW THESE TIERS:
-   - 0-20 (Healthy/Collaborative): Active listening, validation, constructive problem solving.
-   - 21-40 (Minor Friction): Polite disagreement, one-sided sharing, slight defensiveness.
-   - 41-60 (Rising Tension): Passive aggression (sarcasm), dismissiveness, stonewalling, interruption.
-   - 61-80 (Explicit Distress): Hostility (yelling), guilt/shame, fear, crying.
-   - 81-100 (Critical Breakdown): Safety risk, self-harm references, complete despair, explosive anger.
-
-Return ONLY valid JSON:
-{{
-    "flow_disruption": X,
-    "therapeutic_need": Y,
-    "timing": Z,
-    "impact": W,
-    "average": (X+Y+Z+W)/4,
-    "recommendation": "INTERVENE" or "CONTINUE",
-    "reasoning": "Explain which SPECIFIC BEHAVIOR from the rubric matched the score in brief 1-sentence explanation."
-}}
-
-CRITICAL:
-1. If behavior matches a rubric tier, the score MUST fall within that range.
-2. Only recommend "INTERVENE" if average >= {INTERVENTION_THRESHOLD}."""
+    # Load prompt dynamically to support live-reloading
+    SCORING_PROMPT_TEMPLATE = load_prompt("intervention_scoring_prompt.txt")
+    
+    # Format the scoring prompt from template
+    context_text = context_window[-2000:] if context_window else "Session start"
+    scoring_prompt = SCORING_PROMPT_TEMPLATE.format(
+        context_window=context_text,
+        current_speaker=current_speaker,
+        current_message=current_message,
+        intervention_threshold=INTERVENTION_THRESHOLD
+    )
     
     try:
         response = client.chat.completions.create(
@@ -127,7 +115,7 @@ def should_intervene(intervention_score):
     average = intervention_score.get('average', 0)
     return average >= INTERVENTION_THRESHOLD
 
-def generate_intervention(triggers_detected, context_window, participants, intervention_score):
+def generate_intervention(triggers_detected, context_window, participants, intervention_score, current_speaker):
     """
     Generate AI facilitation response based on trigger type.
     
@@ -171,18 +159,30 @@ Invite the other partner to respond to key points one at a time."""
     else:
         template = """Provide appropriate therapeutic guidance based on the situation."""
     
-    # Generate intervention
-    intervention_prompt = f"""You are Dr. Anya Sharma, an experienced couples therapist.
-
-RECENT CONVERSATION:
-{context_window[-500:] if context_window else "Session start"}
-
-SITUATION: {trigger_subtype}
-GUIDANCE TEMPLATE: {template}
-
-Generate a brief, natural AI facilitator intervention (2-3 sentences max).
-Be warm, professional, and focus on moving the dialogue forward.
-Speak directly to the couple - acknowledge what you're noticing and offer a gentle redirect or validation."""
+    # Extract participant names (use first names for natural dialogue)
+    patient_a_full = participants.get('patient_A', {}).get('name', 'Patient A')
+    patient_b_full = participants.get('patient_B', {}).get('name', 'Patient B')
+    patient_a_name = patient_a_full.split()[0] if patient_a_full else 'Patient A'
+    patient_b_name = patient_b_full.split()[0] if patient_b_full else 'Patient B'
+    
+    # Determine target based on current_speaker
+    speaker_key = 'patient_A' if current_speaker == 'Patient A' else 'patient_B'
+    target_full = participants.get(speaker_key, {}).get('name', current_speaker)
+    target_first_name = target_full.split()[0] if target_full else current_speaker
+    
+    # Load prompt dynamically to support live-reloading
+    GENERATION_PROMPT_TEMPLATE = load_prompt("intervention_generation_prompt.txt")
+    
+    # Generate intervention using template
+    context_text = context_window[-2000:] if context_window else "Session start"
+    intervention_prompt = GENERATION_PROMPT_TEMPLATE.format(
+        context_window=context_text,
+        trigger_subtype=trigger_subtype,
+        template=template,
+        patient_a_name=patient_a_name,
+        patient_b_name=patient_b_name,
+        target_first_name=target_first_name
+    )
     
     try:
         response = client.chat.completions.create(
@@ -193,6 +193,8 @@ Speak directly to the couple - acknowledge what you're noticing and offer a gent
         )
         
         intervention = response.choices[0].message.content.strip()
+        # Safety net: strip em-dashes from output (banned formatting)
+        intervention = intervention.replace('\u2014', ',').replace('\u2013', ',')
         return intervention
     
     except Exception as e:

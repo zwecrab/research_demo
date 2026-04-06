@@ -1,7 +1,7 @@
 # user_interface.py
 # All menu functions and user input handling
 
-from config import CONVERSATION_STRUCTURES, TRIGGER_TYPES, FIRST_SPEAKER_OPTIONS, CONSOLE_WIDTH, DIVIDER
+from config import CONVERSATION_STRUCTURES, FIRST_SPEAKER_OPTIONS, CONSOLE_WIDTH, DIVIDER
 
 def select_session_topic(therapy_plans):
     """Let user select therapy session topic."""
@@ -50,8 +50,7 @@ def select_conversation_structure():
     
     structures_desc = {
         "Sequential": "Fixed order: Therapist → Patient A → Patient B (cycle)",
-        "LLM Only": "AI chooses speaker for balance (no intervention triggers)",
-        "LLM with Triggers": "AI chooses speaker + detects triggers + intervenes"
+        "LLM-Based Selection": "AI chooses speaker dynamically based on conversation flow",
     }
     
     for i, structure in enumerate(CONVERSATION_STRUCTURES, 1):
@@ -67,32 +66,6 @@ def select_conversation_structure():
             pass
         print("❌ Invalid choice. Try again.")
 
-def select_trigger_type():
-    """Let user select trigger type (only if LLM with Triggers)."""
-    print("\n" + DIVIDER)
-    print("SELECT TRIGGER TYPE")
-    print(DIVIDER)
-    
-    trigger_desc = {
-        "Direct Intervention Request": "Patient directly asks for help (keywords)",
-        "Time-based Analysis": "Simulated silence > 30 seconds",
-        "Semantic Analysis": "Emotional escalation or self-harm indicators",
-        "Quantitative Analysis": "Message dominance or extreme length",
-        "All Triggers": "Test all trigger types together"
-    }
-    
-    for i, ttype in enumerate(TRIGGER_TYPES, 1):
-        print(f" {i}: {ttype}")
-        print(f"    → {trigger_desc[ttype]}")
-    
-    while True:
-        try:
-            choice = int(input("\nEnter number: "))
-            if 1 <= choice <= len(TRIGGER_TYPES):
-                return TRIGGER_TYPES[choice - 1]
-        except ValueError:
-            pass
-        print("❌ Invalid choice. Try again.")
 
 def select_first_speaker():
     """
@@ -147,12 +120,10 @@ def select_specific_persona(available_personas, role_label, exclude_name=None):
     
     for i, name in enumerate(options, 1):
         p = available_personas[name]
-        trigger_behavior = p.get("trigger_behavior", "N/A")
-        # Truncate behavior if too long
-        if len(trigger_behavior) > 60:
-            trigger_behavior = trigger_behavior[:57] + "..."
-            
-        print(f" {i}: {name:<20} | {trigger_behavior}")
+        style = p.get("speaking_style", p.get("trigger_type", "N/A"))
+        if len(style) > 60:
+            style = style[:57] + "..."
+        print(f" {i}: {name:<20} | {style}")
     
     while True:
         try:

@@ -14,8 +14,7 @@ Status: ✅ **ALL FILES CREATED & READY TO USE**
 3. ✅ **user_interface.py** - CLI menu system
 4. ✅ **session_setup.py** - Session initialization
 5. ✅ **conversation_engine.py** - Dialogue generation & speaker selection
-6. ✅ **trigger_system.py** - Trigger detection (4 modalities)
-7. ✅ **intervention_system.py** - LLM scoring & intervention generation
+6. ✅ **intervention_system.py** - LLM scoring & intervention generation
 8. ✅ **panas_analyzer.py** - Emotional assessment (pre/post)
 9. ✅ **output_manager.py** - File I/O & summaries
 10. ✅ **main.py** - Orchestrator (ties everything together)
@@ -42,7 +41,6 @@ your_project/
 ├── user_interface.py
 ├── session_setup.py
 ├── conversation_engine.py
-├── trigger_system.py
 ├── intervention_system.py
 ├── panas_analyzer.py
 ├── output_manager.py
@@ -86,7 +84,6 @@ main.py (Orchestrator)
     ├─→ session_setup.py (Initialize session)
     ├─→ conversation_engine.py (Generate dialogue)
     │   └─→ config.py (Models, temperature)
-    ├─→ trigger_system.py (Detect triggers)
     ├─→ intervention_system.py (Score & generate)
     ├─→ panas_analyzer.py (Emotional analysis)
     └─→ output_manager.py (Save results)
@@ -280,18 +277,6 @@ transcripts/
 **File**: `config.py`
 ```python
 INTERVENTION_THRESHOLD = 70  # Change to 50, 60, 80, etc.
-```
-
-### Add New Trigger Type
-**File**: `trigger_system.py`
-```python
-def detect_my_trigger(message):
-    return "pattern" in message.lower()
-
-# In detect_triggers():
-if selected_trigger == "My Trigger":
-    if detect_my_trigger(current_message):
-        triggers_detected.append({...})
 ```
 
 ### Change Model
@@ -490,7 +475,6 @@ Good luck with your research! 🎓
 | **user_interface.py** | User input | `select_*` functions |
 | **session_setup.py** | Initialize session | `setup_session_parameters()` |
 | **conversation_engine.py** | Generate dialogue | `generate_agent_turn()` |
-| **trigger_system.py** | Detect triggers | `detect_triggers()` |
 | **intervention_system.py** | Score & generate interventions | `calculate_intervention_score()` |
 | **panas_analyzer.py** | Emotional assessment | `compute_panas_delta()` |
 | **output_manager.py** | Save & display results | `save_session_json()` |

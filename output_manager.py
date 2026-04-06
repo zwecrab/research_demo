@@ -105,6 +105,27 @@ def display_session_summary(output_json, panas_summaries=None):
         print(f"\nTrigger Breakdown:")
         for ttype, count in trigger_types.items():
             print(f"  {ttype}:         {count}")
+            
+    # Therapist Alliance Evaluation
+    alliance = output_json.get('therapist_alliance')
+    if alliance:
+        print("\nTherapeutic Alliance Evaluation:")
+        print(f"  Overall Score: {alliance.get('overall', 0)}/10")
+        print(f"  Validation:    {alliance.get('validation', 0)}")
+        print(f"  Neutrality:    {alliance.get('neutrality', 0)}")
+        print(f"  Guidance:      {alliance.get('guidance', 0)}")
+        
+        strengths = alliance.get('strengths', [])
+        if strengths:
+            print(f"  Strengths:")
+            for s in strengths:
+                print(f"    • {s}")
+                
+        weaknesses = alliance.get('weaknesses', [])
+        if weaknesses:
+            print(f"  Weaknesses:")
+            for w in weaknesses:
+                print(f"    • {w}")
     
     # PANAS summary
     if panas_summaries:

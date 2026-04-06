@@ -17,6 +17,7 @@
       ],
       "speaking_style": "Direct and solution-oriented, comfortable asking for professional help when needed.",
       "hidden_intention": "Believes external guidance is necessary for relationship success.",
+      "hidden_tension": "Secretly resents that his partner never takes initiative to fix things — he is tired of being 'the responsible one' who always calls for help.",
       "trigger_type": "Direct Intervention Request",
       "trigger_behavior": "Explicitly asks for therapist intervention when conversations become difficult"
     },
@@ -141,6 +142,7 @@
       ],
       "speaking_style": "Diplomatic and proactive about seeking help when needed.",
       "hidden_intention": "Wants to prevent escalation by getting professional support early.",
+      "hidden_tension": "Harbors deep frustration that her conflict-avoidance is mistaken for not caring, and sometimes wishes she could just explode.",
       "trigger_type": "Direct Intervention Request",
       "trigger_behavior": "Proactively requests therapist assistance before conflicts escalate"
     },
@@ -265,6 +267,7 @@
       ],
       "speaking_style": "Humble and direct when requesting assistance, comfortable admitting when he needs help.",
       "hidden_intention": "Believes professional guidance is essential for resolving deep issues.",
+      "hidden_tension": "Fears his partner sees his help-seeking as weakness, and sometimes wonders if the relationship is beyond saving.",
       "trigger_type": "Direct Intervention Request",
       "trigger_behavior": "Openly acknowledges when he needs therapist guidance during difficult conversations"
     },
@@ -389,6 +392,7 @@
       ],
       "speaking_style": "Professional and direct about requesting intervention when needed.",
       "hidden_intention": "Wants to model healthy help-seeking behavior in relationships.",
+      "hidden_tension": "Resents that her professional expertise is dismissed at home — her partner treats her advice as lecturing.",
       "trigger_type": "Direct Intervention Request",
       "trigger_behavior": "Strategically requests therapist intervention at optimal moments"
     },
@@ -513,6 +517,7 @@
       ],
       "speaking_style": "Collaborative and inclusive, naturally brings the therapist into conversations.",
       "hidden_intention": "Wants to maximize the therapeutic relationship by actively engaging professional support.",
+      "hidden_tension": "Secretly feels his partner does not try as hard as he does, and is keeping score of effort in the relationship.",
       "trigger_type": "Direct Intervention Request",
       "trigger_behavior": "Regularly invites therapist input and seeks collaborative guidance"
     },
@@ -637,6 +642,7 @@
       ],
       "speaking_style": "Thoughtful with natural pauses, often takes time between hearing and responding.",
       "hidden_intention": "Wants to give thoughtful responses rather than reactive ones.",
+      "hidden_tension": "Feels suffocated by her partner's need for immediate responses, and sometimes her silence is actually anger, not processing.",
       "trigger_type": "Time-based Analysis",
       "trigger_behavior": "Creates extended silences while processing emotional or complex information"
     },
@@ -761,6 +767,7 @@
       ],
       "speaking_style": "Becomes notably quiet during emotional discussions, long pauses between thoughts.",
       "hidden_intention": "Tries to avoid saying something harmful by taking time to calm down.",
+      "hidden_tension": "Has things he desperately wants to say but swallows — resentment is building from years of self-censorship.",
       "trigger_type": "Time-based Analysis",
       "trigger_behavior": "Goes silent for extended periods when emotionally overwhelmed"
     },
@@ -885,6 +892,7 @@
       ],
       "speaking_style": "Deliberately paced with intentional silences, values quality over speed of response.",
       "hidden_intention": "Wants to have meaningful rather than superficial conversations.",
+      "hidden_tension": "Privately looks down on her partner's emotional intelligence and feels intellectually lonely in the relationship.",
       "trigger_type": "Time-based Analysis",
       "trigger_behavior": "Takes long contemplative pauses to formulate deep, thoughtful responses"
     },
@@ -1009,6 +1017,7 @@
       ],
       "speaking_style": "Becomes silent and withdrawn when feeling criticized or overwhelmed.",
       "hidden_intention": "Uses silence to protect himself from emotional pain.",
+      "hidden_tension": "His stonewalling hides that he has already mentally checked out of certain aspects of the relationship.",
       "trigger_type": "Time-based Analysis",
       "trigger_behavior": "Shuts down and becomes silent when feeling criticized or attacked"
     },
@@ -1133,6 +1142,7 @@
       ],
       "speaking_style": "Becomes quiet when emotionally activated, needs time to regulate before continuing.",
       "hidden_intention": "Wants to stay emotionally regulated rather than react from a triggered state.",
+      "hidden_tension": "Fears she is too emotionally fragile for this relationship and that her partner secretly finds her exhausting.",
       "trigger_type": "Time-based Analysis",
       "trigger_behavior": "Becomes silent when experiencing intense emotions, needing time to process and regulate"
     },
@@ -1257,6 +1267,7 @@
       ],
       "speaking_style": "Escalates quickly from calm to highly emotional, uses absolute language like 'always' and 'never'.",
       "hidden_intention": "Feels unheard and uses emotional intensity to get attention.",
+      "hidden_tension": "Knows her escalation pushes people away but cannot stop — terrified that calmness means being ignored.",
       "trigger_type": "Semantic Analysis",
       "trigger_behavior": "Rapidly escalates emotional intensity and uses inflammatory language during conflicts"
     },
@@ -1381,6 +1392,7 @@
       ],
       "speaking_style": "Frequently changes subjects when conversations become emotionally challenging.",
       "hidden_intention": "Avoids emotional vulnerability by redirecting to safer topics.",
+      "hidden_tension": "Is dodging a specific conversation about something he did that he is deeply ashamed of.",
       "trigger_type": "Semantic Analysis",
       "trigger_behavior": "Consistently shifts conversation topics away from emotional or difficult subjects"
     },
@@ -1505,6 +1517,7 @@
       ],
       "speaking_style": "Makes concerning statements about self-worth and self-harm when emotionally overwhelmed.",
       "hidden_intention": "Expresses emotional pain through concerning language, may be seeking help or attention.",
+      "hidden_tension": "Uses dark language partly to test whether her partner truly cares enough to react.",
       "trigger_type": "Semantic Analysis",
       "trigger_behavior": "Uses concerning language about self-harm or self-worth during emotional distress"
     },
@@ -1629,6 +1642,7 @@
       ],
       "speaking_style": "Uses harsh, demeaning language during conflicts, makes personal attacks.",
       "hidden_intention": "Uses aggressive language to maintain control when feeling threatened.",
+      "hidden_tension": "Deep down is terrified of abandonment and uses harshness because vulnerability has never been safe for him.",
       "trigger_type": "Semantic Analysis",
       "trigger_behavior": "Uses harsh, demeaning, or intimidating language during relationship conflicts"
     },
@@ -1753,6 +1767,7 @@
       ],
       "speaking_style": "Uses dramatic, intense language and rapidly escalates emotional expression.",
       "hidden_intention": "Uses dramatic expression to communicate the depth of her emotional experience.",
+      "hidden_tension": "Secretly believes her partner does not love her as much as she loves them.",
       "trigger_type": "Semantic Analysis",
       "trigger_behavior": "Rapidly escalates to dramatic, intense emotional expression during conflicts"
     },
@@ -1877,6 +1892,7 @@
       ],
       "speaking_style": "Sends multiple consecutive messages, each over 100 words, covering excessive detail.",
       "hidden_intention": "Believes thorough explanation will prevent misunderstandings.",
+      "hidden_tension": "Over-explains because a past partner used 'you never told me' as an excuse to betray his trust.",
       "trigger_type": "Quantitative Analysis",
       "trigger_behavior": "Sends 6+ consecutive messages, each over 100 words, overwhelming the conversation"
     },
@@ -2004,6 +2020,7 @@
       ],
       "speaking_style": "Sends many consecutive short messages without pausing for responses.",
       "hidden_intention": "Wants to capture every thought before forgetting it.",
+      "hidden_tension": "Rapid-fires messages because silence from her partner triggers abandonment anxiety.",
       "trigger_type": "Quantitative Analysis",
       "trigger_behavior": "Sends 6+ consecutive short messages in rapid succession without waiting for responses"
     },
@@ -2128,6 +2145,7 @@
       ],
       "speaking_style": "Delivers long monologues without pausing, treats conversations like lectures.",
       "hidden_intention": "Believes comprehensive explanation will solve relationship problems.",
+      "hidden_tension": "Lectures because he is terrified of losing control — if he stops talking, his partner might say something he cannot handle.",
       "trigger_type": "Quantitative Analysis",
       "trigger_behavior": "Delivers extended monologues of 150+ words without pausing for partner input"
     },
@@ -2252,6 +2270,7 @@
       ],
       "speaking_style": "Provides exhaustive detail in very long messages, overwhelming partners with information.",
       "hidden_intention": "Believes complete information sharing will prevent relationship problems.",
+      "hidden_tension": "Her obsessive detail-sharing masks a deep fear that she is fundamentally misunderstood and unlovable.",
       "trigger_type": "Quantitative Analysis",
       "trigger_behavior": "Sends extremely long messages (200+ words) with excessive detail about minor situations"
     },
@@ -2379,6 +2398,7 @@
       ],
       "speaking_style": "Repeats the same messages and points multiple times in succession.",
       "hidden_intention": "Believes repetition will ensure his message is understood and valued.",
+      "hidden_tension": "Repeats himself because his emotionally neglectful parents never listened the first time — he is unconsciously re-enacting that wound.",
       "trigger_type": "Quantitative Analysis",
       "trigger_behavior": "Sends 6+ consecutive messages repeating the same points with slight variations"
     },

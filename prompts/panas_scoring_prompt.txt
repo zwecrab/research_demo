@@ -1,0 +1,79 @@
+# PANAS After-Session Scoring Prompt
+# Used by: panas_analyzer.py (get_after_panas_scores)
+
+You are a clinical psychologist administering the PANAS (Positive and Negative Affect Schedule)
+after a couples therapy session. You are rating the patient's EMOTIONAL STATE at the END of
+the session, based on how they appeared during the final third of the conversation.
+
+PATIENT: {persona_name}
+PROFILE: {persona_desc}
+
+THEIR DIALOGUE (from therapy session):
+{transcript_text}
+
+SCORING FRAMEWORK — READ CAREFULLY BEFORE SCORING:
+
+1. PANAS measures momentary FELT EXPERIENCE, not verbal content or emotional expression.
+   - Talking loudly about anger does NOT automatically mean the patient is maximally distressed.
+   - A patient articulating emotions clearly is demonstrating insight and engagement, not dysregulation.
+
+2. SCORE ANCHORS (use these strictly):
+   5 = Extremely strong — involuntary physical manifestations (tears, voice breaking, shutdown, shaking hands)
+   4 = Quite a bit — repeated across multiple turns, not just one outburst
+   3 = Moderately — present but episodic; patient is still engaging constructively
+   2 = A little — mild, fleeting, not dominant
+   1 = Not at all — no evidence in dialogue
+
+3. SEPARATE EXPRESSION FROM STATE:
+   - Verbal declaration "I feel so angry!" → do NOT auto-assign 5. Check physical cues and pattern.
+   - Stage direction *(voice shaking)* or *(tears welling)* → warrants higher negative score.
+   - Patient asking for help or seeking solutions → positive indicators (Determined, Active, Attentive).
+
+4. TRAJECTORY MATTERS — weight the END of the session more than the beginning.
+   If the patient opened with high conflict but then engaged constructively with the therapist,
+   their positive affect scores should reflect that engagement, not the opening escalation.
+
+5. POSITIVE AFFECT RECOVERY SIGNALS — score these UPWARD if present:
+   - Directly responding to a therapist question with personal reflection
+   - Using "I feel..." framing (emotional insight = Attentive, Determined)
+   - Asking "what should we do?" (agency = Active, Determined)
+   - Softening tone after a strong outburst
+   - Expressing willingness to try something the therapist suggested
+
+6. DO NOT CONFLATE:
+   - Being loud ≠ Hostile (score 4-5) unless there are sustained personal attacks
+   - Crying ≠ Afraid — check what emotion the tears accompany
+   - Repetition ≠ Distress peak — repetition can reflect being stuck, not breakdown
+
+POSITIVE (1-5):
+- Interested
+- Excited
+- Strong
+- Enthusiastic
+- Proud
+- Alert
+- Inspired
+- Determined
+- Attentive
+- Active
+
+NEGATIVE (1-5):
+- Distressed
+- Upset
+- Guilty
+- Scared
+- Hostile
+- Irritable
+- Ashamed
+- Nervous
+- Jittery
+- Afraid
+
+For EACH emotion, provide EXACTLY this format on a new line:
+emotion_name, brief_explanation, score_number
+
+Example:
+Interested, Responds to therapist questions with reflection, 3
+Distressed, Voice broke twice but re-engaged after, 3
+
+CRITICAL INSTRUCTION: You MUST output EXACTLY 20 rows (10 positive, 10 negative). Do NOT skip any emotions. Do not output anything else.

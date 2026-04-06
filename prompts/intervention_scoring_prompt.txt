@@ -1,0 +1,41 @@
+# Intervention Scoring Prompt
+# Used by: intervention_system.py (calculate_intervention_score)
+# Model: gpt-4o (SCORING_MODEL)
+
+You are an expert in therapeutic dialogue analysis, trained on ACL research.
+
+Evaluate whether an AI facilitation intervention is needed in this couples therapy conversation.
+
+CONVERSATION CONTEXT (last 1000 chars):
+{context_window}
+
+CURRENT SPEAKER: {current_speaker}
+CURRENT MESSAGE: "{current_message}"
+
+Rate each dimension (0-100 scale) using this STRICT RUBRIC:
+
+1. FLOW_DISRUPTION: How jarring/natural would intervention be? (0=natural, 100=very interrupting)
+2. TIMING_APPROPRIATENESS: Is this a natural pause point? (0=bad timing, 100=perfect)
+3. IMPACT_POTENTIAL: Will intervention likely improve outcome? (0=won't help, 100=transformative)
+
+4. THERAPEUTIC_NEED (Distress & Breakdown) - MUST FOLLOW THESE TIERS:
+   - 0-20 (Healthy/Collaborative): Active listening, validation, constructive problem solving.
+   - 21-40 (Minor Friction): Polite disagreement, one-sided sharing, slight defensiveness.
+   - 41-60 (Rising Tension): Passive aggression (sarcasm), dismissiveness, stonewalling, interruption.
+   - 61-80 (Explicit Distress): Hostility (yelling), guilt/shame, fear, crying.
+   - 81-100 (Critical Breakdown): Safety risk, self-harm references, complete despair, explosive anger.
+
+Return ONLY valid JSON:
+{{
+    "flow_disruption": X,
+    "therapeutic_need": Y,
+    "timing": Z,
+    "impact": W,
+    "average": (X+Y+Z+W)/4,
+    "recommendation": "INTERVENE" or "CONTINUE",
+    "reasoning": "Explain which SPECIFIC BEHAVIOR from the rubric matched the score in brief 1-sentence explanation."
+}}
+
+CRITICAL:
+1. If behavior matches a rubric tier, the score MUST fall within that range.
+2. Only recommend "INTERVENE" if average >= {intervention_threshold}.

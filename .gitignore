@@ -1,7 +1,45 @@
-# Ignore environment variables
+# Environment
 **/.env
 __pycache__/
 *.pyc
+*.pyo
 
+# Claude / editor
+.claude/
+.vscode/
+
+# Auto-generated transcripts (hundreds of files, regenerable)
+transcripts/
+
+# Large data / discussions (not tracked — see CLAUDE.md for required file)
+discussions/
+
+# Research writing (large, managed separately)
 paper/
 write_demo/
+presentation/
+reveal/
+figures_test/
+
+# Backup and test folders
+backup/
+
+# Fund request forms (sensitive personal/financial docs)
+"project_fund request forms/"
+project_fund*
+
+# Planning / scratch docs
+bau.md
+roadmap.md
+roadmap_2.md
+task.md
+feedback/
+
+# One-off analysis scripts (not part of core simulation)
+analyze_bias.py
+analyze_bias2.py
+emotion_tracker.py
+app/temp_uploads/
+app/experiments.db
+compare/*.txt
+compare/*.json
