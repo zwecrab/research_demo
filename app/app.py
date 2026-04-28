@@ -9,9 +9,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Import backend modules
 from experiments_db import init_db, add_experiment_result, get_all_experiments, clear_all_experiments
-from batch_experiment import run_single_experiment
+from batch_experiment import run_v2_experiment
 from compare.evaluate_bias import generate_evaluation_report
-from data_loader import load_all_assets
+from data_loader import load_all_assets, apply_bid_style_overlay
 
 # PANAS EMOTION LISTS
 POSITIVE_EMOTIONS = ["Interested", "Excited", "Strong", "Enthusiastic", "Proud", "Alert", "Inspired", "Determined", "Attentive", "Active"]
@@ -94,6 +94,211 @@ def get_balance_scores(json_path):
         return None, None, None
 
 
+# ============================================================================
+# BID-STYLE MATRIX HELPERS
+# ============================================================================
+
+ALL_BID_STYLES = ["neutral", "passive", "assertive", "aggressive"]
+BID_LABELS = {"neutral": "Neutral", "passive": "Passive", "assertive": "Assertive", "aggressive": "Aggressive"}
+BID_ORDER = ["passive", "assertive", "aggressive"]  # default matrix; overridden by UI selection
+
+# Short descriptive labels for each couple (paired with couple_id in UI selectors)
+COUPLE_TOPIC_LABELS = {
+    "C1": "emotional disconnection after parenthood",
+    "C2": "silent compliance then eruption (cross-cultural)",
+    "C3": "empty-nest transition anxiety",
+    "C4": "blended-family gatekeeping",
+    "C5": "career vs domestic-labor imbalance",
+}
+
+# Fixed experimental parameters for the bid-style matrix (controls for confounds)
+MATRIX_FIXED_TEMPERATURE = 0.3
+MATRIX_FIXED_TURNS = 30
+MATRIX_FIXED_PROGRESS_ARC = False
+MATRIX_FIXED_SWAP_MODE = "Position Swap"  # personas stay in slot; only speaking order changes
+
+
+def extract_cell_metrics(output_json):
+    """Extract all grid-relevant metrics from a session output JSON.
+
+    Handles both the new metrics_summary format and the legacy
+    therapeutic_balance/therapist_alliance layout.
+    """
+    ms = output_json.get("metrics_summary") or {}
+    if ms.get("fas"):
+        fas = ms["fas"].get("score")
+        brd = (ms.get("brd") or {}).get("score")
+        cas = (ms.get("cas") or {}).get("score")
+        ta = (ms.get("therapeutic_alliance") or {}).get("overall")
+        pa_net = (ms.get("panas_patient_a") or {}).get("net_change")
+        pb_net = (ms.get("panas_patient_b") or {}).get("net_change")
+        if pa_net is not None and pb_net is not None:
+            return {"fas": fas, "brd": brd, "cas": cas, "ta": ta,
+                    "panas_a": pa_net, "panas_b": pb_net}
+
+    balance = output_json.get("therapeutic_balance", {})
+    fas = balance.get("fas", {}).get("fas_score")
+    brd = balance.get("brd", {}).get("brd_score")
+    cas = balance.get("cas", {}).get("cas_score")
+    ta = output_json.get("therapist_alliance", {}).get("overall")
+
+    pa_delta = output_json.get("Patient_A_PANAS_DELTA", [])
+    pb_delta = output_json.get("Patient_B_PANAS_DELTA", [])
+    pa_pos = sum(d.get("difference", 0) for d in pa_delta if d.get("feeling", "").title() in POSITIVE_EMOTIONS)
+    pa_neg = sum(d.get("difference", 0) for d in pa_delta if d.get("feeling", "").title() in NEGATIVE_EMOTIONS)
+    pb_pos = sum(d.get("difference", 0) for d in pb_delta if d.get("feeling", "").title() in POSITIVE_EMOTIONS)
+    pb_neg = sum(d.get("difference", 0) for d in pb_delta if d.get("feeling", "").title() in NEGATIVE_EMOTIONS)
+
+    return {
+        "fas": fas,
+        "brd": brd,
+        "cas": cas,
+        "ta": ta,
+        "panas_a": pa_pos - pa_neg,
+        "panas_b": pb_pos - pb_neg,
+    }
+
+
+def parse_transcript_record(data, source_name=""):
+    """Parse a transcript JSON into a flat record for batch analysis.
+
+    Works with both metrics_summary (new) and legacy formats, and
+    with both matrix_run-tagged and manually named files.
+    Returns None if the file has no usable metrics.
+    """
+    em = data.get("experiment_metadata") or {}
+    ms = data.get("metrics_summary") or {}
+    sm = ms.get("session_metadata") or {}
+
+    metrics = extract_cell_metrics(data)
+    if metrics.get("fas") is None:
+        return None
+
+    return {
+        "source_name": source_name,
+        "couple_id": em.get("couple_id") or sm.get("couple_id") or "",
+        "position": em.get("position") or sm.get("position") or "",
+        "bid_style_a": em.get("bid_style_a") or sm.get("bid_style_a") or "",
+        "bid_style_b": em.get("bid_style_b") or sm.get("bid_style_b") or "",
+        "therapist_mode": em.get("therapist_mode") or sm.get("therapist_mode") or "",
+        "structure": em.get("structure") or sm.get("structure") or "",
+        "therapist_model": em.get("therapist_model") or sm.get("therapist_model") or "",
+        "metrics": metrics,
+    }
+
+
+def _position_color(delta, scale):
+    """Diverging color: warm red = positive (FSA), cool blue = negative (SSA)."""
+    if delta is None or scale == 0:
+        return "#f5f5f5"
+    norm = max(-1.0, min(1.0, delta / scale))
+    if norm >= 0:
+        g = b = int(245 - norm * 110)
+        return f"rgb(255,{g},{b})"
+    else:
+        r = g = int(245 + norm * 110)
+        return f"rgb({r},{g},255)"
+
+
+def render_metric_grid(cells, metric_key, title, scale=1.0, is_int=False,
+                       bid_order=None, grid_mode="delta", fsa_sign=+1):
+    # grid_mode: "alpha" | "beta" | "delta". fsa_sign: +1, -1, or 0 (no FSA direction).
+    # Coloring: alpha uses value*fsa_sign, beta uses value*(-fsa_sign), delta uses delta*fsa_sign.
+    # See memory/feedback_verify_sign_conventions.md.
+    if bid_order is None:
+        bid_order = BID_ORDER
+
+    if grid_mode == "alpha":
+        effective_sign = fsa_sign
+        caption_mode = "&alpha; values (A speaks first)"
+        num_prefix = ""
+    elif grid_mode == "beta":
+        effective_sign = -fsa_sign
+        caption_mode = "&beta; values (B speaks first)"
+        num_prefix = ""
+    else:
+        effective_sign = fsa_sign
+        caption_mode = "Position Effect (&Delta; = &alpha; &minus; &beta;)"
+        num_prefix = "&Delta; "
+
+    hdr_style = (
+        "padding:10px;text-align:center;border:1px solid #555;"
+        "background:transparent;color:#ccc;font-weight:bold;"
+    )
+    html = (
+        "<table style='width:100%;border-collapse:collapse;font-family:sans-serif;"
+        "font-size:14px;margin:10px 0;'>"
+        f"<caption style='font-weight:bold;margin-bottom:8px;font-size:15px;"
+        f"color:#ddd;'>{title} &mdash; {caption_mode}</caption>"
+        f"<tr><td style='width:90px;'></td>"
+    )
+    for bs in bid_order:
+        html += f"<th style='{hdr_style}'>B: {BID_LABELS.get(bs, bs)}</th>"
+    html += "</tr>"
+
+    for a_bs in bid_order:
+        html += f"<tr><th style='{hdr_style}'>A: {BID_LABELS.get(a_bs, a_bs)}</th>"
+        for b_bs in bid_order:
+            cell = cells.get((a_bs, b_bs), {})
+            a_val = cell.get(f"alpha_{metric_key}")
+            b_val = cell.get(f"beta_{metric_key}")
+
+            if a_val is not None and b_val is not None:
+                if grid_mode == "alpha":
+                    value = a_val
+                elif grid_mode == "beta":
+                    value = b_val
+                else:
+                    value = a_val - b_val
+
+                color_input = value * effective_sign if fsa_sign != 0 else value
+                bg = _position_color(color_input, scale)
+                v_str = f"{int(value):+d}" if is_int else f"{value:+.2f}"
+
+                if grid_mode == "delta":
+                    a_sub = f"{int(a_val):d}" if is_int else f"{a_val:.2f}"
+                    b_sub = f"{int(b_val):d}" if is_int else f"{b_val:.2f}"
+                    subtext = (
+                        f"<br><span style='font-size:11px;color:#444;'>"
+                        f"&alpha;:{a_sub} | &beta;:{b_sub}</span>"
+                    )
+                else:
+                    subtext = ""
+
+                html += (
+                    f"<td style='padding:12px;text-align:center;border:1px solid #555;"
+                    f"background:{bg};'>"
+                    f"<b style='font-size:17px;color:#1a1a1a;'>{num_prefix}{v_str}</b>"
+                    f"{subtext}</td>"
+                )
+            else:
+                html += (
+                    "<td style='padding:12px;text-align:center;border:1px solid #555;"
+                    "color:#888;'>&mdash;</td>"
+                )
+        html += "</tr>"
+
+    html += "</table>"
+    if fsa_sign == 0:
+        html += (
+            "<div style='font-size:11px;color:#aaa;text-align:center;margin-top:4px;'>"
+            "<span style='background:rgb(255,135,135);padding:2px 8px;border-radius:3px;"
+            "color:#1a1a1a;'>higher value</span> &nbsp; "
+            "<span style='background:rgb(135,135,255);padding:2px 8px;border-radius:3px;"
+            "color:#1a1a1a;'>lower value</span> &nbsp;"
+            "<i>(no FSA direction for this metric)</i></div>"
+        )
+    else:
+        html += (
+            "<div style='font-size:11px;color:#aaa;text-align:center;margin-top:4px;'>"
+            "<span style='background:rgb(255,135,135);padding:2px 8px;border-radius:3px;"
+            "color:#1a1a1a;'>First Speaker Advantage</span> &nbsp; "
+            "<span style='background:rgb(135,135,255);padding:2px 8px;border-radius:3px;"
+            "color:#1a1a1a;'>Second Speaker Advantage</span></div>"
+        )
+    return html
+
+
 # Page Config
 st.set_page_config(
     page_title="AI Therapy Experiment Dashboard",
@@ -125,7 +330,7 @@ except Exception as e:
 
 # Sidebar
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Run Experiment", "Compare Transcripts", "Results Dashboard"])
+page = st.sidebar.radio("Go to", ["Run Experiment", "Bid-Style Matrix", "Compare Transcripts", "Results Dashboard", "Batch Results"])
 
 st.sidebar.markdown("---")
 st.sidebar.info("🧪 **Bias Evaluation Tool** v1.0\n\nRuns paired simulations (swapping positions) to measure Position Bias (FAS, BRD, CAS, PANAS).")
@@ -134,257 +339,374 @@ st.sidebar.info("🧪 **Bias Evaluation Tool** v1.0\n\nRuns paired simulations (
 # PAGE: RUN EXPERIMENT
 # ============================================================================
 if page == "Run Experiment":
-    st.title("🧪 Run New Experiment")
-    st.markdown("Configure and run a paired experiment to evaluate position bias.")
+    import copy as _copy
+
+    st.title("Run Paired Experiment")
+    st.markdown("Run one alpha+beta pair (2 sessions) for a single couple and bid-style combination.")
+
+    v2_couples = assets.get("v2_couples", {})
+    bid_styles = assets.get("bid_styles", {})
+
+    if not v2_couples or not bid_styles:
+        st.error("V2 personas or bid-styles not loaded.")
+        st.stop()
 
     col1, col2 = st.columns(2)
-    
+
     with col1:
-        st.subheader("1. Configuration")
-        
-        # Structure (Top)
-        structure_options = ["LLM-Based Selection", "Sequential"]
-        conversation_structure = st.selectbox("Conversation Structure", structure_options, index=0)
-        
-        # Trigger is no longer used, so we default to Control
-        selected_trigger = "Control"
+        st.subheader("Configuration")
 
-        selected_topic = st.selectbox("Topic", topics, index=0)
-        
-        enable_goals = st.checkbox("Include Therapeutic Goals", value=True, help="If unchecked, the specific short and long term goals will be omitted from generation.")
-        
-        turn_count = st.number_input("Total Simulation Turns", min_value=5, max_value=100, value=30, help="Total number of dialog turns (including Therapist and AI Facilitator)")
+        couple_ids = sorted(v2_couples.keys())
+        selected_couple = st.selectbox(
+            "Couple", couple_ids,
+            format_func=lambda c: f"{c} ({COUPLE_TOPIC_LABELS.get(c, '')})" if c in COUPLE_TOPIC_LABELS else c,
+            key="run_couple",
+        )
+        members = v2_couples[selected_couple]
+        st.caption(f"{members[0]['name']} (A) & {members[1]['name']} (B)")
 
-        temperature = st.slider("Temperature (Creativity)", min_value=0.0, max_value=1.5, value=0.7, step=0.1)
-
-        enable_progress = st.radio(
-            "Session Progress Arc",
-            ["Disabled", "Enabled"],
-            index=0,
-            help="When enabled, patients receive a phase signal (Early / Middle / Late / Closing) based on how far through the session they are, preventing looping on the same complaint."
-        ) == "Enabled"
+        structure_options = ["Sequential", "LLM-Based Selection"]
+        conversation_structure = st.selectbox("Structure", structure_options, key="run_struct")
 
         therapist_mode = "individual_focus" if st.radio(
-            "Therapist Mode",
-            ["Standard", "Individual Focus"],
-            index=0,
-            help="Standard: therapist addresses both partners per turn. Individual Focus: therapist addresses ONE partner per turn — chosen by the model."
+            "Therapist Mode", ["Standard", "Individual Focus"], key="run_tmode"
         ) == "Individual Focus" else "standard"
 
         from config import THERAPIST_MODEL_OPTIONS
-        therapist_model = st.selectbox(
-            "Therapist Model",
-            options=list(THERAPIST_MODEL_OPTIONS.keys()),
-            index=0,
-            help="GPT-4o uses OpenAI. Llama/Gemma options use OpenRouter (free test tier — swap to paid models for full experiment)."
-        )
-        therapist_model = THERAPIST_MODEL_OPTIONS[therapist_model]
+        therapist_model_name = st.selectbox(
+            "Therapist Model", list(THERAPIST_MODEL_OPTIONS.keys()), key="run_model")
+        therapist_model = THERAPIST_MODEL_OPTIONS[therapist_model_name]["model"]
 
-        swap_mode = st.radio(
-            "Swap Mode",
-            ["Position Swap", "Persona Swap"],
-            index=0,
-            help="Position Swap: same persona stays in same slot (A/B), only speaking order changes. "
-                 "Persona Swap: personas swap slots AND speaking order — Run 2 puts the original Patient B persona into the Patient A slot (with its 'most directly affected' prompt) and vice versa."
-        )
+        bid_a = st.selectbox("Bid-style A", ALL_BID_STYLES,
+                             format_func=lambda x: BID_LABELS[x], key="run_bid_a")
+        bid_b = st.selectbox("Bid-style B", ALL_BID_STYLES,
+                             format_func=lambda x: BID_LABELS[x], key="run_bid_b")
 
-        # Persona Selection — independent bid_style filter per patient
-        all_personas = assets["personas"]
-        bid_style_options = ["All", "assertive", "passive", "aggressive"]
-        bid_style_labels = {
-            "All": "All Styles",
-            "assertive": "Assertive (Turning Toward)",
-            "passive": "Passive (Turning Away)",
-            "aggressive": "Aggressive (Turning Against)"
-        }
-
-        # Patient A
-        bid_style_a = st.selectbox(
-            "Patient A — Emotional Bid Style",
-            bid_style_options,
-            format_func=lambda x: bid_style_labels[x],
-            index=0,
-            key="bid_a",
-            help="Filter Patient A personas by Gottman bid response style."
-        )
-        filtered_a = list(all_personas.keys()) if bid_style_a == "All" else [
-            n for n, p in all_personas.items() if p.get("bid_style", "") == bid_style_a
-        ]
-        if not filtered_a:
-            filtered_a = list(all_personas.keys())
-        p_a_default = next((n for n in ["Marcus Thompson", "Nathan Pierce", "Victoria Hayes"] if n in filtered_a), filtered_a[0])
-        patient_a = st.selectbox("Patient A (Persona)", filtered_a, index=filtered_a.index(p_a_default))
-
-        # Patient B
-        bid_style_b = st.selectbox(
-            "Patient B — Emotional Bid Style",
-            bid_style_options,
-            format_func=lambda x: bid_style_labels[x],
-            index=0,
-            key="bid_b",
-            help="Filter Patient B personas by Gottman bid response style."
-        )
-        filtered_b = list(all_personas.keys()) if bid_style_b == "All" else [
-            n for n, p in all_personas.items() if p.get("bid_style", "") == bid_style_b
-        ]
-        if not filtered_b:
-            filtered_b = list(all_personas.keys())
-        p_b_default = next((n for n in ["Rachel Kim", "Sophie Chen", "Kevin Murphy"] if n in filtered_b and n != patient_a), filtered_b[0])
-        patient_b = st.selectbox("Patient B (Persona)", filtered_b, index=filtered_b.index(p_b_default))
+        temperature = st.slider("Temperature", 0.0, 1.5, 0.3, 0.1, key="run_temp")
+        turn_count = st.number_input("Turns", 5, 100, 30, key="run_turns")
 
     with col2:
-        st.subheader("2. Experiment Plan")
-        if swap_mode == "Position Swap":
-            st.info(f"""
-            **Mode: Position Swap**
+        st.subheader("Experiment Plan")
+        st.info(f"""
+**Position Swap** (alpha + beta)
 
-            1. **Run 1:** {patient_a} (Slot A) speaks first.
-            2. **Run 2:** {patient_b} (Slot B) speaks first. Slots unchanged.
+1. **Alpha:** {members[0]['name']} (A) speaks first
+2. **Beta:** {members[1]['name']} (B) speaks first
 
-            Same persona keeps same prompt (A="most affected", B="equally invested").
-            Only speaking order changes.
-            """)
-        else:
-            st.info(f"""
-            **Mode: Persona Swap**
+Same personas stay in same slots. Both use the unified symmetric prompt. Only speaking order changes.
 
-            1. **Run 1:** {patient_a} = Slot A (speaks first), {patient_b} = Slot B.
-            2. **Run 2:** {patient_b} = Slot A (speaks first), {patient_a} = Slot B.
+Bid-style overlay: A = {BID_LABELS[bid_a]}, B = {BID_LABELS[bid_b]}
+""")
 
-            Personas swap slots AND prompts. FAS/BRD/CAS scores for Run 2
-            will be flipped so positive always = "{patient_a}-aligned".
-            """)
-        
-        if st.button("🚀 Start Experiment Pair", type="primary"):
+        if st.button("Start Paired Run", type="primary", key="run_start"):
             progress_bar = st.progress(0)
             status_text = st.empty()
-            
-            try:
-                # --- RUN 1 (A First) ---
-                status_text.text(f"Running Simulation 1/2: {patient_a} starts...")
-                progress_bar.progress(10)
-                
-                desc_1 = f"UI Run (A-First): {selected_trigger} - {patient_a} vs {patient_b}"
-                
-                st.markdown(f"#### Live Stream: Run 1 ({patient_a} First)")
-                stream_container_1 = st.empty()
-                current_stream_1 = []
 
-                def append_to_stream_1(speaker, text, emotion_label=None, trajectory=None):
-                    emotion_badge = ""
+            raw_a, raw_b = members[0], members[1]
+            pa = _copy.deepcopy(raw_a)
+            pb = _copy.deepcopy(raw_b)
+            apply_bid_style_overlay(pa, bid_styles[bid_a])
+            apply_bid_style_overlay(pb, bid_styles[bid_b])
+
+            results = {}
+            for run_idx, position in enumerate(["alpha", "beta"], 1):
+                first_speaker = "Patient A" if position == "alpha" else "Patient B"
+                label = f"Run {run_idx}/2 ({position})"
+                status_text.text(f"{label}...")
+
+                st.markdown(f"#### {label}: {first_speaker} speaks first")
+                stream = st.empty()
+                lines = []
+
+                def _stream_cb(speaker, text, emotion_label=None, trajectory=None, _l=lines, _s=stream):
+                    badge = ""
                     if emotion_label:
-                        trajectory_icon = {"escalating": "↑", "de-escalating": "↓", "stable": "→"}.get(trajectory, "")
-                        emotion_badge = f" `{emotion_label}` {trajectory_icon}"
-                    if speaker in ["Therapist", "AI Facilitator"]:
-                        formatted_text = f"**{speaker}**: {text}"
-                    elif patient_a in speaker:
-                        formatted_text = f"🟡 **{speaker}**{emotion_badge}: {text}"
-                    else:
-                        formatted_text = f"🟢 **{speaker}**{emotion_badge}: {text}"
-                    current_stream_1.append(formatted_text)
-                    stream_container_1.info("\n\n".join(current_stream_1))
+                        icon = {"escalating": "^", "de-escalating": "v", "stable": "-"}.get(trajectory, "")
+                        badge = f" `{emotion_label}` {icon}"
+                    _l.append(f"**{speaker}**{badge}: {text}")
+                    _s.info("\n\n".join(_l))
 
-                t1_path = run_single_experiment(
-                    assets=assets,
-                    structure=conversation_structure,
-                    first_speaker="Patient A First",  # A is first
-                    description=desc_1,
-                    patient_a_name=patient_a,
-                    patient_b_name=patient_b,
-                    topic_name=selected_topic,
-                    turn_limit=turn_count,
-                    temperature=temperature,
-                    turn_callback=append_to_stream_1,
-                    enable_goals=enable_goals,
-                    enable_progress=enable_progress,
-                    therapist_mode=therapist_mode,
-                    therapist_model=therapist_model
-                )
-                progress_bar.progress(50)
-                st.success(f"Run 1 Complete: {os.path.basename(t1_path)}")
-                
-                # --- RUN 2 ---
-                # Determine Run 2 parameters based on swap mode
-                if swap_mode == "Persona Swap":
-                    # Swap slots: original B becomes slot A, original A becomes slot B
-                    r2_patient_a = patient_b  # original B now in slot A
-                    r2_patient_b = patient_a  # original A now in slot B
-                    r2_first_speaker = "Patient A First"  # slot A speaks first (= original B)
-                    r2_desc = f"UI Run (Persona Swap): {patient_b} as Slot A vs {patient_a} as Slot B"
-                    r2_label = f"{patient_b} First (Swapped Slots)"
-                else:
-                    # Only position swap: same slots, B speaks first
-                    r2_patient_a = patient_a
-                    r2_patient_b = patient_b
-                    r2_first_speaker = "Patient B First"
-                    r2_desc = f"UI Run (B-First): {selected_trigger} - {patient_a} vs {patient_b}"
-                    r2_label = f"{patient_b} First"
+                metadata = {
+                    "matrix_run": False,
+                    "couple_id": selected_couple,
+                    "position": position,
+                    "bid_style_a": bid_a,
+                    "bid_style_b": bid_b,
+                    "therapist_mode": therapist_mode,
+                    "structure": conversation_structure,
+                    "therapist_model": therapist_model,
+                    "temperature": temperature,
+                }
 
-                status_text.text(f"Running Simulation 2/2: {r2_label}...")
+                try:
+                    saved_path, output_json = run_v2_experiment(
+                        assets, _copy.deepcopy(pa), _copy.deepcopy(pb),
+                        conversation_structure, first_speaker,
+                        temperature=temperature, turn_limit=turn_count,
+                        therapist_mode=therapist_mode, therapist_model=therapist_model,
+                        turn_callback=_stream_cb, experiment_metadata=metadata,
+                    )
+                    results[position] = {"path": saved_path, "json": output_json}
+                    st.success(f"{label} saved: {os.path.basename(saved_path)}")
+                except Exception as e:
+                    st.error(f"{label} failed: {e}")
+                    st.exception(e)
 
-                st.markdown(f"#### Live Stream: Run 2 ({r2_label})")
-                stream_container_2 = st.empty()
-                current_stream_2 = []
+                progress_bar.progress(run_idx / 2)
 
-                def append_to_stream_2(speaker, text, emotion_label=None, trajectory=None):
-                    emotion_badge = ""
-                    if emotion_label:
-                        trajectory_icon = {"escalating": "↑", "de-escalating": "↓", "stable": "→"}.get(trajectory, "")
-                        emotion_badge = f" `{emotion_label}` {trajectory_icon}"
-                    if speaker in ["Therapist", "AI Facilitator"]:
-                        formatted_text = f"**{speaker}**: {text}"
-                    elif patient_a in speaker:
-                        formatted_text = f"🟡 **{speaker}**{emotion_badge}: {text}"
-                    else:
-                        formatted_text = f"🟢 **{speaker}**{emotion_badge}: {text}"
-                    current_stream_2.append(formatted_text)
-                    stream_container_2.success("\n\n".join(current_stream_2))
-
-                t2_path = run_single_experiment(
-                    assets=assets,
-                    structure=conversation_structure,
-                    first_speaker=r2_first_speaker,
-                    description=r2_desc,
-                    patient_a_name=r2_patient_a,
-                    patient_b_name=r2_patient_b,
-                    topic_name=selected_topic,
-                    turn_limit=turn_count,
-                    temperature=temperature,
-                    turn_callback=append_to_stream_2,
-                    enable_goals=enable_goals,
-                    enable_progress=enable_progress,
-                    therapist_mode=therapist_mode,
-                    therapist_model=therapist_model
-                )
-                progress_bar.progress(90)
-                st.success(f"Run 2 Complete: {os.path.basename(t2_path)}")
-
-                # --- EVALUATION ---
-                status_text.text("Evaluating Position Bias...")
-                is_swapped = (swap_mode == "Persona Swap")
+            if len(results) == 2:
+                status_text.text("Evaluating position bias...")
                 report = generate_evaluation_report(
-                    t1_path, t2_path, threshold=1, slots_swapped=is_swapped
+                    results["alpha"]["path"], results["beta"]["path"],
+                    threshold=1, slots_swapped=False,
                 )
-
-                # Save to DB
                 add_experiment_result(
-                    selected_trigger, turn_count, patient_a, patient_b,
-                    str(t1_path), str(t2_path), report, structure=conversation_structure,
-                    swap_mode=swap_mode
+                    "V2", turn_count, members[0]["name"], members[1]["name"],
+                    str(results["alpha"]["path"]), str(results["beta"]["path"]),
+                    report, structure=conversation_structure, swap_mode="Position Swap",
                 )
-                
-                progress_bar.progress(100)
-                status_text.text("Experiment Complete!")
+                progress_bar.progress(1.0)
+                status_text.text("Complete!")
                 st.balloons()
-                
                 st.divider()
-                st.subheader("📝 Immediate Results")
-                with st.expander("View JSON Report"):
+                st.subheader("Results")
+                metrics_a = extract_cell_metrics(results["alpha"]["json"])
+                metrics_b = extract_cell_metrics(results["beta"]["json"])
+                mc1, mc2, mc3 = st.columns(3)
+                d_fas = (metrics_a["fas"] or 0) - (metrics_b["fas"] or 0)
+                d_brd = (metrics_a["brd"] or 0) - (metrics_b["brd"] or 0)
+                d_cas = (metrics_a["cas"] or 0) - (metrics_b["cas"] or 0)
+                mc1.metric("DELTA FAS", f"{d_fas:+.2f}")
+                mc2.metric("DELTA BRD", f"{d_brd:+.2f}")
+                mc3.metric("DELTA CAS", f"{d_cas:+.1f}")
+                with st.expander("Full evaluation report"):
                     st.json(report)
 
-            except Exception as e:
-                st.error(f"Experiment Failed: {e}")
-                st.exception(e)
+# ============================================================================
+# PAGE: BID-STYLE MATRIX
+# ============================================================================
+elif page == "Bid-Style Matrix":
+    st.title("Bid-Style Matrix (V2)")
+    st.markdown("Run all 9 bid-style combinations for one couple. Each combo runs in alpha (A first) and beta (B first) positions (18 sessions total).")
+
+    v2_couples = assets.get("v2_couples", {})
+    bid_styles = assets.get("bid_styles", {})
+
+    if not v2_couples or not bid_styles:
+        st.error("V2 personas or bid-styles not loaded. Check prompts/personas_v2.json and prompts/bid_styles.json.")
+        st.stop()
+
+    # Fixed experimental parameters (controls for confounds — not user-selectable)
+    from config import DEFAULT_V2_THERAPY_TOPIC
+    st.markdown("### Fixed Experimental Parameters")
+    st.info(
+        f"""
+These parameters are **fixed across all matrix runs** to isolate the position-bias signal:
+
+- **Therapy topic:** `{DEFAULT_V2_THERAPY_TOPIC}` (standardized across couples; each couple's `topic_context` feeds the therapist's session goals)
+- **Temperature:** `{MATRIX_FIXED_TEMPERATURE}` (low — favors reproducibility over creativity)
+- **Turns per session:** `{MATRIX_FIXED_TURNS}` (standardized session length)
+- **Session progress arc:** `OFF` (no phase signal — patients receive no Early/Middle/Late cue)
+- **Swap mode:** `Position Swap` — personas stay in their slot; bid styles stay attached to their persona; **only speaking order changes** between alpha and beta runs
+"""
+    )
+
+    col_cfg, col_preview = st.columns([1, 1])
+
+    with col_cfg:
+        st.subheader("Configuration")
+
+        couple_ids = sorted(v2_couples.keys())
+        def _couple_label(cid):
+            topic = COUPLE_TOPIC_LABELS.get(cid, "")
+            return f"{cid} ({topic})" if topic else cid
+        selected_couple = st.selectbox(
+            "Couple",
+            couple_ids,
+            format_func=_couple_label,
+            key="matrix_couple",
+        )
+        members = v2_couples[selected_couple]
+        st.caption(f"{members[0]['name']} (A) & {members[1]['name']} (B)")
+
+        from config import THERAPIST_MODEL_OPTIONS
+        model_name = st.selectbox("Therapist Model", list(THERAPIST_MODEL_OPTIONS.keys()), key="matrix_model")
+        therapist_model = THERAPIST_MODEL_OPTIONS[model_name]["model"]
+
+        structure = st.selectbox("Structure", ["Sequential", "LLM-Based Selection"], key="matrix_struct")
+
+        therapist_mode_label = st.radio("Therapist Mode", ["Standard", "Individual Focus"], key="matrix_tmode")
+        therapist_mode = "individual_focus" if therapist_mode_label == "Individual Focus" else "standard"
+
+        selected_bids = st.multiselect(
+            "Bid-styles to include",
+            ALL_BID_STYLES,
+            default=["passive", "assertive", "aggressive"],
+            format_func=lambda x: BID_LABELS[x],
+            key="matrix_bids",
+            help="Select 'Neutral' for RQ1 (pure position bias, no bid-style overlay).",
+        )
+        if not selected_bids:
+            selected_bids = ["passive", "assertive", "aggressive"]
+
+        temperature = MATRIX_FIXED_TEMPERATURE
+        turn_count = MATRIX_FIXED_TURNS
+
+    with col_preview:
+        n_bids = len(selected_bids)
+        n_cells = n_bids ** 2
+        n_sessions = n_cells * 2
+        st.subheader(f"{n_bids}x{n_bids} Matrix ({n_sessions} sessions)")
+        bid_abbr = {"neutral": "neu", "passive": "pas", "assertive": "ass", "aggressive": "agg"}
+        header = "| | " + " | ".join(f"B: {BID_LABELS[b]}" for b in selected_bids) + " |"
+        sep = "|---|" + "|".join(["---"] * n_bids) + "|"
+        rows_md = ""
+        for a in selected_bids:
+            cells_md = " | ".join(f"{bid_abbr.get(a,'?')}+{bid_abbr.get(b,'?')}" for b in selected_bids)
+            rows_md += f"| **A: {BID_LABELS[a]}** | {cells_md} |\n"
+        st.markdown(f"{header}\n{sep}\n{rows_md}\nEach cell = 2 sessions (alpha + beta) = **{n_sessions} sessions total**.")
+        est_minutes = turn_count * n_sessions * 4 // 60
+        st.info(f"Estimated time: ~{est_minutes} minutes")
+
+    if st.button(f"Run {n_bids}x{n_bids} Matrix", type="primary", key="matrix_run"):
+        import copy
+
+        raw_a, raw_b = members[0], members[1]
+        total_sessions = n_sessions
+        session_num = 0
+        cells = {}
+
+        progress = st.progress(0)
+        status = st.status("Running bid-style matrix...", expanded=True)
+
+        for bid_a in selected_bids:
+            for bid_b in selected_bids:
+                cell_data = {}
+
+                for position in ["alpha", "beta"]:
+                    session_num += 1
+                    first_speaker = "Patient A" if position == "alpha" else "Patient B"
+                    label = f"{bid_a}+{bid_b} {position}"
+
+                    status.update(label=f"Session {session_num}/{total_sessions}: {label}")
+                    status.write(f"Starting {label}...")
+
+                    pa = copy.deepcopy(raw_a)
+                    pb = copy.deepcopy(raw_b)
+                    apply_bid_style_overlay(pa, bid_styles[bid_a])
+                    apply_bid_style_overlay(pb, bid_styles[bid_b])
+
+                    metadata = {
+                        "matrix_run": True,
+                        "couple_id": selected_couple,
+                        "position": position,
+                        "bid_style_a": bid_a,
+                        "bid_style_b": bid_b,
+                        "therapist_mode": therapist_mode,
+                        "structure": structure,
+                        "therapist_model": therapist_model,
+                        "temperature": temperature,
+                    }
+
+                    try:
+                        saved_path, output_json = run_v2_experiment(
+                            assets, pa, pb, structure, first_speaker,
+                            temperature=temperature,
+                            turn_limit=turn_count,
+                            therapist_mode=therapist_mode,
+                            therapist_model=therapist_model,
+                            experiment_metadata=metadata,
+                        )
+                        metrics = extract_cell_metrics(output_json)
+                        cell_data[f"{position}_path"] = saved_path
+                        for k, v in metrics.items():
+                            cell_data[f"{position}_{k}"] = v
+
+                        fas_v = metrics.get("fas", "?")
+                        brd_v = metrics.get("brd", "?")
+                        cas_v = metrics.get("cas", "?")
+                        status.write(f"  {label}: FAS={fas_v}, BRD={brd_v}, CAS={cas_v}")
+
+                    except Exception as e:
+                        status.write(f"  {label} FAILED: {e}")
+
+                    progress.progress(session_num / total_sessions)
+
+                cells[(bid_a, bid_b)] = cell_data
+
+        st.session_state.matrix_results = {
+            "couple_id": selected_couple,
+            "couple_names": f"{members[0]['name']} & {members[1]['name']}",
+            "model": model_name,
+            "structure": structure,
+            "therapist_mode": therapist_mode_label,
+            "cells": cells,
+            "bid_order": list(selected_bids),
+        }
+        status.update(label="Matrix complete!", state="complete")
+        st.balloons()
+
+    # --- Results Display ---
+    if "matrix_results" in st.session_state:
+        res = st.session_state.matrix_results
+        cells = res["cells"]
+        res_bid_order = res.get("bid_order", BID_ORDER)
+
+        st.divider()
+        st.subheader(f"Results: {res['couple_names']} | {res['model']} | {res['structure']} | {res['therapist_mode']}")
+
+        metrics_cfg = [
+            ("fas", "FAS (Framing Adoption)", 0.5, False, +1),
+            ("brd", "BRD (Bid Responsiveness)", 2.0, False, -1),
+            ("cas", "CAS (Challenge Asymmetry)", 5.0, True, +1),
+            ("ta", "TA (Therapeutic Alliance)", 3.0, False, 0),
+            ("panas_a", "PANAS-A (Patient A Outcome)", 10.0, True, +1),
+            ("panas_b", "PANAS-B (Patient B Outcome)", 10.0, True, -1),
+        ]
+
+        tab_labels = [c[1].split("(")[0].strip() for c in metrics_cfg]
+        tabs = st.tabs(tab_labels)
+
+        grid_modes = [("alpha", "Alpha (A speaks first)"),
+                      ("beta",  "Beta (B speaks first)"),
+                      ("delta", "Delta (&alpha; &minus; &beta;)")]
+
+        for tab, (key, label, scale, is_int, fsa_sign) in zip(tabs, metrics_cfg):
+            with tab:
+                for mode_key, mode_label in grid_modes:
+                    st.markdown(f"**{mode_label}**", unsafe_allow_html=True)
+                    grid_html = render_metric_grid(
+                        cells, key, label, scale, is_int,
+                        bid_order=res_bid_order,
+                        grid_mode=mode_key, fsa_sign=fsa_sign,
+                    )
+                    st.markdown(grid_html, unsafe_allow_html=True)
+
+        st.divider()
+        st.subheader("Summary Statistics")
+        summary_rows = []
+        for a_bs in res_bid_order:
+            for b_bs in res_bid_order:
+                cell = cells.get((a_bs, b_bs), {})
+                row = {"A Bid": BID_LABELS.get(a_bs, a_bs), "B Bid": BID_LABELS.get(b_bs, b_bs)}
+                for key, _, _, is_int, _ in metrics_cfg:
+                    a_v = cell.get(f"alpha_{key}")
+                    b_v = cell.get(f"beta_{key}")
+                    if a_v is not None and b_v is not None:
+                        delta = a_v - b_v
+                        row[f"{key.upper()} alpha"] = int(a_v) if is_int else round(a_v, 3)
+                        row[f"{key.upper()} beta"] = int(b_v) if is_int else round(b_v, 3)
+                        row[f"{key.upper()} delta"] = int(delta) if is_int else round(delta, 3)
+                summary_rows.append(row)
+
+        import pandas as pd
+        summary_df = pd.DataFrame(summary_rows)
+        st.dataframe(summary_df, use_container_width=True, hide_index=True)
+
+        if st.button("Clear Matrix Results", key="matrix_clear"):
+            del st.session_state.matrix_results
+            st.rerun()
+
 
 # ============================================================================
 # PAGE: COMPARE TRANSCRIPTS
@@ -694,3 +1016,235 @@ elif page == "Results Dashboard":
                     st.write(f"**Run 1 Path:** `{row['t1_path']}`")
                     st.write(f"**Run 2 Path:** `{row['t2_path']}`")
                     st.json(report["meta"])
+
+
+# ============================================================================
+# PAGE: BATCH RESULTS
+# ============================================================================
+elif page == "Batch Results":
+    import glob as glib
+    import statistics as _st
+
+    st.title("Batch Results")
+    st.markdown("Load saved transcript JSONs from a previous matrix batch. Renders the bid-style grid, summary table, and spread statistics.")
+
+    source = st.radio("Source", ["Scan transcripts/ folder", "Upload JSON files"], horizontal=True, key="batch_source")
+
+    records = []
+
+    if source == "Upload JSON files":
+        uploaded = st.file_uploader("Drop transcript JSON files", type="json", accept_multiple_files=True, key="batch_upload")
+        for f in uploaded or []:
+            try:
+                data = json.load(f)
+                f.seek(0)
+                rec = parse_transcript_record(data, source_name=f.name)
+                if rec:
+                    records.append(rec)
+            except Exception as e:
+                st.warning(f"{f.name}: {e}")
+    else:
+        col_pat, col_btn = st.columns([3, 1])
+        pattern = col_pat.text_input("Glob pattern", "transcripts/therapy_transcript_*.json", key="batch_glob")
+        only_matrix = st.checkbox("Only matrix_run sessions", value=True, key="batch_matrix_flag")
+        if col_btn.button("Scan", key="batch_scan"):
+            found = 0
+            for path in sorted(glib.glob(pattern), key=os.path.getmtime):
+                try:
+                    with open(path, encoding="utf-8") as fh:
+                        data = json.load(fh)
+                    if only_matrix:
+                        em = data.get("experiment_metadata") or {}
+                        if not em.get("matrix_run"):
+                            continue
+                    rec = parse_transcript_record(data, source_name=os.path.basename(path))
+                    if rec:
+                        records.append(rec)
+                        found += 1
+                except Exception:
+                    pass
+            st.session_state["batch_records"] = records
+            st.caption(f"Found {found} valid sessions.")
+
+    if source == "Scan transcripts/ folder" and "batch_records" in st.session_state:
+        records = st.session_state["batch_records"]
+
+    if not records:
+        st.info("No sessions loaded yet. Scan a folder or upload files to begin.")
+        st.stop()
+
+    # --- Filters ---
+    st.divider()
+    all_couples = sorted({r["couple_id"] for r in records if r["couple_id"]})
+    all_modes = sorted({r["therapist_mode"] for r in records if r["therapist_mode"]})
+    all_models = sorted({r["therapist_model"] for r in records if r["therapist_model"]})
+    all_structs = sorted({r["structure"] for r in records if r["structure"]})
+
+    fc1, fc2, fc3, fc4 = st.columns(4)
+    sel_couple = fc1.selectbox("Couple", all_couples, key="br_couple") if all_couples else ""
+    sel_mode = fc2.selectbox("Therapist Mode", all_modes, key="br_mode") if all_modes else ""
+    sel_model = fc3.selectbox("Model", all_models, key="br_model") if all_models else ""
+    sel_struct = fc4.selectbox("Structure", all_structs, key="br_struct") if all_structs else ""
+
+    filtered = [r for r in records
+                if (not sel_couple or r["couple_id"] == sel_couple)
+                and (not sel_mode or r["therapist_mode"] == sel_mode)
+                and (not sel_model or r["therapist_model"] == sel_model)
+                and (not sel_struct or r["structure"] == sel_struct)]
+
+    st.caption(f"{len(filtered)} sessions matched filters.")
+    if not filtered:
+        st.stop()
+
+    cells = {}
+    for r in filtered:
+        key = (r["bid_style_a"], r["bid_style_b"])
+        c = cells.setdefault(key, {})
+        pos = r["position"]
+        for m in ["fas", "brd", "cas", "ta", "panas_a", "panas_b"]:
+            c[f"{pos}_{m}"] = r["metrics"].get(m)
+        c[f"{pos}_path"] = r["source_name"]
+
+    data_bids = sorted({r["bid_style_a"] for r in filtered} | {r["bid_style_b"] for r in filtered},
+                       key=lambda x: ALL_BID_STYLES.index(x) if x in ALL_BID_STYLES else 99)
+
+    st.divider()
+    st.subheader("Position Effect Grids")
+
+    metrics_cfg = [
+        ("fas", "FAS (Framing Adoption)", 0.5, False, +1),
+        ("brd", "BRD (Bid Responsiveness)", 2.0, False, -1),
+        ("cas", "CAS (Challenge Asymmetry)", 5.0, True, +1),
+        ("ta", "TA (Therapeutic Alliance)", 3.0, False, 0),
+        ("panas_a", "PANAS-A (Patient A Outcome)", 10.0, True, +1),
+        ("panas_b", "PANAS-B (Patient B Outcome)", 10.0, True, -1),
+    ]
+
+    tab_labels = [c[1].split("(")[0].strip() for c in metrics_cfg]
+    tabs = st.tabs(tab_labels)
+
+    grid_modes = [("alpha", "Alpha (A speaks first)"),
+                  ("beta",  "Beta (B speaks first)"),
+                  ("delta", "Delta (&alpha; &minus; &beta;)")]
+
+    for tab, (key, label, scale, is_int, fsa_sign) in zip(tabs, metrics_cfg):
+        with tab:
+            for mode_key, mode_label in grid_modes:
+                st.markdown(f"**{mode_label}**", unsafe_allow_html=True)
+                grid_html = render_metric_grid(
+                    cells, key, label, scale, is_int,
+                    bid_order=data_bids,
+                    grid_mode=mode_key, fsa_sign=fsa_sign,
+                )
+                st.markdown(grid_html, unsafe_allow_html=True)
+
+    st.divider()
+    st.subheader("Summary Table")
+    summary_rows = []
+    for a_bs in data_bids:
+        for b_bs in data_bids:
+            cell = cells.get((a_bs, b_bs), {})
+            row = {"A Bid": BID_LABELS.get(a_bs, a_bs), "B Bid": BID_LABELS.get(b_bs, b_bs)}
+            for key, _, _, is_int, _ in metrics_cfg:
+                a_v = cell.get(f"alpha_{key}")
+                b_v = cell.get(f"beta_{key}")
+                if a_v is not None and b_v is not None:
+                    delta = a_v - b_v
+                    row[f"{key.upper()} alpha"] = int(a_v) if is_int else round(a_v, 3)
+                    row[f"{key.upper()} beta"] = int(b_v) if is_int else round(b_v, 3)
+                    row[f"{key.upper()} delta"] = int(delta) if is_int else round(delta, 3)
+            summary_rows.append(row)
+
+    summary_df = pd.DataFrame(summary_rows)
+    st.dataframe(summary_df, use_container_width=True, hide_index=True)
+
+    # --- Spread Statistics ---
+    st.divider()
+    st.subheader("Spread Statistics")
+    st.caption("SD and |mean| measure how much the metric varies across sessions. Higher = more discriminative.")
+
+    spread_rows = []
+    for key, label, _, _, _ in metrics_cfg:
+        vals = [r["metrics"].get(key) for r in filtered if r["metrics"].get(key) is not None]
+        if not vals:
+            continue
+        abs_vals = [abs(v) for v in vals]
+        spread_rows.append({
+            "Metric": label.split("(")[0].strip(),
+            "n": len(vals),
+            "Mean": round(_st.mean(vals), 3),
+            "SD": round(_st.pstdev(vals), 3),
+            "Min": round(min(vals), 2),
+            "Max": round(max(vals), 2),
+            "|Mean|": round(_st.mean(abs_vals), 3),
+            "|Max|": round(max(abs_vals), 2),
+        })
+    if spread_rows:
+        st.dataframe(pd.DataFrame(spread_rows), use_container_width=True, hide_index=True)
+
+    # --- Paired Delta Spread ---
+    delta_vals = {key: [] for key, _, _, _, _ in metrics_cfg}
+    for a_bs in data_bids:
+        for b_bs in data_bids:
+            cell = cells.get((a_bs, b_bs), {})
+            for key, _, _, _, _ in metrics_cfg:
+                a_v = cell.get(f"alpha_{key}")
+                b_v = cell.get(f"beta_{key}")
+                if a_v is not None and b_v is not None:
+                    delta_vals[key].append(a_v - b_v)
+
+    st.subheader("Paired Position Deltas (alpha minus beta)")
+    delta_rows = []
+    for key, label, _, _, _ in metrics_cfg:
+        dv = delta_vals.get(key, [])
+        if not dv:
+            continue
+        abs_dv = [abs(v) for v in dv]
+        delta_rows.append({
+            "Metric": label.split("(")[0].strip(),
+            "Pairs": len(dv),
+            "Mean delta": round(_st.mean(dv), 3),
+            "Mean |delta|": round(_st.mean(abs_dv), 3),
+            "Max |delta|": round(max(abs_dv), 2),
+        })
+    if delta_rows:
+        st.dataframe(pd.DataFrame(delta_rows), use_container_width=True, hide_index=True)
+
+    # --- Cross-mode comparison (if multiple modes present in unfiltered data) ---
+    mode_levels = sorted({r["therapist_mode"] for r in records if r["therapist_mode"] and r["couple_id"] == sel_couple})
+    if len(mode_levels) == 2 and sel_couple:
+        st.divider()
+        st.subheader(f"Spread Contrast: {mode_levels[0]} vs {mode_levels[1]}")
+        st.caption("Compares |metric| means between the two therapist modes for the selected couple. Ratio > 1 means the second mode produces wider spread.")
+
+        contrast_recs = [r for r in records if r["couple_id"] == sel_couple]
+        contrast_rows = []
+        for key, label, _, _, _ in metrics_cfg:
+            by_mode = {m: [] for m in mode_levels}
+            for r in contrast_recs:
+                v = r["metrics"].get(key)
+                if v is not None and r["therapist_mode"] in by_mode:
+                    by_mode[r["therapist_mode"]].append(abs(v))
+            m0 = _st.mean(by_mode[mode_levels[0]]) if by_mode[mode_levels[0]] else None
+            m1 = _st.mean(by_mode[mode_levels[1]]) if by_mode[mode_levels[1]] else None
+            if m0 is not None and m1 is not None:
+                ratio = (m1 / m0) if m0 > 0 else float("inf")
+                contrast_rows.append({
+                    "Metric": label.split("(")[0].strip(),
+                    f"|mean| {mode_levels[0]}": round(m0, 3),
+                    f"|mean| {mode_levels[1]}": round(m1, 3),
+                    "Ratio": round(ratio, 2),
+                })
+        if contrast_rows:
+            st.dataframe(pd.DataFrame(contrast_rows), use_container_width=True, hide_index=True)
+
+    # --- CSV export ---
+    st.divider()
+    export_rows = []
+    for r in filtered:
+        row = {k: v for k, v in r.items() if k != "metrics"}
+        row.update(r["metrics"])
+        export_rows.append(row)
+    if export_rows:
+        csv_data = pd.DataFrame(export_rows).to_csv(index=False)
+        st.download_button("Download filtered data as CSV", csv_data, "batch_results.csv", "text/csv")

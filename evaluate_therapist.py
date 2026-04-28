@@ -1,8 +1,8 @@
 import json
 from openai import OpenAI
-from config import SCORING_MODEL as EVALUATION_MODEL, OPENAI_API_KEY
+from config import SCORING_MODEL as EVALUATION_MODEL, OPENROUTER_GPT_KEY, OPENROUTER_BASE_URL
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENROUTER_GPT_KEY, base_url=OPENROUTER_BASE_URL)
 
 
 def evaluate_therapeutic_alliance(transcript, therapist_name="Therapist"):
