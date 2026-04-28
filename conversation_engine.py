@@ -5,18 +5,31 @@ from openai import OpenAI
 import re
 import random
 from config import (
-    CONVERSATION_MODEL, MAX_TOKENS_PER_TURN, OPENAI_API_KEY,
-    OPENROUTER_API_KEY, OPENROUTER_BASE_URL
+    CONVERSATION_MODEL, MAX_TOKENS_PER_TURN,
+    OPENROUTER_BASE_URL, OPENROUTER_GPT_KEY, OPENROUTER_L8B_KEY, OPENROUTER_L70B_KEY,
 )
 
-# OpenAI client — patients + evaluation (always GPT-4o)
-client = OpenAI(api_key=OPENAI_API_KEY)
+# All calls route through OpenRouter
+client = OpenAI(api_key=OPENROUTER_GPT_KEY, base_url=OPENROUTER_BASE_URL)
 
-# OpenRouter client — alternative therapist models (Llama, Gemma, etc.)
-openrouter_client = OpenAI(
-    api_key=OPENROUTER_API_KEY,
-    base_url=OPENROUTER_BASE_URL,
-)
+# Patient client (same as client; kept as separate alias for clarity)
+patient_client = client
+
+# Model-to-key mapping for therapist routing
+_THERAPIST_KEY_MAP = {
+    "openai/gpt-4o":                     OPENROUTER_GPT_KEY,
+    "meta-llama/llama-3.1-8b-instruct":  OPENROUTER_L8B_KEY,
+    "meta-llama/llama-3.1-70b-instruct": OPENROUTER_L70B_KEY,
+}
+
+# Cache OpenRouter clients to avoid recreating per turn
+_client_cache = {}
+
+def _get_openrouter_client(api_key):
+    """Return a cached OpenAI client for the given OpenRouter API key."""
+    if api_key not in _client_cache:
+        _client_cache[api_key] = OpenAI(api_key=api_key, base_url=OPENROUTER_BASE_URL)
+    return _client_cache[api_key]
 
 def generate_agent_turn(blueprint_prompt, persona, session_topic, discussion_notes,
                        conversation_history, last_responses, temperature, turn_number=1,
@@ -48,14 +61,68 @@ def generate_agent_turn(blueprint_prompt, persona, session_topic, discussion_not
         injected_prompt = injected_prompt.replace("[insert persona seeds]", seeds_str)
     else:
         # Format generic fields for Patients
-        for field in ["name", "age", "gender", "traits", "speaking_style", "hidden_intention", "hidden_tension", "bid_style"]:
-            # Default to 'Not specified' to avoid leaving bracketed placeholders
-            injected_prompt = injected_prompt.replace(f"[{field}]", str(persona.get(field, "Not specified")))
-            
-        # Interruption frequency (persona attribute)
+        for field in ["name", "age", "gender", "traits", "speaking_style",
+                      "hidden_intention", "hidden_tension", "bid_style",
+                      "attachment_style"]:
+            value = persona.get(field, "Not specified")
+            if isinstance(value, list):
+                value = ", ".join(str(v) for v in value)
+            injected_prompt = injected_prompt.replace(f"[{field}]", str(value))
+
+        # Slot label: "Partner A" / "Partner B" (symmetric framing across prompts)
+        slot_label = persona.get("role", "").replace("Patient", "Partner")
+        injected_prompt = injected_prompt.replace("[slot_label]", slot_label)
+
+        # Cognitive model (v2 personas)
+        cognitive_model = persona.get("cognitive_model", {})
+        if cognitive_model:
+            cm_text = (f"Your core belief: {cognitive_model.get('core_belief', '')}\n"
+                       f"Your coping strategy: {cognitive_model.get('coping_strategy', '')}")
+        else:
+            cm_text = ""
+        injected_prompt = injected_prompt.replace("[cognitive_model]", cm_text)
+
+        # OCEAN profile (v2 personas)
+        ocean = persona.get("ocean_profile", {})
+        if ocean:
+            ocean_text = "Your personality (OCEAN): " + ", ".join(
+                f"{k}: {v}" for k, v in ocean.items())
+        else:
+            ocean_text = ""
+        injected_prompt = injected_prompt.replace("[ocean_profile]", ocean_text)
+
+        # Attachment style context (v2 personas)
+        attachment = persona.get("attachment_style", "")
+        if attachment:
+            attach_text = f"Your attachment style: {attachment}"
+        else:
+            attach_text = ""
+        injected_prompt = injected_prompt.replace("[attachment_info]", attach_text)
+
+        # Relationship history (v2 personas)
+        rel_history = persona.get("relationship_history", "")
+        injected_prompt = injected_prompt.replace("[relationship_context]",
+            f"Relationship background: {rel_history}" if rel_history else "")
+
+        # Bid-style behavioral principles (v2, injected from overlay)
+        bid_principles = persona.get("bid_style_principles", [])
+        if bid_principles:
+            principles_text = "BID-STYLE BEHAVIORAL RULES (follow these strictly):\n"
+            for p in bid_principles:
+                principles_text += f"- {p}\n"
+            bid_modifiers = persona.get("bid_style_speaking_modifiers", [])
+            if bid_modifiers:
+                principles_text += "\nSPEAKING PATTERN MODIFIERS:\n"
+                for m in bid_modifiers:
+                    principles_text += f"- {m}\n"
+        else:
+            principles_text = ""
+        injected_prompt = injected_prompt.replace("[bid_style_principles]", principles_text)
+
+        # Interruption frequency (from persona or bid-style overlay)
         interruption_freq = persona.get("interruption_frequency", "")
         interruption_rules = ""
-        if interruption_freq:
+        if interruption_freq and interruption_freq != "none":
             interruption_rules += f"- INTERRUPTION FREQUENCY: {interruption_freq}.\n"
 
         # Hidden tension leakage
@@ -71,7 +138,19 @@ def generate_agent_turn(blueprint_prompt, persona, session_topic, discussion_not
     injected_prompt = injected_prompt.replace("[insert topic]", session_topic)
     
     # Inject objectives/notes (mainly for therapist)
-    notes_str = ', '.join(discussion_notes.get('objectives', [])) if isinstance(discussion_notes, dict) else str(discussion_notes)
+    # Include goals (which contain patient names) so the therapist knows
+    # who the patients are from Turn 1 — prevents name hallucination.
+    if isinstance(discussion_notes, dict):
+        goals = discussion_notes.get('goals', [])
+        objectives = discussion_notes.get('objectives', [])
+        notes_parts = []
+        if goals:
+            notes_parts.append(', '.join(goals))
+        if objectives:
+            notes_parts.append(', '.join(objectives))
+        notes_str = '. '.join(notes_parts) if notes_parts else ''
+    else:
+        notes_str = str(discussion_notes)
     injected_prompt = injected_prompt.replace("[insert specific notes]", notes_str)
 
     # Build context message
@@ -114,17 +193,21 @@ CRITICAL INSTRUCTION: DO NOT prefix your response with your name or role (e.g. n
             return 0.0
         return len(set1.intersection(set2)) / len(set1.union(set2))
 
-    # Helper function to extract recent statements from the same speaker
+    # Route: patients use patient_client (OpenRouter GPT-4o),
+    # therapist uses model-specific OpenRouter key
+    is_therapist = persona.get('role') == 'Therapist'
     speaker_prefix = "Dr. Anya Forger:" if is_therapist else f"{persona['name']}:"
     recent_own_turns = [t.replace(speaker_prefix, "").strip() for t in conversation_history[-10:] if t.startswith(speaker_prefix)]
-    
-    # Route therapist turns to the selected model/client; patients always use OpenAI
-    is_therapist = persona.get('role') == 'Therapist'
-    if is_therapist and therapist_model and therapist_model != CONVERSATION_MODEL:
-        _client = openrouter_client
-        _model  = therapist_model
+
+    if is_therapist and therapist_model:
+        _model = therapist_model
+        _key = _THERAPIST_KEY_MAP.get(therapist_model, OPENROUTER_GPT_KEY)
+        _client = _get_openrouter_client(_key)
+    elif is_therapist:
+        _client = patient_client  # default therapist = same GPT-4o
+        _model  = CONVERSATION_MODEL
     else:
-        _client = client
+        _client = patient_client
         _model  = CONVERSATION_MODEL
 
     max_retries = 1
@@ -238,6 +321,17 @@ def decide_therapist_intervention(conversation_history, decision_prompt, tempera
         print(f"❌ Error deciding intervention: {e}")
         return False
 
+def _speaker_in(history_entry: str, speaker: str) -> bool:
+    """Return True if the formatted history line was spoken by `speaker`.
+
+    History entries look like "Therapist: ...", "Patient A: ...", etc.
+    Matches the substring conventions used elsewhere in this file.
+    """
+    if speaker == "Therapist":
+        return "Therapist:" in history_entry or "Dr." in history_entry[:20]
+    return speaker in history_entry
+
+
 def sequential_speaker_selection(turn_number, first_speaker="Patient A"):
     """
     Sequential speaker selection: Therapist → first_speaker → second_speaker cycle.
@@ -260,20 +354,25 @@ def sequential_speaker_selection(turn_number, first_speaker="Patient A"):
 def intelligent_speaker_selection(conversation_history, current_speaker, intervention_occurred=False, patients_only=False):
     """
     Intelligent speaker selection based on therapeutic balance.
-    
+
+    S2 (2026-04-21): hard "never same speaker twice in a row" rule replaced
+    by a soft guard that blocks ONLY 3+ consecutive same-speaker turns. Two
+    consecutive turns by the same speaker are now legal so first-speaker
+    airtime dominance can manifest as an FSA channel.
+
     Args:
         conversation_history: List of dialogue entries
         current_speaker: Who just spoke
         intervention_occurred: Whether AI just intervened
         patients_only: If True, exclude Therapist from candidates (used in trigger mode)
-    
+
     Returns:
         str: Next speaker to maximize therapeutic balance
     """
     # Count recent participation (last 6 turns)
     speaker_counts = {"Therapist": 0, "Patient A": 0, "Patient B": 0, "AI_Facilitator": 0}
     recent_history = conversation_history[-6:] if len(conversation_history) >= 6 else conversation_history
-    
+
     for entry in recent_history:
         if "Therapist:" in entry:
             speaker_counts["Therapist"] += 1
@@ -283,12 +382,24 @@ def intelligent_speaker_selection(conversation_history, current_speaker, interve
             speaker_counts["Patient B"] += 1
         elif "AI_Facilitator:" in entry:
             speaker_counts["AI_Facilitator"] += 1
-    
-    # Possible next speakers (never same speaker twice)
+
+    # S2 soft guard: block current_speaker only if they spoke the last TWO
+    # turns (i.e., another consecutive turn would make it three in a row).
+    last_two = conversation_history[-2:] if len(conversation_history) >= 2 else []
+    spoke_last_two = (
+        len(last_two) == 2
+        and all(_speaker_in(entry, current_speaker) for entry in last_two)
+    )
+
     if patients_only:
-        possible_speakers = [s for s in ["Patient A", "Patient B"] if s != current_speaker]
+        candidates = ["Patient A", "Patient B"]
     else:
-        possible_speakers = [s for s in ["Therapist", "Patient A", "Patient B"] if s != current_speaker]
+        candidates = ["Therapist", "Patient A", "Patient B"]
+
+    if spoke_last_two:
+        possible_speakers = [s for s in candidates if s != current_speaker]
+    else:
+        possible_speakers = candidates[:]
     
     # If AI just intervened, strongly prefer patients
     if intervention_occurred:
@@ -372,7 +483,9 @@ def decide_next_speaker(conversation_history, patient_a_name, patient_b_name,
         f"{recent}\n\n"
         "Who should speak next? Rules:\n"
         "- If Therapist has not spoken in the last 3 turns, strongly prefer Therapist.\n"
-        "- Never let the same speaker go twice in a row.\n"
+        "- A speaker may take two consecutive turns when their content warrants it; "
+        "do NOT force alternation just to be balanced. Three or more consecutive "
+        "turns by the same speaker is not allowed.\n"
         "- A withdrawn or passive patient may elect silence this turn.\n\n"
         "Reply with EXACTLY ONE of these options (no other text):\n"
         "Therapist | Patient A | Patient B | Patient A Silent | Patient B Silent"

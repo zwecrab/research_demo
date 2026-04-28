@@ -33,24 +33,151 @@ def random_filename(base="therapy_transcript"):
     
     return TRANSCRIPTS_DIR / f"{base_filename}{max_num + 1}.json"
 
+def _panas_net_by_affect(delta_list):
+    """Sum PANAS deltas split by positive/negative affect.
+
+    Returns:
+        dict with positive_change, negative_change, net_change (pos - neg),
+        num_improved_positive, num_improved_negative.
+    """
+    pos_set = {e.title() for e in PANAS_POSITIVE}
+    neg_set = {e.title() for e in PANAS_NEGATIVE}
+    pos_change = sum(d.get("difference", 0) for d in delta_list if d.get("feeling", "").title() in pos_set)
+    neg_change = sum(d.get("difference", 0) for d in delta_list if d.get("feeling", "").title() in neg_set)
+    num_improved_pos = sum(1 for d in delta_list if d.get("feeling", "").title() in pos_set and d.get("difference", 0) > 0)
+    num_improved_neg = sum(1 for d in delta_list if d.get("feeling", "").title() in neg_set and d.get("difference", 0) < 0)
+    return {
+        "positive_change": int(pos_change),
+        "negative_change": int(neg_change),
+        "net_change": int(pos_change - neg_change),  # pos up + neg down = larger positive net
+        "num_improved_positive": num_improved_pos,
+        "num_improved_negative": num_improved_neg,
+    }
+
+
+def build_metrics_summary(output_json):
+    """Assemble a top-of-file metrics block from all scored fields.
+
+    Pulls FAS/BRD/CAS, therapeutic alliance, and PANAS deltas for both patients,
+    plus a couple-level net PANAS (sum of both partners' net changes). Returns
+    an ordered dict suitable to prepend to the saved transcript.
+    """
+    participants = output_json.get("participant_details", {})
+    pa = participants.get("patient_A", {})
+    pb = participants.get("patient_B", {})
+
+    balance = output_json.get("therapeutic_balance", {}) or {}
+    fas = balance.get("fas", {}) or {}
+    brd = balance.get("brd", {}) or {}
+    cas = balance.get("cas", {}) or {}
+
+    alliance = output_json.get("therapist_alliance", {}) or {}
+
+    pa_delta = output_json.get("Patient_A_PANAS_DELTA", [])
+    pb_delta = output_json.get("Patient_B_PANAS_DELTA", [])
+    pa_panas = _panas_net_by_affect(pa_delta)
+    pb_panas = _panas_net_by_affect(pb_delta)
+
+    transcript = output_json.get("session_transcript", [])
+    meta = output_json.get("experiment_metadata", {}) or {}
+
+    return {
+        "fas": {
+            "score": fas.get("fas_score"),
+            "count_a": fas.get("count_a", 0),
+            "count_b": fas.get("count_b", 0),
+            "count_neutral": fas.get("count_neutral", 0),
+        },
+        "brd": {
+            "score": brd.get("brd_score"),
+            "mean_depth_a": brd.get("mean_depth_a"),
+            "mean_depth_b": brd.get("mean_depth_b"),
+        },
+        "cas": {
+            "score": cas.get("cas_score"),
+            "challenges_to_a": cas.get("challenges_to_a", 0),
+            "challenges_to_b": cas.get("challenges_to_b", 0),
+        },
+        "therapeutic_alliance": {
+            "overall": alliance.get("overall"),
+            "validation": alliance.get("validation"),
+            "neutrality": alliance.get("neutrality"),
+            "guidance": alliance.get("guidance"),
+        },
+        "panas_patient_a": {"name": pa.get("name"), **pa_panas},
+        "panas_patient_b": {"name": pb.get("name"), **pb_panas},
+        "panas_couple_net": pa_panas["net_change"] + pb_panas["net_change"],
+        "session": {
+            "turns": len(transcript),
+            "structure": output_json.get("conversation_structure"),
+            "first_speaker": output_json.get("first_speaker_selection"),
+            "therapist_mode": meta.get("therapist_mode"),
+            "therapist_model": meta.get("therapist_model"),
+            "temperature": meta.get("temperature"),
+            "couple_id": meta.get("couple_id"),
+            "bid_style_a": meta.get("bid_style_a") or (pa.get("bid_style") if pa else None),
+            "bid_style_b": meta.get("bid_style_b") or (pb.get("bid_style") if pb else None),
+            "position": meta.get("position"),
+        },
+    }
+
+
+# V1 fields that are no longer populated by the current pipeline; dropped on save.
+_LEGACY_V1_FIELDS = (
+    "trigger_log",
+    "intervention_scores",
+    "intervention_count",
+    "scored_interventions_rejected",
+)
+
+
 def save_session_json(output_json, include_panas=False):
     """
     Save session data to JSON file.
-    
+
+    Reorders the output so the metrics_summary block sits at the top of the
+    file, followed by configuration, transcript, and raw scoring detail.
+    Drops unused v1 legacy fields.
+
     Args:
         output_json: Complete session data dictionary
-        include_panas: If True, also includes PANAS analysis
-    
+        include_panas: Retained for backward compatibility (unused).
+
     Returns:
         Path to saved file
     """
     filename = random_filename()
-    
+
     try:
+        metrics_summary = build_metrics_summary(output_json)
 
-        # Create a copy to not mutate the original runtime data
-        json_to_save = output_json.copy()
+        # Build ordered output: summary first, then config, then transcript, then raw scoring
+        ordered_keys = [
+            "metrics_summary",
+            "session_topic_header",
+            "session_details",
+            "participant_details",
+            "conversation_structure",
+            "first_speaker_selection",
+            "experiment_metadata",
+            "models_used",
+            "session_transcript",
+            "therapist_alliance",
+            "therapeutic_balance",
+            "Patient_A_AFTER_PANAS",
+            "Patient_A_PANAS_DELTA",
+            "Patient_B_AFTER_PANAS",
+            "Patient_B_PANAS_DELTA",
+        ]
 
+        json_to_save = {"metrics_summary": metrics_summary}
+        for key in ordered_keys[1:]:
+            if key in output_json and key not in _LEGACY_V1_FIELDS:
+                json_to_save[key] = output_json[key]
+        # Append any remaining keys we didn't explicitly order, skipping legacy fields
+        for key, value in output_json.items():
+            if key not in json_to_save and key not in _LEGACY_V1_FIELDS:
+                json_to_save[key] = value
 
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(json_to_save, f, indent=2, ensure_ascii=False)
@@ -127,6 +254,23 @@ def display_session_summary(output_json, panas_summaries=None):
             for w in weaknesses:
                 print(f"    • {w}")
     
+    # Therapeutic Balance (FAS/BRD/CAS)
+    balance = output_json.get('therapeutic_balance', {})
+    if balance:
+        print("\nTherapeutic Balance (Position Bias Metrics):")
+        fas = balance.get('fas', {})
+        if fas:
+            print(f"  FAS (Framing Adoption):  {fas.get('fas_score', 'N/A'):+.3f}"
+                  f"  (A:{fas.get('count_a', 0)}, B:{fas.get('count_b', 0)}, N:{fas.get('count_neutral', 0)})")
+        brd = balance.get('brd', {})
+        if brd:
+            print(f"  BRD (Bid Responsiveness): {brd.get('brd_score', 'N/A'):+.3f}"
+                  f"  (depth A:{brd.get('mean_depth_a', 0):.2f}, B:{brd.get('mean_depth_b', 0):.2f})")
+        cas = balance.get('cas', {})
+        if cas:
+            print(f"  CAS (Challenge Asymmetry): {cas.get('cas_score', 'N/A'):+d}"
+                  f"  (A:{cas.get('challenges_to_a', 0)}, B:{cas.get('challenges_to_b', 0)})")
+
     # PANAS summary
     if panas_summaries:
         print(f"\nPANAS Emotional State Changes:")

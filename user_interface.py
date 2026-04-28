@@ -1,7 +1,10 @@
 # user_interface.py
 # All menu functions and user input handling
 
-from config import CONVERSATION_STRUCTURES, FIRST_SPEAKER_OPTIONS, CONSOLE_WIDTH, DIVIDER
+from config import (
+    CONVERSATION_STRUCTURES, FIRST_SPEAKER_OPTIONS,
+    CONSOLE_WIDTH, DIVIDER, DEFAULT_V2_THERAPY_TOPIC
+)
 
 def select_session_topic(therapy_plans):
     """Let user select therapy session topic."""
@@ -133,6 +136,124 @@ def select_specific_persona(available_personas, role_label, exclude_name=None):
         except ValueError:
             pass
         print("❌ Invalid choice. Try again.")
+
+def select_persona_version():
+    """Let user choose between v1 (legacy) and v2 (couple-based) personas."""
+    print("\n" + DIVIDER)
+    print("SELECT PERSONA SET")
+    print(DIVIDER)
+    print(" 1: Legacy personas (trigger-personas.json)")
+    print(" 2: V2 couples (personas_v2.json + bid_styles.json)")
+
+    while True:
+        try:
+            choice = int(input("\nEnter number: "))
+            if choice == 1:
+                return "v1"
+            if choice == 2:
+                return "v2"
+        except ValueError:
+            pass
+        print("Invalid choice. Try again.")
+
+
+def select_couple(couples):
+    """Let user select a couple from v2 personas.
+
+    Args:
+        couples: dict keyed by couple_id, value is list of persona dicts
+
+    Returns:
+        tuple: (couple_id, persona_a, persona_b)
+    """
+    print("\n" + DIVIDER)
+    print("SELECT COUPLE")
+    print(DIVIDER)
+
+    couple_ids = sorted(couples.keys())
+    for i, cid in enumerate(couple_ids, 1):
+        members = couples[cid]
+        names = " & ".join(m["name"] for m in members)
+        topics = members[0].get("therapy_topics", [])
+        topic_str = topics[0] if topics else "N/A"
+        print(f" {i}: {cid} - {names}")
+        print(f"    Topic: {topic_str}")
+
+    while True:
+        try:
+            choice = int(input("\nEnter number: "))
+            if 1 <= choice <= len(couple_ids):
+                cid = couple_ids[choice - 1]
+                members = couples[cid]
+                return cid, members[0], members[1]
+        except ValueError:
+            pass
+        print("Invalid choice. Try again.")
+
+
+def select_bid_style_pair(bid_styles):
+    """Let user select bid-style for Patient A and Patient B.
+
+    Args:
+        bid_styles: dict keyed by bid_style_id
+
+    Returns:
+        tuple: (bid_style_a_id, bid_style_b_id)
+    """
+    print("\n" + DIVIDER)
+    print("SELECT BID-STYLE PAIRING")
+    print(DIVIDER)
+
+    style_ids = list(bid_styles.keys())
+    style_labels = {sid: bid_styles[sid]["label"] for sid in style_ids}
+
+    # Build all 9 combinations
+    combos = []
+    for a_id in style_ids:
+        for b_id in style_ids:
+            combos.append((a_id, b_id))
+
+    for i, (a_id, b_id) in enumerate(combos, 1):
+        print(f" {i}: Patient A = {style_labels[a_id]:10s} | Patient B = {style_labels[b_id]}")
+
+    while True:
+        try:
+            choice = int(input("\nEnter number: "))
+            if 1 <= choice <= len(combos):
+                return combos[choice - 1]
+        except ValueError:
+            pass
+        print("Invalid choice. Try again.")
+
+
+def select_v2_topic():
+    """Let user confirm the standardized topic or override it.
+
+    Returns:
+        str or None: None means use the default, otherwise the custom topic string.
+    """
+    print("\n" + DIVIDER)
+    print("SESSION TOPIC")
+    print(DIVIDER)
+    print(f"  Default (standardized): {DEFAULT_V2_THERAPY_TOPIC}")
+    print()
+    print(" 1: Use default (recommended for experiment standardization)")
+    print(" 2: Enter custom topic")
+
+    while True:
+        try:
+            choice = int(input("\nEnter number: "))
+            if choice == 1:
+                return None
+            if choice == 2:
+                custom = input("Enter custom topic: ").strip()
+                if custom:
+                    return custom
+                print("Topic cannot be empty.")
+        except ValueError:
+            pass
+        print("Invalid choice. Try again.")
+
 
 def display_session_configuration(config):
     """Display session configuration summary."""

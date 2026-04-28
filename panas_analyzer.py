@@ -5,11 +5,11 @@ from openai import OpenAI
 import re
 import os
 from config import (
-    PANAS_MODEL, PANAS_MAX_TOKENS, OPENAI_API_KEY,
+    PANAS_MODEL, PANAS_MAX_TOKENS, OPENROUTER_GPT_KEY, OPENROUTER_BASE_URL,
     PANAS_POSITIVE, PANAS_NEGATIVE, PROMPTS_DIR
 )
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENROUTER_GPT_KEY, base_url=OPENROUTER_BASE_URL)
 
 # ============================================================================
 # PROMPT LOADING
@@ -38,6 +38,21 @@ def get_after_panas_scores(persona, transcript_text):
     
     persona_name = persona.get("name", "Patient")
     persona_desc = persona.get("description", "")
+    # v2 personas lack a "description" field; construct one from available fields
+    if not persona_desc:
+        parts = []
+        if persona.get("traits"):
+            traits = persona["traits"]
+            if isinstance(traits, list):
+                traits = ", ".join(traits)
+            parts.append(f"Traits: {traits}")
+        if persona.get("speaking_style"):
+            parts.append(f"Style: {persona['speaking_style']}")
+        if persona.get("attachment_style"):
+            parts.append(f"Attachment: {persona['attachment_style']}")
+        if persona.get("hidden_tension"):
+            parts.append(f"Inner conflict: {persona['hidden_tension']}")
+        persona_desc = ". ".join(parts)
     
     # Format the PANAS prompt from template
     transcript_truncated = transcript_text[-2000:] if len(transcript_text) > 2000 else transcript_text
