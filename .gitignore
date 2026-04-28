@@ -7,9 +7,12 @@ __pycache__/
 # Claude / editor
 .claude/
 .vscode/
+.agents/
+.windsurf/
 
 # Auto-generated transcripts (hundreds of files, regenerable)
 transcripts/
+temp_uploads/
 
 # Large data / discussions (not tracked — see CLAUDE.md for required file)
 discussions/
