@@ -1,0 +1,322 @@
+[
+  {
+    "persona": {
+      "name": "Adaeze Okafor",
+      "gender": "Female",
+      "age": 31,
+      "traits": "Emotionally attuned, reflective under pressure, values relational closeness",
+      "attachment_style": "anxious",
+      "neuroticism": "high"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Highly emotionally attuned and invested in the therapy process; wants to repair the disconnection", "score": 4},
+      {"feeling": "Excited", "explanation": "Moderate; hopeful about therapy but anxiety tempers excitement", "score": 2},
+      {"feeling": "Strong", "explanation": "Anxious attachment undermines felt sense of strength entering session", "score": 2},
+      {"feeling": "Enthusiastic", "explanation": "Moderate; values relational work but is drained from months of emotional isolation", "score": 2},
+      {"feeling": "Proud", "explanation": "Low-moderate; her sense of pride is diminished by feeling unnoticed", "score": 2},
+      {"feeling": "Alert", "explanation": "Monitors partner's emotional availability closely; hyperattentive to relational cues", "score": 4},
+      {"feeling": "Inspired", "explanation": "High openness creates some inspiration about the possibility of reconnection", "score": 3},
+      {"feeling": "Determined", "explanation": "Strongly motivated to address the disconnection; has been tracking unresolved conversations", "score": 4},
+      {"feeling": "Attentive", "explanation": "Reflective under pressure; pauses to check partner's understanding before continuing", "score": 4},
+      {"feeling": "Active", "explanation": "Moderate; she initiates emotional conversations but parenthood exhaustion limits energy", "score": 3},
+      {"feeling": "Distressed", "explanation": "Feels emotionally disconnected from partner since baby arrived despite physical proximity", "score": 3},
+      {"feeling": "Upset", "explanation": "Months of feeling isolated and unnoticed by her partner; accumulated hurt", "score": 3},
+      {"feeling": "Guilty", "explanation": "Low; does not blame herself for the disconnection", "score": 2},
+      {"feeling": "Scared", "explanation": "Privately fears husband married her out of obligation rather than genuine connection", "score": 3},
+      {"feeling": "Hostile", "explanation": "High agreeableness; does not externalize frustration as hostility", "score": 1},
+      {"feeling": "Irritable", "explanation": "Moderate; the ongoing pattern of feeling invisible creates intermittent irritability", "score": 2},
+      {"feeling": "Ashamed", "explanation": "Low-moderate; wonders whether she is asking too much by wanting emotional closeness", "score": 2},
+      {"feeling": "Nervous", "explanation": "Anxious attachment creates baseline nervousness about relationship security", "score": 3},
+      {"feeling": "Jittery", "explanation": "High neuroticism and anxious attachment elevate baseline physiological anxiety", "score": 3},
+      {"feeling": "Afraid", "explanation": "Fears that emotional distance confirms her worst belief about the marriage", "score": 3}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Chidi Okafor",
+      "gender": "Male",
+      "age": 33,
+      "traits": "Analytical, emotionally reserved, dependable in action",
+      "attachment_style": "avoidant",
+      "neuroticism": "low"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Moderately engaged; agreed to therapy because Adaeze asked, though skeptical about the process", "score": 3},
+      {"feeling": "Excited", "explanation": "Low; avoidant attachment and emotional reserve suppress excitement about emotional work", "score": 2},
+      {"feeling": "Strong", "explanation": "Maintains composure through compartmentalization; channels energy into responsibilities", "score": 3},
+      {"feeling": "Enthusiastic", "explanation": "Low; questions whether talking about feelings will change anything practical", "score": 2},
+      {"feeling": "Proud", "explanation": "Takes quiet pride in his professional competence and practical contributions to the family", "score": 3},
+      {"feeling": "Alert", "explanation": "Analytical orientation keeps him mentally present; processes observations systematically", "score": 3},
+      {"feeling": "Inspired", "explanation": "Low; moderate openness and current exhaustion from 80-hour residency weeks", "score": 2},
+      {"feeling": "Determined", "explanation": "Committed to the relationship and family; willing to show up even if uncertain about the method", "score": 3},
+      {"feeling": "Attentive", "explanation": "Listens carefully and organizes information before responding", "score": 3},
+      {"feeling": "Active", "explanation": "Low extraversion; prefers to recharge alone; active in tasks but not in emotional processing", "score": 2},
+      {"feeling": "Distressed", "explanation": "Low; compartmentalization keeps felt distress below surface", "score": 2},
+      {"feeling": "Upset", "explanation": "Low; emotional reserve prevents him from registering upset until it accumulates", "score": 2},
+      {"feeling": "Guilty", "explanation": "Carries guilt about missing Amara's first steps and Adaeze's difficult nights", "score": 3},
+      {"feeling": "Scared", "explanation": "Low neuroticism keeps fear response muted; avoidance keeps it out of awareness", "score": 1},
+      {"feeling": "Hostile", "explanation": "Not hostile; low agreeableness manifests as directness, not aggression", "score": 1},
+      {"feeling": "Irritable", "explanation": "Moderate; underlying frustration that his practical care is not recognized as love", "score": 2},
+      {"feeling": "Ashamed", "explanation": "Fears becoming the emotionally absent father he promised himself he would never be", "score": 2},
+      {"feeling": "Nervous", "explanation": "Low; low neuroticism and avoidant attachment suppress nervous activation", "score": 2},
+      {"feeling": "Jittery", "explanation": "Low; physiological anxiety is minimal due to low neuroticism", "score": 1},
+      {"feeling": "Afraid", "explanation": "Low-moderate; private fear surfaces only in quiet moments", "score": 2}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Eszter Kovacs",
+      "gender": "Female",
+      "age": 28,
+      "traits": "Curious and open-minded, socially energized, emotionally grounded",
+      "attachment_style": "secure",
+      "neuroticism": "low"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Genuinely curious about the therapy process and her partner's inner experience", "score": 4},
+      {"feeling": "Excited", "explanation": "High extraversion and proactive approach create positive anticipation about therapy", "score": 3},
+      {"feeling": "Strong", "explanation": "Secure attachment and emotional groundedness provide felt sense of strength", "score": 3},
+      {"feeling": "Enthusiastic", "explanation": "Socially energized; approaches relational work with genuine engagement", "score": 4},
+      {"feeling": "Proud", "explanation": "Proud of their decision to enter therapy proactively before things escalated", "score": 3},
+      {"feeling": "Alert", "explanation": "Actively attentive to relational dynamics; uses metaphors and observations", "score": 3},
+      {"feeling": "Inspired", "explanation": "High openness creates genuine inspiration about possibility of deeper understanding", "score": 3},
+      {"feeling": "Determined", "explanation": "Proactively initiated therapy; determined to build a fair decision-making framework", "score": 4},
+      {"feeling": "Attentive", "explanation": "Reflects back what she hears; builds on partner's statements actively", "score": 4},
+      {"feeling": "Active", "explanation": "High extraversion; verbally processes and actively fills silences constructively", "score": 4},
+      {"feeling": "Distressed", "explanation": "Low; secure base keeps distress contained even during relocation tension", "score": 2},
+      {"feeling": "Upset", "explanation": "Low; approaches problems as solvable rather than threatening", "score": 2},
+      {"feeling": "Guilty", "explanation": "Not experiencing guilt; has not done anything she perceives as harmful", "score": 1},
+      {"feeling": "Scared", "explanation": "Not scared; low neuroticism and secure attachment buffer fear responses", "score": 1},
+      {"feeling": "Hostile", "explanation": "High agreeableness; warmth and empathy prevent hostile feelings", "score": 1},
+      {"feeling": "Irritable", "explanation": "Low; occasional frustration about Rajan's quick compliance but not irritable", "score": 1},
+      {"feeling": "Ashamed", "explanation": "Not experiencing shame entering the session", "score": 1},
+      {"feeling": "Nervous", "explanation": "Low-moderate; mild worry that Rajan resents the Seattle move but not anxious", "score": 2},
+      {"feeling": "Jittery", "explanation": "Low; secure attachment and low neuroticism suppress physiological anxiety", "score": 1},
+      {"feeling": "Afraid", "explanation": "Not afraid; enters therapy from a position of relational security", "score": 1}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Rajan Singh",
+      "gender": "Male",
+      "age": 29,
+      "traits": "Methodical, internally intense, loyal",
+      "attachment_style": "anxious",
+      "neuroticism": "high"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Values the relationship enough to engage genuinely with therapy", "score": 3},
+      {"feeling": "Excited", "explanation": "Low; moderate extraversion and internal intensity suppress visible excitement", "score": 2},
+      {"feeling": "Strong", "explanation": "Low-moderate; suppressed dissatisfaction undermines felt strength", "score": 2},
+      {"feeling": "Enthusiastic", "explanation": "Low; enters therapy with accumulated unvoiced frustrations", "score": 2},
+      {"feeling": "Proud", "explanation": "Low; feels he has made disproportionate sacrifices and fears seeming selfish", "score": 2},
+      {"feeling": "Alert", "explanation": "Methodical thinker; organizes observations before responding", "score": 3},
+      {"feeling": "Inspired", "explanation": "Low openness limits inspirational response to new situations", "score": 2},
+      {"feeling": "Determined", "explanation": "Determined to make the relationship work; recognizes silent accommodation is unsustainable", "score": 3},
+      {"feeling": "Attentive", "explanation": "Careful and precise; processes internally before speaking", "score": 3},
+      {"feeling": "Active", "explanation": "Low-moderate; prefers to sit with ideas rather than act immediately", "score": 2},
+      {"feeling": "Distressed", "explanation": "Accumulated frustrations from suppressing dissatisfaction create underlying distress", "score": 3},
+      {"feeling": "Upset", "explanation": "Feels he has sacrificed more than acknowledged; misses family", "score": 3},
+      {"feeling": "Guilty", "explanation": "Core belief: expressing dissatisfaction equals ingratitude; guilt about having needs", "score": 3},
+      {"feeling": "Scared", "explanation": "Moderate; fears that voicing concerns will damage the relationship or hurt Eszter", "score": 2},
+      {"feeling": "Hostile", "explanation": "Not hostile; moderate agreeableness and loyalty prevent hostile expression", "score": 1},
+      {"feeling": "Irritable", "explanation": "Moderate; accumulated suppressed frustrations create intermittent irritability", "score": 2},
+      {"feeling": "Ashamed", "explanation": "Fears being perceived as selfish or ungrateful for what they have built together", "score": 2},
+      {"feeling": "Nervous", "explanation": "Anxious attachment and high neuroticism elevate baseline nervousness about the session", "score": 3},
+      {"feeling": "Jittery", "explanation": "High neuroticism creates physiological anxiety, especially about voicing unspoken concerns", "score": 3},
+      {"feeling": "Afraid", "explanation": "Moderate; fears that articulating sacrifices will make him seem selfish", "score": 2}
+    ]
+  },
+  {
+    "persona": {
+      "name": "David Thompson",
+      "gender": "Male",
+      "age": 46,
+      "traits": "Introspective, steady in routine, conflict-averse",
+      "attachment_style": "anxious",
+      "neuroticism": "high"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Introspective nature creates genuine engagement with self-reflection in therapy", "score": 3},
+      {"feeling": "Excited", "explanation": "Very low; dreads the changes that approaching empty nest represents", "score": 1},
+      {"feeling": "Strong", "explanation": "Low; identity is dissolving as primary parenting role ends", "score": 2},
+      {"feeling": "Enthusiastic", "explanation": "Very low; conflict-averse and anxious about the future", "score": 1},
+      {"feeling": "Proud", "explanation": "Low-moderate; proud of his parenting but uncertain about what comes next", "score": 2},
+      {"feeling": "Alert", "explanation": "Monitors partner's behavior for signs of wanting to leave", "score": 3},
+      {"feeling": "Inspired", "explanation": "Low; moderate openness but resistance to change limits inspiration", "score": 2},
+      {"feeling": "Determined", "explanation": "Low; wants to slow things down rather than push forward with determination", "score": 2},
+      {"feeling": "Attentive", "explanation": "Prefers structured turn-taking; listens carefully but processes slowly", "score": 3},
+      {"feeling": "Active", "explanation": "Low; low extraversion and preference for familiar routines", "score": 2},
+      {"feeling": "Distressed", "explanation": "Feels the structure of daily life dissolving as children prepare to leave", "score": 3},
+      {"feeling": "Upset", "explanation": "Upset that partner's excitement about change feels like excitement about leaving him", "score": 3},
+      {"feeling": "Guilty", "explanation": "Low; does not feel responsible for the tension, just frightened by it", "score": 2},
+      {"feeling": "Scared", "explanation": "Deeply scared that James has been waiting for children to leave to pursue a life without him", "score": 4},
+      {"feeling": "Hostile", "explanation": "Not hostile; conflict-averse nature prevents hostile expression", "score": 1},
+      {"feeling": "Irritable", "explanation": "Moderate; frustration with partner's restlessness creates irritability", "score": 2},
+      {"feeling": "Ashamed", "explanation": "Low-moderate; wonders if his need for stability makes him boring or inadequate", "score": 2},
+      {"feeling": "Nervous", "explanation": "Anxious attachment and high neuroticism create persistent nervousness about the relationship's future", "score": 4},
+      {"feeling": "Jittery", "explanation": "High neuroticism and existential anxiety about empty nest elevate baseline jitteriness", "score": 3},
+      {"feeling": "Afraid", "explanation": "Deeply afraid of what the house will feel like with just the two of them; fears abandonment", "score": 4}
+    ]
+  },
+  {
+    "persona": {
+      "name": "James Thompson",
+      "gender": "Male",
+      "age": 47,
+      "traits": "Energetic, forward-looking, impatient with stagnation",
+      "attachment_style": "anxious",
+      "neuroticism": "moderate"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Engaged and curious about new possibilities for the next chapter", "score": 3},
+      {"feeling": "Excited", "explanation": "High; reconnecting with photography, travel, fitness creates genuine excitement", "score": 4},
+      {"feeling": "Strong", "explanation": "Feels energized by the prospect of growth and new experiences", "score": 3},
+      {"feeling": "Enthusiastic", "explanation": "High extraversion and forward-looking nature generate strong enthusiasm", "score": 4},
+      {"feeling": "Proud", "explanation": "Proud of the life they have built; wants to build further, not abandon it", "score": 3},
+      {"feeling": "Alert", "explanation": "Mentally sharp; makes rapid connections between ideas", "score": 3},
+      {"feeling": "Inspired", "explanation": "Moderate; inspired by new possibilities but anxious about partner's resistance", "score": 3},
+      {"feeling": "Determined", "explanation": "Strongly determined to explore the next chapter; frustrated by resistance to change", "score": 4},
+      {"feeling": "Attentive", "explanation": "Moves quickly; sometimes jumps to solutions before fully exploring emotional territory", "score": 3},
+      {"feeling": "Active", "explanation": "High; trail running, photography, jazz events; always in motion", "score": 4},
+      {"feeling": "Distressed", "explanation": "Low-moderate; distress comes from feeling trapped in routines, not from crisis", "score": 2},
+      {"feeling": "Upset", "explanation": "Low-moderate; frustrated by partner's resistance but not deeply upset", "score": 2},
+      {"feeling": "Guilty", "explanation": "Feels guilty that his excitement about the empty nest reads as wanting to escape David", "score": 3},
+      {"feeling": "Scared", "explanation": "Low-moderate; fears restlessness may become irreconcilable with David's stability needs", "score": 2},
+      {"feeling": "Hostile", "explanation": "Not hostile but low agreeableness creates bluntness that can feel confrontational", "score": 1},
+      {"feeling": "Irritable", "explanation": "Impatient with stagnation; low agreeableness makes him quick to show frustration", "score": 3},
+      {"feeling": "Ashamed", "explanation": "Low; does not internalize shame about his desires for growth", "score": 2},
+      {"feeling": "Nervous", "explanation": "Low-moderate; anxious attachment creates some nervousness about the relationship", "score": 2},
+      {"feeling": "Jittery", "explanation": "Low-moderate; moderate neuroticism and restless energy create some baseline activation", "score": 2},
+      {"feeling": "Afraid", "explanation": "Low-moderate; fears that David's resistance will force an impossible choice", "score": 2}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Sofia Reyes",
+      "gender": "Female",
+      "age": 32,
+      "traits": "Passionate about fairness, emotionally volatile under stress, deeply empathetic",
+      "attachment_style": "disorganized",
+      "neuroticism": "high"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Engaged with therapy as a place to be heard and advocate for her son", "score": 3},
+      {"feeling": "Excited", "explanation": "Low; enters therapy from a place of stress and protective urgency, not excitement", "score": 2},
+      {"feeling": "Strong", "explanation": "Feels strong in her conviction to protect Lucas; passion fuels a sense of power", "score": 4},
+      {"feeling": "Enthusiastic", "explanation": "Low; volatile emotional state and unresolved trauma dampen enthusiasm", "score": 2},
+      {"feeling": "Proud", "explanation": "Proud of having fought for and won custody; protective identity is a source of pride", "score": 3},
+      {"feeling": "Alert", "explanation": "Hypervigilant due to disorganized attachment and custody battle trauma", "score": 4},
+      {"feeling": "Inspired", "explanation": "Low; high openness exists but is overshadowed by defensive posture", "score": 2},
+      {"feeling": "Determined", "explanation": "Fiercely determined to maintain parental authority and protect her son", "score": 4},
+      {"feeling": "Attentive", "explanation": "Attentive to threats and partner's parenting moves; connects present to past experiences", "score": 3},
+      {"feeling": "Active", "explanation": "Moderate; oscillates between hyperinvolvement and withdrawal", "score": 3},
+      {"feeling": "Distressed", "explanation": "Disorganized attachment and unresolved custody trauma create high baseline distress", "score": 4},
+      {"feeling": "Upset", "explanation": "Accumulated arguments about discipline and boundaries have left her upset", "score": 3},
+      {"feeling": "Guilty", "explanation": "Low-moderate; sometimes projects ex-partner's behavior onto Kenji and feels guilt about it", "score": 2},
+      {"feeling": "Scared", "explanation": "Afraid of losing control over parenting decisions; custody battle echoes", "score": 3},
+      {"feeling": "Hostile", "explanation": "Low agreeableness and protective stance can tip into hostility under pressure", "score": 2},
+      {"feeling": "Irritable", "explanation": "Emotional volatility and high neuroticism create high baseline irritability", "score": 3},
+      {"feeling": "Ashamed", "explanation": "Low; does not feel ashamed of her protectiveness", "score": 2},
+      {"feeling": "Nervous", "explanation": "Disorganized attachment creates unpredictable nervous activation", "score": 3},
+      {"feeling": "Jittery", "explanation": "High neuroticism and hypervigilance produce physiological restlessness", "score": 3},
+      {"feeling": "Afraid", "explanation": "Unresolved trauma from custody battle generates genuine fear about losing parental control", "score": 3}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Kenji Nakamura",
+      "gender": "Male",
+      "age": 34,
+      "traits": "Patient, structured in thinking, values harmony",
+      "attachment_style": "avoidant",
+      "neuroticism": "low"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Genuinely invested in understanding the family dynamics and finding a workable structure", "score": 3},
+      {"feeling": "Excited", "explanation": "Low; low extraversion and the weight of feeling excluded suppress excitement", "score": 2},
+      {"feeling": "Strong", "explanation": "Patient demeanor projects steadiness; internal frustration is suppressed", "score": 3},
+      {"feeling": "Enthusiastic", "explanation": "Low; the ongoing gatekeeping has dampened his enthusiasm about family participation", "score": 2},
+      {"feeling": "Proud", "explanation": "Low; feels his efforts to connect with Lucas are not recognized", "score": 2},
+      {"feeling": "Alert", "explanation": "Structured thinking keeps him analytically alert during difficult conversations", "score": 3},
+      {"feeling": "Inspired", "explanation": "Low; hard to feel inspired when feeling like a guest in his own family", "score": 2},
+      {"feeling": "Determined", "explanation": "Determined to establish himself as a co-parent; believes the current dynamic is unsustainable", "score": 3},
+      {"feeling": "Attentive", "explanation": "Deliberate pacing; listens carefully and frames issues as shared problems", "score": 3},
+      {"feeling": "Active", "explanation": "Low; low extraversion and deference in parenting disputes limit proactive engagement", "score": 2},
+      {"feeling": "Distressed", "explanation": "Low; avoidant attachment and low neuroticism keep felt distress below threshold", "score": 2},
+      {"feeling": "Upset", "explanation": "Moderate; accumulated frustration from feeling excluded from parenting decisions", "score": 2},
+      {"feeling": "Guilty", "explanation": "Low; does not blame himself for the parenting boundary issues", "score": 1},
+      {"feeling": "Scared", "explanation": "Low; low neuroticism buffers fear response even when questioning the relationship's future", "score": 1},
+      {"feeling": "Hostile", "explanation": "Not hostile; values harmony and uses engineering analogies rather than blame", "score": 1},
+      {"feeling": "Irritable", "explanation": "Moderate; suppressed frustration about feeling like an outsider occasionally surfaces", "score": 2},
+      {"feeling": "Ashamed", "explanation": "Low; does not internalize the exclusion as his failure", "score": 1},
+      {"feeling": "Nervous", "explanation": "Low-moderate; privately questions whether Sofia will ever let him fully in", "score": 2},
+      {"feeling": "Jittery", "explanation": "Low; low neuroticism and avoidant attachment suppress physiological anxiety", "score": 1},
+      {"feeling": "Afraid", "explanation": "Low-moderate; quietly wonders whether the relationship can survive the parenting impasse", "score": 2}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Nadia Al-Rashid",
+      "gender": "Female",
+      "age": 37,
+      "traits": "Driven, precise in communication, emotionally contained",
+      "attachment_style": "secure",
+      "neuroticism": "low"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Engaged with therapy as a structured problem-solving space", "score": 3},
+      {"feeling": "Excited", "explanation": "Low; enters therapy to address a problem, not from enthusiasm", "score": 2},
+      {"feeling": "Strong", "explanation": "Feels professionally and personally strong; secure attachment provides foundation", "score": 4},
+      {"feeling": "Enthusiastic", "explanation": "Moderate; high extraversion and drive create energy even in difficult conversations", "score": 3},
+      {"feeling": "Proud", "explanation": "Proud of her surgical career and the life they have built together", "score": 4},
+      {"feeling": "Alert", "explanation": "Precise communication style; focuses on specific incidents and details", "score": 4},
+      {"feeling": "Inspired", "explanation": "Moderate; drawn to mentoring and achievement but therapy topic is not inspirational", "score": 3},
+      {"feeling": "Determined", "explanation": "Strongly determined to find a workable solution; marathon runner mentality", "score": 4},
+      {"feeling": "Attentive", "explanation": "Listens attentively and responds with focus on solutions and next steps", "score": 3},
+      {"feeling": "Active", "explanation": "High; driven personality keeps her in action mode", "score": 4},
+      {"feeling": "Distressed", "explanation": "Low; secure attachment and emotional containment limit felt distress", "score": 2},
+      {"feeling": "Upset", "explanation": "Low-moderate; recognizes the problem but approaches it analytically", "score": 2},
+      {"feeling": "Guilty", "explanation": "Carries guilt about becoming like her father who prioritized work over family", "score": 3},
+      {"feeling": "Scared", "explanation": "Low; secure attachment buffers fear, though she fears Farah will stop waiting", "score": 2},
+      {"feeling": "Hostile", "explanation": "Not hostile; moderate agreeableness and professional demeanor prevent hostility", "score": 1},
+      {"feeling": "Irritable", "explanation": "Low-moderate; occasional frustration when domestic balance is framed as her fault alone", "score": 2},
+      {"feeling": "Ashamed", "explanation": "Moderate; privately ashamed of becoming the career-obsessed partner she swore she would not be", "score": 2},
+      {"feeling": "Nervous", "explanation": "Low; low neuroticism and secure attachment minimize nervousness", "score": 1},
+      {"feeling": "Jittery", "explanation": "Low; emotionally contained and physiologically calm", "score": 1},
+      {"feeling": "Afraid", "explanation": "Low-moderate; quiet fear that Farah will eventually stop waiting for her", "score": 2}
+    ]
+  },
+  {
+    "persona": {
+      "name": "Farah Al-Rashid",
+      "gender": "Female",
+      "age": 36,
+      "traits": "Thoughtful, values reciprocity, quietly persistent",
+      "attachment_style": "avoidant",
+      "neuroticism": "moderate"
+    },
+    "panas_emotions": [
+      {"feeling": "Interested", "explanation": "Thoughtful engagement; wants to understand and address the pattern, not just vent", "score": 3},
+      {"feeling": "Excited", "explanation": "Low; entering therapy from accumulated frustration, not positive anticipation", "score": 2},
+      {"feeling": "Strong", "explanation": "Low-moderate; quietly persistent but the weight of being deprioritized erodes felt strength", "score": 2},
+      {"feeling": "Enthusiastic", "explanation": "Low; years of one-sided domestic burden have drained enthusiasm", "score": 2},
+      {"feeling": "Proud", "explanation": "Low-moderate; proud of what they built together but her own career has been deprioritized", "score": 2},
+      {"feeling": "Alert", "explanation": "Attentive to relational dynamics; returns to unresolved points others might let slide", "score": 3},
+      {"feeling": "Inspired", "explanation": "Low; low openness and current resentment limit inspirational response", "score": 2},
+      {"feeling": "Determined", "explanation": "Determined to address the imbalance before resentment permanently damages the bond", "score": 3},
+      {"feeling": "Attentive", "explanation": "Highly attentive; builds points gradually and layering context before reaching main concern", "score": 4},
+      {"feeling": "Active", "explanation": "Low-moderate; absorbs burden without complaint rather than acting assertively", "score": 2},
+      {"feeling": "Distressed", "explanation": "Two years of increasingly one-sided domestic burden create moderate distress", "score": 3},
+      {"feeling": "Upset", "explanation": "Accumulated grievances about being expected to manage everything alone", "score": 3},
+      {"feeling": "Guilty", "explanation": "Moderate; feels guilty for questioning whether Nadia's career demands are genuinely unavoidable", "score": 2},
+      {"feeling": "Scared", "explanation": "Low-moderate; avoidant attachment keeps fear at a distance", "score": 2},
+      {"feeling": "Hostile", "explanation": "Not hostile; high agreeableness prevents overt hostility despite growing resentment", "score": 1},
+      {"feeling": "Irritable", "explanation": "Building resentment about domestic imbalance creates moderate irritability", "score": 3},
+      {"feeling": "Ashamed", "explanation": "Low-moderate; wonders if questioning her partner's career commitment is unfair", "score": 2},
+      {"feeling": "Nervous", "explanation": "Low-moderate; moderate neuroticism creates some nervousness about the session", "score": 2},
+      {"feeling": "Jittery", "explanation": "Low-moderate; moderate neuroticism with avoidant dampening", "score": 2},
+      {"feeling": "Afraid", "explanation": "Low-moderate; fears the resentment has already done irreparable damage", "score": 2}
+    ]
+  }
+]

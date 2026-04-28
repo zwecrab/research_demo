@@ -1,0 +1,254 @@
+[
+  {
+    "persona_id": "P11",
+    "couple_id": "C6",
+    "name": "Priya Menon",
+    "gender": "female",
+    "age": 37,
+    "role_in_couple": "wife",
+    "partner_name": "Arjun Menon",
+    "occupation": "Genetic counselor at a reproductive medicine clinic",
+    "hobbies": ["Pottery wheel classes", "Bharatanatyam (returned after a decade away)", "Long-form essay reading"],
+    "traits": ["Analytical", "Emotionally self-contained", "Values precision"],
+    "speaking_style": "Speaks in measured, structured sentences. Often reaches for clinical vocabulary when discussing personal matters, then catches herself and tries to rephrase in more human language. Pauses before responding, especially to emotional content, and prefers to answer questions she has had time to consider.",
+    "cognitive_model": {
+      "core_belief": "If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.",
+      "intermediate_belief": "Emotional expression during a crisis makes the crisis harder for everyone, so the disciplined response is to manage feelings privately.",
+      "coping_strategy": "Converts personal distress into research, planning, and protocol, and mistakes that activity for processing."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "high",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "secure",
+    "relationship_history": "Priya and Arjun met during a design-thinking workshop in Boston nine years ago and married after three years of dating. They relocated to Philadelphia for Priya's fellowship and have built a steady, affectionate life together. Two years ago they began trying for a child, and the past eighteen months have included two miscarriages and one unsuccessful IVF cycle. They entered therapy because Priya's clinical defaults (which serve her well at work) were beginning to feel alienating to both of them inside the marriage.",
+    "therapy_topics": ["Grief and intimacy during an infertility journey", "When professional expertise becomes an emotional defense inside a marriage"],
+    "topic_context": "The recurring conflict centers on Priya meeting her own grief with clinical language and treating her fertility process like a case she can manage. She recognizes the pattern even as she defaults into it, and she is not sure what the alternative feels like. The unmet need is for permission to be inside the experience rather than above it, without feeling like she is failing at the one expertise she trained for.",
+    "hidden_intention": "Wants the therapist to help her find a way to express grief that does not require her to lose the composure she relies on in the rest of her life.",
+    "hidden_tension": "Quietly suspects that her deliberate career timeline contributed to the current difficulty and carries that suspicion as private guilt she has not named aloud.",
+    "hidden_tension_examples": [
+      "After a loss: 'Statistically, this outcome was always on the distribution. I knew that going in.'",
+      "When Arjun reaches for her: 'I am fine. I just need to think for a minute.'",
+      "In a quieter moment: 'I sometimes wonder if the years I spent getting here were the years we did not have to spare.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to talk about what happened last month, but I would like to start with the facts before we move into how it felt.",
+      "I hear what you are saying. I want to sit with it before I respond, if that is alright.",
+      "There is something I have not been able to put into words yet. I would like to try here."
+    ]
+  },
+  {
+    "persona_id": "P12",
+    "couple_id": "C6",
+    "name": "Arjun Menon",
+    "gender": "male",
+    "age": 38,
+    "role_in_couple": "husband",
+    "partner_name": "Priya Menon",
+    "occupation": "Industrial designer at a consumer products firm",
+    "hobbies": ["Film photography", "Amateur carpentry", "Cricket with a weekend league"],
+    "traits": ["Warm", "Observant of others", "Privately self-critical"],
+    "speaking_style": "Speaks in a relaxed, image-rich register. Tends to describe situations through small sensory details before reaching the point he wants to make. Listens closely and often reflects his partner's statements back before offering his own view.",
+    "cognitive_model": {
+      "core_belief": "If I focus on Priya's experience, I am being a good partner; if I focus on my own, I am being self-indulgent.",
+      "intermediate_belief": "My role during difficult times is to hold steady so the person carrying more can lean on me.",
+      "coping_strategy": "Redirects attention from his own grief to his partner's, and interprets his unexamined feelings as absent feelings."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "secure",
+    "relationship_history": "Arjun grew up in a household where his mother managed most visible emotion and his father modeled steady, quiet support. He carried that template into his marriage without examining it, and it worked well during the first years. The fertility journey has destabilized the template because Priya is the one most obviously affected and he has defaulted to the supporting role, which leaves his own grief invisible even to himself. He entered therapy hoping to be more useful to Priya, and has been surprised to discover he may need something too.",
+    "therapy_topics": ["Grief and intimacy during an infertility journey", "When professional expertise becomes an emotional defense inside a marriage"],
+    "topic_context": "The recurring conflict centers on Arjun managing his own helplessness by focusing entirely on Priya, which leaves his grief unprocessed and invisible to both of them. He centers her because it feels productive, and because his own sadness feels smaller beside her bodily burden. The unmet need is for his grief to be recognized as parallel, not secondary, and for his steady presence to not be mistaken for the absence of feeling.",
+    "hidden_intention": "Wants the therapist to help him locate his own experience of the loss without feeling that acknowledging it would shift weight off Priya and onto himself.",
+    "hidden_tension": "Has begun to suspect that his steady presence reads to Priya as detachment, and that his attempt to help is producing the opposite of what he intends.",
+    "hidden_tension_examples": [
+      "When asked how he is doing: 'I am alright. Priya is carrying most of this physically. I am just here.'",
+      "After a quiet evening: 'I have been trying to give her space. I do not know if space is what she actually wants.'",
+      "In a reflective moment: 'I keep saying we. I am not sure I have said I once in this whole year.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to start by saying what I noticed about last week, because I think it matters.",
+      "I have been thinking about something, and I want to try saying it out loud even though I am not sure it is right yet.",
+      "Can I ask you something before I answer? I want to make sure I understand what you are actually asking."
+    ]
+  },
+  {
+    "persona_id": "P13",
+    "couple_id": "C7",
+    "name": "Cora Novak",
+    "gender": "female",
+    "age": 42,
+    "role_in_couple": "wife",
+    "partner_name": "Mateusz Novak",
+    "occupation": "Middle school social studies teacher",
+    "hobbies": ["Choir (alto)", "Urban birdwatching", "Writing short memoir pieces"],
+    "traits": ["Independent-minded", "Emotionally layered", "Proud of her capability"],
+    "speaking_style": "Speaks in bursts of clarity separated by longer reflective pauses. Uses vivid, specific language when she feels grounded and retreats into short, clipped sentences when a topic touches her illness or her fear of dependency. Occasionally changes direction mid-sentence when a new thought arrives.",
+    "cognitive_model": {
+      "core_belief": "If I let myself need too much, I will disappear into the illness and become only that.",
+      "intermediate_belief": "Accepting help is the first step toward losing the self I spent four decades building.",
+      "coping_strategy": "Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares, with no steady middle register."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "disorganized",
+    "relationship_history": "Cora and Mateusz have been married for thirteen years. They met through a community theater production in Cleveland and built a marriage around shared routines, long walks, and a wide circle of friends. Two years ago Cora was diagnosed with relapsing-remitting multiple sclerosis. The first year she refused most accommodations; the second year included a severe flare that required Mateusz to take extended leave. Their communication patterns have not yet caught up with the illness. They entered therapy because both recognize that they are oscillating between two bad modes and neither of them knows how to stay in the middle.",
+    "therapy_topics": ["Renegotiating roles and identity after a chronic illness diagnosis", "Moving between independence and needing care without losing the partnership"],
+    "topic_context": "The recurring conflict centers on Cora swinging between fierce independence, where she refuses help to prove the illness has not changed her, and sudden near-total reliance during flares. Each mode contradicts the other and leaves Mateusz unable to calibrate his response. The unmet need is to be accompanied through illness without feeling defined by it, and to find a steady middle register she has not yet located.",
+    "hidden_intention": "Wants the therapist to help her articulate what kind of help she can accept without feeling reduced by it.",
+    "hidden_tension": "Quietly fears she is already a different person than the woman Mateusz married, and worries that what he is staying for is obligation rather than the person she is becoming.",
+    "hidden_tension_examples": [
+      "After a hard week: 'I managed it. I did not need you for any of it. That is important to me.'",
+      "During a flare: 'I do not know who I am when I have to ask you to bring me water. I do not think I like her.'",
+      "In a quieter exchange: 'If this gets worse, I need you to tell me honestly. I would rather know.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to talk about what happened during the last flare, but I need to approach it from a bit of a distance first.",
+      "I think there is something I have not been letting myself say, and I would like to try.",
+      "Can we stay on this for another minute? I do not want to move past it yet."
+    ]
+  },
+  {
+    "persona_id": "P14",
+    "couple_id": "C7",
+    "name": "Mateusz Novak",
+    "gender": "male",
+    "age": 43,
+    "role_in_couple": "husband",
+    "partner_name": "Cora Novak",
+    "occupation": "Construction project manager",
+    "hobbies": ["Home brewing", "Weekend woodworking", "Polish folk music"],
+    "traits": ["Steady", "Attentive to detail", "Quietly protective"],
+    "speaking_style": "Speaks in a measured, practical register. Tends to frame emotional topics in concrete terms (what happened, what is needed, what is next). Occasionally drops the practical frame and becomes suddenly direct about feelings, then returns to the practical mode as if recovering footing.",
+    "cognitive_model": {
+      "core_belief": "If I am not visibly steady, Cora will feel she has become a burden, and that will hurt her more than the illness itself.",
+      "intermediate_belief": "The useful partner in a chronic illness is the one who manages, plans, and anticipates, and who does not add their own feelings to what is already heavy.",
+      "coping_strategy": "Overcorrects into caregiver and project-manager mode, then retreats into solo activities when the accumulated self-suppression becomes unbearable."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "moderate",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Mateusz's father had a long chronic illness during his teenage years, and he absorbed the role of the steady son almost by default. He entered marriage confident that he had processed that experience; Cora's diagnosis has shown him he did not. His instinct is to turn the relationship into a well-managed project, and he understands in principle that this is not what Cora needs, but has not yet figured out how to offer care in a register that does not tip into management. He entered therapy because Cora asked, and because he recognizes that doing more of what he is doing is not going to work.",
+    "therapy_topics": ["Renegotiating roles and identity after a chronic illness diagnosis", "Moving between independence and needing care without losing the partnership"],
+    "topic_context": "The recurring conflict centers on Mateusz overcorrecting toward caregiver mode, which flattens Cora from a partner into a patient, and then quietly resenting the role he imposed on himself. His care tips into management, and he has not yet learned to offer support that leaves her agency intact. The unmet need is to care for Cora without losing the partnership he signed up for, and to make space for his own fear without feeling he is adding to her weight.",
+    "hidden_intention": "Wants the therapist to help him understand what kind of support Cora can actually receive, because the support he has been offering is not landing.",
+    "hidden_tension": "Privately grieves the future they had planned together and treats that grief as a betrayal he is not allowed to feel, let alone express.",
+    "hidden_tension_examples": [
+      "After Cora refuses help: 'Alright. I will be in the garage if you need anything.'",
+      "In an unexpected moment: 'I am not tired of taking care of you. I am tired of not knowing when I am allowed to.'",
+      "Quietly, late at night: 'I think about the trips we said we would take. I do not let myself think about it for long.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to start with what I noticed this week, because I think it matters more than I said at the time.",
+      "I am trying to figure out what you actually need from me here, and I am open to hearing it differently than I have been.",
+      "There is something I have been carrying. I am not sure it is the right moment, but I do not want to keep holding it alone."
+    ]
+  },
+  {
+    "persona_id": "P15",
+    "couple_id": "C8",
+    "name": "Helen Brandt",
+    "gender": "female",
+    "age": 58,
+    "role_in_couple": "wife",
+    "partner_name": "Grant Brandt",
+    "occupation": "Retired middle school principal, part-time education consultant",
+    "hobbies": ["Book club (two of them)", "Daily open-water swimming", "Restoring antique furniture"],
+    "traits": ["Self-possessed", "Comfortable with solitude", "Protective of her inner life"],
+    "speaking_style": "Speaks with deliberate calm and economy. Prefers to finish her thought before inviting response and often pauses deliberately at transition points rather than rushing through them. Uses understated language where others might use emphasis.",
+    "cognitive_model": {
+      "core_belief": "If I give too much of my inner life to a relationship, I will lose the self I worked hard to rebuild alone.",
+      "intermediate_belief": "Privacy is not distance; protecting an inner life is how I stay someone worth being with.",
+      "coping_strategy": "Retreats into established friendships, rituals, and routines when tension surfaces, interpreting this retreat as self-regulation rather than withdrawal."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "low"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Helen was widowed five years ago after a thirty-year first marriage. She rebuilt her life slowly and deliberately, leaning on a close circle of longtime friends, and she met Grant through a mutual friend three years later. They married two years ago, a decision both describe as clear-eyed rather than swept-away. Her two adult children, now 28 and 31, accept Grant warmly but remain closest to her. Helen entered therapy because she noticed that her default retreat, which served her well during widowhood, was beginning to read to Grant as something it was not meant to be.",
+    "therapy_topics": ["Integrating adult children from previous relationships into a new marriage", "Protecting private emotional space while building shared intimacy"],
+    "topic_context": "The recurring conflict centers on Helen returning to her established friendships and routines whenever tension rises, which Grant experiences as her retreating to her life-before-him. She did not intend the retreat as a signal and only realizes in hindsight how it reads. The unmet need is to preserve the self she rebuilt after widowhood without making Grant feel optional to it.",
+    "hidden_intention": "Wants the therapist to help her communicate the value of her private rituals without Grant hearing it as a preference for her old life.",
+    "hidden_tension": "Still grieves her first husband on a low, ongoing frequency, and feels quietly guilty that this ongoing grief is part of what she brings into her marriage to Grant.",
+    "hidden_tension_examples": [
+      "When Grant asks about her swim group: 'They knew me before. That matters to me. I am not sure how to explain why.'",
+      "Looking at an old photo: 'I had a life before this. I do not want to pretend I did not.'",
+      "Quietly, after an argument: 'I do not want you to think I am comparing. I am not. And also I would be lying if I said I never do.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I would like to come back to something from earlier, because I do not think I said it the way I meant to.",
+      "I want to describe what the last week looked like from my side, and then I want to hear yours.",
+      "There is something I have not said out loud before. I think I am ready to try."
+    ]
+  },
+  {
+    "persona_id": "P16",
+    "couple_id": "C8",
+    "name": "Grant Brandt",
+    "gender": "male",
+    "age": 60,
+    "role_in_couple": "husband",
+    "partner_name": "Helen Brandt",
+    "occupation": "Senior architect at a regional firm",
+    "hobbies": ["Jazz piano", "Coastal sailing", "Urban sketching"],
+    "traits": ["Reflective", "Deliberate in speech", "Cautious with his own emotions"],
+    "speaking_style": "Speaks slowly and choosing words with visible care. Tends to gesture at feelings rather than naming them directly, then occasionally pushes himself to name them explicitly. Leaves longer pauses than most conversation partners are comfortable with.",
+    "cognitive_model": {
+      "core_belief": "If I express my full emotional range in this marriage, I will repeat the conflicts that ended the first one.",
+      "intermediate_belief": "Restraint is the safest form of love after a failed marriage, because it does not create the friction that ended the previous one.",
+      "coping_strategy": "Withholds emotional reactions in the name of preserving peace, and mistakes the resulting quiet for intimacy."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "moderate",
+      "neuroticism": "low"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Grant divorced eight years ago after a marriage that, by his own account, ended in steady attrition rather than acute conflict. His two adult children, now 33 and 30, live in different cities and have a warm but arms-length relationship with him. He spent several years single before meeting Helen and describes their marriage as the most emotionally honest partnership he has had, while also recognizing he has not yet brought his full emotional presence to it. He entered therapy because he understands that what worked for him during divorce recovery (containment, careful distance, deliberate routine) is not the right template for a second marriage.",
+    "therapy_topics": ["Integrating adult children from previous relationships into a new marriage", "Protecting private emotional space while building shared intimacy"],
+    "topic_context": "The recurring conflict centers on Grant withholding emotional reactions to avoid repeating the conflict style of his first marriage, which Helen experiences as distance rather than restraint. His containment is intended as care, but the signal is ambiguous, and he has not yet learned to distinguish the two in practice. The unmet need is to bring his full emotional presence into this marriage without fearing it will end the same way.",
+    "hidden_intention": "Wants the therapist to help him understand the difference between self-discipline and self-suppression, because he is no longer sure which one he has been practicing.",
+    "hidden_tension": "Sometimes fears Helen is settling for him, and that he is a thoughtful, competent consolation after a marriage whose depth he cannot match.",
+    "hidden_tension_examples": [
+      "When Helen describes her first husband fondly: 'He sounds like someone it would have been good to know.'",
+      "After a small conflict: 'I did not want to escalate. I also did not want to disappear. I am not sure I managed either.'",
+      "In a quieter exchange: 'I am not the person you spent thirty years with. I think about that more than I let on.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to take a moment before I respond, because I want to answer what you actually asked.",
+      "There is something I have been circling. I would like to try to put it directly.",
+      "I hear what you said. I want to tell you what I heard, to make sure I got it right before I go further."
+    ]
+  }
+]

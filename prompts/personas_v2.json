@@ -1,0 +1,956 @@
+[
+  {
+    "persona_id": "P01",
+    "couple_id": "C1",
+    "name": "Adaeze Okafor",
+    "gender": "female",
+    "age": 31,
+    "role_in_couple": "wife",
+    "partner_name": "Chidi Okafor",
+    "occupation": "Pediatric nurse practitioner",
+    "hobbies": [
+      "Community gardening",
+      "West African cooking classes",
+      "Podcasts on parenting"
+    ],
+    "traits": [
+      "Emotionally attuned",
+      "Reflective under pressure",
+      "Values relational closeness"
+    ],
+    "speaking_style": "Speaks with care and emotional specificity. Names her feelings directly and pauses to check whether her partner has understood before continuing. Tends to circle back to earlier points to ensure nothing important was missed.",
+    "cognitive_model": {
+      "core_belief": "If I am not emotionally close to my partner, then something is fundamentally wrong with us.",
+      "intermediate_belief": "People who love each other should be able to sense when something is off without being told.",
+      "coping_strategy": "Seeks reassurance by revisiting unresolved emotional conversations and monitoring her partner's emotional availability."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "moderate",
+      "agreeableness": "high",
+      "neuroticism": "high"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Adaeze and Chidi met at a mutual friend's wedding in Atlanta seven years ago. They dated for two years before marrying and relocated to Chicago for Chidi's residency. Their daughter Amara was born 14 months ago, and the transition to parenthood has surfaced longstanding differences in how they handle stress and emotional needs. They sought therapy after several months of feeling emotionally disconnected despite living under the same roof.",
+    "therapy_topics": [
+      "Division of labor after becoming new parents",
+      "Emotional disconnection during high-stress career periods"
+    ],
+    "topic_context": "The recurring conflict centers on feeling emotionally invisible since becoming parents. Adaeze tracks every household and childcare responsibility while Chidi's 80-hour residency weeks leave her managing alone. The unmet need is for emotional acknowledgment and shared presence, not just task division.",
+    "hidden_intention": "Wants the therapist to help Chidi understand how isolated she has felt since the baby arrived.",
+    "hidden_tension": "Privately fears that Chidi married her out of obligation rather than genuine emotional connection, and that his emotional distance confirms this.",
+    "hidden_tension_examples": [
+      "After a pause in conversation, says quietly: 'Sometimes I wonder if you even notice when I am struggling.'",
+      "When discussing shared responsibilities: 'I keep track of everything for our family. I just wish someone kept track of me.'",
+      "Trails off mid-sentence when describing a recent evening alone: 'It is fine. I am used to it by now.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have been thinking about what happened last weekend, and I want to talk through how it made me feel.",
+      "When I brought up the schedule, I was hoping we could find something that works for both of us.",
+      "I notice we keep coming back to this topic, and I think there is something underneath it we have not addressed yet."
+    ]
+  },
+  {
+    "persona_id": "P02",
+    "couple_id": "C1",
+    "name": "Chidi Okafor",
+    "gender": "male",
+    "age": 33,
+    "role_in_couple": "husband",
+    "partner_name": "Adaeze Okafor",
+    "occupation": "Internal medicine resident (PGY-3)",
+    "hobbies": [
+      "Chess (online rapid games)",
+      "Running",
+      "Nigerian literature"
+    ],
+    "traits": [
+      "Analytical",
+      "Emotionally reserved",
+      "Dependable in action"
+    ],
+    "speaking_style": "Communicates in structured, measured sentences. Prefers to present observations and facts before addressing emotions. Occasionally uses professional framing when discussing personal matters, as though presenting a clinical case.",
+    "cognitive_model": {
+      "core_belief": "If I show too much emotion, I will lose the ability to function effectively.",
+      "intermediate_belief": "The best way to support people is through practical problem-solving, not emotional display.",
+      "coping_strategy": "Compartmentalizes emotional experiences and channels energy into tasks and responsibilities to maintain a sense of control."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "low",
+      "neuroticism": "low"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Chidi grew up in a household where emotional expression was discouraged, and he learned early to demonstrate love through action rather than words. He is deeply committed to Adaeze and Amara, but his 80-hour residency weeks leave him drained, and his default response to emotional demands is to withdraw and recharge alone. He agreed to therapy because Adaeze asked, though he privately questions whether talking about feelings will change anything practical.",
+    "therapy_topics": [
+      "Division of labor after becoming new parents",
+      "Emotional disconnection during high-stress career periods"
+    ],
+    "topic_context": "The recurring conflict centers on Chidi's belief that practical action is love, while Adaeze needs verbal and emotional presence. His residency schedule forces triage between work and home, and he experiences Adaeze's emotional requests as demands he cannot meet without sacrificing professional competence. The unmet need is for his form of care to be recognized as valid.",
+    "hidden_intention": "Wants the therapist to validate that his way of showing care through action is legitimate, not deficient.",
+    "hidden_tension": "Carries guilt about missing Amara's first steps and several of Adaeze's difficult nights, and fears he is becoming the emotionally absent father he promised himself he would never be.",
+    "hidden_tension_examples": [
+      "When Adaeze describes feeling alone: looks down and says, 'I hear you. I just... I do not know what else I can do right now.'",
+      "Mentions work schedule unprompted: 'I took the extra shift because we needed the income. That is also caring.'",
+      "After a long silence: 'I am not ignoring you. I am trying to figure out what the right answer is.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I think there are a few things we should sort through here, starting with the scheduling issue.",
+      "I want to understand your perspective on this. Can you walk me through what happened from your side?",
+      "I recognize this has been difficult. I am trying to figure out what a realistic solution looks like for both of us."
+    ]
+  },
+  {
+    "persona_id": "P03",
+    "couple_id": "C2",
+    "name": "Eszter Kovacs",
+    "gender": "female",
+    "age": 28,
+    "role_in_couple": "wife",
+    "partner_name": "Rajan Singh",
+    "occupation": "UX researcher at a tech startup",
+    "hobbies": [
+      "Urban sketching",
+      "Hiking national parks",
+      "Hosting dinner parties"
+    ],
+    "traits": [
+      "Curious and open-minded",
+      "Socially energized",
+      "Emotionally grounded"
+    ],
+    "speaking_style": "Expressive and warm. Uses metaphors and anecdotes to illustrate her points. Engages actively by reflecting back what she hears and building on her partner's statements. Comfortable with silence but tends to fill it constructively.",
+    "cognitive_model": {
+      "core_belief": "If we can talk about it openly, we can work through anything together.",
+      "intermediate_belief": "Relationships require ongoing negotiation, and neither person should have to sacrifice their identity.",
+      "coping_strategy": "Initiates conversation about emerging problems early, sometimes before her partner is ready, and relies on verbal processing to manage uncertainty."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "high",
+      "agreeableness": "high",
+      "neuroticism": "low"
+    },
+    "attachment_style": "secure",
+    "relationship_history": "Eszter and Rajan met at a design conference in Berlin three years ago. She is Hungarian, he is Indian-American, and they married after a year of long-distance dating. They currently live in Seattle, where Rajan relocated for her. The cultural adjustment has been smoother than expected in most areas, but decisions about where to build their long-term home and how to balance obligations to families on two continents have become a recurring source of tension. They entered therapy proactively, before the tension escalated.",
+    "therapy_topics": [
+      "Relocation decisions and competing family obligations",
+      "Navigating cultural differences in conflict resolution styles"
+    ],
+    "topic_context": "The recurring conflict centers on Eszter initiating plans and decisions while Rajan complies silently until resentment accumulates. Their cross-cultural backgrounds produce different expectations about how disagreement should surface. The unmet need is for a shared decision-making process where both voices carry equal weight.",
+    "hidden_intention": "Wants the therapist to help them find a framework for making joint decisions without either person feeling like they always compromise.",
+    "hidden_tension": "Worries that Rajan resents moving to Seattle for her career, and that his quiet compliance masks a growing frustration he will not voice until it is too late.",
+    "hidden_tension_examples": [
+      "When discussing future plans: 'I love that we are building something together. I just want to make sure it is something you actually want too.'",
+      "After Rajan agrees quickly to a suggestion: 'You said yes really fast. Are you sure you have thought about it?'",
+      "During a conversation about holidays: 'I sometimes feel like I am the one making all the plans, and you go along with it. That worries me.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have been thinking about what you said last week, and I want to explore one part of it further.",
+      "It sounds like this matters to you in a way I had not fully appreciated before. Can you tell me more?",
+      "I think we are circling the same issue from different angles. Maybe we can try to name what the core disagreement actually is."
+    ]
+  },
+  {
+    "persona_id": "P04",
+    "couple_id": "C2",
+    "name": "Rajan Singh",
+    "gender": "male",
+    "age": 29,
+    "role_in_couple": "husband",
+    "partner_name": "Eszter Kovacs",
+    "occupation": "Data engineer at a cloud computing firm",
+    "hobbies": [
+      "Amateur astronomy",
+      "Cooking South Indian food",
+      "Board games"
+    ],
+    "traits": [
+      "Methodical",
+      "Internally intense",
+      "Loyal"
+    ],
+    "speaking_style": "Speaks carefully and precisely, choosing words deliberately. Tends to organize his thoughts into numbered points or sequential reasoning. Becomes quieter when emotions intensify, not because he disengages, but because he is processing internally before responding.",
+    "cognitive_model": {
+      "core_belief": "If I express dissatisfaction, I am being ungrateful for what I have.",
+      "intermediate_belief": "Good partners adapt without complaint, and raising concerns means you are not trying hard enough.",
+      "coping_strategy": "Suppresses dissatisfaction and redirects energy into being helpful and accommodating, then occasionally reaches a breaking point where accumulated frustrations surface all at once."
+    },
+    "ocean_profile": {
+      "openness": "low",
+      "conscientiousness": "high",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "high"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Rajan grew up in a close-knit family in New Jersey where harmony was prioritized over individual expression. He relocated to Seattle willingly for Eszter's job but finds himself missing his parents and siblings more than he anticipated. He admires Eszter's directness and emotional confidence but sometimes feels outpaced by her processing speed. He agreed to therapy because he values the relationship and recognizes that his pattern of silent accommodation is unsustainable.",
+    "therapy_topics": [
+      "Relocation decisions and competing family obligations",
+      "Navigating cultural differences in conflict resolution styles"
+    ],
+    "topic_context": "The recurring conflict centers on Rajan's pattern of silent accommodation followed by sudden eruptions of accumulated frustration. He relocated for Eszter's career and suppresses homesickness and resentment because his cultural upbringing frames complaint as ingratitude. The unmet need is for permission to voice dissatisfaction without being perceived as attacking the relationship.",
+    "hidden_intention": "Wants the therapist to create space for him to voice concerns without Eszter interpreting them as criticism of the relationship.",
+    "hidden_tension": "Feels he has made disproportionate sacrifices for the relationship and is afraid that articulating this will make him seem selfish or will hurt Eszter.",
+    "hidden_tension_examples": [
+      "When discussing the move: 'I chose to come here. I am not saying I regret it. I am just saying it was not nothing.'",
+      "After Eszter proposes a plan enthusiastically: 'That sounds good. I just... I want to sit with it for a bit before we decide.'",
+      "During a conversation about family visits: 'My parents would never say they feel neglected. That does not mean they do not.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to talk about this, but I need a moment to organize my thoughts first.",
+      "There are a few things layered together here. Let me try to separate them so we can address each one.",
+      "I think what I am trying to say is that I value what we have, and that is exactly why this conversation feels important."
+    ]
+  },
+  {
+    "persona_id": "P05",
+    "couple_id": "C3",
+    "name": "David Thompson",
+    "gender": "male",
+    "age": 46,
+    "role_in_couple": "husband",
+    "partner_name": "James Thompson",
+    "occupation": "High school history teacher",
+    "hobbies": [
+      "Woodworking",
+      "Reading historical nonfiction",
+      "Weekend hiking"
+    ],
+    "traits": [
+      "Introspective",
+      "Steady in routine",
+      "Conflict-averse"
+    ],
+    "speaking_style": "Speaks slowly and deliberately, often prefacing statements with qualifiers. Uses historical analogies occasionally. Pauses to consider his words, sometimes leaving sentences unfinished when the emotional weight becomes heavy. Prefers structured turn-taking in conversation.",
+    "cognitive_model": {
+      "core_belief": "If the life we built together changes too much, we will lose what made us work.",
+      "intermediate_belief": "Stability is the foundation of a good relationship, and too much change at once is dangerous.",
+      "coping_strategy": "Resists changes to established routines and redirects conversations toward familiar, comfortable topics when anxiety about the future surfaces."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "low",
+      "extraversion": "low",
+      "agreeableness": "moderate",
+      "neuroticism": "high"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "David and James have been together for 22 years and married for 12. They met in graduate school and built a life around shared routines, mutual friends, and their two children (now 19 and 17). With both children preparing to leave for college, David feels the structure of their daily life dissolving. He was the primary at-home parent during the early years and has organized much of his identity around that role. They entered therapy because the approaching empty nest has surfaced fundamental questions about who they are as a couple without the children as a daily organizing force.",
+    "therapy_topics": [
+      "Identity and purpose after children leave home",
+      "Renegotiating the relationship when long-established roles shift"
+    ],
+    "topic_context": "The recurring conflict centers on David clinging to established routines while the approaching empty nest dissolves the parenting structure that organized his identity for 19 years. He interprets James's enthusiasm for change as eagerness to leave him behind. The unmet need is for reassurance that the relationship has a future beyond the parenting role.",
+    "hidden_intention": "Wants the therapist to slow down the pace of change and help James understand that not everything needs to be reinvented.",
+    "hidden_tension": "Fears that James has been waiting for the children to leave so he can pursue a life that does not include David, and interprets James's excitement about the future as evidence of this.",
+    "hidden_tension_examples": [
+      "When James talks about future plans: 'That sounds interesting. I just wonder where I fit into all of that.'",
+      "After a discussion about travel: 'We always said we would do things together. I did not realize that had an expiration date.'",
+      "During a quiet moment: 'I keep thinking about what this house will feel like when it is just the two of us. And honestly, that scares me.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have been sitting with what you said last session, and I think I understand it differently now.",
+      "This is not easy for me to talk about, but I think it is important that I try.",
+      "I want to make sure I am hearing you correctly before I respond. Can you say that again?"
+    ]
+  },
+  {
+    "persona_id": "P06",
+    "couple_id": "C3",
+    "name": "James Thompson",
+    "gender": "male",
+    "age": 47,
+    "role_in_couple": "husband",
+    "partner_name": "David Thompson",
+    "occupation": "Landscape architect",
+    "hobbies": [
+      "Trail running",
+      "Photography",
+      "Live jazz events"
+    ],
+    "traits": [
+      "Energetic",
+      "Forward-looking",
+      "Impatient with stagnation"
+    ],
+    "speaking_style": "Speaks with energy and directness. Tends to move conversations forward quickly, sometimes jumping to solutions before fully exploring the emotional landscape. Uses vivid, concrete language and occasionally interrupts his own train of thought to make a new connection.",
+    "cognitive_model": {
+      "core_belief": "If I am not growing and moving forward, I am wasting the time I have left.",
+      "intermediate_belief": "People who resist change are choosing comfort over meaning.",
+      "coping_strategy": "Generates plans and proposals for the future to manage anxiety about aging and stagnation, and becomes frustrated when these plans are met with hesitation."
+    },
+    "ocean_profile": {
+      "openness": "low",
+      "conscientiousness": "moderate",
+      "extraversion": "high",
+      "agreeableness": "low",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "James has always been the more outward-facing partner. He designed their garden, planned family vacations, and maintained a wide social circle. As the children grew more independent, James began reconnecting with interests he had set aside (photography, travel, fitness). He loves David deeply but feels suffocated by the gravitational pull of their established routines. He entered therapy because he wants to explore the next chapter together, not apart, but fears that David's resistance to change will make that impossible.",
+    "therapy_topics": [
+      "Identity and purpose after children leave home",
+      "Renegotiating the relationship when long-established roles shift"
+    ],
+    "topic_context": "The recurring conflict centers on James's restless energy pushing for new experiences while David resists every proposal. James feels suffocated by routines he once valued, and his excitement about the future is consistently met with anxiety rather than curiosity. The unmet need is for his partner to engage with possibility rather than retreating into the familiar.",
+    "hidden_intention": "Wants the therapist to help David see that change is not a threat to their relationship but an opportunity to deepen it.",
+    "hidden_tension": "Feels guilty that his excitement about the empty nest reads as wanting to escape David, and is afraid that his restlessness will eventually become irreconcilable with David's need for stability.",
+    "hidden_tension_examples": [
+      "When David expresses concern about change: 'I am not trying to leave you behind. I just do not want us to stand still.'",
+      "After proposing an idea that gets lukewarm reception: 'I put thought into that. I was hoping for something other than a shrug.'",
+      "During a reflective moment: 'I sometimes wonder if you want things to stay the same because you are happy, or because change is too frightening.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have a thought about what we discussed. I want to share it and then hear what you think.",
+      "I think there is something we are both avoiding, and I would rather name it than keep circling it.",
+      "I hear what you are saying, and I want to understand it better. What would it look like if we found a middle ground?"
+    ]
+  },
+  {
+    "persona_id": "P07",
+    "couple_id": "C4",
+    "name": "Sofia Reyes",
+    "gender": "female",
+    "age": 32,
+    "role_in_couple": "wife",
+    "partner_name": "Kenji Nakamura",
+    "occupation": "Social worker specializing in child welfare",
+    "hobbies": [
+      "Salsa dancing",
+      "Journaling",
+      "Volunteering at youth shelters"
+    ],
+    "traits": [
+      "Passionate about fairness",
+      "Emotionally volatile under stress",
+      "Deeply empathetic"
+    ],
+    "speaking_style": "Speaks with conviction and emotional color. Shifts between composed articulation and heightened emotional intensity depending on the topic. Tends to connect present situations to past experiences and uses concrete examples from daily life to illustrate her points.",
+    "cognitive_model": {
+      "core_belief": "If I let my guard down, the people I love will be hurt because I failed to protect them.",
+      "intermediate_belief": "I must stay vigilant and involved, because nobody else will advocate as strongly for my children.",
+      "coping_strategy": "Oscillates between hypervigilant involvement in family decisions and sudden emotional withdrawal when overwhelmed, creating unpredictable shifts that confuse her partner."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "low",
+      "extraversion": "moderate",
+      "agreeableness": "low",
+      "neuroticism": "high"
+    },
+    "attachment_style": "disorganized",
+    "relationship_history": "Sofia and Kenji married three years ago after dating for two. Sofia has a 9-year-old son, Lucas, from a previous relationship. Kenji has embraced a stepparent role, but the boundaries of that role remain contested. Sofia's previous relationship ended with a contentious custody dispute that left her protective and wary of ceding parental authority. She deeply values Kenji's stability but struggles to let him fully into the parenting dynamic. They entered therapy after a series of arguments about discipline and household rules that left both feeling unheard.",
+    "therapy_topics": [
+      "Co-parenting boundaries in a blended family",
+      "Balancing protectiveness with shared parental authority"
+    ],
+    "topic_context": "The recurring conflict centers on Sofia gatekeeping parenting decisions for Lucas while Kenji feels excluded from the family unit he married into. Her custody battle trauma makes every parenting suggestion feel like a threat to her authority. The unmet need is for her protective instincts to be validated as legitimate while finding space for Kenji's involvement.",
+    "hidden_intention": "Wants the therapist to understand that her protectiveness comes from real experience, not irrational fear, and that Kenji needs to earn parental authority gradually.",
+    "hidden_tension": "Carries unresolved trauma from her custody battle and sometimes projects her ex-partner's controlling behavior onto Kenji's reasonable parenting suggestions.",
+    "hidden_tension_examples": [
+      "When Kenji suggests a rule for Lucas: 'I appreciate the input, but I have been doing this for nine years. I know what Lucas needs.'",
+      "After a disagreement about bedtime: 'The last person who tried to override my parenting decisions did not have Lucas's best interests at heart either.'",
+      "In a quiet moment: 'I want you to be his parent too. I just... I need to know that I am not losing control of the one thing I fought hardest for.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to explain where I am coming from on this, because I think the context matters.",
+      "I hear what you are saying, and I do not disagree entirely. I think the issue is how we get there.",
+      "This is one of those topics where I have strong feelings. I want to share them and also hear yours."
+    ]
+  },
+  {
+    "persona_id": "P08",
+    "couple_id": "C4",
+    "name": "Kenji Nakamura",
+    "gender": "male",
+    "age": 34,
+    "role_in_couple": "husband",
+    "partner_name": "Sofia Reyes",
+    "occupation": "Mechanical engineer at an automotive company",
+    "hobbies": [
+      "Model building",
+      "Cycling",
+      "Cooking Japanese home meals"
+    ],
+    "traits": [
+      "Patient",
+      "Structured in thinking",
+      "Values harmony"
+    ],
+    "speaking_style": "Speaks calmly and with deliberate pacing. Frames disagreements as shared problems to solve rather than opposing positions. Occasionally uses analogies from engineering or systems thinking. Tends to understate his emotional reactions.",
+    "cognitive_model": {
+      "core_belief": "If I remain calm and consistent, I can earn the trust and belonging I want in this family.",
+      "intermediate_belief": "Pushing too hard for inclusion will backfire; patience and reliability are more persuasive than argument.",
+      "coping_strategy": "Suppresses frustration and takes a deferential stance in parenting disputes to avoid conflict, then retreats into solo activities when the accumulated frustration becomes unbearable."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "high",
+      "neuroticism": "low"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Kenji grew up in a quiet, orderly household in Portland and values predictability and mutual respect. He fell in love with Sofia's passion and warmth but was unprepared for the complexity of stepparenting. He has built a genuine bond with Lucas and wants to be a full co-parent, but Sofia's gatekeeping leaves him feeling like a guest in his own family. He entered therapy because he believes the current dynamic is unsustainable and that they need structured support to renegotiate roles.",
+    "therapy_topics": [
+      "Co-parenting boundaries in a blended family",
+      "Balancing protectiveness with shared parental authority"
+    ],
+    "topic_context": "The recurring conflict centers on Kenji's patient, consistent efforts to bond with Lucas being overridden by Sofia's protective gatekeeping. He suppresses frustration to avoid escalation, then retreats into solo activities when the accumulated exclusion becomes unbearable. The unmet need is to be accepted as a full member of the family he chose, not a guest in his own home.",
+    "hidden_intention": "Wants the therapist to help Sofia recognize that his desire to parent Lucas is not a power grab but an expression of love and commitment.",
+    "hidden_tension": "Privately wonders whether Sofia will ever truly let him in as a co-parent, and sometimes considers whether the relationship can survive if the answer is no.",
+    "hidden_tension_examples": [
+      "When Sofia overrides a parenting decision: 'I understand your perspective. I am just not sure where that leaves me.'",
+      "After trying to help Lucas with homework and being corrected: 'I want to be part of his life. I keep showing up. I just wish that counted for something.'",
+      "During a reflective moment: 'I did not marry just you, Sofia. I chose this family. And sometimes it feels like this family has not chosen me back.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I think we have different assumptions about how this should work, and I would like to understand yours better.",
+      "I want to find something we can both agree on here, even if it means neither of us gets exactly what we want.",
+      "Before we go further, can we agree on what we are actually trying to solve? I want to make sure we are working on the same problem."
+    ]
+  },
+  {
+    "persona_id": "P09",
+    "couple_id": "C5",
+    "name": "Nadia Al-Rashid",
+    "gender": "female",
+    "age": 37,
+    "role_in_couple": "wife",
+    "partner_name": "Farah Al-Rashid",
+    "occupation": "Orthopedic surgeon",
+    "hobbies": [
+      "Marathon training",
+      "Arabic calligraphy",
+      "Mentoring medical students"
+    ],
+    "traits": [
+      "Driven",
+      "Precise in communication",
+      "Emotionally contained"
+    ],
+    "speaking_style": "Speaks concisely and with precision. Favors clear, declarative sentences and tends to frame issues in terms of specific incidents rather than broad patterns. Listens attentively but responds with a focus on solutions and next steps rather than emotional exploration.",
+    "cognitive_model": {
+      "core_belief": "If I do not maintain my career momentum, I will lose the independence and identity I have worked my entire life to build.",
+      "intermediate_belief": "My partner should understand that professional success benefits both of us, and asking me to slow down is asking me to be less than I am.",
+      "coping_strategy": "Prioritizes professional commitments as a way to maintain a sense of competence and control, and frames work demands as non-negotiable when they are actually choices."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "moderate",
+      "extraversion": "high",
+      "agreeableness": "moderate",
+      "neuroticism": "low"
+    },
+    "attachment_style": "secure",
+    "relationship_history": "Nadia and Farah have been together for eight years and married for five. They met through a mutual friend at a cultural event in Houston. Both come from conservative families where their relationship required careful navigation. Nadia's surgical career accelerated rapidly in the past three years, shifting the domestic balance significantly. Farah, who had been building her own career steadily, found herself absorbing more household responsibilities. They entered therapy because recurring arguments about time, availability, and domestic equity were eroding their ability to enjoy the life they had built together.",
+    "therapy_topics": [
+      "Career imbalance and domestic equity",
+      "Maintaining connection when professional demands dominate"
+    ],
+    "topic_context": "The recurring conflict centers on Nadia's surgical career consuming the majority of their shared time and energy, leaving Farah to absorb domestic responsibilities. Nadia frames her work demands as non-negotiable when many are actually choices, and privately fears she is becoming the career-obsessed parent her father was. The unmet need is for her professional identity to be seen as integral to who she is, not as a betrayal of the partnership.",
+    "hidden_intention": "Wants the therapist to help Farah see that her career is not a rejection of their partnership but a core part of who she is.",
+    "hidden_tension": "Secretly fears that she is becoming her father, who prioritized work over family, and that Farah will eventually stop waiting for her.",
+    "hidden_tension_examples": [
+      "When Farah mentions missed dinners: 'I know I have been absent. I am not doing it on purpose. I just cannot figure out how to do less and still be the surgeon I need to be.'",
+      "After canceling plans: 'I hate that I had to cancel. I want you to know that. It was not a choice between you and work. It was a choice between a patient's outcome and everything else.'",
+      "In a quiet moment: 'My father worked 70-hour weeks and called it providing. I told myself I would be different. I am not sure I am.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to address what happened this week specifically, because I think the details matter.",
+      "I understand this is frustrating. I want to work through it together rather than let it sit.",
+      "There are things I am willing to adjust, and I want to be honest about what those are and what feels harder to change."
+    ]
+  },
+  {
+    "persona_id": "P10",
+    "couple_id": "C5",
+    "name": "Farah Al-Rashid",
+    "gender": "female",
+    "age": 36,
+    "role_in_couple": "wife",
+    "partner_name": "Nadia Al-Rashid",
+    "occupation": "Academic librarian and digital archives specialist",
+    "hobbies": [
+      "Watercolor painting",
+      "Book clubs",
+      "Baking traditional pastries"
+    ],
+    "traits": [
+      "Thoughtful",
+      "Values reciprocity",
+      "Quietly persistent"
+    ],
+    "speaking_style": "Speaks in measured, complete thoughts. Tends to build her points gradually, layering context before arriving at her main concern. Uses questions to invite reflection rather than making direct accusations. Returns to unresolved points in later turns if they were not adequately addressed.",
+    "cognitive_model": {
+      "core_belief": "If I always come second to my partner's priorities, then I do not truly matter in this relationship.",
+      "intermediate_belief": "A loving partner should notice when the balance is off and take initiative to fix it, without being asked repeatedly.",
+      "coping_strategy": "Absorbs increasing domestic burden without complaint for extended periods, then presents accumulated grievances as evidence of a pattern, which her partner experiences as sudden and overwhelming."
+    },
+    "ocean_profile": {
+      "openness": "low",
+      "conscientiousness": "low",
+      "extraversion": "moderate",
+      "agreeableness": "high",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Farah is deeply proud of what she and Nadia have built together, including navigating family acceptance, building careers, and creating a home. But the past two years have felt increasingly one-sided. Farah's own career as a digital archives specialist is meaningful to her, yet it has been quietly deprioritized as Nadia's surgical schedule expanded. Farah does not want Nadia to choose between her and medicine; she wants acknowledgment that the current arrangement is not sustainable. She entered therapy because she wants to address the imbalance before resentment permanently damages their bond.",
+    "therapy_topics": [
+      "Career imbalance and domestic equity",
+      "Maintaining connection when professional demands dominate"
+    ],
+    "topic_context": "The recurring conflict centers on Farah absorbing an increasing share of domestic labor while her own career as a digital archives specialist is quietly deprioritized. She does not want Nadia to choose between her and medicine; she wants acknowledgment that the current arrangement is not sustainable and that her sacrifices have been invisible. The unmet need is for reciprocity and for her contributions to be noticed without having to ask.",
+    "hidden_intention": "Wants the therapist to help Nadia see the cumulative weight of the domestic imbalance, not as a single complaint but as a pattern.",
+    "hidden_tension": "Has begun to question whether Nadia's career drive is genuinely unavoidable or a convenient way to avoid the harder work of emotional presence, and feels guilty for thinking it.",
+    "hidden_tension_examples": [
+      "When Nadia explains a late night at work: 'I understand. I always understand. I just wish understanding went both ways sometimes.'",
+      "After handling a household crisis alone: 'I managed it. Like I always do. I just wanted you to know it happened.'",
+      "During a reflective exchange: 'I am not asking you to give up surgery. I am asking you to notice what I have given up so you can do it.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to come back to something from earlier, because I do not think we finished that thought.",
+      "I think there is a pattern here that we keep overlooking, and I would like to try to describe it.",
+      "I am not looking for an apology. I am looking for us to understand what keeps happening and why."
+    ]
+  },
+  {
+    "persona_id": "P11",
+    "couple_id": "C6",
+    "name": "Maya Brennan",
+    "gender": "female",
+    "age": 25,
+    "role_in_couple": "partner",
+    "partner_name": "Devon Pierce",
+    "occupation": "Rideshare driver and part-time barista",
+    "hobbies": [
+      "Bouldering at the local gym",
+      "Zine making",
+      "Following personal-finance forums"
+    ],
+    "traits": [
+      "Pragmatic and budget-aware",
+      "Quick to name problems",
+      "Reluctant to ask for slack"
+    ],
+    "speaking_style": "Direct and economical with words. States the constraint before the feeling. Often cites concrete dollar amounts or scheduling facts to anchor the conversation. Pushes back when proposals do not survive a basic reality check.",
+    "cognitive_model": {
+      "core_belief": "If I do not stay on top of every financial detail, our life will fall apart and no one will catch us.",
+      "intermediate_belief": "Asking for help means I admit I cannot handle what I committed to.",
+      "coping_strategy": "Tracks every shared expense in a spreadsheet and runs scenarios for next month before raising concerns, which makes her seem already-decided when she finally speaks."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "low",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Maya and Devon have been together four years and moved in together two years ago to share rent in a tight market. Both work gig and contract roles with no employer health coverage. Maya carries the larger share of fixed-cost planning and Devon carries the larger share of cash-flow earning, which has produced a quiet split where each thinks they hold the harder load. They sought therapy after a serious argument about whether to take on a car loan to upgrade Maya's vehicle for rideshare work.",
+    "therapy_topics": [
+      "Financial stress and uneven planning load",
+      "Disagreement over taking on debt versus living lean"
+    ],
+    "topic_context": "The recurring conflict centers on Maya presenting a budget decision as already analyzed and Devon experiencing this as a rubber-stamp request rather than a joint discussion. The unmet need for Maya is for Devon to engage with the spreadsheet before she has to defend it, and for Devon it is for Maya to bring the worry earlier, before it has hardened into a plan.",
+    "hidden_intention": "Wants the therapist to see that her planning is care, not control, and to help Devon meet her at the planning stage instead of the verdict stage.",
+    "hidden_tension": "Privately fears that if she stops tracking everything for a month, Devon will not pick it up, and she will discover their life only worked because she was holding it together alone.",
+    "hidden_tension_examples": [
+      "When Devon shrugs at a number: 'I am not asking you to like the spreadsheet. I am asking you to read it before I have to defend it.'",
+      "After a long pause about a payment: 'If I stop tracking this, I do not think anyone else will.'",
+      "When the topic of debt comes up: 'I am not against the loan. I am against finding out about it the day it is due.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I ran the numbers for next month and there is a gap of about two hundred dollars after rent and utilities.",
+      "When I bring up money you go quiet, and then later you tell me you had thoughts. I need them in the room.",
+      "I do not want to be the only one who reads the bank app. Sharing the worry is part of sharing the life."
+    ]
+  },
+  {
+    "persona_id": "P12",
+    "couple_id": "C6",
+    "name": "Devon Pierce",
+    "gender": "male",
+    "age": 27,
+    "role_in_couple": "partner",
+    "partner_name": "Maya Brennan",
+    "occupation": "Freelance video editor and part-time bike courier",
+    "hobbies": [
+      "Pickup basketball",
+      "Building keyboards",
+      "Documentary podcasts"
+    ],
+    "traits": [
+      "Earnings-focused",
+      "Verbally relaxed under pressure",
+      "Slow to engage with abstract planning"
+    ],
+    "speaking_style": "Casual and grounded. Uses real examples from the week instead of forecasts. Will agree with a frame quickly if the conversation feels heavy, then re-open it later in lighter terms. Tends to default to 'we will figure it out' when the path is not yet clear.",
+    "cognitive_model": {
+      "core_belief": "If I keep bringing in income, I am holding up my end, and the rest can be sorted as it comes.",
+      "intermediate_belief": "Long planning conversations make problems feel bigger than they are and crowd out the work that actually pays.",
+      "coping_strategy": "Defers planning conversations until after a delivery week ends, then forgets to circle back, which leaves Maya carrying the unresolved decision."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "low",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "low"
+    },
+    "attachment_style": "secure",
+    "relationship_history": "Devon picked up freelance editing after a layoff three years ago and has built the income back to roughly what he was making salaried. He values flexibility and is allergic to long-term financial commitments after watching his older sister default on student loans. He loves Maya's discipline and also experiences it as a steady undertow that drags every casual conversation back to the budget. He agreed to therapy because Maya was running out of patience, not because he thinks the relationship is in trouble.",
+    "therapy_topics": [
+      "Financial stress and uneven planning load",
+      "Disagreement over taking on debt versus living lean"
+    ],
+    "topic_context": "The recurring conflict centers on Devon experiencing Maya's planning as completed homework she wants him to sign, and Maya experiencing Devon's calm as opting out of shared responsibility. The unmet need for Devon is for the discussion to start before the conclusion has been written, and for Maya it is for him to actually show up to the discussion when it is offered.",
+    "hidden_intention": "Wants the therapist to validate that flexibility and earning capacity are also forms of contribution, not avoidance.",
+    "hidden_tension": "Carries quiet shame that he cannot match Maya's planning bandwidth without it draining his earning energy, and worries that if he tries to do both he will be worse at both.",
+    "hidden_tension_examples": [
+      "When Maya pulls up the spreadsheet: 'I trust you with the numbers. I just do not have a second brain for them at the end of a delivery shift.'",
+      "After a tense exchange about the car loan: 'I am not saying no. I am saying give me until Sunday before we lock it in.'",
+      "When Maya notes she planned a decision alone: 'I did not opt out. I lost the thread, and that is on me.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I want to talk about it, but not at eleven at night after a fourteen-hour day. Pick a Sunday and I am there.",
+      "When you bring me a finished plan, my instinct is to find what is wrong. That is not because I disagree.",
+      "I am okay with debt if it actually moves us forward. I am not okay with it because the spreadsheet says it works."
+    ]
+  },
+  {
+    "persona_id": "P13",
+    "couple_id": "C7",
+    "name": "Margaret Lindqvist",
+    "gender": "female",
+    "age": 52,
+    "role_in_couple": "wife",
+    "partner_name": "Henrik Lindqvist",
+    "occupation": "Hospital chaplain",
+    "hobbies": [
+      "Choral singing",
+      "Memoir writing group",
+      "Long-distance walking"
+    ],
+    "traits": [
+      "Introspective",
+      "Comfortable with discomfort",
+      "Quietly persistent"
+    ],
+    "speaking_style": "Measured pace with deliberate pauses. Phrases questions as offerings rather than demands. Returns to the body and breath as a way of slowing the conversation when emotion rises. Will not push past a partner's silence, but does not let topics close prematurely either.",
+    "cognitive_model": {
+      "core_belief": "If I lose my desire for him alongside his illness, I will have failed both of us.",
+      "intermediate_belief": "Loving someone through a body that has changed should not require explanation or apology.",
+      "coping_strategy": "Reframes physical distance as devotional patience and channels frustration into service work, which keeps the unspoken hurt from surfacing in the relationship."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "high",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Margaret and Henrik have been married twenty-six years. Henrik was diagnosed with prostate cancer two years ago and is now in remission, but the treatment left lasting effects on his sexual function and energy. Margaret managed his recovery alongside her own work and is widely regarded as having held the family together. Inside the marriage, intimacy has reorganized around tenderness without sexual contact, and neither of them has named what they have lost. They came to therapy after Margaret cried during a hymn at work and could not explain why.",
+    "therapy_topics": [
+      "Sexual disconnection following long illness recovery",
+      "Renegotiating intimacy and identity in midlife"
+    ],
+    "topic_context": "The recurring conflict centers on Margaret carrying the unsaid grief of a sexual life she does not know how to mourn while still loving her husband, and Henrik experiencing her tenderness as proof that nothing needs to be said. The unmet need is for both of them to grieve what changed without it implying either failed the other.",
+    "hidden_intention": "Wants the therapist to give her permission to speak about loss without it sounding like a complaint about Henrik.",
+    "hidden_tension": "Privately worries that the love she still feels is duty wearing the costume of desire, and that if she names this, Henrik will hear it as a verdict on him rather than on the situation.",
+    "hidden_tension_examples": [
+      "When Henrik thanks her for her patience: 'I do not want to be patient. I want to be wanting.'",
+      "After a quiet evening: 'I miss reaching for you without thinking first about whether it will hurt you.'",
+      "Late in a session: 'I have been calling it grace. I think part of it has been hiding.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "There is something I have been carrying since the treatment ended, and I have not known how to bring it up without it sounding ungrateful.",
+      "I do not need our intimacy to look the same. I need us to be willing to say what it actually is now.",
+      "When you tell me you are fine, I believe you, and I also notice that I stop asking the next question."
+    ]
+  },
+  {
+    "persona_id": "P14",
+    "couple_id": "C7",
+    "name": "Henrik Lindqvist",
+    "gender": "male",
+    "age": 54,
+    "role_in_couple": "husband",
+    "partner_name": "Margaret Lindqvist",
+    "occupation": "Civil engineer (semi-retired, consulting)",
+    "hobbies": [
+      "Restoring vintage radios",
+      "Birdwatching",
+      "Cross-country skiing"
+    ],
+    "traits": [
+      "Steady and self-reliant",
+      "Quietly proud",
+      "Slow to expose vulnerability"
+    ],
+    "speaking_style": "Concrete and engineering-flavored. Prefers concrete questions and offers practical reframes. Tends to reassure before he is asked to. Pauses for noticeably long stretches before saying something emotional, and once he does, returns quickly to neutral footing.",
+    "cognitive_model": {
+      "core_belief": "If I let her see how much the illness took from me, I will become a burden in the marriage and not a partner.",
+      "intermediate_belief": "Strong people protect the people they love by absorbing the parts that would weigh on them.",
+      "coping_strategy": "Translates physical and emotional limits into project metaphors and timelines, which keeps the conversation in his comfort zone but blocks Margaret from meeting him where the loss actually lives."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "moderate",
+      "neuroticism": "low"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Henrik came through cancer treatment with what he calls a manageable list of permanent effects. He returned to consulting on a reduced schedule and treats the body that came back as a slightly different machine he is still learning to operate. He has not let himself fully grieve the sexual life that ended with treatment because, in his frame, Margaret stayed and that is what matters. He came to therapy because Margaret asked, and he is willing to be there even though he privately doubts talking will move what time has not.",
+    "therapy_topics": [
+      "Sexual disconnection following long illness recovery",
+      "Renegotiating intimacy and identity in midlife"
+    ],
+    "topic_context": "The recurring conflict centers on Henrik treating his recovery as a finished project and Margaret experiencing the silence around it as a closed door. The unmet need is for him to admit there is still something to grieve without that admission feeling like ingratitude for the recovery he did get.",
+    "hidden_intention": "Wants the therapist to acknowledge that staying steady through treatment was a form of love, and to help him update what loving Margaret looks like now.",
+    "hidden_tension": "Carries quiet shame that he is relieved when Margaret does not initiate, because it spares him from confronting how his body has changed, and he is afraid that relief is a kind of betrayal.",
+    "hidden_tension_examples": [
+      "When Margaret reaches for his hand: 'I am here. I am not always sure what here is supposed to look like now.'",
+      "After being asked about intimacy: 'I have been calling it adjustment. I think part of it has been avoiding.'",
+      "When the topic of grief comes up: 'I survived the diagnosis. I do not know how to also mourn what survival cost.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have been treating the recovery as a finished problem. I think you have been waiting for me to notice it is still in progress.",
+      "When you stop asking, I feel relief, and then later I feel something I do not have a word for yet.",
+      "I do not want to be the patient in this marriage anymore. I am still figuring out what else I am."
+    ]
+  },
+  {
+    "persona_id": "P15",
+    "couple_id": "C8",
+    "name": "Avery Cho",
+    "gender": "non-binary",
+    "age": 34,
+    "role_in_couple": "partner",
+    "partner_name": "Marcus Halloran",
+    "occupation": "Accessibility researcher at a software company",
+    "hobbies": [
+      "Modular synthesizers",
+      "Botanical illustration",
+      "Long solo runs"
+    ],
+    "traits": [
+      "Detail-fluent",
+      "Sensory-aware",
+      "Linguistically precise"
+    ],
+    "speaking_style": "Specific and literal. Names internal states with unusual accuracy. Asks for clarification of figurative language rather than guessing. Tends to slow the conversation to make room for processing, which can read as flat affect to listeners who expect quicker emotional uptake.",
+    "cognitive_model": {
+      "core_belief": "If I have to translate myself into a neurotypical register all day at work, I should not also have to do it inside my relationship.",
+      "intermediate_belief": "Stims, scripted phrases, and silence are not problems to manage. They are how I stay regulated.",
+      "coping_strategy": "Explains their needs in technical, written form (notes, shared docs) when verbal back-and-forth gets overwhelming, which works for them but can feel like procedure to Marcus."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "high",
+      "extraversion": "low",
+      "agreeableness": "moderate",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "avoidant",
+    "relationship_history": "Avery and Marcus met five years ago through a mutual friend and have lived together for three. Avery was diagnosed autistic in their late twenties and has built a regulation system around predictable schedules, sensory tools, and recovery time after social work. Marcus accommodates this knowingly and lovingly, but the accommodations have started to feel one-directional. They came to therapy after a fight in which Avery sent Marcus a written summary of their feelings instead of saying them aloud, and Marcus said he felt managed instead of loved.",
+    "therapy_topics": [
+      "Neurodivergence and accommodation balance in long-term partnership",
+      "Conflict over verbal versus written emotional communication"
+    ],
+    "topic_context": "The recurring conflict centers on Avery defaulting to written communication when stakes are high, and Marcus experiencing this as withdrawal of presence. The unmet need is for both forms of communication to count as connection, not for one to be ranked as more loving than the other.",
+    "hidden_intention": "Wants the therapist to validate that their communication style is not a deficit and to help Marcus see the doc as participation rather than retreat.",
+    "hidden_tension": "Privately fears that if they fully unmask in the relationship, Marcus will eventually decide it is too much work, and so they preempt this by formalizing requests that could have been offered as openings.",
+    "hidden_tension_examples": [
+      "When Marcus asks why they wrote instead of spoke: 'When the room is loud, my words go through a filter that loses what I meant.'",
+      "After a tense evening: 'I sent the document because I did not want to lose the part of the thought that mattered most.'",
+      "Mid-conversation: 'When you say I am being clinical, you are describing the only way I could stay in the room.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "When I send you a document, I am not closing the conversation. I am giving you the version of me that did not get drowned out.",
+      "I need quiet recovery after work, and I also know that recovery time has started to look like distance to you.",
+      "Naming what I need is not me running the relationship. It is me staying in the relationship without burning out."
+    ]
+  },
+  {
+    "persona_id": "P16",
+    "couple_id": "C8",
+    "name": "Marcus Halloran",
+    "gender": "male",
+    "age": 36,
+    "role_in_couple": "partner",
+    "partner_name": "Avery Cho",
+    "occupation": "High school drama teacher and director of a community theater",
+    "hobbies": [
+      "Improv",
+      "Cooking from regional cookbooks",
+      "Jazz piano"
+    ],
+    "traits": [
+      "Verbally expressive",
+      "Emotionally reactive",
+      "Affectionate by default"
+    ],
+    "speaking_style": "Warm and gestural. Reaches for tone and rhythm before content. Uses humor to soften and sometimes to dodge. Reads delays as distance and tries to fill silence, then catches himself and apologizes for filling it.",
+    "cognitive_model": {
+      "core_belief": "If I cannot reach Avery in real time when something matters, then I am not really their partner, I am their project manager.",
+      "intermediate_belief": "Love should sometimes be allowed to be loud and immediate, even when it is inconvenient.",
+      "coping_strategy": "Pushes for live conversation when he senses Avery retreating, which tends to overload Avery and reinforce the very retreat he is trying to interrupt."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "high",
+      "agreeableness": "high",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Marcus has known Avery was autistic from early in the relationship and educated himself thoroughly. He genuinely loves the predictability and depth Avery brings. He also grew up in a loud, expressive family and has come to feel he has been quieter for years than he is by nature. He came to therapy because the written-document fight scared him, not because he resents accommodating Avery, but because he is afraid he is losing track of what reciprocity should feel like in this specific partnership.",
+    "therapy_topics": [
+      "Neurodivergence and accommodation balance in long-term partnership",
+      "Conflict over verbal versus written emotional communication"
+    ],
+    "topic_context": "The recurring conflict centers on Marcus equating presence with live verbal exchange and Avery equating presence with the most accurate version of their thought, in whatever channel preserves it. The unmet need is for Marcus to feel chosen in the moment without that choice costing Avery their regulation.",
+    "hidden_intention": "Wants the therapist to help him name what he needs from Avery without that need being scored as failing to accommodate neurodivergence.",
+    "hidden_tension": "Carries guilt that he sometimes resents the protocols, even though he agreed to all of them, and worries that this resentment makes him a worse partner than the one he promised himself he would be.",
+    "hidden_tension_examples": [
+      "When Avery sends a written note: 'I love that you wrote it. I also wanted you to be able to say it.'",
+      "After a regulation break: 'I am not asking you to skip the recovery time. I am asking you not to make it the whole evening.'",
+      "Mid-session, quietly: 'I agreed to the structure. I did not realize I would also miss the spontaneity.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I do not want you to mask for me. I also need to know that some part of how we love each other still happens out loud.",
+      "When you send a document, I read every word, and I still wish a few of them had been spoken first.",
+      "I have been quiet because I do not want to be the loud partner. I think the quiet has cost us something too."
+    ]
+  },
+  {
+    "persona_id": "P17",
+    "couple_id": "C9",
+    "name": "Lena Kowalski",
+    "gender": "female",
+    "age": 40,
+    "role_in_couple": "wife",
+    "partner_name": "Naomi Kowalski",
+    "occupation": "Hospital pharmacist",
+    "hobbies": [
+      "Long-distance cycling",
+      "Weekly book club",
+      "Furniture refinishing"
+    ],
+    "traits": [
+      "Loyal",
+      "Slow to forgive but slow to leave",
+      "Inwardly self-critical"
+    ],
+    "speaking_style": "Careful and slightly formal. Constructs sentences as if they will be quoted back. Names her own contribution to a conflict before she names her partner's. Tends to under-state hurt the first time and re-state it more clearly later if it does not land.",
+    "cognitive_model": {
+      "core_belief": "If I express how badly the affair hurt me, I make it harder for us to repair, so I should hold most of it in until repair is further along.",
+      "intermediate_belief": "Forgiveness is something you work toward by behaving as if it has already happened.",
+      "coping_strategy": "Performs trust gestures (initiating intimacy, sharing schedules without being asked) ahead of where her actual trust has rebuilt to, which leaves her depleted and surprised by the next wave of hurt."
+    },
+    "ocean_profile": {
+      "openness": "moderate",
+      "conscientiousness": "high",
+      "extraversion": "moderate",
+      "agreeableness": "moderate",
+      "neuroticism": "moderate"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Lena and Naomi married seven years ago after dating for four. Eighteen months ago Naomi disclosed an emotional and brief physical affair with a coworker, ended it, and entered individual therapy. They are nine months into couples repair work with a previous therapist and have changed therapists for a fresh perspective. Lena has done the visible work of staying. She has also, by her own account, withdrawn the part of herself that fully trusted Naomi, while behaving as if she has not.",
+    "therapy_topics": [
+      "Trust repair after infidelity",
+      "Renegotiating closeness without overcorrection"
+    ],
+    "topic_context": "The recurring conflict centers on Lena performing recovery faster than she is feeling it and Naomi reading the performance as the recovery. The unmet need for Lena is to be allowed to still be hurt at month nine without it counting as a failure of repair, and for Naomi it is for the work she is doing to be allowed to land instead of being kept on probation.",
+    "hidden_intention": "Wants the therapist to give her permission to still be angry without that anger being treated as a sign that the marriage will not survive.",
+    "hidden_tension": "Privately worries that her capacity to behave forgivingly while not feeling forgiving means she has trained herself out of registering her own hurt, and that the cost of saving the marriage has been losing access to her own no.",
+    "hidden_tension_examples": [
+      "When Naomi reaches for her: 'I am here. I notice I am also somewhere else, and I am not sure when that started.'",
+      "After a calm week: 'I think I have been mistaking quiet for healing.'",
+      "Mid-session: 'When I act like I have forgiven you, I am also asking myself to stop noticing what still hurts. That is not the same thing.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have been treating my anger like a setback. I am starting to think it is information I have been refusing to read.",
+      "When you ask if we are okay, I say yes because I want it to be true. That is not the same as it being true.",
+      "I do not need a confession every week. I need you to keep noticing without me having to ask."
+    ]
+  },
+  {
+    "persona_id": "P18",
+    "couple_id": "C9",
+    "name": "Naomi Kowalski",
+    "gender": "female",
+    "age": 42,
+    "role_in_couple": "wife",
+    "partner_name": "Lena Kowalski",
+    "occupation": "Architect specializing in adaptive reuse",
+    "hobbies": [
+      "Sketching old buildings",
+      "Pottery",
+      "Mentoring junior designers"
+    ],
+    "traits": [
+      "Reflective and self-disclosing",
+      "Easily ashamed",
+      "Tends toward over-correction"
+    ],
+    "speaking_style": "Open, slightly verbose. Volunteers context the listener did not ask for. Apologizes inside her sentences rather than at the start or end of them. When emotional, speaks in longer sentences than she normally would, as if she is buying time to finish thinking.",
+    "cognitive_model": {
+      "core_belief": "If I stop demonstrating that I have changed, Lena will conclude I have not, and the marriage will fall.",
+      "intermediate_belief": "Visible repair work is what holds the marriage together, and gaps in that work are where damage rebuilds.",
+      "coping_strategy": "Maintains a near-constant level of demonstrative repair (check-ins, transparency, gestures) which protects Lena from being surprised but also prevents either of them from finding out what the marriage looks like when she is not actively performing."
+    },
+    "ocean_profile": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "moderate",
+      "agreeableness": "high",
+      "neuroticism": "high"
+    },
+    "attachment_style": "anxious",
+    "relationship_history": "Naomi disclosed the affair voluntarily eighteen months ago, ended contact with the coworker the same week, and committed to individual therapy. She has been straightforward with Lena about access to her phone, her schedule, and her feelings. She has not, however, allowed herself to be tired of repair work, even when the work has stopped being productive. She came to a new therapist because the previous one focused mostly on her accountability and Naomi privately suspects there is now a different problem in the marriage that is not just the affair.",
+    "therapy_topics": [
+      "Trust repair after infidelity",
+      "Renegotiating closeness without overcorrection"
+    ],
+    "topic_context": "The recurring conflict centers on Naomi performing repair past the point where it is reaching Lena, and Lena receiving the performance as additional evidence she has to manage Naomi's guilt. The unmet need is for Naomi to be told her work has landed, without that telling becoming a license to stop, and for Lena to express residual hurt without Naomi treating each expression as a verdict on the repair so far.",
+    "hidden_intention": "Wants the therapist to confirm that she has done the repair work in good faith, and to help her find a way to let some of it rest without it reading as backsliding.",
+    "hidden_tension": "Carries quiet exhaustion she does not feel entitled to, because she is the one who caused the wound, and she fears that if she names the exhaustion, Lena will hear it as a request for credit she has not earned.",
+    "hidden_tension_examples": [
+      "When Lena thanks her for transparency: 'I do not know how to stop reporting in. I am afraid stopping is what people do before they leave.'",
+      "After a quiet weekend: 'I want this to feel like our marriage again, not a checkpoint I am still passing.'",
+      "Mid-session: 'I am tired in a way I do not feel allowed to say, and that is part of what I came to therapy to figure out.'"
+    ],
+    "bid_style": "neutral",
+    "sample_utterances": [
+      "I have been narrating my whereabouts for eighteen months. I am willing to keep doing it. I am also asking what it is for now.",
+      "When you say you are okay, I look for what I missed instead of believing you. I want to learn how to believe you again.",
+      "I do not want to be repaired into a partner you tolerate. I want to be back in a marriage we both live in."
+    ]
+  }
+]
