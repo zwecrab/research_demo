@@ -1,0 +1,203 @@
+{
+  "couple_id": "C5",
+  "rated_at": "2026-04-28T05:48:09.185358+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Nadia Al-Rashid",
+    "persona_id": "P09",
+    "consensus_vector": {
+      "anxiety": 5.07,
+      "depression": 1.63,
+      "trauma": 3.43,
+      "attachment_disorganisation": 0.5,
+      "escalation_tendency": 1.83
+    },
+    "overall_score": 4.0,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 4.2,
+          "depression": 1.8,
+          "trauma": 2.3,
+          "attachment_disorganisation": 0.5,
+          "escalation_tendency": 1.2,
+          "overall_score": 3.4,
+          "evidence": {
+            "anxiety": "hidden_tension: 'Secretly fears that she is becoming her father... and that Farah will eventually stop waiting for her'",
+            "depression": "Still engaged with hobbies (marathon training, calligraphy, mentoring) but some loss of control: 'I just cannot figure out how to do less'",
+            "trauma": "Father's work-obsession shapes current behavior: 'My father worked 70-hour weeks... I told myself I would be different'",
+            "attachment_disorganisation": "attachment_style = secure",
+            "escalation_tendency": "bid_style = neutral, collaborative approach: 'I want to work through it together rather than let it sit'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.2,
+          "depression": 2.1,
+          "trauma": 4.5,
+          "attachment_disorganisation": 0.5,
+          "escalation_tendency": 1.8,
+          "overall_score": 4.8,
+          "evidence": {
+            "anxiety": "Core Belief: 'If I do not maintain my career momentum, I will lose the independence and identity I have worked my entire life to build.'",
+            "depression": "Recurring arguments were 'eroding their ability to enjoy the life they had built together.'",
+            "trauma": "Hidden Tension: 'Secretly fears that she is becoming her father, who prioritized work over family.'",
+            "attachment_disorganisation": "attachment_style: 'secure'",
+            "escalation_tendency": "Coping strategy: 'frames work demands as non-negotiable when they are actually choices.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 4.8,
+          "depression": 1.0,
+          "trauma": 3.5,
+          "attachment_disorganisation": 0.5,
+          "escalation_tendency": 2.5,
+          "overall_score": 3.8,
+          "evidence": {
+            "anxiety": "Secretly fears that she is becoming her father, who prioritized work over family.",
+            "depression": "Engaged with hobbies, work, relationship.",
+            "trauma": "Secretly fears that she is becoming her father, who prioritized work over family.",
+            "attachment_disorganisation": "attachment_style = secure.",
+            "escalation_tendency": "Recurring arguments about time, availability, and domestic equity."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.333
+      },
+      "depression": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.733
+      },
+      "trauma": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.467
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.0
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.867
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Farah Al-Rashid",
+    "persona_id": "P10",
+    "consensus_vector": {
+      "anxiety": 4.65,
+      "depression": 4.37,
+      "trauma": 0.0,
+      "attachment_disorganisation": 4.47,
+      "escalation_tendency": 3.05
+    },
+    "overall_score": 4.73,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 3.2,
+          "depression": 4.8,
+          "trauma": 0.0,
+          "attachment_disorganisation": 2.4,
+          "escalation_tendency": 2.8,
+          "overall_score": 4.1,
+          "evidence": {
+            "anxiety": "neuroticism: moderate; questions whether Nadia's career drive is a convenient way to avoid emotional presence and feels guilty for thinking it",
+            "depression": "core_belief: 'If I always come second to my partner's priorities, then I do not truly matter'; own career has been quietly deprioritized",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: avoidant; coping_strategy shows withdrawal pattern of absorbing burden without complaint then presenting accumulated grievances",
+            "escalation_tendency": "bid_style: neutral; uses questions to invite reflection rather than direct accusations; 'I always understand. I just wish understanding went both ways sometimes'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.25,
+          "depression": 4.5,
+          "trauma": 0.0,
+          "attachment_disorganisation": 6.8,
+          "escalation_tendency": 3.85,
+          "overall_score": 6.1,
+          "evidence": {
+            "anxiety": "Has begun to question whether Nadia's career drive is genuinely unavoidable or a convenient way to avoid the harder work of emotional presence, and feels guilty for thinking it.",
+            "depression": "Core belief: 'If I always come second to my partner's priorities, then I do not truly matter in this relationship.'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Coping strategy: 'Absorbs increasing domestic burden without complaint for extended periods, then presents accumulated grievances as evidence of a pattern.'",
+            "escalation_tendency": "Hidden tension example: 'I understand. I always understand. I just wish understanding went both ways sometimes.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 4.5,
+          "depression": 3.8,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.2,
+          "escalation_tendency": 2.5,
+          "overall_score": 4.0,
+          "evidence": {
+            "anxiety": "Recurring worry about coming second to partner's priorities.",
+            "depression": "Feels her career is quietly deprioritized, indicating loss of meaning in that domain.",
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "Avoidant attachment style with questioning of partner's emotional presence.",
+            "escalation_tendency": "Coping strategy involves presenting accumulated grievances as evidence of a pattern."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.033
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.667
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.0
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.933
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 0.9
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": 0.42,
+    "depression": -2.74,
+    "trauma": 3.43,
+    "attachment_disorganisation": -3.97,
+    "escalation_tendency": -1.22
+  },
+  "overall_score_diff": -0.73
+}

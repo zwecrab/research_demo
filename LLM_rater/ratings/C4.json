@@ -1,0 +1,203 @@
+{
+  "couple_id": "C4",
+  "rated_at": "2026-04-28T05:46:45.405133+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Sofia Reyes",
+    "persona_id": "P07",
+    "consensus_vector": {
+      "anxiety": 7.3,
+      "depression": 1.87,
+      "trauma": 6.87,
+      "attachment_disorganisation": 8.48,
+      "escalation_tendency": 3.62
+    },
+    "overall_score": 7.3,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 6.85,
+          "depression": 1.25,
+          "trauma": 7.2,
+          "attachment_disorganisation": 8.45,
+          "escalation_tendency": 2.3,
+          "overall_score": 6.75,
+          "evidence": {
+            "anxiety": "core_belief: 'If I let my guard down, the people I love will be hurt because I failed to protect them.'",
+            "depression": "Engaged with hobbies including salsa dancing and volunteering at youth shelters",
+            "trauma": "hidden_tension: 'Carries unresolved trauma from her custody battle and sometimes projects her ex-partner's controlling behavior onto Kenji's reasonable parenting suggestions.'",
+            "attachment_disorganisation": "attachment_style = disorganized; coping_strategy: 'Oscillates between hypervigilant involvement in family decisions and sudden emotional withdrawal when overwhelmed'",
+            "escalation_tendency": "bid_style = neutral; sample utterances show collaborative approach: 'I want to share them and also hear yours.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 8.25,
+          "depression": 1.85,
+          "trauma": 7.9,
+          "attachment_disorganisation": 8.8,
+          "escalation_tendency": 4.75,
+          "overall_score": 8.15,
+          "evidence": {
+            "anxiety": "core_belief: 'If I let my guard down, the people I love will be hurt because I failed to protect them.'",
+            "depression": "coping_strategy: 'sudden emotional withdrawal when overwhelmed'",
+            "trauma": "topic_context: 'Her custody battle trauma makes every parenting suggestion feel like a threat to her authority.'",
+            "attachment_disorganisation": "attachment_style: 'disorganized'",
+            "escalation_tendency": "hidden_tension_examples: 'The last person who tried to override my parenting decisions did not have Lucas's best interests at heart either.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 6.8,
+          "depression": 2.5,
+          "trauma": 5.5,
+          "attachment_disorganisation": 8.2,
+          "escalation_tendency": 3.8,
+          "overall_score": 7.0,
+          "evidence": {
+            "anxiety": "Oscillates between hypervigilant involvement in family decisions and sudden emotional withdrawal when overwhelmed.",
+            "depression": "Emotionally volatile under stress.",
+            "trauma": "Carries unresolved trauma from her custody battle.",
+            "attachment_disorganisation": "Attachment_style = disorganized.",
+            "escalation_tendency": "Hidden tension contains 'you always / you never' frame."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 0.967
+      },
+      "depression": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.833
+      },
+      "trauma": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.6
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.4
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.633
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Kenji Nakamura",
+    "persona_id": "P08",
+    "consensus_vector": {
+      "anxiety": 3.3,
+      "depression": 4.42,
+      "trauma": 0.17,
+      "attachment_disorganisation": 4.77,
+      "escalation_tendency": 1.63
+    },
+    "overall_score": 4.37,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 2.3,
+          "depression": 4.2,
+          "trauma": 0.0,
+          "attachment_disorganisation": 2.8,
+          "escalation_tendency": 0.5,
+          "overall_score": 3.4,
+          "evidence": {
+            "anxiety": "hidden_tension: 'Privately wonders whether Sofia will ever truly let him in as a co-parent'",
+            "depression": "coping_strategy: 'retreats into solo activities when the accumulated frustration becomes unbearable'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: 'avoidant' with suppression of frustration and retreat pattern",
+            "escalation_tendency": "bid_style: 'neutral' with collaborative utterances like 'I want to find something we can both agree on'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 3.85,
+          "depression": 4.55,
+          "trauma": 0.5,
+          "attachment_disorganisation": 6.25,
+          "escalation_tendency": 1.65,
+          "overall_score": 5.2,
+          "evidence": {
+            "anxiety": "Privately wonders whether Sofia will ever truly let him in... and sometimes considers whether the relationship can survive if the answer is no.",
+            "depression": "retreats into solo activities when the accumulated frustration becomes unbearable.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "His coping strategy is to suppress frustration and then retreat, which is a core approach-avoidance conflict given his stated desire for inclusion.",
+            "escalation_tendency": "The coping strategy of retreating into solo activities can be seen as a mild form of stonewalling or withdrawal from conflict."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 3.75,
+          "depression": 4.5,
+          "trauma": 0.0,
+          "attachment_disorganisation": 5.25,
+          "escalation_tendency": 2.75,
+          "overall_score": 4.5,
+          "evidence": {
+            "anxiety": "Suppresses frustration and takes a deferential stance in parenting disputes to avoid conflict.",
+            "depression": "The unmet need is to be accepted as a full member of the family he chose, not a guest in his own home.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Kenji's avoidant attachment style and feeling like a guest in his own family.",
+            "escalation_tendency": "Suppresses frustration to avoid escalation, then retreats into solo activities."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.033
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.233
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.333
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.3
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.5
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": 4.0,
+    "depression": -2.55,
+    "trauma": 6.7,
+    "attachment_disorganisation": 3.71,
+    "escalation_tendency": 1.99
+  },
+  "overall_score_diff": 2.93
+}

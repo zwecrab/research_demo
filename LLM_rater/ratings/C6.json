@@ -1,0 +1,203 @@
+{
+  "couple_id": "C6",
+  "rated_at": "2026-04-28T05:50:07.335777+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Priya Menon",
+    "persona_id": "P11",
+    "consensus_vector": {
+      "anxiety": 5.68,
+      "depression": 4.38,
+      "trauma": 4.87,
+      "attachment_disorganisation": 1.08,
+      "escalation_tendency": 1.13
+    },
+    "overall_score": 5.28,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 4.2,
+          "depression": 3.8,
+          "trauma": 2.3,
+          "attachment_disorganisation": 0.5,
+          "escalation_tendency": 0.8,
+          "overall_score": 3.6,
+          "evidence": {
+            "anxiety": "core_belief: 'If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.'",
+            "depression": "'I sometimes wonder if the years I spent getting here were the years we did not have to spare.'",
+            "trauma": "Two miscarriages and one unsuccessful IVF cycle",
+            "attachment_disorganisation": "attachment_style = secure",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 7.65,
+          "depression": 4.55,
+          "trauma": 6.8,
+          "attachment_disorganisation": 1.75,
+          "escalation_tendency": 1.6,
+          "overall_score": 6.95,
+          "evidence": {
+            "anxiety": "core_belief: 'If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.'",
+            "depression": "therapy_topics: 'Grief and intimacy during an infertility journey'",
+            "trauma": "coping_strategy: 'Converts personal distress into research, planning, and protocol, and mistakes that activity for processing.'",
+            "attachment_disorganisation": "attachment_style: 'secure'",
+            "escalation_tendency": "hidden_tension_examples: 'When Arjun reaches for her: 'I am fine. I just need to think for a minute.''"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 5.2,
+          "depression": 4.8,
+          "trauma": 5.5,
+          "attachment_disorganisation": 1.0,
+          "escalation_tendency": 1.0,
+          "overall_score": 5.3,
+          "evidence": {
+            "anxiety": "Core belief: 'If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.'",
+            "depression": "Hidden tension: 'Quietly suspects that her deliberate career timeline contributed to the current difficulty and carries that suspicion as private guilt.'",
+            "trauma": "Therapy topics: 'Grief and intimacy during an infertility journey.'",
+            "attachment_disorganisation": "Attachment style: 'secure.'",
+            "escalation_tendency": "Bid style: 'neutral.'"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.3
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.667
+      },
+      "trauma": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 3.0
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.833
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.533
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Arjun Menon",
+    "persona_id": "P12",
+    "consensus_vector": {
+      "anxiety": 4.03,
+      "depression": 4.5,
+      "trauma": 2.68,
+      "attachment_disorganisation": 1.03,
+      "escalation_tendency": 0.5
+    },
+    "overall_score": 4.07,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 2.8,
+          "depression": 3.2,
+          "trauma": 0.0,
+          "attachment_disorganisation": 0.0,
+          "escalation_tendency": 0.0,
+          "overall_score": 2.4,
+          "evidence": {
+            "anxiety": "hidden_tension: 'Has begun to suspect that his steady presence reads to Priya as detachment'",
+            "depression": "cognitive_model: 'interprets his unexamined feelings as absent feelings'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style = secure",
+            "escalation_tendency": "bid_style = neutral, speaks in relaxed register, listens closely"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 4.8,
+          "depression": 4.5,
+          "trauma": 4.25,
+          "attachment_disorganisation": 2.1,
+          "escalation_tendency": 0.5,
+          "overall_score": 4.6,
+          "evidence": {
+            "anxiety": "Has begun to suspect that his steady presence reads to Priya as detachment, and that his attempt to help is producing the opposite of what he intends.",
+            "depression": "The unmet need is for his grief to be recognized as parallel, not secondary, and for his steady presence to not be mistaken for the absence of feeling.",
+            "trauma": "The fertility journey has destabilized the template because Priya is the one most obviously affected and he has defaulted to the supporting role, which leaves his own grief invisible even to himself.",
+            "attachment_disorganisation": "attachment_style is 'secure', but the 'fertility journey has destabilized the template'.",
+            "escalation_tendency": "Listens closely and often reflects his partner's statements back before offering his own view."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 4.5,
+          "depression": 5.8,
+          "trauma": 3.8,
+          "attachment_disorganisation": 1.0,
+          "escalation_tendency": 1.0,
+          "overall_score": 5.2,
+          "evidence": {
+            "anxiety": "Has begun to suspect that his steady presence reads to Priya as detachment.",
+            "depression": "The unmet need is for his grief to be recognized as parallel, not secondary.",
+            "trauma": "The fertility journey has destabilized the template because Priya is the one most obviously affected.",
+            "attachment_disorganisation": "attachment_style = secure",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.333
+      },
+      "depression": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.733
+      },
+      "trauma": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.833
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.4
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.667
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": 1.65,
+    "depression": -0.12,
+    "trauma": 2.19,
+    "attachment_disorganisation": 0.05,
+    "escalation_tendency": 0.63
+  },
+  "overall_score_diff": 1.21
+}

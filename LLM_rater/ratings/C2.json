@@ -1,0 +1,189 @@
+{
+  "couple_id": "C2",
+  "rated_at": "2026-04-28T05:43:54.069026+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Eszter Kovacs",
+    "persona_id": "P03",
+    "consensus_vector": {
+      "anxiety": 3.4,
+      "depression": 0.25,
+      "trauma": 0.0,
+      "attachment_disorganisation": 0.17,
+      "escalation_tendency": 1.5
+    },
+    "overall_score": 2.02,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 2.85,
+          "depression": 0.0,
+          "trauma": 0.0,
+          "attachment_disorganisation": 0.0,
+          "escalation_tendency": 0.0,
+          "overall_score": 0.75,
+          "evidence": {
+            "anxiety": "hidden_tension: 'Worries that Rajan resents moving to Seattle for her career, and that his quiet compliance masks a growing frustration'",
+            "depression": "no textual evidence",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style = secure",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 2.85,
+          "depression": 0.25,
+          "trauma": 0.0,
+          "attachment_disorganisation": 0.5,
+          "escalation_tendency": 0.75,
+          "overall_score": 1.5,
+          "evidence": {
+            "anxiety": "Worries that Rajan resents moving to Seattle for her career, and that his quiet compliance masks a growing frustration he will not voice until it is too late.",
+            "depression": "core_belief: 'If we can talk about it openly, we can work through anything together.'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: 'secure'",
+            "escalation_tendency": "Engages actively by reflecting back what she hears and building on her partner's statements."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 4.5,
+          "depression": 0.5,
+          "trauma": 0.0,
+          "attachment_disorganisation": 0.0,
+          "escalation_tendency": 3.75,
+          "overall_score": 3.8,
+          "evidence": {
+            "anxiety": "Worries that Rajan resents moving to Seattle for her career.",
+            "depression": "Engaged with hobbies, work, relationship.",
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "attachment_style = secure",
+            "escalation_tendency": "Recurring conflict centers on Eszter initiating plans and decisions while Rajan complies silently until resentment accumulates."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.1
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.333
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.0
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.333
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.5
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Rajan Singh",
+    "persona_id": "P04",
+    "consensus_vector": {
+      "anxiety": 6.0,
+      "depression": 3.0,
+      "trauma": 0.9,
+      "attachment_disorganisation": 3.3,
+      "escalation_tendency": 3.95
+    },
+    "overall_score": 4.85,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 6.2,
+          "depression": 2.3,
+          "trauma": 1.8,
+          "attachment_disorganisation": 2.1,
+          "escalation_tendency": 3.7,
+          "overall_score": 4.5,
+          "evidence": {
+            "anxiety": "High neuroticism, 'processing internally before responding' when emotions intensify, and 'afraid that articulating this will make him seem selfish'",
+            "depression": "Suppresses homesickness and finds himself missing family 'more than he anticipated'",
+            "trauma": "Grew up where 'harmony was prioritized over individual expression' - mild developmental impact",
+            "attachment_disorganisation": "Anxious attachment style but shows coherent strategy of accommodation",
+            "escalation_tendency": "Pattern of 'silent accommodation followed by sudden eruptions of accumulated frustration'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": null,
+        "error": "'NoneType' object has no attribute 'strip'"
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 5.8,
+          "depression": 3.7,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.5,
+          "escalation_tendency": 4.2,
+          "overall_score": 5.2,
+          "evidence": {
+            "anxiety": "High neuroticism and pattern of silent accommodation followed by eruptions of frustration.",
+            "depression": "Persistent low-mood frame due to homesickness and feeling outpaced by partner.",
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "Anxious attachment style and fear of expressing dissatisfaction.",
+            "escalation_tendency": "Pattern of silent accommodation followed by sudden eruptions of frustration."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.4
+      },
+      "depression": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.4
+      },
+      "trauma": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.8
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.4
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.5
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": -2.6,
+    "depression": -2.75,
+    "trauma": -0.9,
+    "attachment_disorganisation": -3.13,
+    "escalation_tendency": -2.45
+  },
+  "overall_score_diff": -2.83
+}

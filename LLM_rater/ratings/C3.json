@@ -1,0 +1,203 @@
+{
+  "couple_id": "C3",
+  "rated_at": "2026-04-28T05:45:01.690993+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "David Thompson",
+    "persona_id": "P05",
+    "consensus_vector": {
+      "anxiety": 6.78,
+      "depression": 4.4,
+      "trauma": 0.17,
+      "attachment_disorganisation": 3.48,
+      "escalation_tendency": 0.98
+    },
+    "overall_score": 5.72,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 6.2,
+          "depression": 4.8,
+          "trauma": 0.0,
+          "attachment_disorganisation": 2.3,
+          "escalation_tendency": 1.2,
+          "overall_score": 5.4,
+          "evidence": {
+            "anxiety": "hidden_tension: 'Fears that James has been waiting for the children to leave so he can pursue a life that does not include David'",
+            "depression": "hidden_tension_examples: 'I keep thinking about what this house will feel like when it is just the two of us. And honestly, that scares me.'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: 'anxious' with coherent strategy of clinging to routines",
+            "escalation_tendency": "bid_style: 'neutral' and sample utterances show careful, non-escalating communication"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 7.35,
+          "depression": 4.6,
+          "trauma": 0.5,
+          "attachment_disorganisation": 3.65,
+          "escalation_tendency": 0.75,
+          "overall_score": 6.25,
+          "evidence": {
+            "anxiety": "Fears that James has been waiting for the children to leave so he can pursue a life that does not include David.",
+            "depression": "He has organized much of his identity around the parenting role and is now facing a loss of purpose.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "He resists changes to routines (push) while simultaneously having an unmet need for reassurance (pull).",
+            "escalation_tendency": "I want to make sure I am hearing you correctly before I respond. Can you say that again?"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 6.8,
+          "depression": 3.8,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.5,
+          "escalation_tendency": 1.0,
+          "overall_score": 5.5,
+          "evidence": {
+            "anxiety": "Fears that James has been waiting for the children to leave so he can pursue a life that does not include David.",
+            "depression": "The approaching empty nest dissolves the parenting structure that organized his identity for 19 years.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "David clinging to established routines while the approaching empty nest dissolves the parenting structure.",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.767
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.667
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.333
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.467
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.3
+      }
+    }
+  },
+  "patient_B": {
+    "name": "James Thompson",
+    "persona_id": "P06",
+    "consensus_vector": {
+      "anxiety": 5.93,
+      "depression": 1.23,
+      "trauma": 0.0,
+      "attachment_disorganisation": 3.93,
+      "escalation_tendency": 3.47
+    },
+    "overall_score": 4.73,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 5.8,
+          "depression": 2.2,
+          "trauma": 0.0,
+          "attachment_disorganisation": 2.8,
+          "escalation_tendency": 3.7,
+          "overall_score": 4.1,
+          "evidence": {
+            "anxiety": "core_belief: 'If I am not growing and moving forward, I am wasting the time I have left' - catastrophizing about aging/stagnation",
+            "depression": "feels suffocated by routines he once valued",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: anxious, but shows coherent approach strategy without withdrawal",
+            "escalation_tendency": "'I put thought into that. I was hoping for something other than a shrug' - criticism marker"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.2,
+          "depression": 0.5,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.8,
+          "escalation_tendency": 4.2,
+          "overall_score": 5.6,
+          "evidence": {
+            "anxiety": "Coping strategy is to generate plans 'to manage anxiety about aging and stagnation'.",
+            "depression": "Engaged with hobbies like 'Trail running', 'Photography', and 'Live jazz events'.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "He 'loves David deeply but feels suffocated by the gravitational pull of their established routines'.",
+            "escalation_tendency": "Hidden tension examples show Criticism ('I was hoping for something other than a shrug') and Defensiveness ('I am not trying to leave you behind')."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 5.8,
+          "depression": 1.0,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.2,
+          "escalation_tendency": 2.5,
+          "overall_score": 4.5,
+          "evidence": {
+            "anxiety": "Generates plans and proposals for the future to manage anxiety about aging and stagnation.",
+            "depression": "Engaged with hobbies, work, relationship.",
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "Feels suffocated by the gravitational pull of their established routines.",
+            "escalation_tendency": "Frustrated when these plans are met with hesitation."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.267
+      },
+      "depression": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.133
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.0
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.333
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.133
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": 0.85,
+    "depression": 3.17,
+    "trauma": 0.17,
+    "attachment_disorganisation": -0.45,
+    "escalation_tendency": -2.49
+  },
+  "overall_score_diff": 0.99
+}

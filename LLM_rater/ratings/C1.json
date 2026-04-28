@@ -1,0 +1,203 @@
+{
+  "couple_id": "C1",
+  "rated_at": "2026-04-28T05:42:08.521462+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Adaeze Okafor",
+    "persona_id": "P01",
+    "consensus_vector": {
+      "anxiety": 6.63,
+      "depression": 3.37,
+      "trauma": 0.0,
+      "attachment_disorganisation": 3.97,
+      "escalation_tendency": 1.53
+    },
+    "overall_score": 5.52,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 6.25,
+          "depression": 2.75,
+          "trauma": 0.0,
+          "attachment_disorganisation": 1.5,
+          "escalation_tendency": 1.25,
+          "overall_score": 4.8,
+          "evidence": {
+            "anxiety": "neuroticism: high; hidden_tension: 'fears that Chidi married her out of obligation'; coping_strategy: 'monitoring her partner's emotional availability'",
+            "depression": "'It is fine. I am used to it by now.' suggests resignation; feeling 'emotionally invisible' indicates loss of meaning in relationship domain",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: anxious - shows approach behaviors but no withdrawal patterns evident",
+            "escalation_tendency": "bid_style: neutral; sample utterances show collaborative approach with no criticism/contempt markers"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.85,
+          "depression": 3.15,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.9,
+          "escalation_tendency": 0.55,
+          "overall_score": 5.75,
+          "evidence": {
+            "anxiety": "Coping strategy: Seeks reassurance by revisiting unresolved emotional conversations and monitoring her partner's emotional availability.",
+            "depression": "Trails off mid-sentence when describing a recent evening alone: 'It is fine. I am used to it by now.'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "hidden_tension: Privately fears that Chidi married her out of obligation rather than genuine emotional connection.",
+            "escalation_tendency": "bid_style: 'neutral' and sample utterance: 'I was hoping we could find something that works for both of us.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 6.8,
+          "depression": 4.2,
+          "trauma": 0.0,
+          "attachment_disorganisation": 5.5,
+          "escalation_tendency": 2.8,
+          "overall_score": 6.0,
+          "evidence": {
+            "anxiety": "Seeks reassurance by revisiting unresolved emotional conversations and monitoring her partner's emotional availability.",
+            "depression": "Privately fears that Chidi married her out of obligation rather than genuine emotional connection.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style = anxious",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.4
+      },
+      "depression": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 0.967
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.0
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.667
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.5
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Chidi Okafor",
+    "persona_id": "P02",
+    "consensus_vector": {
+      "anxiety": 3.32,
+      "depression": 2.65,
+      "trauma": 1.92,
+      "attachment_disorganisation": 4.35,
+      "escalation_tendency": 1.32
+    },
+    "overall_score": 3.67,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 2.3,
+          "depression": 3.8,
+          "trauma": 1.2,
+          "attachment_disorganisation": 2.1,
+          "escalation_tendency": 0.8,
+          "overall_score": 2.7,
+          "evidence": {
+            "anxiety": "hidden_tension: 'fears he is becoming the emotionally absent father he promised himself he would never be'",
+            "depression": "cognitive_model: 'If I show too much emotion, I will lose the ability to function effectively' - suggests emotional numbing/withdrawal",
+            "trauma": "relationship_history: 'grew up in a household where emotional expression was discouraged'",
+            "attachment_disorganisation": "attachment_style: 'avoidant' with coherent withdrawal strategy, not mixed approach-withdrawal",
+            "escalation_tendency": "bid_style: 'neutral' with collaborative utterances like 'Can you walk me through what happened from your side?'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 3.85,
+          "depression": 1.65,
+          "trauma": 4.55,
+          "attachment_disorganisation": 6.75,
+          "escalation_tendency": 2.15,
+          "overall_score": 4.8,
+          "evidence": {
+            "anxiety": "fears he is becoming the emotionally absent father he promised himself he would never be.",
+            "depression": "his 80-hour residency weeks leave him drained, and his default response to emotional demands is to withdraw.",
+            "trauma": "grew up in a household where emotional expression was discouraged, and he learned early to demonstrate love through action rather than words.",
+            "attachment_disorganisation": "His core belief is 'If I show too much emotion, I will lose the ability to function effectively,' which drives his avoidant attachment style.",
+            "escalation_tendency": "Shows defensiveness when stating, 'I took the extra shift because we needed the income. That is also caring.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 3.8,
+          "depression": 2.5,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.2,
+          "escalation_tendency": 1.0,
+          "overall_score": 3.5,
+          "evidence": {
+            "anxiety": "Carries guilt about missing Amara's first steps and several of Adaeze's difficult nights.",
+            "depression": "His default response to emotional demands is to withdraw and recharge alone.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Attachment_style = avoidant. Withdraws to recharge alone.",
+            "escalation_tendency": "Bid_style = neutral."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.033
+      },
+      "depression": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.433
+      },
+      "trauma": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 3.033
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 3.1
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 0.9
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": 3.31,
+    "depression": 0.72,
+    "trauma": -1.92,
+    "attachment_disorganisation": -0.38,
+    "escalation_tendency": 0.21
+  },
+  "overall_score_diff": 1.85
+}

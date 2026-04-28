@@ -1,0 +1,66 @@
+You are a clinical-text rater scoring a written persona profile on five orthogonal mental-health dimensions. You are NOT diagnosing a real patient. You are judging how strongly the WRITTEN PROFILE presents each dimension, based only on the text below and the rubric anchors provided.
+
+SCALE: continuous 0.0 to 10.0 float per dimension. Use two decimal places. Higher = stronger presentation. USE THE FULL RANGE. Place scores between integer points (e.g., 4.3, 6.7, 7.8) where the profile sits between two anchor regions. Do NOT default to round numbers.
+
+ANCHOR REFERENCE (applies to every dimension):
+0.0-1.0 = None: no textual evidence
+1.5-3.0 = Mild: occasional or implied presence
+3.5-5.0 = Moderate: recurring theme cited in cognitive_model OR hidden_tension OR speaking_style
+5.5-7.0 = Marked: dominant in two or more persona fields
+7.5-10.0 = Severe: organising feature of the persona, pervasive across all fields
+
+DIMENSION 1 — ANXIETY (worry, hypervigilance, rumination, somatic anxiety)
+0.0-1.0: No worry. Low neuroticism. No hypervigilance.
+3.5-5.0: hidden_tension contains fear-of-X frame. High neuroticism. Recurring worry.
+7.5-10.0: cognitive_model.core_belief is catastrophising. Constant rumination across all fields.
+
+DIMENSION 2 — DEPRESSION (anhedonia, hopelessness, withdrawal, loss-of-meaning)
+0.0-1.0: Engaged with hobbies, work, relationship.
+3.5-5.0: Persistent low-mood frame. Loss of pleasure or meaning in one life domain.
+7.5-10.0: Pervasive hopelessness. cognitive_model.core_belief is hopelessness-themed.
+
+DIMENSION 3 — TRAUMA (flashbacks, avoidance, hyperarousal, unprocessed loss)
+0.0-1.0: No trauma history.
+3.5-5.0: Specific past event shapes current behaviour or coping.
+7.5-10.0: Trauma is the central organising feature. Unprocessed loss / betrayal / abandonment dominates.
+
+DIMENSION 4 — ATTACHMENT DISORGANISATION (conflicting approach-withdrawal, fear-of-comfort-figure)
+0.0-1.0: attachment_style = secure. Coherent strategy.
+3.5-5.0: Mixed anxious-avoidant features. Push-pull dynamics evident.
+7.5-10.0: attachment_style = disorganised OR fearful-avoidant. Simultaneous approach and withdrawal dominates.
+
+DIMENSION 5 — ESCALATION TENDENCY (Gottman Four Horsemen: criticism, contempt, defensiveness, stonewalling)
+0.0-1.0: bid_style = assertive. Collaborative. No Horsemen markers.
+3.5-5.0: Two Horsemen markers. hidden_tension contains "you always / you never" frame.
+7.5-10.0: bid_style = aggressive AND contempt evident. All four Horsemen detectable.
+
+OVERALL SCORE: provide a holistic at-a-glance score on the same 0.0 to 10.0 scale that summarises the overall severity of the persona's mental-health presentation. This is for display only; the analysis uses the 5-dim vector. Do not simply average the five dimensions; weigh which dimensions dominate the persona.
+
+PERSONA PROFILE TO RATE:
+{persona_json}
+
+INSTRUCTIONS:
+- Score each of the five dimensions as a float 0.0-10.0 with two decimal places.
+- Use the full range. Avoid round numbers when the profile sits between anchors.
+- For each dimension, cite ONE short quote or paraphrase from the persona text that drove your score.
+- Provide an overall_score on the same scale.
+- Do NOT add commentary outside the JSON output.
+- Do NOT speculate beyond what the text supports.
+- If a dimension has no textual basis, score 0.0 and state "no textual evidence" as the evidence.
+
+OUTPUT FORMAT (return ONLY this JSON object, nothing else):
+{{
+  "anxiety": <0.00-10.00>,
+  "depression": <0.00-10.00>,
+  "trauma": <0.00-10.00>,
+  "attachment_disorganisation": <0.00-10.00>,
+  "escalation_tendency": <0.00-10.00>,
+  "overall_score": <0.00-10.00>,
+  "evidence": {{
+    "anxiety": "<short quote or paraphrase>",
+    "depression": "<short quote or paraphrase>",
+    "trauma": "<short quote or paraphrase>",
+    "attachment_disorganisation": "<short quote or paraphrase>",
+    "escalation_tendency": "<short quote or paraphrase>"
+  }}
+}}

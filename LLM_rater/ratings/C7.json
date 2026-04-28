@@ -1,0 +1,203 @@
+{
+  "couple_id": "C7",
+  "rated_at": "2026-04-28T05:51:39.036070+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Cora Novak",
+    "persona_id": "P13",
+    "consensus_vector": {
+      "anxiety": 6.42,
+      "depression": 3.58,
+      "trauma": 2.82,
+      "attachment_disorganisation": 8.48,
+      "escalation_tendency": 1.82
+    },
+    "overall_score": 7.03,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 6.2,
+          "depression": 4.8,
+          "trauma": 2.3,
+          "attachment_disorganisation": 8.4,
+          "escalation_tendency": 1.2,
+          "overall_score": 6.7,
+          "evidence": {
+            "anxiety": "core_belief: 'If I let myself need too much, I will disappear into the illness and become only that.'",
+            "depression": "'I do not know who I am when I have to ask you to bring me water. I do not think I like her.'",
+            "trauma": "Two years ago Cora was diagnosed with relapsing-remitting multiple sclerosis",
+            "attachment_disorganisation": "attachment_style = disorganized; 'Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares'",
+            "escalation_tendency": "bid_style = neutral; sample utterances show collaborative approach"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 8.25,
+          "depression": 2.25,
+          "trauma": 6.15,
+          "attachment_disorganisation": 8.85,
+          "escalation_tendency": 1.75,
+          "overall_score": 7.9,
+          "evidence": {
+            "anxiety": "Core belief: 'If I let myself need too much, I will disappear into the illness and become only that.'",
+            "depression": "'I do not know who I am when I have to ask you to bring me water. I do not think I like her.'",
+            "trauma": "The diagnosis of relapsing-remitting MS two years ago is a specific event that now shapes her identity, coping, and relationship dynamics.",
+            "attachment_disorganisation": "Coping strategy: 'Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares.'",
+            "escalation_tendency": "Sample utterance: 'Can we stay on this for another minute? I do not want to move past it yet.'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 4.8,
+          "depression": 3.7,
+          "trauma": 0.0,
+          "attachment_disorganisation": 8.2,
+          "escalation_tendency": 2.5,
+          "overall_score": 6.5,
+          "evidence": {
+            "anxiety": "Quietly fears she is already a different person than the woman Mateusz married, and worries that what he is staying for is obligation.",
+            "depression": "Worries that what he is staying for is obligation rather than the person she is becoming.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares.",
+            "escalation_tendency": "Their communication patterns have not yet caught up with the illness."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.3
+      },
+      "depression": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.7
+      },
+      "trauma": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 4.1
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.433
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.867
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Mateusz Novak",
+    "persona_id": "P14",
+    "consensus_vector": {
+      "anxiety": 5.62,
+      "depression": 4.35,
+      "trauma": 4.87,
+      "attachment_disorganisation": 4.12,
+      "escalation_tendency": 2.15
+    },
+    "overall_score": 5.27,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 4.2,
+          "depression": 3.8,
+          "trauma": 4.5,
+          "attachment_disorganisation": 2.3,
+          "escalation_tendency": 1.8,
+          "overall_score": 4.1,
+          "evidence": {
+            "anxiety": "core_belief: 'If I am not visibly steady, Cora will feel she has become a burden' - hypervigilance about appearing steady",
+            "depression": "'I think about the trips we said we would take. I do not let myself think about it for long.' - loss of future meaning",
+            "trauma": "relationship_history: father's chronic illness during teenage years shaped default role as 'steady son' - past event shapes current coping",
+            "attachment_disorganisation": "attachment_style: anxious, but shows coherent caregiving strategy despite overcorrection",
+            "escalation_tendency": "bid_style: neutral, withdraws to garage but no criticism/contempt markers"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.85,
+          "depression": 4.75,
+          "trauma": 4.9,
+          "attachment_disorganisation": 5.25,
+          "escalation_tendency": 2.15,
+          "overall_score": 6.2,
+          "evidence": {
+            "anxiety": "Core belief: 'If I am not visibly steady, Cora will feel she has become a burden, and that will hurt her more than the illness itself.'",
+            "depression": "Hidden tension: 'Privately grieves the future they had planned together and treats that grief as a betrayal he is not allowed to feel...'",
+            "trauma": "Relationship history: '...confident that he had processed that experience [father's illness]; Cora's diagnosis has shown him he did not.'",
+            "attachment_disorganisation": "Coping strategy: 'Overcorrects into caregiver and project-manager mode, then retreats into solo activities when the accumulated self-suppression becomes unbearable.'",
+            "escalation_tendency": "Hidden tension example: 'After Cora refuses help: 'Alright. I will be in the garage if you need anything.'' (mild stonewalling/withdrawal)"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 5.8,
+          "depression": 4.5,
+          "trauma": 5.2,
+          "attachment_disorganisation": 4.8,
+          "escalation_tendency": 2.5,
+          "overall_score": 5.5,
+          "evidence": {
+            "anxiety": "Overcorrects into caregiver and project-manager mode, then retreats into solo activities when the accumulated self-suppression becomes unbearable.",
+            "depression": "Privately grieves the future they had planned together and treats that grief as a betrayal he is not allowed to feel, let alone express.",
+            "trauma": "Mateusz's father had a long chronic illness during his teenage years, and he absorbed the role of the steady son almost by default.",
+            "attachment_disorganisation": "His instinct is to turn the relationship into a well-managed project, and he understands in principle that this is not what Cora needs, but has not yet figured out how to offer care in a register that does not tip into management.",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.767
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.633
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.467
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.967
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.467
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": 0.8,
+    "depression": -0.77,
+    "trauma": -2.05,
+    "attachment_disorganisation": 4.36,
+    "escalation_tendency": -0.33
+  },
+  "overall_score_diff": 1.76
+}
