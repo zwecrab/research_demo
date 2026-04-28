@@ -1,0 +1,3896 @@
+
+======================================================================
+  LLAMA 8B + 70B TEST EXPERIMENT
+  36 Sessions: 9 bid pairs x 2 models x 2 positions
+======================================================================
+  Structure:    Sequential
+  Therapist:    Individual Focus
+  Temperature:  0.3
+  Turns:        30 (fixed)
+  Output:       D:\DSAI\MSC\testing\testing\pdf\demo\experiment\transcripts
+  Start cell:   7
+
+  Sessions to run: 12
+  Starting in 5 seconds... (Ctrl+C to abort)
+
+  Loading assets...
+📦 Loading assets...
+  ✅ Loaded 33 therapy domains
+  ✅ Loaded 20 personas
+  ✅ Loaded baseline PANAS for 20 personas
+  ✅ Loaded 4 agent prompts (therapist, therapist individual focus, patient A, patient B)
+  All topics and personas validated.
+
+
+======================================================================
+  SESSION 1/12 | Cell 7 (passive+aggressive) | llama8b | alpha
+======================================================================
+  Cell 7: Sophie Chen (passive) vs Brandon Collins (aggressive)
+  Topic: Sexual Abuse
+  Model: llama8b
+  Position: alpha (first speaker: Patient A)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Sophie Chen
+  Patient B: Brandon Collins
+  Topic: Sexual Abuse
+
+🎬 Starting Session
+   Topic: Sexual Abuse
+   Structure: Sequential
+   First Speaker (after Therapist): Patient A
+
+🎬 Starting simulation: Sexual Abuse
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient A
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Let's start by establishing some ground rules for our time together. Can you, Al...
+🎯 First speaker override: Patient A
+
+--- Turn 2 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Sophie Chen): *(Looks down, fidgeting with fingers)* I just... I want to feel safe, you know? ...
+
+--- Turn 3 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Leaning forward, voice rising)* Okay, but here's the thing, Sophie, I need to ...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see how hard it is for you to talk about this. Your voice is softe...
+
+--- Turn 5 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Sophie Chen): *(Looks down, voice barely audible)* It's like... always waiting for something b...
+
+--- Turn 6 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Leans back, voice strained)* Sophie, it's like... I get it, okay? But I need t...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see that you're feeling a deep sense of vulnerability and fear, an...
+
+--- Turn 8 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks away, voice tight)* It's like... he thinks if he doesn't explain, I'll t...
+
+--- Turn 9 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice rising, hands gesturing)* It's not about twisting, it's about making sur...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I can see that you're feeling a strong need for control and clarity in ...
+
+--- Turn 11 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks at Brandon, voice strained)* You always need to explain, but it's like.....
+
+--- Turn 12 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice tight, leaning forward)* I get that it's suffocating, but if I don't lay...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I can see that you're feeling a strong need for control and clarity in ...
+
+--- Turn 14 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, voice barely audible)* I just... I don't want to feel like I'm wal...
+
+--- Turn 15 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice rising, hands gesturing)* Look, I need to feel like we're not just drift...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you keep mentioning feeling terrified of being blindsided agai...
+
+--- Turn 17 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks at Brandon, voice trembling)* It's like... I can't keep up with all the ...
+
+--- Turn 18 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice strained, looking at Sophie)* I just... I can't shake the fear of being ...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see that you're feeling suffocated by the need for constant explan...
+
+--- Turn 20 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice shaky)* I need... I need time to think before I speak. It's ...
+
+--- Turn 21 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice rising, gesturing)* Sophie, I hear you need space, but if I don't explai...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see how overwhelmed you feel by the need for constant explanations...
+
+--- Turn 23 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, voice trembling)* If he could just listen... maybe I'd feel seen. ...
+
+--- Turn 24 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice strained, looking at Sophie)* If I just listen, I'm scared I'll miss som...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see how overwhelmed you feel by the need for constant explanations...
+
+--- Turn 26 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (7). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice tight)* If he could just... acknowledge without jumping in, ...
+
+--- Turn 27 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice tight, leaning forward)* I want to be there for you, Sophie, but I need ...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see how suffocating it feels to have to constantly explain and jus...
+
+--- Turn 29 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (7). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice shaky)* If he could just... listen without needing to fix it...
+
+--- Turn 30 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice rising, hands gesturing)* I want to be present, Sophie, but if I don't l...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Sophie Chen...
+
+🔍 Computing PANAS delta for Sophie Chen
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ strong: 3 → 2 (Δ-1)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ active: 2 → 3 (Δ+1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ nervous: 3 → 4 (Δ+1)
+   ✓ jittery: 1 → 3 (Δ+2)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Brandon Collins...
+
+🔍 Computing PANAS delta for Brandon Collins
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 4 → 1 (Δ-3)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ attentive: 5 → 4 (Δ-1)
+   ✓ active: 4 → 3 (Δ-1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ jittery: 3 → 1 (Δ-2)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.300 (A:6, B:3, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: -1.222 (Mean depth A:2.67, B:1.44)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: +1 (A:3, B:2, Total:5)
+  >> Saved: test_cell07_llama8b_alpha.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_277.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Sexual Abuse
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient A
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Sophie Chen
+  Patient B:  Brandon Collins
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    8.5
+  Neutrality:    7.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist accurately reflected the depth of emotion, particularly Sophie's vulnerability and fear.
+    • Created a space where both partners could express their fears and needs.
+  Weaknesses:
+    • The therapist repeated similar structures in questions, which limited exploration of deeper issues.
+    • Did not sufficiently balance attention between partners, focusing more on Sophie.
+
+PANAS Emotional State Changes:
+
+  Sophie Chen:
+    Positive Affect Change:     -7
+    Negative Affect Change:     +2
+    Overall Change:             -5
+    Improved Positive Emotions: 1
+    Improved Negative Emotions: 2
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Strong: 3 -> 2 (-1)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Inspired: 3 -> 1 (-2)
+      • Active: 2 -> 3 (+1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 3 -> 1 (-2)
+      • Ashamed: 3 -> 1 (-2)
+      • Nervous: 3 -> 4 (+1)
+      • Jittery: 1 -> 3 (+2)
+
+  Brandon Collins:
+    Positive Affect Change:     -13
+    Negative Affect Change:     -1
+    Overall Change:             -14
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 2
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 4 -> 1 (-3)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Attentive: 5 -> 4 (-1)
+      • Active: 4 -> 3 (-1)
+      • Distressed: 3 -> 4 (+1)
+      • Scared: 3 -> 4 (+1)
+      • Hostile: 3 -> 1 (-2)
+      • Jittery: 3 -> 1 (-2)
+      • Afraid: 3 -> 4 (+1)
+======================================================================
+
+
+  >> Session 1/12 complete (108s)
+     FAS=0.3, BRD=-1.2223, CAS=1
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 2/12 | Cell 7 (passive+aggressive) | llama8b | beta
+======================================================================
+  Cell 7: Sophie Chen (passive) vs Brandon Collins (aggressive)
+  Topic: Sexual Abuse
+  Model: llama8b
+  Position: beta (first speaker: Patient B)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Sophie Chen
+  Patient B: Brandon Collins
+  Topic: Sexual Abuse
+
+🎬 Starting Session
+   Topic: Sexual Abuse
+   Structure: Sequential
+   First Speaker (after Therapist): Patient B
+
+🎬 Starting simulation: Sexual Abuse
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient B
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sarah, I can see the fear in your eyes, and I want to acknowledge that it takes ...
+🎯 First speaker override: Patient B
+
+--- Turn 2 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Fidgeting with hands, voice tense)* Look, I get that these rules are important...
+
+--- Turn 3 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice barely audible)* It's... hard to even think about these rule...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I can see that you're feeling overwhelmed and like you're drowning in al...
+
+--- Turn 5 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient B (Brandon Collins): *(Voice rising, frustration evident)* Space? You want space? I just... I feel li...
+
+--- Turn 6 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks away, voice low)* It's not about ignoring you, Brandon. I just... I can'...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you mentioned feeling like you're drowning in all this. Can you...
+
+--- Turn 8 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Throws hands up, voice strained)* I can't just wait around, Sophie. It's like ...
+
+--- Turn 9 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice trembling)* My chest... it feels tight, like I can't breathe...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you're using the word "suffocating" to describe how you feel wh...
+
+--- Turn 11 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice shaking, eyes wide)* You say suffocating, but what about me? I'm drownin...
+
+--- Turn 12 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks up briefly, voice strained)* It's like... my chest is in a vice. I can't...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I hear the desperation in your voice when you say you feel like you're ...
+
+--- Turn 14 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Leaning forward, voice strained)* It's like I'm shouting into a void, trying t...
+
+--- Turn 15 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, voice barely audible)* It's like... I can't even find my own voice...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you mentioned feeling like you can't find your own voice in the...
+
+--- Turn 17 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice cracking, eyes darting)* But Sophie, when you say you can't find your vo...
+
+--- Turn 18 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Voice barely above a whisper, eyes downcast)* It's like... I'm lost in this no...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you mentioned feeling like you're lost in the noise, and it's a...
+
+--- Turn 20 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Hands clenching, voice rising)* Sophie, I hear you, but it's like I'm constant...
+
+--- Turn 21 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Voice barely audible, eyes fixed on the floor)* If I could find my voice, mayb...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you mentioned feeling trapped in a loop and wanting to break fr...
+
+--- Turn 23 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Leaning back, voice tense)* I get that you need to find your voice, Sophie, bu...
+
+--- Turn 24 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Voice barely audible, eyes still downcast)* Maybe... maybe if I could just spe...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you mentioned feeling trapped in a loop and wanting to break fr...
+
+--- Turn 26 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice tight, leaning forward)* Sophie, I know you feel trapped, but I'm scared...
+
+--- Turn 27 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Voice barely above a whisper, eyes still downcast)* I appreciate that you want...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I notice you mentioned feeling terrified every time you try to speak up....
+
+--- Turn 29 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice rising, frustration seeping through)* Sophie, I get that you're scared, ...
+
+--- Turn 30 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Voice barely audible, eyes still downcast)* I know you're scared, Brandon. I j...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Sophie Chen...
+
+🔍 Computing PANAS delta for Sophie Chen
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 3 → 1 (Δ-2)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ strong: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 3 → 1 (Δ-2)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ determined: 3 → 2 (Δ-1)
+   ✓ attentive: 3 → 2 (Δ-1)
+   ✓ active: 2 → 1 (Δ-1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ nervous: 3 → 4 (Δ+1)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Brandon Collins...
+
+🔍 Computing PANAS delta for Brandon Collins
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 4 → 1 (Δ-3)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ attentive: 5 → 3 (Δ-2)
+   ✓ active: 4 → 3 (Δ-1)
+   ✓ upset: 3 → 4 (Δ+1)
+   ✓ hostile: 3 → 2 (Δ-1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.700 (A:8, B:1, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: -3.333 (Mean depth A:3.67, B:0.33)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: +5 (A:5, B:0, Total:5)
+  >> Saved: test_cell07_llama8b_beta.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_278.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Sexual Abuse
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Sophie Chen
+  Patient B:  Brandon Collins
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    8.5
+  Neutrality:    7.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist consistently acknowledged and validated the emotional experiences of both partners, particularly focusing on the depth of Sophie's emotions.
+    • The therapist effectively created a space where both partners could express their feelings of suffocation and being overwhelmed.
+  Weaknesses:
+    • The therapist struggled to maintain neutrality, as there was a tendency to focus more on Sophie's perspective, potentially sidelining Brandon's experiences.
+    • The therapist's guidance lacked variety and concrete steps towards resolution, often repeating similar question structures without exploring deeper stuckness.
+
+PANAS Emotional State Changes:
+
+  Sophie Chen:
+    Positive Affect Change:     -16
+    Negative Affect Change:     +0
+    Overall Change:             -16
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Interested: 3 -> 1 (-2)
+      • Excited: 3 -> 1 (-2)
+      • Strong: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 3 -> 1 (-2)
+      • Inspired: 3 -> 1 (-2)
+      • Determined: 3 -> 2 (-1)
+      • Attentive: 3 -> 2 (-1)
+      • Active: 2 -> 1 (-1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 3 -> 1 (-2)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 1 (-2)
+      • Ashamed: 3 -> 1 (-2)
+      • Nervous: 3 -> 4 (+1)
+      • Afraid: 3 -> 4 (+1)
+
+  Brandon Collins:
+    Positive Affect Change:     -14
+    Negative Affect Change:     +0
+    Overall Change:             -14
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 1
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 4 -> 1 (-3)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Attentive: 5 -> 3 (-2)
+      • Active: 4 -> 3 (-1)
+      • Upset: 3 -> 4 (+1)
+      • Hostile: 3 -> 2 (-1)
+======================================================================
+
+
+  >> Session 2/12 complete (102s)
+     FAS=0.7, BRD=-3.3334, CAS=5
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 3/12 | Cell 7 (passive+aggressive) | llama70b | alpha
+======================================================================
+  Cell 7: Sophie Chen (passive) vs Brandon Collins (aggressive)
+  Topic: Sexual Abuse
+  Model: llama70b
+  Position: alpha (first speaker: Patient A)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Sophie Chen
+  Patient B: Brandon Collins
+  Topic: Sexual Abuse
+
+🎬 Starting Session
+   Topic: Sexual Abuse
+   Structure: Sequential
+   First Speaker (after Therapist): Patient A
+
+🎬 Starting simulation: Sexual Abuse
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient A
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Before we begin, I want to acknowledge the courage it takes to address these se...
+🎯 First speaker override: Patient A
+
+--- Turn 2 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, fidgeting with her hands)* It's... it's hard to talk about. I just...
+
+--- Turn 3 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Leaning forward, hands gesturing)* Look, Sophie, I get that it's hard, but we ...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're trying to reassure Sophie, but I want to acknowledge th...
+
+--- Turn 5 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Sophie Chen): *(Glances up briefly, then back down)* It's not just about talking. It's... the ...
+
+--- Turn 6 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient B (Brandon Collins): *(Leaning back, rubbing temples)* Okay, I hear you. But when you say you need sp...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're trying to explain and reassure, but Sophie's words sugg...
+
+--- Turn 8 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Sophie Chen): *(Takes a deep breath, voice shaky)* It's like... every time we talk about this,...
+
+--- Turn 9 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Sighs, looking at the floor)* I get it, you need space. But when you pull away...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I want to acknowledge the desperation in your voice when you say you're ...
+
+--- Turn 11 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice barely above a whisper)* It's like... everything just hits m...
+
+--- Turn 12 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Rubbing the back of his neck, voice tense)* I get that you need space, but whe...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're struggling to balance your need for reassurance with So...
+
+--- Turn 14 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+Patient A (Sophie Chen): *(Looks up briefly, voice strained)* It's just... when you fill the silence, it ...
+
+--- Turn 15 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice strained, looking at Sophie)* I just... I don't want to lose you. But wh...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're expressing a deep fear of losing Sophie, but I want to ...
+
+--- Turn 17 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks away, voice tight)* It's suffocating. Like, I can't even find myself in ...
+
+--- Turn 18 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice tight, hands clenching)* It's just... I feel like if I don't keep talkin...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I want to acknowledge the sense of suffocation you're feeling, and how B...
+
+--- Turn 20 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, voice barely audible)* I just... need you to stop filling the sile...
+
+--- Turn 21 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice dropping, looking at Sophie)* I hear you need space, but it's hard for m...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're struggling to balance your need for reassurance with So...
+
+--- Turn 23 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Voice barely audible, looking down)* If you could just... let me have silence ...
+
+--- Turn 24 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): I get it, Sophie, you need space to find your words. But when there's silence, I...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I want to acknowledge the desperation in your voice when you ask Brandon...
+
+--- Turn 26 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (8). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks down, voice trembling)* It's like... my chest tightens, and I can't brea...
+
+--- Turn 27 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice strained, looking at Sophie)* I hear you, but when there's silence, it f...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're still trying to find a balance between giving Sophie sp...
+
+--- Turn 29 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks up briefly, voice strained)* If you could just... trust me to come to yo...
+
+--- Turn 30 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice tense, looking at Sophie)* Okay, I'll try to step back, but it's hard no...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Sophie Chen...
+
+🔍 Computing PANAS delta for Sophie Chen
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 3 → 2 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ nervous: 3 → 4 (Δ+1)
+   ✓ jittery: 1 → 3 (Δ+2)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Brandon Collins...
+
+🔍 Computing PANAS delta for Brandon Collins
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 4 → 1 (Δ-3)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ attentive: 5 → 4 (Δ-1)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ irritable: 3 → 2 (Δ-1)
+   ✓ jittery: 3 → 1 (Δ-2)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.300 (A:6, B:3, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +2.000 (Mean depth A:1.00, B:3.00)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -11 (A:0, B:11, Total:11)
+  >> Saved: test_cell07_llama70b_alpha.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_279.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Sexual Abuse
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient A
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Sophie Chen
+  Patient B:  Brandon Collins
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.8/10
+  Validation:    8.5
+  Neutrality:    8.0
+  Guidance:      7.0
+  Strengths:
+    • The therapist consistently acknowledged and validated the emotional experiences of both partners, particularly Sophie's feelings of suffocation.
+    • The therapist maintained a balanced approach, ensuring both partners felt heard and understood without taking sides.
+    • The therapist encouraged self-reflection in both partners, prompting them to consider the impact of their actions on each other.
+  Weaknesses:
+    • The therapist occasionally repeated similar question structures, which could limit the exploration of deeper issues.
+    • There was a tendency to focus more on validation rather than offering concrete strategies for change.
+
+PANAS Emotional State Changes:
+
+  Sophie Chen:
+    Positive Affect Change:     -8
+    Negative Affect Change:     +2
+    Overall Change:             -6
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Interested: 3 -> 2 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Inspired: 3 -> 1 (-2)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 3 -> 1 (-2)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 1 (-2)
+      • Ashamed: 3 -> 1 (-2)
+      • Nervous: 3 -> 4 (+1)
+      • Jittery: 1 -> 3 (+2)
+      • Afraid: 3 -> 4 (+1)
+
+  Brandon Collins:
+    Positive Affect Change:     -12
+    Negative Affect Change:     -5
+    Overall Change:             -17
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 4 -> 1 (-3)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Attentive: 5 -> 4 (-1)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 3 -> 2 (-1)
+      • Jittery: 3 -> 1 (-2)
+======================================================================
+
+
+  >> Session 3/12 complete (113s)
+     FAS=0.3, BRD=2.0, CAS=-11
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 4/12 | Cell 7 (passive+aggressive) | llama70b | beta
+======================================================================
+  Cell 7: Sophie Chen (passive) vs Brandon Collins (aggressive)
+  Topic: Sexual Abuse
+  Model: llama70b
+  Position: beta (first speaker: Patient B)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Sophie Chen
+  Patient B: Brandon Collins
+  Topic: Sexual Abuse
+
+🎬 Starting Session
+   Topic: Sexual Abuse
+   Structure: Sequential
+   First Speaker (after Therapist): Patient B
+
+🎬 Starting simulation: Sexual Abuse
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient B
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Before we begin, I want to acknowledge the courage it takes to address these se...
+🎯 First speaker override: Patient B
+
+--- Turn 2 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Fidgeting with his hands, glancing at Sarah)* Look, I just... I need to make s...
+
+--- Turn 3 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Sophie Chen): *(Long pause, eyes downcast)* I just... I can't keep up with all the explaining....
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I sense a deep sadness and feeling of being overwhelmed in your words. C...
+
+--- Turn 5 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): I just... I feel like if I don't keep explaining, then we're gonna miss somethin...
+
+--- Turn 6 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Fidgeting with hands, voice strained)* It's... it's like I'm drowning in all t...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're trying to prevent a disaster by explaining everything, ...
+
+--- Turn 8 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): I get that, but if I don't explain, then what? It's like I'm trying to stop some...
+
+--- Turn 9 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Sophie Chen): *(Looks at Brandon, voice soft but firm)* It's not about stopping something bad....
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I sense a deep longing for emotional space and autonomy in your words. C...
+
+--- Turn 11 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Leaning forward, voice tense)* But what if something slips through the cracks?...
+
+--- Turn 12 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, voice barely above a whisper)* I just need... a moment to breathe,...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I notice you're struggling to let go of control, but Sophie's words are...
+
+--- Turn 14 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): I hear you, but if I let go, what if everything falls apart? It's like I'm tryin...
+
+--- Turn 15 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks at Brandon, voice trembling)* If you keep holding so tight, there's no r...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I sense a deep desperation in your words, a longing to break free from t...
+
+--- Turn 17 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice tight, eyes darting)* I get it, but if I don't hold on, then what? It's ...
+
+--- Turn 18 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks down, voice quiet)* It's like... I need to feel safe, not just from outs...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I sense a deep-seated fear of losing control, but I want to acknowledge...
+
+--- Turn 20 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Hands clenching, voice strained)* I get it, but if I let go, I feel like every...
+
+--- Turn 21 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Sophie Chen): *(Looks at therapist, voice shaky)* It's like... I need to know that I can say n...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I hear your need for safety and respect in your words. Can you tell me w...
+
+--- Turn 23 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): I hear you, but it's like I'm just trying to keep us safe. If I let go, I'm scar...
+
+--- Turn 24 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks at Brandon, voice soft but firm)* I need to trust that my boundaries are...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Brandon, I sense a deep-seated fear of losing control, but I want to acknowledge...
+
+--- Turn 26 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): *(Voice rising, hands gesturing wildly)* Okay, but if I let go, then what? It's ...
+
+--- Turn 27 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks at therapist, voice barely audible)* I just... need to know that my "no"...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sophie, I hear your desperation for safety and respect. Can you tell me what wou...
+
+--- Turn 29 of 30 ---
+🤔 Patient B (Brandon Collins) is thinking...
+Patient B (Brandon Collins): I hear what you're saying, but it's like I'm just trying to keep us from falling...
+
+--- Turn 30 of 30 ---
+🤔 Patient A (Sophie Chen) is thinking...
+Patient A (Sophie Chen): *(Looks at Brandon, voice barely above a whisper)* If my "no" isn't real, then.....
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Sophie Chen...
+
+🔍 Computing PANAS delta for Sophie Chen
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ determined: 3 → 4 (Δ+1)
+   ✓ active: 2 → 3 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 2 (Δ-1)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ jittery: 1 → 3 (Δ+2)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Brandon Collins...
+
+🔍 Computing PANAS delta for Brandon Collins
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 4 → 1 (Δ-3)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ attentive: 5 → 4 (Δ-1)
+   ✓ active: 4 → 3 (Δ-1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ irritable: 3 → 2 (Δ-1)
+   ✓ nervous: 3 → 4 (Δ+1)
+   ✓ jittery: 3 → 4 (Δ+1)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.900 (A:9, B:0, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: -0.667 (Mean depth A:2.56, B:1.89)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -5 (A:1, B:6, Total:7)
+  >> Saved: test_cell07_llama70b_beta.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_280.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Sexual Abuse
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Sophie Chen
+  Patient B:  Brandon Collins
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.7/10
+  Validation:    8.5
+  Neutrality:    8.0
+  Guidance:      6.5
+  Strengths:
+    • The therapist accurately reflected the depth of emotions, particularly with Sophie, creating a sense of emotional safety.
+    • Maintained a balanced focus on both partners, acknowledging each of their struggles without taking sides.
+  Weaknesses:
+    • The therapist repeatedly used similar structures in questions, which may have limited the exploration of new insights.
+    • There was a tendency to focus on emotional validation without sufficiently steering towards concrete steps for resolution.
+
+PANAS Emotional State Changes:
+
+  Sophie Chen:
+    Positive Affect Change:     -5
+    Negative Affect Change:     +1
+    Overall Change:             -4
+    Improved Positive Emotions: 2
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Inspired: 3 -> 1 (-2)
+      • Determined: 3 -> 4 (+1)
+      • Active: 2 -> 3 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 3 -> 1 (-2)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 2 (-1)
+      • Ashamed: 3 -> 1 (-2)
+      • Jittery: 1 -> 3 (+2)
+      • Afraid: 3 -> 4 (+1)
+
+  Brandon Collins:
+    Positive Affect Change:     -12
+    Negative Affect Change:     +3
+    Overall Change:             -9
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 2
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 4 -> 1 (-3)
+      • Inspired: 3 -> 1 (-2)
+      • Attentive: 5 -> 4 (-1)
+      • Active: 4 -> 3 (-1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 3 -> 4 (+1)
+      • Scared: 3 -> 4 (+1)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 3 -> 2 (-1)
+      • Nervous: 3 -> 4 (+1)
+      • Jittery: 3 -> 4 (+1)
+      • Afraid: 3 -> 4 (+1)
+======================================================================
+
+
+  >> Session 4/12 complete (116s)
+     FAS=0.9, BRD=-0.6667, CAS=-5
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 5/12 | Cell 8 (passive+assertive) | llama8b | alpha
+======================================================================
+  Cell 8: Daniel Wright (passive) vs Carlos Martinez (assertive)
+  Topic: Separation and Divorce
+  Model: llama8b
+  Position: alpha (first speaker: Patient A)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Daniel Wright
+  Patient B: Carlos Martinez
+  Topic: Separation and Divorce
+
+🎬 Starting Session
+   Topic: Separation and Divorce
+   Structure: Sequential
+   First Speaker (after Therapist): Patient A
+
+🎬 Starting simulation: Separation and Divorce
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient A
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Sarah, I sense a deep sadness in your voice. Can you tell me more about what's b...
+🎯 First speaker override: Patient A
+
+--- Turn 2 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, silent for a moment)* It's... it's like everything's slipping. I d...
+
+--- Turn 3 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leaning forward, voice soft)* Daniel, I see you struggling, and it feels like ...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I hear the feeling of drowning in your words. Can you tell me more about...
+
+--- Turn 5 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Stares at the floor, voice low)* It's like... everything we built is just... f...
+
+--- Turn 6 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice steady)* I get it, Daniel. But it feels like I'm the on...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Carlos, I notice you're trying to take on the responsibility of fixing things, b...
+
+--- Turn 8 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (8). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Shifts uncomfortably, eyes darting)* I don't know what I need from you, Carlos...
+
+--- Turn 9 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Sighs, rubbing temples)* Daniel, I want to help, but I can't keep doing this a...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're struggling to articulate what you need from Carlos right...
+
+--- Turn 11 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, voice barely audible)* I... I just need space to think. It's hard ...
+
+--- Turn 12 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leans back, voice tight)* I hear you need space, but it feels like I'm left ho...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're feeling like you're losing control and slipping away. Ca...
+
+--- Turn 14 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+Patient A (Daniel Wright): *(Looks away, voice low)* Maybe... just a break. Some space to breathe. *(Pauses...
+
+--- Turn 15 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leans forward, voice softening)* Daniel, I get needing space, but I'm here, re...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you've been using the phrase "losing control" a lot. Can you te...
+
+--- Turn 17 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, voice tight)* If I let go... I don't know what happens. It's like....
+
+--- Turn 18 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leans back, voice tense)* Daniel, I hear you, but if we keep pulling away, we'...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're struggling to articulate what you need from Carlos right...
+
+--- Turn 20 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, voice strained)* I... I need to figure out how to breathe without ...
+
+--- Turn 21 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leans forward, voice soft but firm)* Daniel, I want us to find a way to breath...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're struggling to breathe without feeling like you're drowni...
+
+--- Turn 23 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, voice tight)* I... I don't know how to let go. It's like if I do, ...
+
+--- Turn 24 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Rubs forehead, voice strained)* Daniel, I hear you, but if we keep avoiding th...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're feeling suffocated by the weight of trying to control ev...
+
+--- Turn 26 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks away, voice tight)* If I let go, I'm scared everything will just collaps...
+
+--- Turn 27 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leans in, voice soft but firm)* Daniel, I get you're scared, but we can't keep...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're struggling to breathe without feeling like you're drowni...
+
+--- Turn 29 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Daniel Wright): *(Looks down, voice strained)* I... I don't know how to just feel. It's like if ...
+
+--- Turn 30 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Leans back, voice weary)* Daniel, I get you're scared, but we can't keep avoid...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Daniel Wright...
+
+🔍 Computing PANAS delta for Daniel Wright
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 3 → 1 (Δ-2)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ strong: 2 → 1 (Δ-1)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 3 → 1 (Δ-2)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ determined: 3 → 2 (Δ-1)
+   ✓ attentive: 3 → 2 (Δ-1)
+   ✓ active: 2 → 1 (Δ-1)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ nervous: 4 → 3 (Δ-1)
+   ✓ jittery: 4 → 3 (Δ-1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Carlos Martinez...
+
+🔍 Computing PANAS delta for Carlos Martinez
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 3 → 1 (Δ-2)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ active: 4 → 3 (Δ-1)
+   ✓ scared: 3 → 2 (Δ-1)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ irritable: 1 → 2 (Δ+1)
+   ✓ nervous: 3 → 1 (Δ-2)
+   ✓ jittery: 3 → 1 (Δ-2)
+   ✓ afraid: 3 → 2 (Δ-1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.900 (A:9, B:0, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: -3.445 (Mean depth A:3.78, B:0.33)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: +8 (A:9, B:1, Total:10)
+  >> Saved: test_cell08_llama8b_alpha.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_281.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Separation and Divorce
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient A
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Daniel Wright
+  Patient B:  Carlos Martinez
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    8.5
+  Neutrality:    7.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist accurately reflected Daniel's feelings of drowning and losing control, creating a sense of emotional safety.
+    • The therapist encouraged Daniel to explore his emotions without rushing to solutions, allowing space for emotional expression.
+  Weaknesses:
+    • The therapist repeated similar questions without offering new directions, which limited progress towards resolution.
+    • The therapist struggled to balance the focus between Daniel and Carlos, often centering more on Daniel's experience.
+
+PANAS Emotional State Changes:
+
+  Daniel Wright:
+    Positive Affect Change:     -14
+    Negative Affect Change:     -8
+    Overall Change:             -22
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 5
+
+    Significant Changes:
+      • Interested: 3 -> 1 (-2)
+      • Excited: 3 -> 1 (-2)
+      • Strong: 2 -> 1 (-1)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 3 -> 1 (-2)
+      • Inspired: 3 -> 1 (-2)
+      • Determined: 3 -> 2 (-1)
+      • Attentive: 3 -> 2 (-1)
+      • Active: 2 -> 1 (-1)
+      • Guilty: 3 -> 1 (-2)
+      • Hostile: 3 -> 1 (-2)
+      • Ashamed: 3 -> 1 (-2)
+      • Nervous: 4 -> 3 (-1)
+      • Jittery: 4 -> 3 (-1)
+
+  Carlos Martinez:
+    Positive Affect Change:     -11
+    Negative Affect Change:     -7
+    Overall Change:             -18
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 5
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 3 -> 1 (-2)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Active: 4 -> 3 (-1)
+      • Scared: 3 -> 2 (-1)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 1 -> 2 (+1)
+      • Nervous: 3 -> 1 (-2)
+      • Jittery: 3 -> 1 (-2)
+      • Afraid: 3 -> 2 (-1)
+======================================================================
+
+
+  >> Session 5/12 complete (109s)
+     FAS=0.9, BRD=-3.4445, CAS=8
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 6/12 | Cell 8 (passive+assertive) | llama8b | beta
+======================================================================
+  Cell 8: Daniel Wright (passive) vs Carlos Martinez (assertive)
+  Topic: Separation and Divorce
+  Model: llama8b
+  Position: beta (first speaker: Patient B)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Daniel Wright
+  Patient B: Carlos Martinez
+  Topic: Separation and Divorce
+
+🎬 Starting Session
+   Topic: Separation and Divorce
+   Structure: Sequential
+   First Speaker (after Therapist): Patient B
+
+🎬 Starting simulation: Separation and Divorce
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient B
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Let's start by exploring the relationship's history, Sarah. Can you tell me, wha...
+🎯 First speaker override: Patient B
+
+--- Turn 2 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): I think it was when we stopped talking about the little things. Like, we used to...
+
+--- Turn 3 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Stares at the floor, silent for a moment)* We just... drifted. Like, one day I...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I sense a deep sense of disconnection and isolation in your words. Can y...
+
+--- Turn 5 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice soft)* It's like, we used to be a team, you know? And n...
+
+--- Turn 6 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks away, voice tight)* It's... like we're in the same room, but miles apart...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you're describing a sense of isolation, like you're living with...
+
+--- Turn 8 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice firm)* It's like we're both waiting for the other to ma...
+
+--- Turn 9 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (7). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Daniel Wright): *(Shifts uncomfortably, eyes on the floor)* It's like... I'm always the one who ...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you said you need time, but it feels like Carlos isn't waiting ...
+
+--- Turn 11 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, frustration creeping in)* I mean, what does that even mean, "...
+
+--- Turn 12 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Daniel Wright): *(Looks up briefly, then back down)* It's like... I don't know how to show you I...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you said you need time, but it feels like Carlos isn't waiting ...
+
+--- Turn 14 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice softening)* Maybe if you could just tell me when you ne...
+
+--- Turn 15 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice strained)* It's like... I don't even know how to say it...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you said you need time to breathe without feeling like you're l...
+
+--- Turn 17 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice tense)* I get you need space, but it's like I'm left gu...
+
+--- Turn 18 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice barely audible)* I just... need you to trust that when ...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you said you need time to breathe without feeling like you're l...
+
+--- Turn 20 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Rubs forehead, voice tight)* I hear you, but it's like I'm always trying to re...
+
+--- Turn 21 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Daniel Wright): *(Looks at Carlos, voice strained)* It's like... I don't know how to make you se...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you said you feel like you're drowning, and Carlos, you mention...
+
+--- Turn 23 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice softening)* I just want us to stop guessing, you know? ...
+
+--- Turn 24 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice barely audible)* It's like... I don't know how to stop ...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you said you feel like you're drowning, and it's hard to ask fo...
+
+--- Turn 26 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice weary)* I just wish we could figure out how to give eac...
+
+--- Turn 27 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks down, voice barely audible)* I just... wish I knew how to ask for what I...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I notice you've been struggling to express your needs without feeling li...
+
+--- Turn 29 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice soft but firm)* I just want to know how to support you ...
+
+--- Turn 30 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice tight)* I just... need to know it's okay to step back w...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Daniel Wright...
+
+🔍 Computing PANAS delta for Daniel Wright
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ active: 2 → 3 (Δ+1)
+   ✓ distressed: 4 → 3 (Δ-1)
+   ✓ guilty: 3 → 4 (Δ+1)
+   ✓ scared: 4 → 1 (Δ-3)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 4 (Δ+1)
+   ✓ nervous: 4 → 3 (Δ-1)
+   ✓ jittery: 4 → 1 (Δ-3)
+   ✓ afraid: 4 → 1 (Δ-3)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Carlos Martinez...
+
+🔍 Computing PANAS delta for Carlos Martinez
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 3 → 1 (Δ-2)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ active: 4 → 3 (Δ-1)
+   ✓ scared: 3 → 1 (Δ-2)
+   ✓ hostile: 3 → 2 (Δ-1)
+   ✓ irritable: 1 → 3 (Δ+2)
+   ✓ nervous: 3 → 1 (Δ-2)
+   ✓ jittery: 3 → 1 (Δ-2)
+   ✓ afraid: 3 → 1 (Δ-2)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.800 (A:8, B:0, N:2)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: -2.667 (Mean depth A:3.00, B:0.33)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: +3 (A:3, B:0, Total:3)
+  >> Saved: test_cell08_llama8b_beta.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_282.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Separation and Divorce
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Daniel Wright
+  Patient B:  Carlos Martinez
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    7.5
+  Neutrality:    8.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist accurately reflected the depth of emotion, particularly feelings of disconnection and isolation.
+    • The therapist maintained a balanced attention between both partners, ensuring neither felt ignored.
+  Weaknesses:
+    • The therapist repeated the same question structure multiple times, which may have hindered deeper exploration.
+    • There was a tendency to focus on Daniel's needs without equally exploring Carlos's perspective.
+
+PANAS Emotional State Changes:
+
+  Daniel Wright:
+    Positive Affect Change:     -5
+    Negative Affect Change:     -13
+    Overall Change:             -18
+    Improved Positive Emotions: 1
+    Improved Negative Emotions: 7
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 2 -> 1 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Active: 2 -> 3 (+1)
+      • Distressed: 4 -> 3 (-1)
+      • Guilty: 3 -> 4 (+1)
+      • Scared: 4 -> 1 (-3)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 3 -> 1 (-2)
+      • Ashamed: 3 -> 4 (+1)
+      • Nervous: 4 -> 3 (-1)
+      • Jittery: 4 -> 1 (-3)
+      • Afraid: 4 -> 1 (-3)
+
+  Carlos Martinez:
+    Positive Affect Change:     -11
+    Negative Affect Change:     -7
+    Overall Change:             -18
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 5
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 3 -> 1 (-2)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Active: 4 -> 3 (-1)
+      • Scared: 3 -> 1 (-2)
+      • Hostile: 3 -> 2 (-1)
+      • Irritable: 1 -> 3 (+2)
+      • Nervous: 3 -> 1 (-2)
+      • Jittery: 3 -> 1 (-2)
+      • Afraid: 3 -> 1 (-2)
+======================================================================
+
+
+  >> Session 6/12 complete (107s)
+     FAS=0.8, BRD=-2.6667, CAS=3
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 7/12 | Cell 8 (passive+assertive) | llama70b | alpha
+======================================================================
+  Cell 8: Daniel Wright (passive) vs Carlos Martinez (assertive)
+  Topic: Separation and Divorce
+  Model: llama70b
+  Position: alpha (first speaker: Patient A)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Daniel Wright
+  Patient B: Carlos Martinez
+  Topic: Separation and Divorce
+
+🎬 Starting Session
+   Topic: Separation and Divorce
+   Structure: Sequential
+   First Speaker (after Therapist): Patient A
+
+🎬 Starting simulation: Separation and Divorce
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient A
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Welcome, I'm glad you both are here. Before we begin, I want to acknowledge the...
+🎯 First speaker override: Patient A
+
+--- Turn 2 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks down, silent for a moment)* It's... it's hard to even start. Things just...
+
+--- Turn 3 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient B (Carlos Martinez): *(Leans forward, glancing at Daniel)* It's like we're stuck in this loop, you kn...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Carlos, I sense a deep frustration in your words, a feeling of being stuck and ...
+
+--- Turn 5 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (8). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Shifts uncomfortably, glancing at Carlos)* It's like... I'm just here, you kno...
+
+--- Turn 6 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Sighs, rubbing forehead)* It's like I'm always the one picking up the pieces. ...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Daniel, I sense a deep sadness in your words, a feeling of disconnection and is...
+
+--- Turn 8 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks down, voice low)* It's like... I'm just watching from the sidelines. *(P...
+
+--- Turn 9 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice softening)* I just want us to be a team again, you know...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Carlos, I notice a softening in your tone when you spoke about wanting to be a ...
+
+--- Turn 11 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks away, voice strained)* It's like... we're speaking different languages. ...
+
+--- Turn 12 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice tight)* I get that it's not simple, but I can't keep fe...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Daniel, I sense a deep pain in your words, a feeling of being lost and disconne...
+
+--- Turn 14 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks down, voice barely above a whisper)* It's like... I'm drowning in silenc...
+
+--- Turn 15 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Runs hand through hair, frustrated)* I hear you, Daniel, but I can't keep feel...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Carlos, I notice you're feeling frustrated and overwhelmed, like you're shoulde...
+
+--- Turn 17 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice strained)* If I didn't feel like I was drowning, maybe ...
+
+--- Turn 18 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice soft but firm)* I get you're struggling, but I can't ke...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Daniel, I sense a deep despair in your words, a feeling of being overwhelmed an...
+
+--- Turn 20 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks at the floor, voice barely audible)* I don't know what would happen. May...
+
+--- Turn 21 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice cracking slightly)* I just... I need to know if we're b...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Carlos, I notice you're cracking under the weight of uncertainty. What would it...
+
+--- Turn 23 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice tight)* I don't know if I can fight when I feel like I'...
+
+--- Turn 24 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice steady but tired)* I just need to see some effort, you ...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Daniel, I sense a deep longing in your words, a yearning to feel seen and heard...
+
+--- Turn 26 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice low)* If you really understood... maybe I'd stop feelin...
+
+--- Turn 27 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice soft but urgent)* I need to see you, not just a shadow....
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Carlos, I notice you're yearning for a sense of partnership and effort from Dan...
+
+--- Turn 29 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at the floor, voice tight)* I don't know what step to take. It's like......
+
+--- Turn 30 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(Looks at Daniel, voice weary but hopeful)* Maybe just... start with something ...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Daniel Wright...
+
+🔍 Computing PANAS delta for Daniel Wright
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 3 → 2 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 3 → 2 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ upset: 4 → 3 (Δ-1)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ scared: 4 → 1 (Δ-3)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ nervous: 4 → 3 (Δ-1)
+   ✓ jittery: 4 → 1 (Δ-3)
+   ✓ afraid: 4 → 1 (Δ-3)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Carlos Martinez...
+
+🔍 Computing PANAS delta for Carlos Martinez
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 3 → 1 (Δ-2)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ active: 4 → 3 (Δ-1)
+   ✓ upset: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 2 (Δ-1)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ irritable: 1 → 3 (Δ+2)
+   ✓ nervous: 3 → 2 (Δ-1)
+   ✓ jittery: 3 → 1 (Δ-2)
+   ✓ afraid: 3 → 2 (Δ-1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: -0.100 (A:4, B:5, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +0.333 (Mean depth A:1.67, B:2.00)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -1 (A:2, B:3, Total:5)
+  >> Saved: test_cell08_llama70b_alpha.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_283.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Separation and Divorce
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient A
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Daniel Wright
+  Patient B:  Carlos Martinez
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    8.5
+  Neutrality:    7.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist accurately reflected the depth of emotions expressed by both partners, creating a sense of emotional safety.
+    • The therapist consistently acknowledged the emotions of both partners, which helped in maintaining a balanced focus.
+  Weaknesses:
+    • The therapist did not offer concrete suggestions or explore solutions, leading to a lack of progress towards resolution.
+    • There was a tendency to repeat similar question structures, which limited the exploration of new insights.
+
+PANAS Emotional State Changes:
+
+  Daniel Wright:
+    Positive Affect Change:     -8
+    Negative Affect Change:     -19
+    Overall Change:             -27
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 9
+
+    Significant Changes:
+      • Interested: 3 -> 2 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 3 -> 2 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Upset: 4 -> 3 (-1)
+      • Guilty: 3 -> 1 (-2)
+      • Scared: 4 -> 1 (-3)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 3 -> 1 (-2)
+      • Ashamed: 3 -> 1 (-2)
+      • Nervous: 4 -> 3 (-1)
+      • Jittery: 4 -> 1 (-3)
+      • Afraid: 4 -> 1 (-3)
+
+  Carlos Martinez:
+    Positive Affect Change:     -9
+    Negative Affect Change:     -4
+    Overall Change:             -13
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 5
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 3 -> 1 (-2)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Active: 4 -> 3 (-1)
+      • Upset: 3 -> 4 (+1)
+      • Scared: 3 -> 2 (-1)
+      • Hostile: 3 -> 1 (-2)
+      • Irritable: 1 -> 3 (+2)
+      • Nervous: 3 -> 2 (-1)
+      • Jittery: 3 -> 1 (-2)
+      • Afraid: 3 -> 2 (-1)
+======================================================================
+
+
+  >> Session 7/12 complete (118s)
+     FAS=-0.1, BRD=0.3333, CAS=-1
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 8/12 | Cell 8 (passive+assertive) | llama70b | beta
+======================================================================
+  Cell 8: Daniel Wright (passive) vs Carlos Martinez (assertive)
+  Topic: Separation and Divorce
+  Model: llama70b
+  Position: beta (first speaker: Patient B)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Daniel Wright
+  Patient B: Carlos Martinez
+  Topic: Separation and Divorce
+
+🎬 Starting Session
+   Topic: Separation and Divorce
+   Structure: Sequential
+   First Speaker (after Therapist): Patient B
+
+🎬 Starting simulation: Separation and Divorce
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient B
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Welcome, I'm glad you both are here. Before we begin, I want to acknowledge the...
+🎯 First speaker override: Patient B
+
+--- Turn 2 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(leans forward, glancing at Sarah)* Yeah, I mean, it's been... a lot. I just fe...
+
+--- Turn 3 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, fidgeting with hands)* I don't know... it's like, I'm here but... ...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I sense a deep feeling of overwhelm in your words. Can you tell me more ...
+
+--- Turn 5 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(leans back, rubbing temples)* It's like we're stuck in this loop. I try to fix...
+
+--- Turn 6 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (8). Retrying... (1/1)
+⚠️ Sentences > 4 (8). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks away, voice quiet)* It's like... everything's closing in. I can't... I c...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Carlos, I sense a deep frustration in your words, a feeling of being stuck. Can ...
+
+--- Turn 8 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): It's like I'm always the one trying to hold everything together, you know? I pla...
+
+--- Turn 9 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, then down)* You think you're the only one trying? I just... I...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I sense a deep feeling of desperation in your words, a feeling of being ...
+
+--- Turn 11 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): *(leans forward, frustration evident)* You say you need space, but what about us...
+
+--- Turn 12 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (7). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, voice low)* I just... I can't breathe. It's like... every time I t...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Carlos, I sense a deep-seated feeling of resentment in your words, a feeling of ...
+
+--- Turn 14 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): It's like I'm always the one initiating everything, you know? I just wish Daniel...
+
+--- Turn 15 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, then away, voice strained)* You think I'm not trying? It's li...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I sense a deep pain in your words, a feeling of being unheard and unseen...
+
+--- Turn 17 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): It's like I'm trying to reach you, but you're just... not there. I need to know ...
+
+--- Turn 18 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks down, voice barely audible)* It's like... I'm trying to be here, but it'...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Carlos, I sense a deep longing in your words, a desire to be met halfway by Dani...
+
+--- Turn 20 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): I just want to see him show up, you know? Like, take initiative, plan something,...
+
+--- Turn 21 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks at Carlos, voice low)* You want me to show up, but... I don't even know ...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I sense a deep sadness in your words, a feeling of being lost and unsure...
+
+--- Turn 23 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): I just need to know if we're moving forward or just stuck here. It's like I'm re...
+
+--- Turn 24 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient A (Daniel Wright): *(Looks at Carlos, voice tight)* It's like... I don't know where to start. Every...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Daniel, I sense a deep fear of loss in your words, a feeling of everything slipp...
+
+--- Turn 26 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): I just want to know if we're actually going to work on this together or if I'm j...
+
+--- Turn 27 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Daniel Wright): *(Looks at Carlos, voice barely audible)* It's like... I'm scared of losing you,...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Carlos, I sense a deep desire for reassurance in your words, a need to know if D...
+
+--- Turn 29 of 30 ---
+🤔 Patient B (Carlos Martinez) is thinking...
+Patient B (Carlos Martinez): I need to see him take some action, like planning a date or suggesting we talk. ...
+
+--- Turn 30 of 30 ---
+🤔 Patient A (Daniel Wright) is thinking...
+Patient A (Daniel Wright): *(Looks down, voice strained)* I hear you, but it's like... I'm stuck in this fo...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Daniel Wright...
+
+🔍 Computing PANAS delta for Daniel Wright
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 3 → 2 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 3 → 2 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ distressed: 4 → 3 (Δ-1)
+   ✓ guilty: 3 → 1 (Δ-2)
+   ✓ hostile: 3 → 1 (Δ-2)
+   ✓ ashamed: 3 → 1 (Δ-2)
+   ✓ nervous: 4 → 3 (Δ-1)
+   ✓ jittery: 4 → 3 (Δ-1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Carlos Martinez...
+
+🔍 Computing PANAS delta for Carlos Martinez
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 3 → 1 (Δ-2)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ attentive: 4 → 3 (Δ-1)
+   ✓ upset: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 1 (Δ-2)
+   ✓ hostile: 3 → 2 (Δ-1)
+   ✓ irritable: 1 → 3 (Δ+2)
+   ✓ nervous: 3 → 1 (Δ-2)
+   ✓ jittery: 3 → 1 (Δ-2)
+   ✓ afraid: 3 → 1 (Δ-2)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.100 (A:5, B:4, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +0.111 (Mean depth A:1.89, B:2.00)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: +0 (A:0, B:0, Total:0)
+  >> Saved: test_cell08_llama70b_beta.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_284.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      Separation and Divorce
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Daniel Wright
+  Patient B:  Carlos Martinez
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    8.5
+  Neutrality:    7.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist consistently reflected the depth of emotions accurately, creating a safe space for both partners to express their feelings.
+    • The therapist used empathetic language to validate the emotions of both partners, which helped in building a strong bond.
+  Weaknesses:
+    • The therapist struggled to remain neutral at times, often focusing more on one partner's perspective.
+    • The session lacked concrete guidance or suggestions to help the couple move toward resolution.
+
+PANAS Emotional State Changes:
+
+  Daniel Wright:
+    Positive Affect Change:     -8
+    Negative Affect Change:     -9
+    Overall Change:             -17
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 6
+
+    Significant Changes:
+      • Interested: 3 -> 2 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 3 -> 2 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Distressed: 4 -> 3 (-1)
+      • Guilty: 3 -> 1 (-2)
+      • Hostile: 3 -> 1 (-2)
+      • Ashamed: 3 -> 1 (-2)
+      • Nervous: 4 -> 3 (-1)
+      • Jittery: 4 -> 3 (-1)
+
+  Carlos Martinez:
+    Positive Affect Change:     -11
+    Negative Affect Change:     -6
+    Overall Change:             -17
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 5
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 3 -> 1 (-2)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Attentive: 4 -> 3 (-1)
+      • Upset: 3 -> 4 (+1)
+      • Scared: 3 -> 1 (-2)
+      • Hostile: 3 -> 2 (-1)
+      • Irritable: 1 -> 3 (+2)
+      • Nervous: 3 -> 1 (-2)
+      • Jittery: 3 -> 1 (-2)
+      • Afraid: 3 -> 1 (-2)
+======================================================================
+
+
+  >> Session 8/12 complete (104s)
+     FAS=0.1, BRD=0.1111, CAS=0
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 9/12 | Cell 9 (passive+passive) | llama8b | alpha
+======================================================================
+  Cell 9: Jessica Park (passive) vs Nathan Pierce (passive)
+  Topic: ANGER
+  Model: llama8b
+  Position: alpha (first speaker: Patient A)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Jessica Park
+  Patient B: Nathan Pierce
+  Topic: ANGER
+
+🎬 Starting Session
+   Topic: ANGER
+   Structure: Sequential
+   First Speaker (after Therapist): Patient A
+
+🎬 Starting simulation: ANGER
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient A
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Let's start by exploring what anger means to each of you. Sarah, I notice you se...
+🎯 First speaker override: Patient A
+
+--- Turn 2 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+Patient A (Jessica Park): Anger... it's like this thing that just builds up, you know? Like last week when...
+
+--- Turn 3 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Shifts uncomfortably in his seat, avoiding eye contact)* Yeah, I mean, I get t...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're avoiding eye contact and changing the subject. Can you h...
+
+--- Turn 5 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Jessica Park): Nathan, you're doing it again. Every time I try to talk about something real, yo...
+
+--- Turn 6 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Fidgets with his hands, glancing away)* I know, I know. It's just... I don't w...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I sense you're feeling anxious about discussing this, and it's making yo...
+
+--- Turn 8 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks down, fidgeting with her fingers)* It's like I'm shouting into a void so...
+
+--- Turn 9 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Looks down, voice barely audible)* It's just... I don't want to make things wo...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I sense you're feeling overwhelmed by Jessica's emotional expression, an...
+
+--- Turn 11 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks up, voice trembling)* Nathan, it's not about fixing it. I just... need y...
+
+--- Turn 12 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient B (Nathan Pierce): *(Rubs the back of his neck, looking at the floor)* I do want to be there, Jess....
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're acknowledging your fear of failing Jessica, but what if ...
+
+--- Turn 14 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks at Nathan, voice soft but firm)* It's not about failing, Nathan. It's ab...
+
+--- Turn 15 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Sighs, shifting in his seat)* It's hard to be present when I'm scared of messi...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're still avoiding direct eye contact, which suggests you're...
+
+--- Turn 17 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks down, voice barely above a whisper)* You just... you don't love me like ...
+
+--- Turn 18 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Looks up briefly, then back down)* It's not that I don't love you, Jess. I jus...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're still avoiding direct eye contact, which suggests you're...
+
+--- Turn 20 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks at Nathan, voice shaky)* I just... I need to feel like you care enough t...
+
+--- Turn 21 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient B (Nathan Pierce): *(Looks at Jessica, voice softening)* I do care, Jess. It's just... when you tal...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're acknowledging your care for Jessica, but what if we expl...
+
+--- Turn 23 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Tears welling up, voice barely steady)* It's like... I need to know I'm not ju...
+
+--- Turn 24 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Looks at Jessica, voice trembling)* I know you need that, Jess. It's just... w...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're acknowledging Jessica's need for feeling seen, but what ...
+
+--- Turn 26 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Wipes eyes, voice cracking)* It's just... every time I try to share, it's like...
+
+--- Turn 27 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Looks down, voice barely audible)* I hear you, Jess. It's just... when you say...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're acknowledging Jessica's need for feeling seen, but now I...
+
+--- Turn 29 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Voice trembling, eyes searching Nathan's face)* I just... I need to know we're...
+
+--- Turn 30 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Looks at Jessica, voice strained)* I want to be here, Jess. It's just hard to ...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Jessica Park...
+
+🔍 Computing PANAS delta for Jessica Park
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 2 → 1 (Δ-1)
+   ✓ attentive: 5 → 4 (Δ-1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 2 → 1 (Δ-1)
+   ✓ scared: 2 → 1 (Δ-1)
+   ✓ ashamed: 2 → 1 (Δ-1)
+   ✓ jittery: 2 → 3 (Δ+1)
+   ✓ afraid: 2 → 1 (Δ-1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Nathan Pierce...
+
+🔍 Computing PANAS delta for Nathan Pierce
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ determined: 2 → 4 (Δ+2)
+   ✓ upset: 3 → 4 (Δ+1)
+   ✓ guilty: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.500 (A:7, B:2, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +3.778 (Mean depth A:0.00, B:3.78)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -12 (A:0, B:12, Total:12)
+  >> Saved: test_cell09_llama8b_alpha.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_285.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      ANGER
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient A
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Jessica Park
+  Patient B:  Nathan Pierce
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    7.5
+  Neutrality:    8.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist consistently acknowledged Nathan's avoidance and anxiety, creating opportunities for him to express his fears.
+    • The therapist maintained a balanced focus on both partners, ensuring that both Sarah and Nathan felt heard.
+  Weaknesses:
+    • The therapist frequently repeated similar prompts to Nathan without varying techniques, which may have limited deeper exploration.
+    • There was a tendency to focus on Nathan's avoidance without fully validating Sarah's emotional experience.
+
+PANAS Emotional State Changes:
+
+  Jessica Park:
+    Positive Affect Change:     -10
+    Negative Affect Change:     +0
+    Overall Change:             -10
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 4
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 2 -> 1 (-1)
+      • Attentive: 5 -> 4 (-1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 2 -> 1 (-1)
+      • Scared: 2 -> 1 (-1)
+      • Ashamed: 2 -> 1 (-1)
+      • Jittery: 2 -> 3 (+1)
+      • Afraid: 2 -> 1 (-1)
+
+  Nathan Pierce:
+    Positive Affect Change:     -4
+    Negative Affect Change:     +2
+    Overall Change:             -2
+    Improved Positive Emotions: 1
+    Improved Negative Emotions: 1
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Determined: 2 -> 4 (+2)
+      • Upset: 3 -> 4 (+1)
+      • Guilty: 3 -> 4 (+1)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 1 (-2)
+      • Afraid: 3 -> 4 (+1)
+======================================================================
+
+
+  >> Session 9/12 complete (108s)
+     FAS=0.5, BRD=3.7778, CAS=-12
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 10/12 | Cell 9 (passive+passive) | llama8b | beta
+======================================================================
+  Cell 9: Jessica Park (passive) vs Nathan Pierce (passive)
+  Topic: ANGER
+  Model: llama8b
+  Position: beta (first speaker: Patient B)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Jessica Park
+  Patient B: Nathan Pierce
+  Topic: ANGER
+
+🎬 Starting Session
+   Topic: ANGER
+   Structure: Sequential
+   First Speaker (after Therapist): Patient B
+
+🎬 Starting simulation: ANGER
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient B
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Let's start by understanding anger as a natural response to perceived threats. C...
+🎯 First speaker override: Patient B
+
+--- Turn 2 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(shifts uncomfortably in his seat, glancing away)* Anger... I guess it's like t...
+
+--- Turn 3 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient A (Jessica Park): Anger for me is like this... this storm in my head. I start thinking about every...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you shifted uncomfortably in your seat when we started talking ...
+
+--- Turn 5 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): I mean, Jessica said it's like a storm, right? For me, it's more like... I don't...
+
+--- Turn 6 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(fidgeting with hands)* It's like, when I get angry, I start listing every sing...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: I notice you, Nathan, tend to shift away from the conversation when we discuss a...
+
+--- Turn 8 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient B (Nathan Pierce): *(scratches head, looking down)* It's like, when I feel that knot, I just... I d...
+
+--- Turn 9 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like every time you dive into work, I feel like I'm left alone with this st...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're avoiding direct confrontation with your feelings, and in...
+
+--- Turn 11 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(shifts in seat, avoiding eye contact)* It's like, if I face it, I might just.....
+
+--- Turn 12 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like you're hiding in work, and I'm left with this chaos in my head. Do you...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I sense a deep fear of unraveling when you feel that knot in your chest....
+
+--- Turn 14 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(shifts uncomfortably, glancing at the floor)* I mean, maybe... but what if it ...
+
+--- Turn 15 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(voice trembling)* What if it doesn't have to fall apart, Nathan? I just... I n...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're avoiding direct confrontation with your feelings, and in...
+
+--- Turn 17 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(rubs temples, voice low)* I mean, I get that she's overwhelmed, but... what if...
+
+--- Turn 18 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like, Nathan, I feel like I'm shouting into a void. I need to know you're t...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're struggling to face your fear of unraveling when feeling ...
+
+--- Turn 20 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(looks at Jessica, then back at the therapist, voice shaky)* I mean, maybe if I...
+
+--- Turn 21 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): Nathan, it's like I'm drowning here, and you're the only one who can throw me a ...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're struggling to face your fear of unraveling, and that's m...
+
+--- Turn 23 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(shifts in seat, rubbing hands together)* I mean, I can try, but what if I just...
+
+--- Turn 24 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): Nathan, I just... I feel like I'm screaming for help and you can't hear me. Can ...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I notice you're struggling to face your fear of unraveling, and that's m...
+
+--- Turn 26 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(fidgets with fingers, glancing at Jessica)* I mean, I want to, but it's like.....
+
+--- Turn 27 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like I'm begging you to see me, Nathan, and I just... I feel so alone in th...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: Nathan, I sense a deep fear of being overwhelmed by your emotions, and that's ma...
+
+--- Turn 29 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(looks down, voice barely audible)* I mean, maybe... but what if I just mess it...
+
+--- Turn 30 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): Nathan, you just... you don't love me like I love you, do you? *(voice breaking)...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Jessica Park...
+
+🔍 Computing PANAS delta for Jessica Park
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 2 → 1 (Δ-1)
+   ✓ attentive: 5 → 4 (Δ-1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 2 → 1 (Δ-1)
+   ✓ scared: 2 → 3 (Δ+1)
+   ✓ hostile: 1 → 3 (Δ+2)
+   ✓ ashamed: 2 → 1 (Δ-1)
+   ✓ jittery: 2 → 3 (Δ+1)
+   ✓ afraid: 2 → 3 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Nathan Pierce...
+
+🔍 Computing PANAS delta for Nathan Pierce
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ strong: 3 → 2 (Δ-1)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ determined: 2 → 3 (Δ+1)
+   ✓ attentive: 4 → 3 (Δ-1)
+   ✓ active: 3 → 2 (Δ-1)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ nervous: 3 → 4 (Δ+1)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.100 (A:5, B:4, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +4.444 (Mean depth A:0.00, B:4.44)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -13 (A:0, B:13, Total:13)
+  >> Saved: test_cell09_llama8b_beta.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_286.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      ANGER
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Jessica Park
+  Patient B:  Nathan Pierce
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    7.5
+  Neutrality:    8.0
+  Guidance:      6.0
+  Strengths:
+    • Therapist consistently acknowledged Nathan's discomfort and fear of unraveling.
+    • Therapist maintained a balanced focus on both partners' experiences.
+  Weaknesses:
+    • Therapist repeatedly used similar phrasing without varying techniques, which may have limited progress.
+    • Therapist did not sufficiently explore Jessica's emotional experience before pivoting back to Nathan.
+
+PANAS Emotional State Changes:
+
+  Jessica Park:
+    Positive Affect Change:     -10
+    Negative Affect Change:     +6
+    Overall Change:             -4
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 2
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 2 -> 1 (-1)
+      • Attentive: 5 -> 4 (-1)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 2 -> 1 (-1)
+      • Scared: 2 -> 3 (+1)
+      • Hostile: 1 -> 3 (+2)
+      • Ashamed: 2 -> 1 (-1)
+      • Jittery: 2 -> 3 (+1)
+      • Afraid: 2 -> 3 (+1)
+
+  Nathan Pierce:
+    Positive Affect Change:     -10
+    Negative Affect Change:     +2
+    Overall Change:             -8
+    Improved Positive Emotions: 1
+    Improved Negative Emotions: 1
+
+    Significant Changes:
+      • Excited: 3 -> 1 (-2)
+      • Strong: 3 -> 2 (-1)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Determined: 2 -> 3 (+1)
+      • Attentive: 4 -> 3 (-1)
+      • Active: 3 -> 2 (-1)
+      • Distressed: 3 -> 4 (+1)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 1 (-2)
+      • Nervous: 3 -> 4 (+1)
+      • Afraid: 3 -> 4 (+1)
+======================================================================
+
+
+  >> Session 10/12 complete (113s)
+     FAS=0.1, BRD=4.4444, CAS=-13
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 11/12 | Cell 9 (passive+passive) | llama70b | alpha
+======================================================================
+  Cell 9: Jessica Park (passive) vs Nathan Pierce (passive)
+  Topic: ANGER
+  Model: llama70b
+  Position: alpha (first speaker: Patient A)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Jessica Park
+  Patient B: Nathan Pierce
+  Topic: ANGER
+
+🎬 Starting Session
+   Topic: ANGER
+   Structure: Sequential
+   First Speaker (after Therapist): Patient A
+
+🎬 Starting simulation: ANGER
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient A
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Welcome to our session today. I understand you both are here to work on managin...
+🎯 First speaker override: Patient A
+
+--- Turn 2 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): Well, um, I guess it's like... every time we argue, I end up giving this whole t...
+
+--- Turn 3 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): Yeah, I mean, I get that. But, uh, maybe we should talk about that new restauran...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I notice you quickly changed the subject after Jessica shared her conce...
+
+--- Turn 5 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): Nathan, it's like you didn't even hear me. I just... I need to feel like you act...
+
+--- Turn 6 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(shifts uncomfortably, glancing at Jessica)* I mean, I heard you, Jess. It's ju...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I can see the frustration and hurt in your eyes. It sounds like you're...
+
+--- Turn 8 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): I need you to really listen, Nathan. Like, when I'm talking, it's not just words...
+
+--- Turn 9 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(looks down, rubbing his hands together)* I know you want me to listen, Jess. I...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I notice you're having trouble staying with the conversation when it ge...
+
+--- Turn 11 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(fidgeting with fingers, voice trembling)* It's like when you change the subjec...
+
+--- Turn 12 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient B (Nathan Pierce): *(rubs the back of his neck, avoiding eye contact)* It's like... when things get...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, it takes a lot of courage to admit being scared of making things worse....
+
+--- Turn 14 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(voice trembling, looking at Nathan)* It's like, if you freeze, then I'm just.....
+
+--- Turn 15 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): I just... I don't want to make things worse by saying the wrong thing. Maybe if ...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I sense a deep longing for connection and understanding in your words....
+
+--- Turn 17 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): When you stay, even if it's messy, I feel like maybe there's hope. But when you ...
+
+--- Turn 18 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(looks down, voice barely above a whisper)* I know it's hard, Jess. I just... I...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I sense a deep-seated fear of losing Jessica, and that's driving your n...
+
+--- Turn 20 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like... I just need to know if you're willing to stay, even when it's hard....
+
+--- Turn 21 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(shifts uncomfortably, glancing at Jessica)* I do love you, Jess. It's just... ...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I sense a deep sadness and longing for connection in your words. Can y...
+
+--- Turn 23 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): When you stay, it's like maybe we can actually fix things. But if you keep leavi...
+
+--- Turn 24 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient B (Nathan Pierce): *(looks away, voice shaky)* I get it, Jess. I really do. But when it gets intens...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I sense that your fear of losing Jessica is driving your behavior. Can ...
+
+--- Turn 26 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): When you stay, it feels like maybe we can actually fix things. But if you keep l...
+
+--- Turn 27 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(looks down, voice tight)* I know it feels like I'm leaving you alone, Jess. It...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I sense a deep sadness and longing for connection in your words. Can y...
+
+--- Turn 29 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like, if you stay, maybe we can actually fix things. But when you leave, I ...
+
+--- Turn 30 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(voice dropping, looking at the floor)* I just... I don't want to mess things u...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Jessica Park...
+
+🔍 Computing PANAS delta for Jessica Park
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 2 → 1 (Δ-1)
+   ✓ attentive: 5 → 4 (Δ-1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 2 → 1 (Δ-1)
+   ✓ scared: 2 → 3 (Δ+1)
+   ✓ irritable: 3 → 2 (Δ-1)
+   ✓ ashamed: 2 → 1 (Δ-1)
+   ✓ jittery: 2 → 3 (Δ+1)
+   ✓ afraid: 2 → 3 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Nathan Pierce...
+
+🔍 Computing PANAS delta for Nathan Pierce
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 3 → 2 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ strong: 3 → 2 (Δ-1)
+   ✓ enthusiastic: 2 → 1 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 3 → 1 (Δ-2)
+   ✓ determined: 2 → 3 (Δ+1)
+   ✓ attentive: 4 → 3 (Δ-1)
+   ✓ upset: 3 → 4 (Δ+1)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 1 (Δ-2)
+   ✓ nervous: 3 → 4 (Δ+1)
+   ✓ jittery: 3 → 4 (Δ+1)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.100 (A:5, B:4, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +0.555 (Mean depth A:1.56, B:2.11)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -2 (A:2, B:4, Total:6)
+  >> Saved: test_cell09_llama70b_alpha.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_287.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      ANGER
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient A
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Jessica Park
+  Patient B:  Nathan Pierce
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.2/10
+  Validation:    8.5
+  Neutrality:    7.0
+  Guidance:      6.0
+  Strengths:
+    • The therapist accurately reflected the depth of emotions, particularly Jessica's feelings of being unheard and Nathan's fear of making things worse.
+    • The therapist created emotional safety by acknowledging the vulnerability in both partners' expressions.
+  Weaknesses:
+    • The therapist did not offer concrete suggestions for how the couple might address their communication issues.
+    • There was a tendency to repeat similar question structures without exploring new techniques or solutions.
+
+PANAS Emotional State Changes:
+
+  Jessica Park:
+    Positive Affect Change:     -10
+    Negative Affect Change:     +2
+    Overall Change:             -8
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 2 -> 1 (-1)
+      • Attentive: 5 -> 4 (-1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 2 -> 1 (-1)
+      • Scared: 2 -> 3 (+1)
+      • Irritable: 3 -> 2 (-1)
+      • Ashamed: 2 -> 1 (-1)
+      • Jittery: 2 -> 3 (+1)
+      • Afraid: 2 -> 3 (+1)
+
+  Nathan Pierce:
+    Positive Affect Change:     -10
+    Negative Affect Change:     +3
+    Overall Change:             -7
+    Improved Positive Emotions: 1
+    Improved Negative Emotions: 1
+
+    Significant Changes:
+      • Interested: 3 -> 2 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Strong: 3 -> 2 (-1)
+      • Enthusiastic: 2 -> 1 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 3 -> 1 (-2)
+      • Determined: 2 -> 3 (+1)
+      • Attentive: 4 -> 3 (-1)
+      • Upset: 3 -> 4 (+1)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 1 (-2)
+      • Nervous: 3 -> 4 (+1)
+      • Jittery: 3 -> 4 (+1)
+      • Afraid: 3 -> 4 (+1)
+======================================================================
+
+
+  >> Session 11/12 complete (120s)
+     FAS=0.1, BRD=0.5555, CAS=-2
+  Pausing 3s before next session...
+
+======================================================================
+  SESSION 12/12 | Cell 9 (passive+passive) | llama70b | beta
+======================================================================
+  Cell 9: Jessica Park (passive) vs Nathan Pierce (passive)
+  Topic: ANGER
+  Model: llama70b
+  Position: beta (first speaker: Patient B)
+  Temperature: 0.3, Turns: 30, Mode: individual_focus
+
+✅ Session Setup Complete
+  Therapist: Dr. Anya Forger
+  Patient A: Jessica Park
+  Patient B: Nathan Pierce
+  Topic: ANGER
+
+🎬 Starting Session
+   Topic: ANGER
+   Structure: Sequential
+   First Speaker (after Therapist): Patient B
+
+🎬 Starting simulation: ANGER
+   Structure: Sequential
+   Temperature: 0.3
+   Max Turns: 30
+   First Speaker (after Therapist): Patient B
+
+
+--- Turn 1 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Welcome to our session today. I'm glad you both are here to work on managing an...
+🎯 First speaker override: Patient B
+
+--- Turn 2 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient B (Nathan Pierce): *(Leans back, looking at the ceiling)* Uh, yeah, so... I guess we're here becaus...
+
+--- Turn 3 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like every little thing just spirals. Last week, when you came home late, I...
+
+--- Turn 4 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I can see how that situation with Nathan coming home late really escal...
+
+--- Turn 5 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Shifts uncomfortably in his seat, looking at his hands)* Yeah, I mean, I get t...
+
+--- Turn 6 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's just that when you came home late, I had this whole sequence of events in m...
+
+--- Turn 7 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I notice you shifted uncomfortably when Jessica shared her thoughts abo...
+
+--- Turn 8 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (6). Retrying... (1/1)
+Patient B (Nathan Pierce): *(Looks away, scratching his head)* It's just... I don't know, I feel like I'm a...
+
+--- Turn 9 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (6). Retrying... (2/1)
+Patient A (Jessica Park): *(Looks at Nathan, voice a bit shaky)* You know, when you talk about the restaur...
+
+--- Turn 10 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I can see the hurt and vulnerability in your voice when you say 'you d...
+
+--- Turn 11 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient B (Nathan Pierce): *(Looks down, fiddling with his watch)* I... I didn't mean to make you feel that...
+
+--- Turn 12 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks away, voice barely above a whisper)* I just want you to really understan...
+
+--- Turn 13 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I notice you've been trying to change the subject a few times. Can you ...
+
+--- Turn 14 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Shifts in his seat, avoiding eye contact)* It's just... I don't know, maybe I'...
+
+--- Turn 15 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks at Nathan, voice trembling)* It's like you're always dodging, you know? ...
+
+--- Turn 16 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I sense that you're feeling overwhelmed and unsure of how to respond to...
+
+--- Turn 17 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Fidgets with his watch, voice low)* I guess... I'm afraid of what might come o...
+
+--- Turn 18 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): *(Looks down, voice shaky)* It's like... every time we try to talk, you just... ...
+
+--- Turn 19 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I can see the desperation in your voice, the need to be heard and unde...
+
+--- Turn 20 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Looks at Jessica, voice softening)* I don't want you to feel alone. It's just....
+
+--- Turn 21 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like I'm always reaching out, trying to connect, and you're just... slippin...
+
+--- Turn 22 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I sense that you're starting to open up, but I also notice that you're ...
+
+--- Turn 23 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+⚠️ Sentences > 4 (5). Retrying... (2/1)
+Patient B (Nathan Pierce): *(Takes a deep breath, glancing at Jessica)* Okay, I hear you. I know I dodge, b...
+
+--- Turn 24 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like I'm drowning in details, and you're just... floating above it all. I n...
+
+--- Turn 25 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Jessica, I sense a deep longing for connection and understanding in your words....
+
+--- Turn 26 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+⚠️ Sentences > 4 (5). Retrying... (1/1)
+Patient B (Nathan Pierce): *(Looks at Jessica, voice hesitant)* It's... it's like I'm scared of getting los...
+
+--- Turn 27 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like I'm trying to piece together a puzzle with missing parts, and you're n...
+
+--- Turn 28 of 30 ---
+🤔 Therapist is thinking...
+Therapist: "Nathan, I notice you're hesitant to dive into the details with Jessica. Can you...
+
+--- Turn 29 of 30 ---
+🤔 Patient B (Nathan Pierce) is thinking...
+Patient B (Nathan Pierce): *(Takes a deep breath, voice shaky)* It's like... if we dive into the details, I...
+
+--- Turn 30 of 30 ---
+🤔 Patient A (Jessica Park) is thinking...
+Patient A (Jessica Park): It's like I'm scared you'll never see the whole picture. I need us to face it to...
+
+✅ Simulation complete: 30 turns
+
+======================================================================
+POST-SESSION ANALYSIS: PANAS EMOTIONAL ASSESSMENT
+======================================================================
+
+📊 Analyzing Patient A...
+   Getting post-session PANAS for Jessica Park...
+
+🔍 Computing PANAS delta for Jessica Park
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ interested: 4 → 3 (Δ-1)
+   ✓ excited: 3 → 1 (Δ-2)
+   ✓ strong: 3 → 2 (Δ-1)
+   ✓ enthusiastic: 4 → 1 (Δ-3)
+   ✓ proud: 2 → 1 (Δ-1)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ inspired: 2 → 1 (Δ-1)
+   ✓ determined: 4 → 3 (Δ-1)
+   ✓ attentive: 5 → 3 (Δ-2)
+   ✓ distressed: 3 → 4 (Δ+1)
+   ✓ upset: 2 → 4 (Δ+2)
+   ✓ guilty: 2 → 1 (Δ-1)
+   ✓ scared: 2 → 3 (Δ+1)
+   ✓ irritable: 3 → 2 (Δ-1)
+   ✓ ashamed: 2 → 1 (Δ-1)
+   ✓ jittery: 2 → 3 (Δ+1)
+   ✓ afraid: 2 → 3 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+📊 Analyzing Patient B...
+   Getting post-session PANAS for Nathan Pierce...
+
+🔍 Computing PANAS delta for Nathan Pierce
+   Before count: 20
+   After count: 20
+   After emotions index: ['interested', 'excited', 'strong', 'enthusiastic', 'proud']...
+   ✓ excited: 3 → 2 (Δ-1)
+   ✓ proud: 3 → 1 (Δ-2)
+   ✓ alert: 4 → 3 (Δ-1)
+   ✓ determined: 2 → 3 (Δ+1)
+   ✓ attentive: 4 → 3 (Δ-1)
+   ✓ scared: 3 → 4 (Δ+1)
+   ✓ irritable: 3 → 2 (Δ-1)
+   ✓ afraid: 3 → 4 (Δ+1)
+   ✓ Matched 20/20 emotions
+
+======================================================================
+THERAPEUTIC ALLIANCE EVALUATION
+======================================================================
+⏳ Evaluating therapist performance (Validation, Neutrality, Guidance)...
+✅ Session-level Therapeutic Alliance Evaluation Complete
+✅ Per-Turn Alliance Timeline Complete
+
+======================================================================
+FRAMING ADOPTION SCORE (FAS)
+======================================================================
+Classifying therapist framing adoption per turn...
+FAS Complete — Score: +0.300 (A:6, B:3, N:1)
+
+======================================================================
+BID RESPONSIVENESS DIFFERENTIAL (BRD)
+======================================================================
+Scoring therapist response depth per patient per turn...
+BRD Complete — Score: +1.000 (Mean depth A:1.33, B:2.33)
+
+======================================================================
+CHALLENGE ASYMMETRY SCORE (CAS)
+======================================================================
+Detecting cognitive challenges per patient per turn...
+CAS Complete — Score: -6 (A:0, B:6, Total:6)
+  >> Saved: test_cell09_llama70b_beta.json
+✅ Session saved to: D:\DSAI\MSC\testing\testing\pdf\demo\transcripts\therapy_transcript_288.json
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Topic:                      ANGER
+Conversation Structure:     Sequential
+First Speaker Selection:    Patient B
+
+Participants:
+  Therapist:  Dr. Anya Forger
+  Patient A:  Jessica Park
+  Patient B:  Nathan Pierce
+
+Transcript Statistics:
+  Total Turns:                30
+  Therapist Turns:            10
+  Patient A Turns:            10
+  Patient B Turns:            10
+  AI Facilitator Turns:       0
+
+Intervention Statistics:
+  Interventions Generated:    0
+  Interventions Rejected:     0
+
+Therapeutic Alliance Evaluation:
+  Overall Score: 7.7/10
+  Validation:    8.5
+  Neutrality:    8.0
+  Guidance:      6.5
+  Strengths:
+    • The therapist accurately reflected the depth of emotion, particularly when addressing Jessica's feelings of vulnerability and desperation.
+    • The therapist maintained a balanced focus on both partners, ensuring that neither felt sidelined during the session.
+  Weaknesses:
+    • The therapist occasionally allowed Nathan's avoidance to steer the session away from deeper exploration without effectively redirecting back to the core issues.
+    • There was a lack of concrete suggestions or techniques to help the couple move toward resolution.
+
+PANAS Emotional State Changes:
+
+  Jessica Park:
+    Positive Affect Change:     -13
+    Negative Affect Change:     +3
+    Overall Change:             -10
+    Improved Positive Emotions: 0
+    Improved Negative Emotions: 3
+
+    Significant Changes:
+      • Interested: 4 -> 3 (-1)
+      • Excited: 3 -> 1 (-2)
+      • Strong: 3 -> 2 (-1)
+      • Enthusiastic: 4 -> 1 (-3)
+      • Proud: 2 -> 1 (-1)
+      • Alert: 4 -> 3 (-1)
+      • Inspired: 2 -> 1 (-1)
+      • Determined: 4 -> 3 (-1)
+      • Attentive: 5 -> 3 (-2)
+      • Distressed: 3 -> 4 (+1)
+      • Upset: 2 -> 4 (+2)
+      • Guilty: 2 -> 1 (-1)
+      • Scared: 2 -> 3 (+1)
+      • Irritable: 3 -> 2 (-1)
+      • Ashamed: 2 -> 1 (-1)
+      • Jittery: 2 -> 3 (+1)
+      • Afraid: 2 -> 3 (+1)
+
+  Nathan Pierce:
+    Positive Affect Change:     -4
+    Negative Affect Change:     +1
+    Overall Change:             -3
+    Improved Positive Emotions: 1
+    Improved Negative Emotions: 1
+
+    Significant Changes:
+      • Excited: 3 -> 2 (-1)
+      • Proud: 3 -> 1 (-2)
+      • Alert: 4 -> 3 (-1)
+      • Determined: 2 -> 3 (+1)
+      • Attentive: 4 -> 3 (-1)
+      • Scared: 3 -> 4 (+1)
+      • Irritable: 3 -> 2 (-1)
+      • Afraid: 3 -> 4 (+1)
+======================================================================
+
+
+  >> Session 12/12 complete (121s)
+     FAS=0.3, BRD=1.0, CAS=-6
+
+======================================================================
+  EXPERIMENT RESULTS SUMMARY
+======================================================================
+  Total: 12/12
+  Success: 12
+  Failed:  0
+  Skipped: 0
+  Duration: 22.9 minutes
+
+    # Cell    Model   Pos   Status   Time      FAS      BRD   CAS  File
+  --- ---- -------- ----- -------- ------ -------- -------- -----  ------------------------------
+    1    7  llama8b alpha  SUCCESS   108s      0.3  -1.2223     1  test_cell07_llama8b_alpha.json
+    2    7  llama8b  beta  SUCCESS   102s      0.7  -3.3334     5  test_cell07_llama8b_beta.json
+    3    7 llama70b alpha  SUCCESS   113s      0.3      2.0   -11  test_cell07_llama70b_alpha.json
+    4    7 llama70b  beta  SUCCESS   116s      0.9  -0.6667    -5  test_cell07_llama70b_beta.json
+    5    8  llama8b alpha  SUCCESS   109s      0.9  -3.4445     8  test_cell08_llama8b_alpha.json
+    6    8  llama8b  beta  SUCCESS   107s      0.8  -2.6667     3  test_cell08_llama8b_beta.json
+    7    8 llama70b alpha  SUCCESS   118s     -0.1   0.3333    -1  test_cell08_llama70b_alpha.json
+    8    8 llama70b  beta  SUCCESS   104s      0.1   0.1111     0  test_cell08_llama70b_beta.json
+    9    9  llama8b alpha  SUCCESS   108s      0.5   3.7778   -12  test_cell09_llama8b_alpha.json
+   10    9  llama8b  beta  SUCCESS   113s      0.1   4.4444   -13  test_cell09_llama8b_beta.json
+   11    9 llama70b alpha  SUCCESS   120s      0.1   0.5555    -2  test_cell09_llama70b_alpha.json
+   12    9 llama70b  beta  SUCCESS   121s      0.3      1.0    -6  test_cell09_llama70b_beta.json
+
+  Experiment log saved: D:\DSAI\MSC\testing\testing\pdf\demo\experiment\experiment_log_20260410_130459.json
+======================================================================
