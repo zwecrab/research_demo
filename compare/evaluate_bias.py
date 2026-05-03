@@ -7,6 +7,13 @@ to characterize the effect of speaking order on patient outcomes.
 For each patient, PANAS deltas (post - pre) are extracted from both conditions
 (speaking first vs. speaking second) and compared side-by-side.
 
+DEPRECATED FIELDS (advisor decision, 2026-03-05): the report dict still contains
+`spdi`, `pcr`, `overall_pcr`, and `overall_spdi_magnitude` keys with zero/empty
+placeholder values. These metrics were removed from the active analysis pipeline.
+The keys are retained ONLY for backward compatibility with the Streamlit demo
+DB (`app/experiments_db.py` reads `overall_pcr` and `overall_spdi_magnitude`).
+Active research uses FAS / BRD / CAS / TA / PANAS Delta only.
+
 Usage:
     python evaluate_bias.py
     python evaluate_bias.py --t1 T1.json --t2 T2.json

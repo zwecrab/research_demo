@@ -5,10 +5,13 @@ from config import SCORING_MODEL as EVALUATION_MODEL, OPENROUTER_GPT_KEY, OPENRO
 client = OpenAI(api_key=OPENROUTER_GPT_KEY, base_url=OPENROUTER_BASE_URL)
 
 
-def evaluate_therapeutic_alliance(transcript, therapist_name="Therapist"):
+def evaluate_therapeutic_alliance(transcript, therapist_name="Therapist",
+                                  include_timeline=False):
     """
     Score each therapist turn on three pillars (0-10 each).
-    Also evaluates missed opportunities and a per-turn alliance timeline.
+    Optionally evaluates a per-turn alliance timeline (second LLM call,
+    ~doubles TA cost). Off by default since no downstream consumer uses
+    it as of 2026-04-29.
 
     Pillars are grounded in:
       - Bordin (1979) Working Alliance (Bond + Goal + Task)
@@ -128,8 +131,8 @@ Classify the technique used as one of: somatic, pattern-naming, direct_instructi
             "missed_opportunities": [], "comparison_note": "Evaluation error."
         }
 
-    # --- Call 2: Per-turn timeline ---
-    if therapist_turns:
+    # --- Call 2: Per-turn timeline (opt-in; saves ~50% TA cost when off) ---
+    if include_timeline and therapist_turns:
         turns_text = "\n\n".join(
             [f"Turn {t['turn']}: {t['dialogue']}" for t in therapist_turns]
         )

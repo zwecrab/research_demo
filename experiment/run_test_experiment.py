@@ -1,11 +1,18 @@
 """
-Test Experiment Batch Runner
-============================
+Test Experiment Batch Runner [HISTORICAL - pre-V2 persona pipeline]
+====================================================================
 Runs the 36-session Llama 8B + 70B validation experiment.
 
 Design: 9 bid-style pairs x 2 models x 2 positions (alpha/beta) = 36 sessions.
 All sessions use: Sequential structure, Individual Focus therapist mode,
 temperature 0.3, 30 fixed turns.
+
+DEPRECATION NOTE (2026-04-29): This runner uses `setup_session_parameters`,
+which loads V1 legacy personas from `trigger-personas.json`. It was used to
+generate the historical 36-session test batch (transcripts/test_cell*.json)
+and is preserved here only for reproducing those specific results. For new
+research runs, use `run_pilot_batch.py` or `run_pilot_batch_2.py`, which
+both use the V2 persona pipeline (personas_v2.json + bid-style overlays).
 
 Usage:
     python experiment/run_test_experiment.py
