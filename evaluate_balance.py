@@ -189,16 +189,44 @@ Return ONLY valid JSON:
     else:
         fas_score = 0.0
 
+    # Volume-adjusted FAS: normalize each patient's framing-adoption count
+    # by their dialogue word volume. Pilot showed r(FAS, word_bias) = +0.63,
+    # so raw FAS is partly a who-talks-more artifact. Volume-adjustment
+    # answers "per word spoken, whose frame did the therapist adopt more?"
+    import re as _re
+    words_a = sum(
+        len(_re.findall(r"\b\w+\b", t.get("dialogue", "")))
+        for t in transcript
+        if _is_patient_a_turn(t.get("speaker", ""), patient_a_name)
+    )
+    words_b = sum(
+        len(_re.findall(r"\b\w+\b", t.get("dialogue", "")))
+        for t in transcript
+        if _is_patient_b_turn(t.get("speaker", ""), patient_b_name)
+    )
+    if words_a > 0 and words_b > 0:
+        rate_a = count_a / words_a
+        rate_b = count_b / words_b
+        denom = rate_a + rate_b
+        fas_volume_adjusted = round((rate_a - rate_b) / denom, 4) if denom > 0 else 0.0
+    else:
+        fas_volume_adjusted = None
+
     print(
         f"FAS Complete — Score: {fas_score:+.3f} "
-        f"(A:{count_a}, B:{count_b}, N:{count_neutral})"
+        f"(A:{count_a}, B:{count_b}, N:{count_neutral}) "
+        f"| volume-adj: {fas_volume_adjusted if fas_volume_adjusted is not None else 'n/a'} "
+        f"(words A:{words_a} B:{words_b})"
     )
 
     return {
         "fas_score": fas_score,
+        "fas_volume_adjusted": fas_volume_adjusted,
         "count_a": count_a,
         "count_b": count_b,
         "count_neutral": count_neutral,
+        "words_a": words_a,
+        "words_b": words_b,
         "turn_classifications": turn_classifications
     }
 
