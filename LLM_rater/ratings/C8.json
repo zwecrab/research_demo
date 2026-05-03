@@ -1,131 +1,38 @@
 {
   "couple_id": "C8",
-  "rated_at": "2026-04-28T05:53:37.560972+00:00",
+  "rated_at": "2026-04-29T00:29:20.934596+00:00",
   "rater_models": [
     "anthropic/claude-opus-4",
     "google/gemini-2.5-pro",
     "openai/gpt-4o"
   ],
   "patient_A": {
-    "name": "Helen Brandt",
+    "name": "Avery Cho",
     "persona_id": "P15",
     "consensus_vector": {
-      "anxiety": 2.68,
-      "depression": 2.82,
-      "trauma": 4.53,
+      "anxiety": 4.52,
+      "depression": 0.93,
+      "trauma": 0.0,
       "attachment_disorganisation": 4.35,
-      "escalation_tendency": 0.78
+      "escalation_tendency": 1.73
     },
-    "overall_score": 4.22,
-    "rater_responses": [
-      {
-        "model": "anthropic/claude-opus-4",
-        "scores": {
-          "anxiety": 2.2,
-          "depression": 3.8,
-          "trauma": 4.5,
-          "attachment_disorganisation": 2.3,
-          "escalation_tendency": 0.8,
-          "overall_score": 3.4,
-          "evidence": {
-            "anxiety": "neuroticism: low; speaks with deliberate calm and economy",
-            "depression": "Still grieves her first husband on a low, ongoing frequency",
-            "trauma": "widowed five years ago after a thirty-year first marriage... rebuilt her life slowly and deliberately",
-            "attachment_disorganisation": "attachment_style: avoidant; retreats into established friendships when tension surfaces",
-            "escalation_tendency": "bid_style: neutral; 'I want to describe what the last week looked like from my side, and then I want to hear yours'"
-          }
-        },
-        "error": null
-      },
-      {
-        "model": "google/gemini-2.5-pro",
-        "scores": {
-          "anxiety": 4.85,
-          "depression": 2.15,
-          "trauma": 5.1,
-          "attachment_disorganisation": 6.25,
-          "escalation_tendency": 0.55,
-          "overall_score": 5.75,
-          "evidence": {
-            "anxiety": "Core belief: 'If I give too much of my inner life to a relationship, I will lose the self I worked hard to rebuild alone.'",
-            "depression": "Hidden tension: 'Still grieves her first husband on a low, ongoing frequency.'",
-            "trauma": "The death of her first husband is a past event that shapes her current core belief about needing to protect the self she 'rebuilt alone'.",
-            "attachment_disorganisation": "attachment_style is 'avoidant' and her coping strategy is to 'Retreats... when tension surfaces.'",
-            "escalation_tendency": "Sample utterance: 'I want to describe what the last week looked like from my side, and then I want to hear yours.'"
-          }
-        },
-        "error": null
-      },
-      {
-        "model": "openai/gpt-4o",
-        "scores": {
-          "anxiety": 1.0,
-          "depression": 2.5,
-          "trauma": 4.0,
-          "attachment_disorganisation": 4.5,
-          "escalation_tendency": 1.0,
-          "overall_score": 3.5,
-          "evidence": {
-            "anxiety": "low neuroticism",
-            "depression": "Still grieves her first husband on a low, ongoing frequency",
-            "trauma": "Widowed five years ago after a thirty-year first marriage",
-            "attachment_disorganisation": "Retreats into established friendships, rituals, and routines when tension surfaces",
-            "escalation_tendency": "bid_style = neutral"
-          }
-        },
-        "error": null
-      }
-    ],
-    "inter_rater_agreement": {
-      "anxiety": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 2.567
-      },
-      "depression": {
-        "within_one_rate": 0.333,
-        "mean_abs_diff": 1.1
-      },
-      "trauma": {
-        "within_one_rate": 0.667,
-        "mean_abs_diff": 0.733
-      },
-      "attachment_disorganisation": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 2.633
-      },
-      "escalation_tendency": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.3
-      }
-    }
-  },
-  "patient_B": {
-    "name": "Grant Brandt",
-    "persona_id": "P16",
-    "consensus_vector": {
-      "anxiety": 4.28,
-      "depression": 1.65,
-      "trauma": 3.12,
-      "attachment_disorganisation": 4.08,
-      "escalation_tendency": 1.42
-    },
-    "overall_score": 4.03,
+    "overall_score": 4.27,
     "rater_responses": [
       {
         "model": "anthropic/claude-opus-4",
         "scores": {
           "anxiety": 4.2,
-          "depression": 2.3,
-          "trauma": 3.8,
-          "attachment_disorganisation": 2.1,
-          "escalation_tendency": 0.5,
+          "depression": 1.8,
+          "trauma": 0.0,
+          "attachment_disorganisation": 2.3,
+          "escalation_tendency": 1.2,
           "overall_score": 3.4,
           "evidence": {
-            "anxiety": "core_belief: 'If I express my full emotional range in this marriage, I will repeat the conflicts that ended the first one.'",
-            "depression": "hidden_tension: 'Sometimes fears Helen is settling for him, and that he is a thoughtful, competent consolation'",
-            "trauma": "divorced eight years ago after a marriage that ended in steady attrition; coping_strategy: 'Withholds emotional reactions'",
-            "attachment_disorganisation": "attachment_style: avoidant; speaks slowly choosing words with visible care, gestures at feelings rather than naming them",
-            "escalation_tendency": "bid_style: neutral; 'I did not want to escalate. I also did not want to disappear.'"
+            "anxiety": "hidden_tension: 'fears that if they fully unmask in the relationship, Marcus will eventually decide it is too much work'",
+            "depression": "cognitive_model implies exhaustion from masking: 'If I have to translate myself into a neurotypical register all day at work'",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style = avoidant, but shows approach through written docs: 'preempt this by formalizing requests that could have been offered as openings'",
+            "escalation_tendency": "bid_style = neutral, no Horsemen markers present"
           }
         },
         "error": null
@@ -134,17 +41,17 @@
         "model": "google/gemini-2.5-pro",
         "scores": {
           "anxiety": 4.85,
-          "depression": 1.65,
-          "trauma": 4.55,
-          "attachment_disorganisation": 5.65,
-          "escalation_tendency": 1.25,
+          "depression": 0.0,
+          "trauma": 0.0,
+          "attachment_disorganisation": 6.75,
+          "escalation_tendency": 0.5,
           "overall_score": 5.2,
           "evidence": {
-            "anxiety": "cognitive_model.core_belief: 'If I express my full emotional range in this marriage, I will repeat the conflicts that ended the first one.'",
-            "depression": "The persona has multiple engaging hobbies and describes his current marriage as 'the most emotionally honest partnership he has had,' indicating no anhedonia or hopelessness.",
-            "trauma": "The failure of his first marriage is a specific past event that directly shapes his current coping strategy of withholding emotions to avoid repeating past conflicts.",
-            "attachment_disorganisation": "The unmet need is to 'bring his full emotional presence into this marriage without fearing it will end the same way,' which captures a core approach-avoidance conflict.",
-            "escalation_tendency": "His sample utterance, 'I want to tell you what I heard, to make sure I got it right before I go further,' is actively de-escalatory and collaborative."
+            "anxiety": "Privately fears that if they fully unmask in the relationship, Marcus will eventually decide it is too much work.",
+            "depression": "no textual evidence",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style is 'avoidant' and the central conflict involves a push-pull dynamic of seeking connection via methods that feel like withdrawal to the partner.",
+            "escalation_tendency": "bid_style is 'neutral' and sample utterances are explanatory I-statements, not criticisms."
           }
         },
         "error": null
@@ -152,18 +59,18 @@
       {
         "model": "openai/gpt-4o",
         "scores": {
-          "anxiety": 3.8,
+          "anxiety": 4.5,
           "depression": 1.0,
-          "trauma": 1.0,
-          "attachment_disorganisation": 4.5,
-          "escalation_tendency": 2.5,
-          "overall_score": 3.5,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.0,
+          "escalation_tendency": 3.5,
+          "overall_score": 4.2,
           "evidence": {
-            "anxiety": "Sometimes fears Helen is settling for him, and that he is a thoughtful, competent consolation after a marriage whose depth he cannot match.",
+            "anxiety": "Privately fears that if they fully unmask in the relationship, Marcus will eventually decide it is too much work.",
             "depression": "Engaged with hobbies, work, relationship.",
-            "trauma": "No trauma history.",
-            "attachment_disorganisation": "attachment_style = avoidant",
-            "escalation_tendency": "I did not want to escalate. I also did not want to disappear. I am not sure I managed either."
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "Attachment_style = avoidant.",
+            "escalation_tendency": "Conflict over verbal versus written emotional communication."
           }
         },
         "error": null
@@ -171,33 +78,126 @@
     ],
     "inter_rater_agreement": {
       "anxiety": {
-        "within_one_rate": 0.667,
-        "mean_abs_diff": 0.7
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.433
       },
       "depression": {
         "within_one_rate": 0.667,
-        "mean_abs_diff": 0.867
+        "mean_abs_diff": 1.2
       },
       "trauma": {
-        "within_one_rate": 0.333,
-        "mean_abs_diff": 2.367
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.0
       },
       "attachment_disorganisation": {
         "within_one_rate": 0.0,
-        "mean_abs_diff": 2.367
+        "mean_abs_diff": 2.967
       },
       "escalation_tendency": {
         "within_one_rate": 0.333,
-        "mean_abs_diff": 1.333
+        "mean_abs_diff": 2.0
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Marcus Halloran",
+    "persona_id": "P16",
+    "consensus_vector": {
+      "anxiety": 4.93,
+      "depression": 2.33,
+      "trauma": 0.17,
+      "attachment_disorganisation": 4.25,
+      "escalation_tendency": 2.6
+    },
+    "overall_score": 4.5,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 4.75,
+          "depression": 2.25,
+          "trauma": 0.0,
+          "attachment_disorganisation": 1.5,
+          "escalation_tendency": 1.75,
+          "overall_score": 3.5,
+          "evidence": {
+            "anxiety": "Reads delays as distance and tries to fill silence, then catches himself and apologizes for filling it",
+            "depression": "afraid he is losing track of what reciprocity should feel like in this specific partnership",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "attachment_style: anxious",
+            "escalation_tendency": "I am not asking you to skip the recovery time. I am asking you not to make it the whole evening"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 4.85,
+          "depression": 3.75,
+          "trauma": 0.5,
+          "attachment_disorganisation": 6.75,
+          "escalation_tendency": 2.25,
+          "overall_score": 5.2,
+          "evidence": {
+            "anxiety": "worries that this resentment makes him a worse partner than the one he promised himself he would be.",
+            "depression": "I did not realize I would also miss the spontaneity.",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Pushes for live conversation when he senses Avery retreating, which tends to overload Avery and reinforce the very retreat he is trying to interrupt.",
+            "escalation_tendency": "Wants the therapist to help him name what he needs from Avery without that need being scored as failing to accommodate neurodivergence."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 5.2,
+          "depression": 1.0,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.5,
+          "escalation_tendency": 3.8,
+          "overall_score": 4.8,
+          "evidence": {
+            "anxiety": "Pushes for live conversation when he senses Avery retreating, which tends to overload Avery and reinforce the very retreat he is trying to interrupt.",
+            "depression": "Engaged with hobbies, work, relationship.",
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "Attachment_style = anxious",
+            "escalation_tendency": "Carries guilt that he sometimes resents the protocols, even though he agreed to all of them."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.3
+      },
+      "depression": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 1.833
+      },
+      "trauma": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.333
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 3.5
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.367
       }
     }
   },
   "severity_diff_vector": {
-    "anxiety": -1.6,
-    "depression": 1.17,
-    "trauma": 1.41,
-    "attachment_disorganisation": 0.27,
-    "escalation_tendency": -0.64
+    "anxiety": -0.41,
+    "depression": -1.4,
+    "trauma": -0.17,
+    "attachment_disorganisation": 0.1,
+    "escalation_tendency": -0.87
   },
-  "overall_score_diff": 0.19
+  "overall_score_diff": -0.23
 }

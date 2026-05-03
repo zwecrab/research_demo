@@ -1,0 +1,203 @@
+{
+  "couple_id": "C9",
+  "rated_at": "2026-04-29T00:19:50.579763+00:00",
+  "rater_models": [
+    "anthropic/claude-opus-4",
+    "google/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "patient_A": {
+    "name": "Lena Kowalski",
+    "persona_id": "P17",
+    "consensus_vector": {
+      "anxiety": 4.98,
+      "depression": 3.53,
+      "trauma": 6.58,
+      "attachment_disorganisation": 5.55,
+      "escalation_tendency": 1.07
+    },
+    "overall_score": 5.8,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 4.2,
+          "depression": 2.3,
+          "trauma": 5.8,
+          "attachment_disorganisation": 3.7,
+          "escalation_tendency": 1.2,
+          "overall_score": 4.5,
+          "evidence": {
+            "anxiety": "hidden_tension: 'worries that her capacity to behave forgivingly while not feeling forgiving means she has trained herself out of registering her own hurt'",
+            "depression": "'I am here. I notice I am also somewhere else, and I am not sure when that started.'",
+            "trauma": "core_belief: 'If I express how badly the affair hurt me, I make it harder for us to repair, so I should hold most of it in'",
+            "attachment_disorganisation": "attachment_style: anxious; coping_strategy: 'Performs trust gestures...ahead of where her actual trust has rebuilt'",
+            "escalation_tendency": "bid_style: neutral; 'Names her own contribution to a conflict before she names her partner's'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.25,
+          "depression": 4.5,
+          "trauma": 8.75,
+          "attachment_disorganisation": 8.25,
+          "escalation_tendency": 1.0,
+          "overall_score": 7.9,
+          "evidence": {
+            "anxiety": "Privately worries that her capacity to behave forgivingly... means she has trained herself out of registering her own hurt.",
+            "depression": "She has... withdrawn the part of herself that fully trusted Naomi, while behaving as if she has not.",
+            "trauma": "Core belief: 'If I express how badly the affair hurt me, I make it harder for us to repair...'",
+            "attachment_disorganisation": "'I am here. I notice I am also somewhere else, and I am not sure when that started.'",
+            "escalation_tendency": "Names her own contribution to a conflict before she names her partner's."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 4.5,
+          "depression": 3.8,
+          "trauma": 5.2,
+          "attachment_disorganisation": 4.7,
+          "escalation_tendency": 1.0,
+          "overall_score": 5.0,
+          "evidence": {
+            "anxiety": "Privately worries that her capacity to behave forgivingly while not feeling forgiving means she has trained herself out of registering her own hurt.",
+            "depression": "I have been treating my anger like a setback. I am starting to think it is information I have been refusing to read.",
+            "trauma": "Eighteen months ago Naomi disclosed an emotional and brief physical affair with a coworker.",
+            "attachment_disorganisation": "Lena has done the visible work of staying. She has also, by her own account, withdrawn the part of herself that fully trusted Naomi, while behaving as if she has not.",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.367
+      },
+      "depression": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.467
+      },
+      "trauma": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.367
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 3.033
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.133
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Naomi Kowalski",
+    "persona_id": "P18",
+    "consensus_vector": {
+      "anxiety": 7.57,
+      "depression": 3.88,
+      "trauma": 3.95,
+      "attachment_disorganisation": 4.93,
+      "escalation_tendency": 1.5
+    },
+    "overall_score": 6.63,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 7.25,
+          "depression": 3.75,
+          "trauma": 2.5,
+          "attachment_disorganisation": 2.25,
+          "escalation_tendency": 1.5,
+          "overall_score": 6.5,
+          "evidence": {
+            "anxiety": "core_belief: 'If I stop demonstrating that I have changed, Lena will conclude I have not, and the marriage will fall.'",
+            "depression": "hidden_tension: 'Carries quiet exhaustion she does not feel entitled to'",
+            "trauma": "relationship_history: 'disclosed the affair voluntarily eighteen months ago'",
+            "attachment_disorganisation": "attachment_style: 'anxious'",
+            "escalation_tendency": "bid_style: 'neutral'"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 8.25,
+          "depression": 4.1,
+          "trauma": 4.85,
+          "attachment_disorganisation": 6.75,
+          "escalation_tendency": 0.5,
+          "overall_score": 6.9,
+          "evidence": {
+            "anxiety": "Core belief: 'If I stop demonstrating that I have changed, Lena will conclude I have not, and the marriage will fall.'",
+            "depression": "'I am tired in a way I do not feel allowed to say, and that is part of what I came to therapy to figure out.'",
+            "trauma": "Her coping strategy of 'near-constant level of demonstrative repair' is entirely shaped by the past infidelity.",
+            "attachment_disorganisation": "'When you say you are okay, I look for what I missed instead of believing you.'",
+            "escalation_tendency": "The persona uses self-reflective 'I' statements, such as 'I want to learn how to believe you again,' which is the opposite of escalation."
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 7.2,
+          "depression": 3.8,
+          "trauma": 4.5,
+          "attachment_disorganisation": 5.8,
+          "escalation_tendency": 2.5,
+          "overall_score": 6.5,
+          "evidence": {
+            "anxiety": "Maintains a near-constant level of demonstrative repair.",
+            "depression": "I am tired in a way I do not feel allowed to say.",
+            "trauma": "Naomi disclosed the affair voluntarily eighteen months ago.",
+            "attachment_disorganisation": "attachment_style = anxious",
+            "escalation_tendency": "bid_style = neutral"
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.7
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.233
+      },
+      "trauma": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.567
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 3.0
+      },
+      "escalation_tendency": {
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 1.333
+      }
+    }
+  },
+  "severity_diff_vector": {
+    "anxiety": -2.59,
+    "depression": -0.35,
+    "trauma": 2.63,
+    "attachment_disorganisation": 0.62,
+    "escalation_tendency": -0.43
+  },
+  "overall_score_diff": -0.83
+}

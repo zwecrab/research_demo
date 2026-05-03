@@ -1,38 +1,38 @@
 {
   "couple_id": "C7",
-  "rated_at": "2026-04-28T05:51:39.036070+00:00",
+  "rated_at": "2026-04-29T00:27:39.168823+00:00",
   "rater_models": [
     "anthropic/claude-opus-4",
     "google/gemini-2.5-pro",
     "openai/gpt-4o"
   ],
   "patient_A": {
-    "name": "Cora Novak",
+    "name": "Margaret Lindqvist",
     "persona_id": "P13",
     "consensus_vector": {
-      "anxiety": 6.42,
-      "depression": 3.58,
-      "trauma": 2.82,
-      "attachment_disorganisation": 8.48,
-      "escalation_tendency": 1.82
+      "anxiety": 5.08,
+      "depression": 5.25,
+      "trauma": 4.63,
+      "attachment_disorganisation": 4.6,
+      "escalation_tendency": 0.5
     },
-    "overall_score": 7.03,
+    "overall_score": 5.5,
     "rater_responses": [
       {
         "model": "anthropic/claude-opus-4",
         "scores": {
-          "anxiety": 6.2,
-          "depression": 4.8,
+          "anxiety": 4.2,
+          "depression": 5.8,
           "trauma": 2.3,
-          "attachment_disorganisation": 8.4,
-          "escalation_tendency": 1.2,
-          "overall_score": 6.7,
+          "attachment_disorganisation": 2.8,
+          "escalation_tendency": 0.5,
+          "overall_score": 4.7,
           "evidence": {
-            "anxiety": "core_belief: 'If I let myself need too much, I will disappear into the illness and become only that.'",
-            "depression": "'I do not know who I am when I have to ask you to bring me water. I do not think I like her.'",
-            "trauma": "Two years ago Cora was diagnosed with relapsing-remitting multiple sclerosis",
-            "attachment_disorganisation": "attachment_style = disorganized; 'Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares'",
-            "escalation_tendency": "bid_style = neutral; sample utterances show collaborative approach"
+            "anxiety": "hidden_tension: 'Privately worries that the love she still feels is duty wearing the costume of desire'",
+            "depression": "core_belief: 'If I lose my desire for him alongside his illness, I will have failed both of us' + 'I miss reaching for you without thinking'",
+            "trauma": "relationship_history: 'Henrik was diagnosed with prostate cancer two years ago' shapes current coping",
+            "attachment_disorganisation": "attachment_style: 'anxious' but shows coherent strategy through 'devotional patience'",
+            "escalation_tendency": "bid_style: 'neutral' + speaking_style: 'will not push past a partner's silence'"
           }
         },
         "error": null
@@ -40,18 +40,18 @@
       {
         "model": "google/gemini-2.5-pro",
         "scores": {
-          "anxiety": 8.25,
-          "depression": 2.25,
-          "trauma": 6.15,
-          "attachment_disorganisation": 8.85,
-          "escalation_tendency": 1.75,
-          "overall_score": 7.9,
+          "anxiety": 6.25,
+          "depression": 4.75,
+          "trauma": 7.8,
+          "attachment_disorganisation": 6.5,
+          "escalation_tendency": 0.0,
+          "overall_score": 6.8,
           "evidence": {
-            "anxiety": "Core belief: 'If I let myself need too much, I will disappear into the illness and become only that.'",
-            "depression": "'I do not know who I am when I have to ask you to bring me water. I do not think I like her.'",
-            "trauma": "The diagnosis of relapsing-remitting MS two years ago is a specific event that now shapes her identity, coping, and relationship dynamics.",
-            "attachment_disorganisation": "Coping strategy: 'Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares.'",
-            "escalation_tendency": "Sample utterance: 'Can we stay on this for another minute? I do not want to move past it yet.'"
+            "anxiety": "Core belief: 'If I lose my desire for him alongside his illness, I will have failed both of us.'",
+            "depression": "Margaret cried during a hymn at work and could not explain why.",
+            "trauma": "The unmet need is for both of them to grieve what changed without it implying either failed the other.",
+            "attachment_disorganisation": "'I miss reaching for you without thinking first about whether it will hurt you.'",
+            "escalation_tendency": "no textual evidence"
           }
         },
         "error": null
@@ -60,109 +60,16 @@
         "model": "openai/gpt-4o",
         "scores": {
           "anxiety": 4.8,
-          "depression": 3.7,
-          "trauma": 0.0,
-          "attachment_disorganisation": 8.2,
-          "escalation_tendency": 2.5,
-          "overall_score": 6.5,
+          "depression": 5.2,
+          "trauma": 3.8,
+          "attachment_disorganisation": 4.5,
+          "escalation_tendency": 1.0,
+          "overall_score": 5.0,
           "evidence": {
-            "anxiety": "Quietly fears she is already a different person than the woman Mateusz married, and worries that what he is staying for is obligation.",
-            "depression": "Worries that what he is staying for is obligation rather than the person she is becoming.",
-            "trauma": "no textual evidence",
-            "attachment_disorganisation": "Alternates between fierce independence during stable periods and sudden near-total reliance during symptom flares.",
-            "escalation_tendency": "Their communication patterns have not yet caught up with the illness."
-          }
-        },
-        "error": null
-      }
-    ],
-    "inter_rater_agreement": {
-      "anxiety": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 2.3
-      },
-      "depression": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 1.7
-      },
-      "trauma": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 4.1
-      },
-      "attachment_disorganisation": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.433
-      },
-      "escalation_tendency": {
-        "within_one_rate": 0.667,
-        "mean_abs_diff": 0.867
-      }
-    }
-  },
-  "patient_B": {
-    "name": "Mateusz Novak",
-    "persona_id": "P14",
-    "consensus_vector": {
-      "anxiety": 5.62,
-      "depression": 4.35,
-      "trauma": 4.87,
-      "attachment_disorganisation": 4.12,
-      "escalation_tendency": 2.15
-    },
-    "overall_score": 5.27,
-    "rater_responses": [
-      {
-        "model": "anthropic/claude-opus-4",
-        "scores": {
-          "anxiety": 4.2,
-          "depression": 3.8,
-          "trauma": 4.5,
-          "attachment_disorganisation": 2.3,
-          "escalation_tendency": 1.8,
-          "overall_score": 4.1,
-          "evidence": {
-            "anxiety": "core_belief: 'If I am not visibly steady, Cora will feel she has become a burden' - hypervigilance about appearing steady",
-            "depression": "'I think about the trips we said we would take. I do not let myself think about it for long.' - loss of future meaning",
-            "trauma": "relationship_history: father's chronic illness during teenage years shaped default role as 'steady son' - past event shapes current coping",
-            "attachment_disorganisation": "attachment_style: anxious, but shows coherent caregiving strategy despite overcorrection",
-            "escalation_tendency": "bid_style: neutral, withdraws to garage but no criticism/contempt markers"
-          }
-        },
-        "error": null
-      },
-      {
-        "model": "google/gemini-2.5-pro",
-        "scores": {
-          "anxiety": 6.85,
-          "depression": 4.75,
-          "trauma": 4.9,
-          "attachment_disorganisation": 5.25,
-          "escalation_tendency": 2.15,
-          "overall_score": 6.2,
-          "evidence": {
-            "anxiety": "Core belief: 'If I am not visibly steady, Cora will feel she has become a burden, and that will hurt her more than the illness itself.'",
-            "depression": "Hidden tension: 'Privately grieves the future they had planned together and treats that grief as a betrayal he is not allowed to feel...'",
-            "trauma": "Relationship history: '...confident that he had processed that experience [father's illness]; Cora's diagnosis has shown him he did not.'",
-            "attachment_disorganisation": "Coping strategy: 'Overcorrects into caregiver and project-manager mode, then retreats into solo activities when the accumulated self-suppression becomes unbearable.'",
-            "escalation_tendency": "Hidden tension example: 'After Cora refuses help: 'Alright. I will be in the garage if you need anything.'' (mild stonewalling/withdrawal)"
-          }
-        },
-        "error": null
-      },
-      {
-        "model": "openai/gpt-4o",
-        "scores": {
-          "anxiety": 5.8,
-          "depression": 4.5,
-          "trauma": 5.2,
-          "attachment_disorganisation": 4.8,
-          "escalation_tendency": 2.5,
-          "overall_score": 5.5,
-          "evidence": {
-            "anxiety": "Overcorrects into caregiver and project-manager mode, then retreats into solo activities when the accumulated self-suppression becomes unbearable.",
-            "depression": "Privately grieves the future they had planned together and treats that grief as a betrayal he is not allowed to feel, let alone express.",
-            "trauma": "Mateusz's father had a long chronic illness during his teenage years, and he absorbed the role of the steady son almost by default.",
-            "attachment_disorganisation": "His instinct is to turn the relationship into a well-managed project, and he understands in principle that this is not what Cora needs, but has not yet figured out how to offer care in a register that does not tip into management.",
+            "anxiety": "Privately worries that the love she still feels is duty wearing the costume of desire.",
+            "depression": "The unmet need is for both of them to grieve what changed without it implying either failed the other.",
+            "trauma": "Margaret cried during a hymn at work and could not explain why.",
+            "attachment_disorganisation": "Attachment style: anxious.",
             "escalation_tendency": "bid_style = neutral"
           }
         },
@@ -171,33 +78,126 @@
     ],
     "inter_rater_agreement": {
       "anxiety": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 1.767
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.367
       },
       "depression": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.633
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.7
       },
       "trauma": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.467
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 3.667
       },
       "attachment_disorganisation": {
-        "within_one_rate": 0.333,
-        "mean_abs_diff": 1.967
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.467
       },
       "escalation_tendency": {
         "within_one_rate": 1.0,
-        "mean_abs_diff": 0.467
+        "mean_abs_diff": 0.667
+      }
+    }
+  },
+  "patient_B": {
+    "name": "Henrik Lindqvist",
+    "persona_id": "P14",
+    "consensus_vector": {
+      "anxiety": 4.27,
+      "depression": 4.52,
+      "trauma": 5.72,
+      "attachment_disorganisation": 3.98,
+      "escalation_tendency": 0.77
+    },
+    "overall_score": 5.15,
+    "rater_responses": [
+      {
+        "model": "anthropic/claude-opus-4",
+        "scores": {
+          "anxiety": 2.8,
+          "depression": 4.2,
+          "trauma": 3.7,
+          "attachment_disorganisation": 2.3,
+          "escalation_tendency": 0.8,
+          "overall_score": 3.5,
+          "evidence": {
+            "anxiety": "hidden_tension: 'afraid that relief is a kind of betrayal' - shows worry about his emotional responses",
+            "depression": "'I do not know how to also mourn what survival cost' - indicates unprocessed grief and loss of meaning in sexual/intimate domain",
+            "trauma": "cancer treatment left 'permanent effects' and 'the sexual life that ended with treatment' - medical trauma shapes current avoidance",
+            "attachment_disorganisation": "attachment_style: 'avoidant' with coping strategy that 'blocks Margaret from meeting him where the loss actually lives'",
+            "escalation_tendency": "bid_style: 'neutral' and 'Tends to reassure before he is asked to' - no Horsemen markers present"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "google/gemini-2.5-pro",
+        "scores": {
+          "anxiety": 6.25,
+          "depression": 4.85,
+          "trauma": 8.2,
+          "attachment_disorganisation": 5.65,
+          "escalation_tendency": 0.5,
+          "overall_score": 7.45,
+          "evidence": {
+            "anxiety": "Core belief: 'If I let her see how much the illness took from me, I will become a burden in the marriage and not a partner.'",
+            "depression": "He has not let himself fully grieve the sexual life that ended with treatment.",
+            "trauma": "I do not know how to also mourn what survival cost.",
+            "attachment_disorganisation": "When you stop asking, I feel relief, and then later I feel something I do not have a word for yet.",
+            "escalation_tendency": "no textual evidence"
+          }
+        },
+        "error": null
+      },
+      {
+        "model": "openai/gpt-4o",
+        "scores": {
+          "anxiety": 3.75,
+          "depression": 4.5,
+          "trauma": 5.25,
+          "attachment_disorganisation": 4.0,
+          "escalation_tendency": 1.0,
+          "overall_score": 4.5,
+          "evidence": {
+            "anxiety": "Carries quiet shame that he is relieved when Margaret does not initiate.",
+            "depression": "I survived the diagnosis. I do not know how to also mourn what survival cost.",
+            "trauma": "Henrik came through cancer treatment with what he calls a manageable list of permanent effects.",
+            "attachment_disorganisation": "Attachment_style = avoidant.",
+            "escalation_tendency": "Bid_style = neutral."
+          }
+        },
+        "error": null
+      }
+    ],
+    "inter_rater_agreement": {
+      "anxiety": {
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.3
+      },
+      "depression": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.433
+      },
+      "trauma": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 3.0
+      },
+      "attachment_disorganisation": {
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.233
+      },
+      "escalation_tendency": {
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.333
       }
     }
   },
   "severity_diff_vector": {
-    "anxiety": 0.8,
-    "depression": -0.77,
-    "trauma": -2.05,
-    "attachment_disorganisation": 4.36,
-    "escalation_tendency": -0.33
+    "anxiety": 0.81,
+    "depression": 0.73,
+    "trauma": -1.09,
+    "attachment_disorganisation": 0.62,
+    "escalation_tendency": -0.27
   },
-  "overall_score_diff": 1.76
+  "overall_score_diff": 0.35
 }

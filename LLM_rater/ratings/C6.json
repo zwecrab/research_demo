@@ -1,38 +1,38 @@
 {
   "couple_id": "C6",
-  "rated_at": "2026-04-28T05:50:07.335777+00:00",
+  "rated_at": "2026-04-29T00:26:05.234489+00:00",
   "rater_models": [
     "anthropic/claude-opus-4",
     "google/gemini-2.5-pro",
     "openai/gpt-4o"
   ],
   "patient_A": {
-    "name": "Priya Menon",
+    "name": "Maya Brennan",
     "persona_id": "P11",
     "consensus_vector": {
-      "anxiety": 5.68,
-      "depression": 4.38,
-      "trauma": 4.87,
-      "attachment_disorganisation": 1.08,
-      "escalation_tendency": 1.13
+      "anxiety": 6.97,
+      "depression": 1.22,
+      "trauma": 0.25,
+      "attachment_disorganisation": 4.53,
+      "escalation_tendency": 4.0
     },
-    "overall_score": 5.28,
+    "overall_score": 6.03,
     "rater_responses": [
       {
         "model": "anthropic/claude-opus-4",
         "scores": {
-          "anxiety": 4.2,
-          "depression": 3.8,
-          "trauma": 2.3,
-          "attachment_disorganisation": 0.5,
-          "escalation_tendency": 0.8,
-          "overall_score": 3.6,
+          "anxiety": 6.25,
+          "depression": 2.15,
+          "trauma": 0.0,
+          "attachment_disorganisation": 2.85,
+          "escalation_tendency": 3.75,
+          "overall_score": 5.4,
           "evidence": {
-            "anxiety": "core_belief: 'If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.'",
-            "depression": "'I sometimes wonder if the years I spent getting here were the years we did not have to spare.'",
-            "trauma": "Two miscarriages and one unsuccessful IVF cycle",
-            "attachment_disorganisation": "attachment_style = secure",
-            "escalation_tendency": "bid_style = neutral"
+            "anxiety": "core_belief: 'If I do not stay on top of every financial detail, our life will fall apart and no one will catch us.'",
+            "depression": "Low extraversion and 'reluctant to ask for slack' suggest mild withdrawal but still engaged with hobbies like bouldering",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Avoidant attachment style with 'Asking for help means I admit I cannot handle what I committed to'",
+            "escalation_tendency": "hidden_tension contains 'you always/you never' frame: 'When I bring up money you go quiet'"
           }
         },
         "error": null
@@ -40,18 +40,18 @@
       {
         "model": "google/gemini-2.5-pro",
         "scores": {
-          "anxiety": 7.65,
-          "depression": 4.55,
-          "trauma": 6.8,
-          "attachment_disorganisation": 1.75,
-          "escalation_tendency": 1.6,
-          "overall_score": 6.95,
+          "anxiety": 7.85,
+          "depression": 0.5,
+          "trauma": 0.75,
+          "attachment_disorganisation": 6.25,
+          "escalation_tendency": 4.75,
+          "overall_score": 7.2,
           "evidence": {
-            "anxiety": "core_belief: 'If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.'",
-            "depression": "therapy_topics: 'Grief and intimacy during an infertility journey'",
-            "trauma": "coping_strategy: 'Converts personal distress into research, planning, and protocol, and mistakes that activity for processing.'",
-            "attachment_disorganisation": "attachment_style: 'secure'",
-            "escalation_tendency": "hidden_tension_examples: 'When Arjun reaches for her: 'I am fine. I just need to think for a minute.''"
+            "anxiety": "core_belief: 'If I do not stay on top of every financial detail, our life will fall apart and no one will catch us.'",
+            "depression": "no textual evidence",
+            "trauma": "no textual evidence",
+            "attachment_disorganisation": "Her avoidant style conflicts with her stated need: 'Sharing the worry is part of sharing the life.'",
+            "escalation_tendency": "'I am not asking you to like the spreadsheet. I am asking you to read it before I have to defend it.'"
           }
         },
         "error": null
@@ -59,18 +59,18 @@
       {
         "model": "openai/gpt-4o",
         "scores": {
-          "anxiety": 5.2,
-          "depression": 4.8,
-          "trauma": 5.5,
-          "attachment_disorganisation": 1.0,
-          "escalation_tendency": 1.0,
-          "overall_score": 5.3,
+          "anxiety": 6.8,
+          "depression": 1.0,
+          "trauma": 0.0,
+          "attachment_disorganisation": 4.5,
+          "escalation_tendency": 3.5,
+          "overall_score": 5.5,
           "evidence": {
-            "anxiety": "Core belief: 'If I stay composed and informed, I can protect myself and the people I love from unbearable outcomes.'",
-            "depression": "Hidden tension: 'Quietly suspects that her deliberate career timeline contributed to the current difficulty and carries that suspicion as private guilt.'",
-            "trauma": "Therapy topics: 'Grief and intimacy during an infertility journey.'",
-            "attachment_disorganisation": "Attachment style: 'secure.'",
-            "escalation_tendency": "Bid style: 'neutral.'"
+            "anxiety": "Core belief: 'If I do not stay on top of every financial detail, our life will fall apart.'",
+            "depression": "Engaged with hobbies, work, relationship.",
+            "trauma": "No textual evidence",
+            "attachment_disorganisation": "Attachment style: avoidant",
+            "escalation_tendency": "Hidden tension contains 'you always / you never' frame."
           }
         },
         "error": null
@@ -79,53 +79,53 @@
     "inter_rater_agreement": {
       "anxiety": {
         "within_one_rate": 0.333,
-        "mean_abs_diff": 2.3
+        "mean_abs_diff": 1.067
       },
       "depression": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.667
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 1.1
       },
       "trauma": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 3.0
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.5
       },
       "attachment_disorganisation": {
-        "within_one_rate": 0.667,
-        "mean_abs_diff": 0.833
+        "within_one_rate": 0.0,
+        "mean_abs_diff": 2.267
       },
       "escalation_tendency": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.533
+        "within_one_rate": 0.667,
+        "mean_abs_diff": 0.833
       }
     }
   },
   "patient_B": {
-    "name": "Arjun Menon",
+    "name": "Devon Pierce",
     "persona_id": "P12",
     "consensus_vector": {
-      "anxiety": 4.03,
-      "depression": 4.5,
-      "trauma": 2.68,
-      "attachment_disorganisation": 1.03,
-      "escalation_tendency": 0.5
+      "anxiety": 3.2,
+      "depression": 0.43,
+      "trauma": 1.42,
+      "attachment_disorganisation": 0.25,
+      "escalation_tendency": 2.42
     },
-    "overall_score": 4.07,
+    "overall_score": 2.7,
     "rater_responses": [
       {
         "model": "anthropic/claude-opus-4",
         "scores": {
-          "anxiety": 2.8,
-          "depression": 3.2,
+          "anxiety": 2.2,
+          "depression": 0.8,
           "trauma": 0.0,
           "attachment_disorganisation": 0.0,
-          "escalation_tendency": 0.0,
-          "overall_score": 2.4,
+          "escalation_tendency": 1.7,
+          "overall_score": 1.5,
           "evidence": {
-            "anxiety": "hidden_tension: 'Has begun to suspect that his steady presence reads to Priya as detachment'",
-            "depression": "cognitive_model: 'interprets his unexamined feelings as absent feelings'",
+            "anxiety": "hidden_tension: 'Carries quiet shame that he cannot match Maya's planning bandwidth without it draining his earning energy'",
+            "depression": "Engaged with hobbies (basketball, keyboards, podcasts) and actively working multiple jobs",
             "trauma": "no textual evidence",
             "attachment_disorganisation": "attachment_style = secure",
-            "escalation_tendency": "bid_style = neutral, speaks in relaxed register, listens closely"
+            "escalation_tendency": "bid_style = neutral, speaking_style shows 'will agree with a frame quickly if the conversation feels heavy, then re-open it later'"
           }
         },
         "error": null
@@ -133,18 +133,18 @@
       {
         "model": "google/gemini-2.5-pro",
         "scores": {
-          "anxiety": 4.8,
-          "depression": 4.5,
+          "anxiety": 3.65,
+          "depression": 0.5,
           "trauma": 4.25,
-          "attachment_disorganisation": 2.1,
-          "escalation_tendency": 0.5,
-          "overall_score": 4.6,
+          "attachment_disorganisation": 0.75,
+          "escalation_tendency": 4.55,
+          "overall_score": 4.1,
           "evidence": {
-            "anxiety": "Has begun to suspect that his steady presence reads to Priya as detachment, and that his attempt to help is producing the opposite of what he intends.",
-            "depression": "The unmet need is for his grief to be recognized as parallel, not secondary, and for his steady presence to not be mistaken for the absence of feeling.",
-            "trauma": "The fertility journey has destabilized the template because Priya is the one most obviously affected and he has defaulted to the supporting role, which leaves his own grief invisible even to himself.",
-            "attachment_disorganisation": "attachment_style is 'secure', but the 'fertility journey has destabilized the template'.",
-            "escalation_tendency": "Listens closely and often reflects his partner's statements back before offering his own view."
+            "anxiety": "Carries quiet shame... and worries that if he tries to do both he will be worse at both.",
+            "depression": "Engaged with hobbies ['Pickup basketball', 'Building keyboards', 'Documentary podcasts'] and work.",
+            "trauma": "allergic to long-term financial commitments after watching his older sister default on student loans.",
+            "attachment_disorganisation": "attachment_style: \"secure\"",
+            "escalation_tendency": "Coping strategy is to defer planning conversations and then forget to circle back."
           }
         },
         "error": null
@@ -152,16 +152,16 @@
       {
         "model": "openai/gpt-4o",
         "scores": {
-          "anxiety": 4.5,
-          "depression": 5.8,
-          "trauma": 3.8,
-          "attachment_disorganisation": 1.0,
+          "anxiety": 3.75,
+          "depression": 0.0,
+          "trauma": 0.0,
+          "attachment_disorganisation": 0.0,
           "escalation_tendency": 1.0,
-          "overall_score": 5.2,
+          "overall_score": 2.5,
           "evidence": {
-            "anxiety": "Has begun to suspect that his steady presence reads to Priya as detachment.",
-            "depression": "The unmet need is for his grief to be recognized as parallel, not secondary.",
-            "trauma": "The fertility journey has destabilized the template because Priya is the one most obviously affected.",
+            "anxiety": "Carries quiet shame that he cannot match Maya's planning bandwidth without it draining his earning energy.",
+            "depression": "no textual evidence",
+            "trauma": "no textual evidence",
             "attachment_disorganisation": "attachment_style = secure",
             "escalation_tendency": "bid_style = neutral"
           }
@@ -172,32 +172,32 @@
     "inter_rater_agreement": {
       "anxiety": {
         "within_one_rate": 0.333,
-        "mean_abs_diff": 1.333
+        "mean_abs_diff": 1.033
       },
       "depression": {
-        "within_one_rate": 0.0,
-        "mean_abs_diff": 1.733
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.533
       },
       "trauma": {
         "within_one_rate": 0.333,
         "mean_abs_diff": 2.833
       },
       "attachment_disorganisation": {
-        "within_one_rate": 0.333,
-        "mean_abs_diff": 1.4
+        "within_one_rate": 1.0,
+        "mean_abs_diff": 0.5
       },
       "escalation_tendency": {
-        "within_one_rate": 1.0,
-        "mean_abs_diff": 0.667
+        "within_one_rate": 0.333,
+        "mean_abs_diff": 2.367
       }
     }
   },
   "severity_diff_vector": {
-    "anxiety": 1.65,
-    "depression": -0.12,
-    "trauma": 2.19,
-    "attachment_disorganisation": 0.05,
-    "escalation_tendency": 0.63
+    "anxiety": 3.77,
+    "depression": 0.79,
+    "trauma": -1.17,
+    "attachment_disorganisation": 4.28,
+    "escalation_tendency": 1.58
   },
-  "overall_score_diff": 1.21
+  "overall_score_diff": 3.33
 }
