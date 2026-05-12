@@ -6,7 +6,7 @@
 
 ---
 
-## Sample Size and Power Analysis (`experiment/sample_size_calculation.md`)
+## Sample Size and Power Analysis
 
 - [LOCKED] Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.). Lawrence Erlbaum. — Power formulas for paired t and RM-ANOVA.
 - [LOCKED] Faul, F., Erdfelder, E., Lang, A.-G., & Buchner, A. (2007). G*Power 3. *Behavior Research Methods*, 39(2), 175-191. — Implementation reference for analytical power.
@@ -15,7 +15,7 @@
 - [LOCKED] Westfall, J., Kenny, D. A., & Judd, C. M. (2014). Statistical power and optimal design in experiments in which samples of participants respond to samples of stimuli. *JEP: General*, 143(5), 2020-2045. — Crossed within-subjects design power.
 - [LOCKED] Benjamini, Y., & Hochberg, Y. (1995). Controlling the false discovery rate. *J. Royal Statistical Society B*, 57(1), 289-300. — FDR alternative to Bonferroni.
 
-## FSA Signal Suppression and Primary Solutions (`experiment/fsa_signal_suppression_diagnosis.md`)
+## Position-Bias Signal Methodology (LLM-judge robustness, airtime control, addressing-asymmetry)
 
 ### Scorer redesign (S1)
 - [LOCKED] Zheng et al. (2023). *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*. NeurIPS. — Pairwise preference and position-swap de-biasing (Section 4.2). Strongest cite for S1.

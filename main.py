@@ -20,7 +20,6 @@ from conversation_engine import (
     generate_agent_turn, sequential_speaker_selection,
     decide_next_speaker, extract_therapist_addressee, _speaker_in
 )
-from emotion_tracker import EmotionTracker
 from panas_analyzer import (
     get_after_panas_scores, parse_panas_output, compute_panas_delta,
     summarize_panas_changes
@@ -53,7 +52,6 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
 
     current_turn_number = 1
     current_speaker = "Therapist"
-    emotion_tracker = EmotionTracker()
 
     therapist_last_addressed = None
     therapist_last_dialogue = None
@@ -113,7 +111,12 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
         
         if current_speaker == "Therapist":
             print("🤔 Therapist is thinking...")
-            therapist_prompt = prompts['therapist_individual_focus'] if therapist_mode == 'individual_focus' else prompts['therapist']
+            if therapist_mode == 'individual_focus':
+                therapist_prompt = prompts['therapist_individual_focus']
+            elif therapist_mode == 'open':
+                therapist_prompt = prompts['therapist_open']
+            else:
+                therapist_prompt = prompts['therapist']
             dialogue = generate_agent_turn(
                 therapist_prompt,
                 participants['therapist'],

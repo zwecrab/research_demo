@@ -4,7 +4,7 @@ from config import (
     THERAPY_PLANS_FILE, PERSONAS_FILE, PERSONAS_V2_FILE, BID_STYLES_FILE,
     PERSONAS_PANAS_FILE, PERSONAS_V2_PANAS_FILE,
     THERAPIST_PROMPT_FILE, THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE,
-    PATIENT_PROMPT_FILE,
+    THERAPIST_OPEN_PROMPT_FILE, PATIENT_PROMPT_FILE,
     THERAPIST_INTERVENTION_PROMPT_FILE
 )
 
@@ -148,12 +148,14 @@ def load_prompts():
     """
     therapist_prompt = load_txt(THERAPIST_PROMPT_FILE)
     therapist_individual_focus_prompt = load_txt(THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE)
+    therapist_open_prompt = load_txt(THERAPIST_OPEN_PROMPT_FILE)
     patient_prompt = load_txt(PATIENT_PROMPT_FILE)
     therapist_intervention_decision = load_txt(THERAPIST_INTERVENTION_PROMPT_FILE)
 
     return {
         "therapist": therapist_prompt,
         "therapist_individual_focus": therapist_individual_focus_prompt,
+        "therapist_open": therapist_open_prompt,
         "patient": patient_prompt,
         "therapist_intervention": therapist_intervention_decision
     }

@@ -37,6 +37,7 @@ PERSONAS_V2_PANAS_FILE = PROMPTS_DIR / "personas_v2_PANAS.json"
 
 THERAPIST_PROMPT_FILE = PROMPTS_DIR / "therapist_prompt.txt"
 THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE = PROMPTS_DIR / "therapist_option2_prompt.txt"
+THERAPIST_OPEN_PROMPT_FILE = PROMPTS_DIR / "therapist_prompt_open.txt"
 PATIENT_PROMPT_FILE = PROMPTS_DIR / "patient_prompt.txt"
 THERAPIST_INTERVENTION_PROMPT_FILE = PROMPTS_DIR / "therapist_intervention_decision.txt"
 
