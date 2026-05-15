@@ -111,10 +111,15 @@ experiment/                   Pilot batches and analysis pipeline (V2)
 
 ### Experimental Design (Locked Final, advisor-aligned 2026-04-29)
 
-**312 sessions total** (symmetric across models, per advisor):
+**504 sessions total** across two runs:
+
+**Primary run (RQ1):** 312 sessions (symmetric across models, per advisor):
 - 13 couples (C1–C9 + C10–C13 to draft) × 4 communication-intensity cells (HH, HL, LH, LL) × 2 positions (alpha, beta) × 3 therapist models (GPT-4o, Llama 3.1 70B, Llama 3.1 8B) × 1 structure (LLM-Based Selection) × 1 mode (Standard) = 312.
 
-Cost ~$50, ~21 hrs wall-clock.
+**Prompt comparison run (RQ2):** 192 sessions:
+- 4 CBT-prompt variants (P1 Clinical-Judgment, P2 CBT-Structured, P3 CBT-Warm, P4 CBT-Balanced) × 8 representative pairs × 2 positions × 3 models = 192.
+
+Combined cost ~$70, ~34 hrs wall-clock.
 
 **Bid-style is decoupled from persona.** Personas in `prompts/personas_v2.json` are bid-style-neutral; bid-style overlays are injected at runtime via `prompts/bid_styles.json`. Communication intensity is the 2x2 axis: High = aggressive or assertive; Low = neutral or passive.
 

@@ -73,6 +73,27 @@
 ### Position-bias-after-content-control
 - [LOCKED] Wang et al. (2023). *Large Language Models are not Fair Evaluators*. arXiv:2305.17926. — Position bias persists after swapping content quality. Strongest cite for the Position × severity_diff interaction defence.
 
+## Therapist Prompt Variants — RQ2 Clinical Grounding
+
+### P1 — Clinical-Judgment (`therapist_prompt.txt`)
+- [VERIFY] Garfield, S. L. (2004). The therapeutic relationship in couples therapy. *Journal of Clinical Psychology*, 56(2), 211–224. — Therapists naturally triage attention toward the more distressed partner in early sessions; grounds the "clinical judgement indicates" addressing rule.
+- [LOCKED] Epstein, N. B., & Baucom, D. H. (2002). *Enhanced Cognitive-Behavioral Therapy for Couples: A Contextual Approach*. American Psychological Association. — Meta-framework for all CBT-informed prompts; provides the CBT case formulation structure visible in the session-context injection.
+
+### P2 — CBT-Structured (`therapist_prompt_structured.txt`)
+- [VERIFY] Epstein, N. B., & Baucom, D. H. (2002). *Enhanced Cognitive-Behavioral Therapy for Couples: A Contextual Approach*. American Psychological Association. — CBCT core manual; defines symmetric cognitive probing, Socratic stance, and technical CBT vocabulary as therapist adherence markers. Primary grounding for P2 addressing rule.
+- [VERIFY] Dattilio, F. M. (2010). *Cognitive-Behavioral Therapy with Couples and Families: A Comprehensive Guide for Clinicians*. Guilford Press. — Operationalizes CBT technical vocabulary (automatic thoughts, schemas, cognitive distortions) in couple sessions; informs P2 language instruction.
+- [VERIFY] Fischer, M. S., Baucom, D. H., & Cohen, M. J. (2016). Cognitive-behavioral couple therapies: Review of the evidence for the treatment of relationship distress, psychopathology, and chronic health conditions. *Family Process*, 55(3), 423–442. — Notes symmetric cognitive probing as a key CBCT adherence indicator; supports the equal-attention framing of P2.
+
+### P3 — CBT-Warm (`therapist_prompt_open.txt`)
+- [VERIFY] Christensen, A., Doss, B. D., & Jacobson, N. S. (2020). *Reconcilable Differences: Rebuild Your Relationship by Understanding and Accepting Your Differences* (3rd ed.). Guilford Press. — IBCT core text; defines empathic joining (reflecting core emotion before reframing) and unified detachment; grounds P3 emotion-first and plain-language rule.
+- [VERIFY] Johnson, S. M., & Greenberg, L. S. (1985). Emotionally focused couples therapy: An outcome study. *Journal of Marital and Family Therapy*, 11(3), 313–317. — EFT landmark paper; establishes validation-before-restructuring as the core therapeutic sequence; grounds P3 "empathic joining comes first" instruction.
+- [LOCKED] Gottman, J. (1999). *The Marriage Clinic: A Scientifically Based Marital Therapy*. Norton. — "Turning toward" bids as a key alliance mechanism; grounds P3 responsiveness to emotional activation rather than turn-order.
+
+### P4 — CBT-Balanced (`therapist_prompt_balanced.txt`)
+- [VERIFY] Gottman, J. M., & Gottman, J. S. (2015). *10 Principles for Doing Effective Couples Therapy*. Norton. — Speaker-listener technique and structured alternation as a core therapeutic tool; primary grounding for P4 strict-rotation and summary-before-turning rules.
+- [VERIFY] Friedlander, M. L., Escudero, V., Heatherington, L., & Diamond, G. M. (2011). Alliance in couple and family therapy. *Psychotherapy*, 48(1), 25–33. — Introduces split-alliance: therapists failing to balance attention with both partners predict dropout; motivates P4 strict equal-attention mandate.
+- [VERIFY] Rait, D. (2000). The therapeutic alliance in couples and family therapy. *Journal of Clinical Psychology*, 56(2), 211–224. — Documents unbalanced attention as a common and consequential therapist error in couple work; grounds P4 neutral-procedural-tone instruction.
+
 ## Pre-existing Project References (memory-tracked)
 
 - See `experiment/persona_design_references.md` for the 9 ACL/EMNLP papers grounding bid-style-neutral persona design (separate file, not duplicated here).

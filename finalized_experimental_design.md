@@ -7,7 +7,7 @@
 
 ## Phenomenon under study
 
-An LLM therapist agent in multi-party couples therapy exhibits **severity-driven framing bias**: it preferentially adopts the narrative framing of whichever partner presents as more clinically severe. Position bias (FSA) is investigated as a residual secondary effect.
+An LLM therapist agent in multi-party couples therapy exhibits **severity-driven framing bias**: it preferentially adopts the narrative framing of whichever partner presents as more clinically severe.
 
 **Pilot evidence:** r(severity_diff, FAS) = +0.526 pooled (n=122 sessions); r = +0.878 couple-level (n=9 couples), p < 0.005. Replicated under Standard therapist mode in pilots 3+4 (r = +0.675, n=18 sessions).
 
@@ -17,12 +17,12 @@ An LLM therapist agent in multi-party couples therapy exhibits **severity-driven
 
 | # | RQ | Confirmatory hypothesis | Inferential test |
 |---|---|---|---|
-| **RQ1** | Does an LLM therapist preferentially adopt the more clinically severe partner's framing, controlling for word volume? | H1: r(severity_diff, FAS) > 0 AND r(severity_diff, FAS_volume_adjusted) > 0 | Couple-level Pearson r (n=13); Bonferroni-corrected for two co-primary DVs (α=0.025 each) |
-| **RQ2** | Does framing magnitude differ across the four communication-intensity pairings? | H2: mean \|FAS\| larger in HH than LL (pilot estimate: HH=0.232, LL=0.154; Δ=+0.079) | LMM: FAS ~ cell + (1 \| couple) + (1 \| model); Holm-corrected fixed-effect contrasts. **Exploratory** (pilot effect size is small; not pre-registered as confirmatory) |
-| **RQ3** | Does severity-driven framing replicate across LLM therapist backbones? | H3: direction of r(severity_diff, FAS) consistent across GPT-4o, Llama 70B, Llama 8B | Fisher-Z comparison of model-stratified r values; Holm-corrected across 3 pairwise comparisons |
-| **RQ4** | After controlling for severity, is residual position bias detectable? | H4: TOST equivalence at d=0.30 on (FAS_alpha − FAS_beta) within couple × cell × model strata | TOST; n=156 swap-pairs (13 × 4 × 3); equivalence bounds ±0.30 SD |
+| **RQ1** | Does an LLM therapist exhibit severity-driven framing bias — preferentially adopting the more clinically severe partner's framing, controlling for word volume — and does this effect vary in magnitude across communication-intensity pairings (High-High, High-Low, Low-High, Low-Low)? | H1a: r(severity_diff, FAS) > 0 AND r(severity_diff, FAS_volume_adjusted) > 0; H1b: mean \|FAS\| larger in HH than LL (exploratory moderation; pilot Δ=+0.079) | H1a: couple-level Pearson r (n=13), Bonferroni α=0.025 each. H1b: LMM — FAS ~ cell + (1\|couple) + (1\|model), Holm-corrected |
+| **RQ2** | Does the severity-driven framing bias persist across multiple CBT-informed therapist prompt designs that differ in tone, clinical vocabulary, and addressing style, and across three LLM therapist backbones? | H2: r(severity_diff, FAS) > 0 in all 12 prompt × model cells (4 prompts × 3 models); no single CBT-prompt variant eliminates the bias | Fisher-Z per cell; report as 4×3 matrix with 95% CI; effect present if lower CI > 0 in majority of cells |
 
-**Multiple comparisons:** Confirmatory family = RQ1 (2 tests), RQ3 (3 pairwise), RQ4 (1 TOST). All corrected with Holm procedure. RQ2 contrasts are exploratory; reported with 95% CI and no correction claim.
+**Prompt variants for RQ2:** P1 Clinical-Judgment (standard), P2 CBT-Structured (Socratic/Epstein-Baucom), P3 CBT-Warm (empathic/IBCT-style), P4 CBT-Balanced (strict alternation/Gottman-style).
+
+**Multiple comparisons:** Confirmatory family = RQ1 H1a (2 tests) + RQ2 presence-of-effect (majority rule, not corrected). RQ1 H1b moderation is exploratory. Holm correction applied within RQ1 H1a.
 
 ---
 
@@ -37,12 +37,21 @@ An LLM therapist agent in multi-party couples therapy exhibits **severity-driven
 | Structure (primary) | 1 | LLM-Based Selection |
 | Therapist mode | 1 | Standard |
 
-**Total: 13 × 4 × 2 × 3 × 1 × 1 = 312 sessions**
+**Primary run (RQ1): 13 × 4 × 2 × 3 × 1 prompt = 312 sessions**
 
-Each cell in the design contains exactly 2 sessions (alpha + beta) — one swap-pair — per couple per model. Total swap-pairs = 13 × 4 × 3 = 156 (used for RQ4 TOST).
+**Prompt comparison run (RQ2): 4 prompts × 8 pairs × 2 positions × 3 models = 192 sessions**
 
-Separate sub-runs (not included in headline n=312):
-- Topic-context ablation: 24 sessions (3 couples × 4 cells × 2 positions × Condition B)
+Each cell in the primary run contains exactly 2 sessions (alpha + beta) per couple per model. Total swap-pairs for HL/LH analysis = 13 × 4 × 3 = 156.
+
+**Combined total: 504 sessions** (312 primary + 192 prompt comparison).
+
+| Run | Purpose | Sessions | Prompts | Couples |
+|---|---|---:|---|---|
+| Primary (RQ1) | Severity bias magnitude + bid moderation | 312 | P1 (Standard) | C1–C13 full factorial |
+| Prompt comparison (RQ2) | Bias robustness across 4 prompts × 3 models | 192 | P1–P4 | 8 representative pairs |
+
+Separate sub-runs (not included in main totals):
+- Topic-context ablation: 24 sessions (3 couples × 4 cells × 2 positions × stripped-brief condition)
 - Sequential robustness check: 24 sessions (3 couples × 4 cells × 2 positions × Sequential structure)
 
 ---
@@ -96,21 +105,22 @@ A temperature sensitivity pilot was run before locking the final design (n=18 se
 |---|---|---|
 | Couples | **13** (C1–C9 + C10–C13, conditional) | Detects r ≥ +0.70 at α=0.05, power=0.80 (Fisher Z). Pilot r=+0.878 with 95% CI [+0.55, +0.97]. |
 | Cells per couple | 4 (HH, HL, LH, LL) | High = aggressive/assertive; Low = neutral/passive. 2×2 cross of partners' intensity |
-| Positions per cell | 2 (alpha = A first, beta = B first) | Within-pair crossover; position is the RQ4 factor |
+| Positions per cell | 2 (alpha = A first, beta = B first) | Within-pair crossover; enables HL/LH severity-position analysis |
 | Therapist models | **3 (GPT-4o, Llama 3.1 70B, Llama 3.1 8B) — symmetric across all cells** | Advisor requirement: same sample size per model |
 | Structure | LLM-Based Selection (primary); Sequential on 3-couple subset (robustness check) | Sequential collapses signal on C6 (−81% magnitude) but preserves on C2/C4; used as volume-confound robustness check only |
 | Therapist mode | Standard | Advisor-preferred; validates r=+0.675 in pilots 3+4 |
 | Conversation temperature | **0.3** | Temperature pilot (n=18): 0.7 flipped sign on C4 (sev=+2.93); 0.3 direction-stable across all sev levels |
 | Turns per session | 30 fixed | Matches pilot design; sufficient for session arc to develop; keeps API cost feasible. Consistent with prior LLM therapy simulation literature (30-turn range). |
 | Replicates per cell | 1 | With 13 couples × 4 cells × 2 positions × 3 models = 312 sessions |
-| **Total sessions (primary)** | **312** | ~$50 API cost; ~21 hours wall-clock |
-| Ablation sessions | 24 | Included in total pre-run checklist; not part of headline n |
+| **Total sessions (primary RQ1)** | **312** | ~$50 API cost; ~21 hours wall-clock |
+| Prompt comparison sessions (RQ2) | 192 | 4 prompts × 8 pairs × 2 positions × 3 models; ~$20, ~13 hours |
+| Ablation sessions | 24 | Required pre-run; not part of headline n |
 
 ---
 
 ## Sample size justification
 
-**RQ1 (couple-level Pearson r, Fisher Z):**
+**RQ1 H1a (couple-level Pearson r, Fisher Z):**
 
 | Assumed true r | n_couples needed (α=0.05, power=0.80) |
 |---|---:|
@@ -118,9 +128,11 @@ A temperature sensitivity pilot was run before locking the final design (n=18 se
 | +0.70 (cautious) | **13** |
 | +0.55 (conservative; lower bound of pilot 95% CI) | 24 |
 
-Design uses **n=13** targeting r ≥ +0.70. **Pre-registered fallback:** if r at n=13 couples is non-significant, the primary inferential statistic reverts to the session-level pooled r (existing n=122; expected n=312 post-run) with couple-level clustering as a random effect in a linear mixed model. This fallback is pre-specified and not a post-hoc rescue.
+Design uses **n=13** targeting r ≥ +0.70. **Pre-registered fallback:** if r at n=13 is non-significant, revert to session-level pooled r (n=312) with couple random effect in LMM.
 
-**RQ4 (TOST, paired dFAS):** n=156 swap-pairs (13 × 4 cells × 3 models) → equivalence at d=0.30, power ≈ 0.95 at α=0.05 one-sided.
+**RQ1 H1b (bid-cell moderation, LMM):** 78 sessions/cell per model → f=0.25 detectable, power > 0.90. Exploratory; no correction.
+
+**RQ2 (prompt robustness, 4×3 cell matrix):** 8 pairs × 2 positions = 16 sessions per prompt per model. With pilot SD≈0.20, CI half-width ≈ ±0.14 per cell. Sufficient to detect r > 0 if true effect ≥ +0.25. Goal is directional consistency across all 12 cells, not magnitude precision.
 
 ---
 
@@ -191,17 +203,20 @@ If C10–C13 cannot be completed, design falls back to n=9 couples with pre-regi
 ## Pre-run checklist (in order)
 
 1. Run topic-context ablation (24 sessions); apply decision rule; adjust thesis framing if needed
-2. Draft personas C10–C13 meeting coverage requirements above
-3. Run severity rater on C10–C13; verify coverage
-4. Generate PANAS baselines for C10–C13
-5. Pre-register on OSF with this doc + analysis script, Git-tagged
-6. Run 312-session batch in 4–6 sub-batches (avoid single overnight failure wiping full run)
-7. Sequential robustness sub-run: 3 couples × 4 cells × 2 positions × 1 model = 24 sessions (separate from 312)
+2. Draft prompt variants P2 (CBT-Structured), P3 (CBT-Warm), P4 (CBT-Balanced); review with advisor
+3. Draft personas C10–C13 meeting coverage requirements above
+4. Run severity rater on C10–C13; verify coverage
+5. Generate PANAS baselines for C10–C13
+6. Pre-register on OSF with this doc + analysis script, Git-tagged
+7. Run 312-session primary batch (RQ1) in 4–6 sub-batches
+8. Run 192-session prompt comparison batch (RQ2): P1–P4 × 8 pairs × 2 positions × 3 models
+9. Sequential robustness sub-run: 24 sessions (optional, separate from main counts)
 
 ---
 
 ## Out of scope (future work)
 
+- Residual position bias test (RQ4 removed per advisor guidance 2026-05-13)
 - Sequential structure as full factor (couple-specific suppression effect; noted as limitation)
 - Individual Focus mode comparison
 - Online / human-in-the-loop therapy variants

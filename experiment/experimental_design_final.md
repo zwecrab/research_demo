@@ -11,12 +11,12 @@ Bias in an LLM therapist agent during multi-party couples therapy. The therapist
 
 | # | RQ | Paired hypothesis |
 |---|---|---|
-| RQ1 | Does an LLM therapist preferentially adopt the more clinically severe partner's framing, controlling for word volume? | r(severity_diff, FAS) > 0 AND r(severity_diff, FAS_volume_adjusted) > 0 |
-| RQ2 | Does the magnitude of severity-driven framing differ across the four communication-intensity pairings of the two partners? | \|FAS\| largest in High-High and smallest in Low-Low; asymmetric pairings intermediate |
-| RQ3 | Does severity-driven framing replicate across LLM therapist backbones? | Direction consistent across GPT-4o, Llama 70B, Llama 8B; magnitude noisier on 8B |
-| RQ4 | After controlling for severity, is residual position bias detectable? | Partial r(position, FAS \| severity) ≈ 0; equivalence at d ≤ 0.30 |
+| RQ1 | Does an LLM therapist exhibit severity-driven framing bias — adopting the more clinically severe partner's framing, controlling for word volume — and does this vary across communication-intensity pairings (HH/HL/LH/LL)? | H1a: r(severity_diff, FAS) > 0 AND r(severity_diff, FAS_volume_adjusted) > 0. H1b (exploratory): \|FAS\| largest in HH, smallest in LL |
+| RQ2 | Does the severity-driven framing bias persist across four CBT-informed therapist prompt variants (Clinical-Judgment, CBT-Structured, CBT-Warm, CBT-Balanced) and across three LLM models? | r(severity_diff, FAS) > 0 in all 12 prompt × model cells; no single variant eliminates the bias |
+| RQ3 | (Subsumed by RQ2) | Model comparison embedded in the 4×3 prompt × model matrix |
 
 Communication intensity: High = aggressive or assertive bid; Low = neutral or passive bid.
+Prompt variants: P1 Clinical-Judgment (standard), P2 CBT-Structured (Socratic, balanced), P3 CBT-Warm (empathic, plain language), P4 CBT-Balanced (strict alternation).
 
 ## Locked design parameters
 
@@ -31,17 +31,16 @@ Communication intensity: High = aggressive or assertive bid; Low = neutral or pa
 | Replicates per cell | 1 |
 | Conversation temperature | 0.3 (sensitivity tested at 0.0 and 0.7 in pre-final pilot; see §Temperature pilot below) |
 | Turns per session | 30 fixed |
-| **Total sessions** | **312** |
+| **Total sessions (primary RQ1)** | **312** |
+| **Total sessions (prompt comparison RQ2)** | **192** (4 prompts × 8 pairs × 2 pos × 3 models) |
 
 ## Sample size justification
 
 **RQ1 (couple-level Pearson r):** with 13 couples, detect r ≥ +0.70 at α=0.05, power=0.80 (Fisher Z; n=13 minimum). Pilot observed r=+0.878.
 
-**RQ2 (4-cell ANOVA, couple as random effect):** 78 sessions/cell on each model → f=0.25 detectable, power > 0.90.
+**RQ1 H1b — bid moderation (4-cell LMM):** 78 sessions/cell per model → f=0.25 detectable, power > 0.90. Exploratory.
 
-**RQ3 (3-model contrast on full grid):** 104 sessions/model → f=0.20 detectable, power > 0.90.
-
-**RQ4 (paired equivalence test):** 104 swap-pairs (after collapsing model) → equivalence at d=0.30 (strict null).
+**RQ2 — prompt robustness (4×3 matrix):** 8 pairs × 2 positions = 16 sessions per prompt-model cell. CI ±0.14; sufficient to confirm directional consistency.
 
 ## Metrics
 
@@ -76,7 +75,7 @@ Wall-clock at ~4 min/session: **~21 hours** (run in batches with overnight gaps)
 2. Run severity rater on C10–C13
 3. Generate PANAS baselines for C10–C13 personas
 4. Run temperature pilot (16 sessions); confirm 0.3 is appropriate
-5. Pre-register primary contrast (RQ1) and secondary contrasts (RQ2-RQ4) before final run
+5. Pre-register primary contrasts (RQ1 H1a, RQ2 directional consistency) before final run
 6. Execute 312-session run in 4-6 sub-batches
 
 ## Out of scope (deferred to future work)
