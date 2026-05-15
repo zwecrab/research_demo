@@ -111,10 +111,14 @@ def run_session_loop(output_json, participants, discussion_notes, conversation_s
         
         if current_speaker == "Therapist":
             print("🤔 Therapist is thinking...")
-            if therapist_mode == 'individual_focus':
-                therapist_prompt = prompts['therapist_individual_focus']
-            elif therapist_mode == 'open':
+            # if therapist_mode == 'individual_focus':  # legacy — not used in final design
+            #     therapist_prompt = prompts['therapist_individual_focus']
+            if therapist_mode == 'structured':
+                therapist_prompt = prompts['therapist_structured']
+            elif therapist_mode in ('open', 'warm'):
                 therapist_prompt = prompts['therapist_open']
+            elif therapist_mode == 'balanced':
+                therapist_prompt = prompts['therapist_balanced']
             else:
                 therapist_prompt = prompts['therapist']
             dialogue = generate_agent_turn(
@@ -334,11 +338,17 @@ def main():
     arc_choice = input("\nEnable session progress arc? (y/n, default n): ").strip().lower()
     enable_progress = arc_choice == "y"
 
-    print("\nTherapist mode:")
-    print("  1 = Standard (addresses both partners per turn)")
-    print("  2 = Individual Focus (addresses one partner per turn)")
+    print("\nTherapist mode (RQ2 prompt variants):")
+    print("  1 = P1 Clinical-Judgment / Standard  (clinical judgement triage)")
+    print("  2 = P2 CBT-Structured                (Socratic, symmetric, technical vocab)")
+    print("  3 = P3 CBT-Warm                      (empathic joining, plain language)")
+    print("  4 = P4 CBT-Balanced                  (strict alternation, speaker-listener)")
+    # print("  5 = Individual Focus               (legacy — not used in final design)")
     mode_choice = input("Select (default 1): ").strip()
-    therapist_mode = 'individual_focus' if mode_choice == '2' else 'standard'
+    therapist_mode = {
+        "2": "structured", "3": "open", "4": "balanced"
+        # "5": "individual_focus"  # legacy — not used in final design
+    }.get(mode_choice, "standard")
 
     print("\n" + "="*70)
     print("SESSION SETUP")

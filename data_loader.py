@@ -3,8 +3,10 @@ from pathlib import Path
 from config import (
     THERAPY_PLANS_FILE, PERSONAS_FILE, PERSONAS_V2_FILE, BID_STYLES_FILE,
     PERSONAS_PANAS_FILE, PERSONAS_V2_PANAS_FILE,
-    THERAPIST_PROMPT_FILE, THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE,
-    THERAPIST_OPEN_PROMPT_FILE, PATIENT_PROMPT_FILE,
+    THERAPIST_PROMPT_FILE,
+    # THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE,  # legacy — not used in final design
+    THERAPIST_OPEN_PROMPT_FILE, THERAPIST_STRUCTURED_PROMPT_FILE,
+    THERAPIST_BALANCED_PROMPT_FILE, PATIENT_PROMPT_FILE,
     THERAPIST_INTERVENTION_PROMPT_FILE
 )
 
@@ -147,15 +149,19 @@ def load_prompts():
     handled at runtime via the [slot_label] placeholder ("Partner A" / "Partner B").
     """
     therapist_prompt = load_txt(THERAPIST_PROMPT_FILE)
-    therapist_individual_focus_prompt = load_txt(THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE)
     therapist_open_prompt = load_txt(THERAPIST_OPEN_PROMPT_FILE)
+    therapist_structured_prompt = load_txt(THERAPIST_STRUCTURED_PROMPT_FILE)
+    therapist_balanced_prompt = load_txt(THERAPIST_BALANCED_PROMPT_FILE)
+    # therapist_individual_focus_prompt = load_txt(THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE)  # legacy — not used in final design
     patient_prompt = load_txt(PATIENT_PROMPT_FILE)
     therapist_intervention_decision = load_txt(THERAPIST_INTERVENTION_PROMPT_FILE)
 
     return {
-        "therapist": therapist_prompt,
-        "therapist_individual_focus": therapist_individual_focus_prompt,
-        "therapist_open": therapist_open_prompt,
+        "therapist":            therapist_prompt,            # P1 Clinical-Judgment (standard)
+        "therapist_structured": therapist_structured_prompt, # P2 CBT-Structured
+        "therapist_open":       therapist_open_prompt,       # P3 CBT-Warm
+        "therapist_balanced":   therapist_balanced_prompt,   # P4 CBT-Balanced
+        # "therapist_individual_focus": therapist_individual_focus_prompt,  # legacy — not used in final design
         "patient": patient_prompt,
         "therapist_intervention": therapist_intervention_decision
     }
@@ -202,7 +208,7 @@ def load_all_assets():
         if v2_personas:
             print(f"  [v2] {len(v2_personas)} personas ({len(v2_couples)} couples), "
                   f"{len(bid_styles)} bid-styles, {v2_panas_count} PANAS baselines")
-        print(f"  Prompts: 4 agent prompts loaded")
+        print(f"  Prompts: 6 therapist prompts loaded (standard/structured/open/balanced/individual_focus + patient)")
 
         return {
             "therapy_plans": therapy_plans,

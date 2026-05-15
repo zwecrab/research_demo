@@ -368,9 +368,18 @@ if page == "Run Experiment":
         structure_options = ["Sequential", "LLM-Based Selection"]
         conversation_structure = st.selectbox("Structure", structure_options, key="run_struct")
 
-        therapist_mode = "individual_focus" if st.radio(
-            "Therapist Mode", ["Standard", "Individual Focus"], key="run_tmode"
-        ) == "Individual Focus" else "standard"
+        _PROMPT_LABELS = {
+            "P1 Clinical-Judgment": "standard",
+            "P2 CBT-Structured": "structured",
+            "P3 CBT-Warm": "open",
+            "P4 CBT-Balanced": "balanced",
+            # "Individual Focus (legacy)": "individual_focus",  # not used in final design
+        }
+        therapist_mode_label_run = st.selectbox(
+            "Therapist Prompt", list(_PROMPT_LABELS.keys()), key="run_tmode",
+            help="P1=triage, P2=Socratic, P3=empathic, P4=strict alternation"
+        )
+        therapist_mode = _PROMPT_LABELS[therapist_mode_label_run]
 
         from config import THERAPIST_MODEL_OPTIONS
         therapist_model_name = st.selectbox(
@@ -535,8 +544,18 @@ These parameters are **fixed across all matrix runs** to isolate the position-bi
 
         structure = st.selectbox("Structure", ["Sequential", "LLM-Based Selection"], key="matrix_struct")
 
-        therapist_mode_label = st.radio("Therapist Mode", ["Standard", "Individual Focus"], key="matrix_tmode")
-        therapist_mode = "individual_focus" if therapist_mode_label == "Individual Focus" else "standard"
+        _PROMPT_LABELS_MATRIX = {
+            "P1 Clinical-Judgment": "standard",
+            "P2 CBT-Structured": "structured",
+            "P3 CBT-Warm": "open",
+            "P4 CBT-Balanced": "balanced",
+            # "Individual Focus (legacy)": "individual_focus",  # not used in final design
+        }
+        therapist_mode_label = st.selectbox(
+            "Therapist Prompt", list(_PROMPT_LABELS_MATRIX.keys()), key="matrix_tmode",
+            help="P1=triage, P2=Socratic, P3=empathic, P4=strict alternation"
+        )
+        therapist_mode = _PROMPT_LABELS_MATRIX[therapist_mode_label]
 
         selected_bids = st.multiselect(
             "Bid-styles to include",

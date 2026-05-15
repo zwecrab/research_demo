@@ -37,9 +37,20 @@ PERSONAS_V2_PANAS_FILE = PROMPTS_DIR / "personas_v2_PANAS.json"
 
 THERAPIST_PROMPT_FILE = PROMPTS_DIR / "therapist_prompt.txt"
 THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE = PROMPTS_DIR / "therapist_option2_prompt.txt"
-THERAPIST_OPEN_PROMPT_FILE = PROMPTS_DIR / "therapist_prompt_open.txt"
+THERAPIST_OPEN_PROMPT_FILE    = PROMPTS_DIR / "therapist_prompt_open.txt"       # P3 CBT-Warm
+THERAPIST_STRUCTURED_PROMPT_FILE = PROMPTS_DIR / "therapist_prompt_structured.txt"  # P2 CBT-Structured
+THERAPIST_BALANCED_PROMPT_FILE   = PROMPTS_DIR / "therapist_prompt_balanced.txt"    # P4 CBT-Balanced
 PATIENT_PROMPT_FILE = PROMPTS_DIR / "patient_prompt.txt"
 THERAPIST_INTERVENTION_PROMPT_FILE = PROMPTS_DIR / "therapist_intervention_decision.txt"
+
+# Therapist mode keys and their prompt files (for RQ2 prompt comparison)
+THERAPIST_MODES = {
+    "standard":         THERAPIST_PROMPT_FILE,            # P1 Clinical-Judgment
+    "structured":       THERAPIST_STRUCTURED_PROMPT_FILE, # P2 CBT-Structured
+    "open":             THERAPIST_OPEN_PROMPT_FILE,        # P3 CBT-Warm
+    "balanced":         THERAPIST_BALANCED_PROMPT_FILE,    # P4 CBT-Balanced
+    # "individual_focus": THERAPIST_INDIVIDUAL_FOCUS_PROMPT_FILE,  # legacy — not used in final design (RQ2 uses P1–P4 only)
+}
 
 TRANSCRIPTS_DIR.mkdir(exist_ok=True)
 

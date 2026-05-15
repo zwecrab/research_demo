@@ -128,7 +128,8 @@ def run_v2_experiment(assets, persona_a, persona_b, structure, first_speaker,
         first_speaker: "Patient A" or "Patient B"
         temperature: model temperature (0.0-1.0)
         turn_limit: override max turns (default uses config)
-        therapist_mode: 'standard' or 'individual_focus'
+        therapist_mode: 'standard' | 'structured' | 'open' | 'balanced'
+                        # 'individual_focus' legacy — not used in final design
         therapist_model: OpenRouter model string for therapist
         topic_override: custom topic string or None for default
         turn_callback: callable(speaker, text, emotion_label, trajectory)
